@@ -34,7 +34,8 @@ class ConditionalStyles
         $conditionals = [];
         foreach ($xmlSheet->conditionalFormatting as $conditional) {
             foreach ($conditional->cfRule as $cfRule) {
-                if (((string) $cfRule['type'] == Conditional::CONDITION_NONE
+                if (
+                    ((string) $cfRule['type'] == Conditional::CONDITION_NONE
                     || (string) $cfRule['type'] == Conditional::CONDITION_CELLIS
                     || (string) $cfRule['type'] == Conditional::CONDITION_CONTAINSTEXT
                     || (string) $cfRule['type'] == Conditional::CONDITION_CONTAINSBLANKS
@@ -45,7 +46,8 @@ class ConditionalStyles
                     || (string) $cfRule['type'] == Conditional::CONDITION_ABOVEAVERAGE
                     || (string) $cfRule['type'] == Conditional::CONDITION_TOPTEN
                         || (string) $cfRule['type'] == Conditional::CONDITION_COLORSCALE)
-                    && isset($this->dxfs[(int) ($cfRule['dxfId'])])) {
+                    && isset($this->dxfs[(int) ($cfRule['dxfId'])])
+                ) {
                     $conditionals[(string) $conditional['sqref']][(int) ($cfRule['priority'])] = $cfRule;
                 }
             }
