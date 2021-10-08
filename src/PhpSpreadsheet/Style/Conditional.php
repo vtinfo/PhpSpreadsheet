@@ -17,6 +17,13 @@ class Conditional implements IComparable
     const CONDITION_DATABAR = 'dataBar';
     const CONDITION_NOTCONTAINSTEXT = 'notContainsText';
 
+    // additional condition types not originally supported
+    const CONDITION_DUPLICATEVALUES = 'duplicateValues';
+    const CONDITION_UNIQUEVALUES = 'uniqueValues';
+    const CONDITION_ABOVEAVERAGE = 'aboveAverage';
+    const CONDITION_COLORSCALE = 'colorScale';
+    const CONDITION_TOPTEN = 'top10';
+
     private const CONDITION_TYPES = [
         self::CONDITION_CELLIS,
         self::CONDITION_CONTAINSBLANKS,
@@ -26,14 +33,12 @@ class Conditional implements IComparable
         self::CONDITION_NONE,
         self::CONDITION_NOTCONTAINSBLANKS,
         self::CONDITION_NOTCONTAINSTEXT,
+        self::CONDITION_DUPLICATEVALUES,
+        self::CONDITION_UNIQUEVALUES,
+        self::CONDITION_ABOVEAVERAGE,
+        self::CONDITION_COLORSCALE,
+        self::CONDITION_TOPTEN,
     ];
-
-    // additional condition types not originally supported
-    const CONDITION_DUPLICATEVALUES = 'duplicateValues';
-    const CONDITION_UNIQUEVALUES = 'uniqueValues';
-    const CONDITION_ABOVEAVERAGE = 'aboveAverage';
-    const CONDITION_COLORSCALE = 'colorScale';
-    const CONDITION_TOPTEN = 'top10';
 
     // Operator types
     const OPERATOR_NONE = '';
