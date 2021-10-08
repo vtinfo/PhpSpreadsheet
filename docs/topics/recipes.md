@@ -201,7 +201,7 @@ $spreadsheet->getActiveSheet()->setCellValue('B8',$internalFormula);
 ```
 
 Currently, formula translation only translates the function names, the
-constants TRUE and FALSE, and the function argument separators.
+constants TRUE and FALSE, and the function argument separators. Cell addressing using R1C1 formatting is not supported.
 
 At present, the following locale settings are supported:
 
@@ -216,7 +216,7 @@ French               | Français             | fr
 Hungarian            | Magyar               | hu
 Italian              | Italiano             | it
 Dutch                | Nederlands           | nl
-Norwegian            | Norsk                | no
+Norwegian            | Norsk Bokmål         | nb
 Polish               | Jezyk polski         | pl
 Portuguese           | Português            | pt
 Brazilian Portuguese | Português Brasileiro | pt_br
@@ -884,6 +884,44 @@ $spreadsheet->getActiveSheet()
     );
 ```
 
+### DataBar of Conditional formatting
+The basics are the same as conditional formatting.
+Additional DataBar object to conditional formatting.
+
+For example, the following code will result in the conditional formatting shown in the image.
+```php
+$conditional = new Conditional();
+$conditional->setConditionType(Conditional::CONDITION_DATABAR);
+$conditional->setDataBar(new ConditionalDataBar());
+$conditional->getDataBar()
+            ->setMinimumConditionalFormatValueObject(new ConditionalFormatValueObject('num', '2'))
+            ->setMaximumConditionalFormatValueObject(new ConditionalFormatValueObject('max'))
+            ->setColor('FFFF555A');
+$ext = $conditional
+    ->getDataBar()
+    ->setConditionalFormattingRuleExt(new ConditionalFormattingRuleExtension())
+    ->getConditionalFormattingRuleExt();
+    
+$ext->setCfRule('dataBar');
+$ext->setSqref('A1:A5'); // target CellCoordinates
+$ext->setDataBarExt(new ConditionalDataBarExtension());
+$ext->getDataBarExt()
+    ->setMinimumConditionalFormatValueObject(new ConditionalFormatValueObject('num', '2'))
+    ->setMaximumConditionalFormatValueObject(new ConditionalFormatValueObject('autoMax'))
+    ->setMinLength(0)
+    ->setMaxLength(100)
+    ->setBorder(true)
+    ->setDirection('rightToLeft')
+    ->setNegativeBarBorderColorSameAsPositive(false)
+    ->setBorderColor('FFFF555A')
+    ->setNegativeFillColor('FFFF0000')
+    ->setNegativeBorderColor('FFFF0000')
+    ->setAxisColor('FF000000');
+
+```
+
+![10-databar-of-conditional-formatting.png](./images/10-databar-of-conditional-formatting.png)
+
 ## Add a comment to a cell
 
 To add a comment to a cell, use the following code. The example below
@@ -949,6 +987,9 @@ $security->setLockWindows(true);
 $security->setLockStructure(true);
 $security->setWorkbookPassword("PhpSpreadsheet");
 ```
+
+Note that there are additional methods setLockRevision and setRevisionsPassword
+which apply only to change tracking and history for shared workbooks.
 
 ### Worksheet
 

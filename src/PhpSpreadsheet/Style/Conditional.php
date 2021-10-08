@@ -3,6 +3,7 @@
 namespace PhpOffice\PhpSpreadsheet\Style;
 
 use PhpOffice\PhpSpreadsheet\IComparable;
+use PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\ConditionalDataBar;
 
 class Conditional implements IComparable
 {
@@ -13,6 +14,8 @@ class Conditional implements IComparable
     const CONDITION_EXPRESSION = 'expression';
     const CONDITION_CONTAINSBLANKS = 'containsBlanks';
     const CONDITION_NOTCONTAINSBLANKS = 'notContainsBlanks';
+    const CONDITION_DATABAR = 'dataBar';
+    const CONDITION_NOTCONTAINSTEXT = 'notContainsText';
 
     // additional condition types not originally supported
     const CONDITION_DUPLICATEVALUES = 'duplicateValues';
@@ -20,6 +23,22 @@ class Conditional implements IComparable
     const CONDITION_ABOVEAVERAGE = 'aboveAverage';
     const CONDITION_COLORSCALE = 'colorScale';
     const CONDITION_TOPTEN = 'top10';
+
+    private const CONDITION_TYPES = [
+        self::CONDITION_CELLIS,
+        self::CONDITION_CONTAINSBLANKS,
+        self::CONDITION_CONTAINSTEXT,
+        self::CONDITION_DATABAR,
+        self::CONDITION_EXPRESSION,
+        self::CONDITION_NONE,
+        self::CONDITION_NOTCONTAINSBLANKS,
+        self::CONDITION_NOTCONTAINSTEXT,
+        self::CONDITION_DUPLICATEVALUES,
+        self::CONDITION_UNIQUEVALUES,
+        self::CONDITION_ABOVEAVERAGE,
+        self::CONDITION_COLORSCALE,
+        self::CONDITION_TOPTEN,
+    ];
 
     // Operator types
     const OPERATOR_NONE = '';
@@ -70,6 +89,11 @@ class Conditional implements IComparable
      * @var string[]
      */
     private $condition = [];
+
+    /**
+     * @var ConditionalDataBar
+     */
+    private $dataBar;
 
     /**
      * Style.
@@ -249,6 +273,28 @@ class Conditional implements IComparable
     }
 
     /**
+     * get DataBar.
+     *
+     * @return ConditionalDataBar | null
+     */
+    public function getDataBar()
+    {
+        return $this->dataBar;
+    }
+
+    /**
+     * set DataBar.
+     *
+     * @return $this
+     */
+    public function setDataBar(ConditionalDataBar $dataBar)
+    {
+        $this->dataBar = $dataBar;
+
+        return $this;
+    }
+
+    /**
      * Get hash code.
      *
      * @return string Hash code
@@ -277,5 +323,13 @@ class Conditional implements IComparable
                 $this->$key = $value;
             }
         }
+    }
+
+    /**
+     * Verify if param is valid condition type.
+     */
+    public static function isValidConditionType(string $type): bool
+    {
+        return in_array($type, self::CONDITION_TYPES);
     }
 }

@@ -14,45 +14,23 @@ use PHPUnit\Framework\TestCase;
 
 class XlsxTest extends TestCase
 {
-    public function testLoadXlsxWorkbookProperties(): void
+    public function testListWorksheetInfo(): void
     {
-        $customPropertySet = [
-            'Publisher' => ['type' => Properties::PROPERTY_TYPE_STRING, 'value' => 'PHPOffice Suite'],
-            'Tested' => ['type' => Properties::PROPERTY_TYPE_BOOLEAN, 'value' => true],
-            'Counter' => ['type' => Properties::PROPERTY_TYPE_INTEGER, 'value' => 15],
-            'Rate' => ['type' => Properties::PROPERTY_TYPE_FLOAT, 'value' => 1.15],
-            'Refactor Date' => ['type' => Properties::PROPERTY_TYPE_DATE, 'value' => '2019-06-10'],
+        $filename = 'tests/data/Reader/XLSX/rowColumnAttributeTest.xlsx';
+        $reader = new Xlsx();
+        $actual = $reader->listWorksheetInfo($filename);
+
+        $expected = [
+            [
+                'worksheetName' => 'Sheet1',
+                'lastColumnLetter' => 'F',
+                'lastColumnIndex' => 5,
+                'totalRows' => '6',
+                'totalColumns' => 6,
+            ],
         ];
 
-        $filename = 'tests/data/Reader/XLSX/propertyTest.xlsx';
-        $reader = new Xlsx();
-        $spreadsheet = $reader->load($filename);
-
-        $properties = $spreadsheet->getProperties();
-        // Core Properties
-        self::assertSame('Mark Baker', $properties->getCreator());
-        self::assertSame('Unit Testing', $properties->getTitle());
-        self::assertSame('Property Test', $properties->getSubject());
-
-        // Extended Properties
-        self::assertSame('PHPOffice', $properties->getCompany());
-        self::assertSame('The Big Boss', $properties->getManager());
-
-        // Custom Properties
-        $customProperties = $properties->getCustomProperties();
-        self::assertIsArray($customProperties);
-        $customProperties = array_flip($customProperties);
-        self::assertArrayHasKey('Publisher', $customProperties);
-
-        foreach ($customPropertySet as $propertyName => $testData) {
-            self::assertTrue($properties->isCustomPropertySet($propertyName));
-            self::assertSame($testData['type'], $properties->getCustomPropertyType($propertyName));
-            if ($properties->getCustomPropertyType($propertyName) == Properties::PROPERTY_TYPE_DATE) {
-                self::assertSame($testData['value'], date('Y-m-d', $properties->getCustomPropertyValue($propertyName)));
-            } else {
-                self::assertSame($testData['value'], $properties->getCustomPropertyValue($propertyName));
-            }
-        }
+        self::assertEquals($expected, $actual);
     }
 
     public function testLoadXlsxRowColumnAttributes(): void
@@ -218,7 +196,7 @@ class XlsxTest extends TestCase
         $filename = 'tests/data/Reader/XLSX/empty_drawing.xlsx';
         $reader = new Xlsx();
         $excel = $reader->load($filename);
-        $resultFilename = tempnam(File::sysGetTempDir(), 'phpspreadsheet-test');
+        $resultFilename = File::temporaryFilename();
         $writer = new \PhpOffice\PhpSpreadsheet\Writer\Xlsx($excel);
         $writer->save($resultFilename);
         $excel = $reader->load($resultFilename);
@@ -231,7 +209,6 @@ class XlsxTest extends TestCase
      * Test if all whitespace is removed from a style definition string.
      * This is needed to parse it into properties with the correct keys.
      *
-     * @param $string
      * @dataProvider providerStripsWhiteSpaceFromStyleString
      */
     public function testStripsWhiteSpaceFromStyleString($string): void
@@ -240,7 +217,7 @@ class XlsxTest extends TestCase
         self::assertEquals(preg_match('/\s/', $string), 0);
     }
 
-    public function providerStripsWhiteSpaceFromStyleString()
+    public function providerStripsWhiteSpaceFromStyleString(): array
     {
         return [
             ['position:absolute;margin-left:424.5pt;margin-top:169.5pt;width:67.5pt;
