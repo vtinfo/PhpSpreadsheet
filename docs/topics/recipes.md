@@ -303,6 +303,21 @@ $spreadsheet->getActiveSheet()->getPageSetup()
 Note that there are additional page settings available. Please refer to
 the [API documentation](https://phpoffice.github.io/PhpSpreadsheet) for all possible options.
 
+The default papersize is initially PAPERSIZE_LETTER. However, this default
+can be changed for new sheets with the following call:
+```php
+\PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::setPaperSizeDefault(
+    \PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::PAPERSIZE_A4
+);
+```
+
+The default orientation is ORIENTATION_DEFAULT, which will be treated as Portrait in Excel. However, this default can be changed for new sheets with the following call:
+```php
+\PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::setOrientationDefault(
+    \PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::ORIENTATION_LANDSCAPE
+);
+```
+
 ### Page Setup: Scaling options
 
 The page setup scaling options in PhpSpreadsheet relate directly to the
@@ -884,6 +899,8 @@ $spreadsheet->getActiveSheet()
     );
 ```
 
+More detailed documentation of the Conditional Formatting options and rules, and the use of Wizards to help create them, can be found in [a dedicated section of the documentation](https://phpspreadsheet.readthedocs.io/en/latest/topics/conditional-formatting/).
+
 ### DataBar of Conditional formatting
 The basics are the same as conditional formatting.
 Additional DataBar object to conditional formatting.
@@ -942,8 +959,25 @@ $spreadsheet->getActiveSheet()
     ->getComment('E11')
     ->getText()->createTextRun('Total amount on the current invoice, excluding VAT.');
 ```
-
 ![08-cell-comment.png](./images/08-cell-comment.png)
+
+## Add a comment with background image to a cell
+
+To add a comment with background image to a cell, use the following code:
+
+```php
+$sheet = $spreadsheet->getActiveSheet();
+$sheet->setCellValue('B5', 'Gibli Chromo');
+// Add png image to comment background
+$drawing = new Drawing();
+$drawing->setName('Gibli Chromo');
+$drawing->setPath('/tmp/gibli_chromo.png');
+$comment = $sheet->getComment('B5');
+$comment->setBackgroundImage($drawing);
+// Set the size of the comment equal to the size of the image 
+$comment->setSizeAsBackgroundImage();
+```
+![08-cell-comment-with-image.png](./images/08-cell-comment-with-image.png)
 
 ## Apply autofilter to a range of cells
 
@@ -1104,7 +1138,7 @@ formula is allowed to be maximum 255 characters (not bytes). This sets a
 limit on how many items you can have in the string "Item A,Item B,Item
 C". Therefore it is normally a better idea to type the item values
 directly in some cell range, say A1:A3, and instead use, say,
-`$validation->setFormula1('Sheet!$A$1:$A$3')`. Another benefit is that
+`$validation->setFormula1('\'Sheet title\'!$A$1:$A$3')`. Another benefit is that
 the item values themselves can contain the comma `,` character itself.
 
 If you need data validation on multiple cells, one can clone the
@@ -1133,13 +1167,15 @@ that you are setting is measured in.
 Valid units are `pt` (points), `px` (pixels), `pc` (pica), `in` (inches),
 `cm` (centimeters) and `mm` (millimeters).
 
+Setting the column width to `-1` tells MS Excel to display the column using its default width.  
+
 ```php
 $spreadsheet->getActiveSheet()->getColumnDimension('D')->setWidth(120, 'pt');
 ```
 
 If you want PhpSpreadsheet to perform an automatic width calculation,
-use the following code. PhpSpreadsheet will approximate the column with
-to the width of the widest column value.
+use the following code. PhpSpreadsheet will approximate the column width
+to the width of the widest value displayed in that column.
 
 ```php
 $spreadsheet->getActiveSheet()->getColumnDimension('B')->setAutoSize(true);
@@ -1232,6 +1268,18 @@ Valid units are `pt` (points), `px` (pixels), `pc` (pica), `in` (inches),
 $spreadsheet->getActiveSheet()->getRowDimension('10')->setRowHeight(100, 'pt');
 ```
 
+Setting the row height to `-1` tells MS Excel to display the column using its default height, which is based on the character font size.
+
+If you have wrapped text in a cell, then the `-1` default will only set the row height to display a single line of that wrapped text.
+If you need to calculate the actual height for the row, then count the lines that should be displayed (count the `\n` and add 1); then adjust for the font.
+The adjustment for Calibri 11 is approximately 14.5; for Calibri 12 15.9, etc.
+```php
+$spreadsheet->getActiveSheet()->getRowDimension(1)->setRowHeight(
+    14.5 * (substr_count($sheet->getCell('A1')->getValue(), "\n") + 1)
+);
+```
+
+
 ## Show/hide a row
 
 To set a worksheet''s row visibility, you can use the following code.
@@ -1300,7 +1348,7 @@ Removing a merge can be done using the unmergeCells method:
 $spreadsheet->getActiveSheet()->unmergeCells('A18:E22');
 ```
 
-## Inserting rows/columns
+## Inserting or Removing rows/columns
 
 You can insert/remove rows/columns at a specific position. The following
 code inserts 2 new rows, right before row 7:
@@ -1308,6 +1356,23 @@ code inserts 2 new rows, right before row 7:
 ```php
 $spreadsheet->getActiveSheet()->insertNewRowBefore(7, 2);
 ```
+while
+```php
+$spreadsheet->getActiveSheet()->removeRow(7, 2);
+```
+will remove 2 rows starting at row number 7 (ie. rows 7 and 8).
+
+Equivalent methods exist for inserting/removing columns:
+
+```php
+$spreadsheet->getActiveSheet()->removeColumn('C', 2);
+```
+
+All subsequent rows (or columns) will be moved to allow the insertion (or removal) with all formulae referencing thise cells adjusted accordingly.
+
+Note that this is a fairly intensive process, particularly with large worksheets, and especially if you are inserting/removing rows/columns from near beginning of the worksheet.
+
+If you need to insert/remove several consecutive rows/columns, always use the second argument rather than making multiple calls to insert/remove a single row/column if possible.
 
 ## Add a drawing to a worksheet
 

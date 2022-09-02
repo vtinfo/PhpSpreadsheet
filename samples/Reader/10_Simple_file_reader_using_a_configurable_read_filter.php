@@ -26,10 +26,10 @@ class MyReadFilter implements IReadFilter
         $this->columns = $columns;
     }
 
-    public function readCell($column, $row, $worksheetName = '')
+    public function readCell($columnAddress, $row, $worksheetName = '')
     {
         if ($row >= $this->startRow && $row <= $this->endRow) {
-            if (in_array($column, $this->columns)) {
+            if (in_array($columnAddress, $this->columns)) {
                 return true;
             }
         }
@@ -40,7 +40,7 @@ class MyReadFilter implements IReadFilter
 
 $filterSubset = new MyReadFilter(9, 15, range('G', 'K'));
 
-$helper->log('Loading file ' . pathinfo($inputFileName, PATHINFO_BASENAME) . ' using IOFactory with a defined reader type of ' . $inputFileType);
+$helper->log('Loading file ' . /** @scrutinizer ignore-type */ pathinfo($inputFileName, PATHINFO_BASENAME) . ' using IOFactory with a defined reader type of ' . $inputFileType);
 $reader = IOFactory::createReader($inputFileType);
 $helper->log('Loading Sheet "' . $sheetname . '" only');
 $reader->setLoadSheetsOnly($sheetname);

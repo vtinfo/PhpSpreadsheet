@@ -42,15 +42,14 @@ class Drawing
      * This gives a conversion factor of 7. Also, we assume that pixels and font size are proportional.
      *
      * @param int $pixelValue Value in pixels
-     * @param \PhpOffice\PhpSpreadsheet\Style\Font $pDefaultFont Default font of the workbook
      *
      * @return float|int Value in cell dimension
      */
-    public static function pixelsToCellDimension($pixelValue, \PhpOffice\PhpSpreadsheet\Style\Font $pDefaultFont)
+    public static function pixelsToCellDimension($pixelValue, \PhpOffice\PhpSpreadsheet\Style\Font $defaultFont)
     {
         // Font name and size
-        $name = $pDefaultFont->getName();
-        $size = $pDefaultFont->getSize();
+        $name = $defaultFont->getName();
+        $size = $defaultFont->getSize();
 
         if (isset(Font::$defaultColumnWidths[$name][$size])) {
             // Exact width can be determined
@@ -68,15 +67,15 @@ class Drawing
      * Convert column width from (intrinsic) Excel units to pixels.
      *
      * @param float $cellWidth Value in cell dimension
-     * @param \PhpOffice\PhpSpreadsheet\Style\Font $pDefaultFont Default font of the workbook
+     * @param \PhpOffice\PhpSpreadsheet\Style\Font $defaultFont Default font of the workbook
      *
      * @return int Value in pixels
      */
-    public static function cellDimensionToPixels($cellWidth, \PhpOffice\PhpSpreadsheet\Style\Font $pDefaultFont)
+    public static function cellDimensionToPixels($cellWidth, \PhpOffice\PhpSpreadsheet\Style\Font $defaultFont)
     {
         // Font name and size
-        $name = $pDefaultFont->getName();
-        $size = $pDefaultFont->getSize();
+        $name = $defaultFont->getName();
+        $size = $defaultFont->getSize();
 
         if (isset(Font::$defaultColumnWidths[$name][$size])) {
             // Exact width can be determined
@@ -126,27 +125,27 @@ class Drawing
     /**
      * Convert degrees to angle.
      *
-     * @param int $pValue Degrees
+     * @param int $degrees Degrees
      *
      * @return int Angle
      */
-    public static function degreesToAngle($pValue)
+    public static function degreesToAngle($degrees)
     {
-        return (int) round($pValue * 60000);
+        return (int) round($degrees * 60000);
     }
 
     /**
      * Convert angle to degrees.
      *
-     * @param int|SimpleXMLElement $pValue Angle
+     * @param int|SimpleXMLElement $angle Angle
      *
      * @return int Degrees
      */
-    public static function angleToDegrees($pValue)
+    public static function angleToDegrees($angle)
     {
-        $pValue = (int) $pValue;
-        if ($pValue != 0) {
-            return (int) round($pValue / 60000);
+        $angle = (int) $angle;
+        if ($angle != 0) {
+            return (int) round($angle / 60000);
         }
 
         return 0;
@@ -157,19 +156,23 @@ class Drawing
      *
      * @see http://www.php.net/manual/en/function.imagecreatefromwbmp.php#86214
      *
-     * @param string $p_sFile Path to Windows DIB (BMP) image
+     * @param string $bmpFilename Path to Windows DIB (BMP) image
      *
      * @return GdImage|resource
      */
-    public static function imagecreatefrombmp($p_sFile)
+    public static function imagecreatefrombmp($bmpFilename)
     {
         //    Load the image into a string
-        $file = fopen($p_sFile, 'rb');
+        $file = fopen($bmpFilename, 'rb');
+        /** @phpstan-ignore-next-line */
         $read = fread($file, 10);
+        // @phpstan-ignore-next-line
         while (!feof($file) && ($read != '')) {
+            // @phpstan-ignore-next-line
             $read .= fread($file, 1024);
         }
 
+        /** @phpstan-ignore-next-line */
         $temp = unpack('H*', $read);
         $hex = $temp[1];
         $header = substr($hex, 0, 108);
@@ -197,6 +200,8 @@ class Drawing
         $y = 1;
 
         //    Create newimage
+
+        /** @phpstan-ignore-next-line */
         $image = imagecreatetruecolor($width, $height);
 
         //    Grab the body from the image
@@ -242,7 +247,10 @@ class Drawing
             $b = hexdec($body[$i_pos] . $body[$i_pos + 1]);
 
             // Calculate and draw the pixel
+
+            /** @phpstan-ignore-next-line */
             $color = imagecolorallocate($image, $r, $g, $b);
+            // @phpstan-ignore-next-line
             imagesetpixel($image, $x, $height - $y, $color);
 
             // Raise the horizontal position
@@ -253,6 +261,7 @@ class Drawing
         unset($body);
 
         //    Return image-object
+        // @phpstan-ignore-next-line
         return $image;
     }
 }
