@@ -147,7 +147,13 @@ abstract class Coordinate
             $range = self::DEFAULT_RANGE;
         }
 
-        $exploded = explode(',', $range);
+        if (strpos(trim($range),' ') !== false) {
+            $delimiter = ' ';
+        } else {
+            $delimiter = ',';
+        }
+
+        $exploded = explode($delimiter, $range);
         $counter = count($exploded);
         for ($i = 0; $i < $counter; ++$i) {
             // @phpstan-ignore-next-line
