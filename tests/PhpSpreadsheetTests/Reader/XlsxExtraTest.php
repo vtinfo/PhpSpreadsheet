@@ -22,7 +22,7 @@ class XlsxExtraTest extends TestCase
         $conditionalRule = $conditionalStyle[0];
         $conditions = $conditionalRule->getConditions();
         self::assertNotEmpty($conditions);
-        self::assertEquals(Conditional::CONDITION_DUPLICATEVALUES, $conditionalRule->getConditionType());
+        self::assertEquals(Conditional::CONDITION_DUPLICATES, $conditionalRule->getConditionType());
         self::assertEquals('', $conditions[0]);
 
         $conditionalStyle = $worksheet->getConditionalStyles('B2:B8');
@@ -76,7 +76,7 @@ class XlsxExtraTest extends TestCase
         $conditionalRule = $conditionalStyle[0];
         $conditions = $conditionalRule->getConditions();
         self::assertNotEmpty($conditions);
-        self::assertEquals(Conditional::CONDITION_DUPLICATEVALUES, $conditionalRule->getConditionType());
+        self::assertEquals(Conditional::CONDITION_DUPLICATES, $conditionalRule->getConditionType());
         self::assertEquals('', $conditions[0]);
 
         $conditionalStyle = $worksheet->getConditionalStyles('B2:B8');
@@ -93,7 +93,7 @@ class XlsxExtraTest extends TestCase
         $conditions = $conditionalRule->getConditions();
         self::assertNotEmpty($conditions);
         self::assertEquals(Conditional::CONDITION_ABOVEAVERAGE, $conditionalRule->getConditionType());
-        self::assertEquals('', $conditions[0]);
+        self::assertEquals('0', $conditions[0]);
 
         $conditionalStyle = $worksheet->getConditionalStyles('D2:D13');
         self::assertNotEmpty($conditionalStyle);

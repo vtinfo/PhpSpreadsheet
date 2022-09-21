@@ -2,6 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheet;
 
+use PhpOffice\PhpSpreadsheet\Cell\AddressRange;
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 
 class CellReferenceHelper
@@ -84,11 +85,18 @@ class CellReferenceHelper
                 : $absoluteColumn . Coordinate::stringFromColumnIndex($newColumnIndex + $this->numberOfColumns);
         }
 
+        if ($newColumn > AddressRange::MAX_COLUMN) {
+            $newColumn = AddressRange::MAX_COLUMN;
+        }
+
         // Create new row reference
         if ($updateRow) {
             $newRow = ($includeAbsoluteReferences === false)
                 ? $newRowIndex + $this->numberOfRows
                 : $absoluteRow . (string) ($newRowIndex + $this->numberOfRows);
+        }
+        if ($newRow > AddressRange::MAX_ROW) {
+            $newRow = AddressRange::MAX_ROW;
         }
 
         // Return new reference
