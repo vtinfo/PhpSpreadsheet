@@ -25,8 +25,6 @@ class Conditional implements IComparable
     const CONDITION_UNIQUE = 'uniqueValues';
 
     // additional condition types not originally supported
-    const CONDITION_DUPLICATEVALUES = 'duplicateValues';
-    const CONDITION_UNIQUEVALUES = 'uniqueValues';
     const CONDITION_ABOVEAVERAGE = 'aboveAverage';
     const CONDITION_COLORSCALE = 'colorScale';
     const CONDITION_TOPTEN = 'top10';

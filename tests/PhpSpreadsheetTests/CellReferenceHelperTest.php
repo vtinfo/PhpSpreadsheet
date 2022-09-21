@@ -2,6 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests;
 
+use PhpOffice\PhpSpreadsheet\Cell\AddressRange;
 use PhpOffice\PhpSpreadsheet\CellReferenceHelper;
 use PHPUnit\Framework\TestCase;
 
@@ -189,5 +190,18 @@ class CellReferenceHelperTest extends TestCase
             ['E7', 'E9'],
             ['$E$7', '$E$9'],
         ];
+    }
+
+    public function testUpdateCellReferenceMaxRow(): void
+    {
+        $expectedResult = 'A' . (AddressRange::MAX_ROW + 1);
+
+        $cellRefHelper = new CellReferenceHelper('A1', 0, 1);
+        $result = $cellRefHelper->updateCellReference('A' . AddressRange::MAX_ROW);
+        self::assertSame($expectedResult, $result);
+
+        $cellRefHelperRange = new CellReferenceHelper('A1', 0, 1);
+        $result = $cellRefHelperRange->updateCellReference('A1:A' . AddressRange::MAX_ROW);
+        self::assertSame($expectedResult, $result);
     }
 }

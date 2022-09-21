@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com)
 and this project adheres to [Semantic Versioning](https://semver.org).
 
+## 1.24.1.1 - 2022-09-21
+
+### Added
+
+- Test that confirms greater than max row cell address
+
+### Changed
+
+- Updated tests to use correct condition constants
+
+### Deprecated
+
+- Nothing
+
+### Removed
+
+- custom support for CONDITION_DUPLICATEVALUES and CONDITION_UNIQUEVALUES that are now supported by default
+
+### Fixed
+
+- Nothing
+
 ## 1.24.1 - 2022-07-18
 
 ### Added
