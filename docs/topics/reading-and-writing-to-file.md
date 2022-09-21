@@ -124,7 +124,7 @@ the Excel file:
 ```php
 class MyReadFilter implements \PhpOffice\PhpSpreadsheet\Reader\IReadFilter {
 
-    public function readCell($column, $row, $worksheetName = '') {
+    public function readCell($columnAddress, $row, $worksheetName = '') {
         // Read title row and rows 20 - 30
         if ($row == 1 || ($row >= 20 && $row <= 30)) {
             return true;
@@ -249,7 +249,7 @@ in the Excel file:
 ```php
 class MyReadFilter implements \PhpOffice\PhpSpreadsheet\Reader\IReadFilter {
 
-    public function readCell($column, $row, $worksheetName = '') {
+    public function readCell($columnAddress, $row, $worksheetName = '') {
         // Read title row and rows 20 - 30
         if ($row == 1 || ($row >= 20 && $row <= 30)) {
             return true;
@@ -308,7 +308,7 @@ in the Excel file:
 ```php
 class MyReadFilter implements \PhpOffice\PhpSpreadsheet\Reader\IReadFilter {
 
-    public function readCell($column, $row, $worksheetName = '') {
+    public function readCell($columnAddress, $row, $worksheetName = '') {
         // Read title row and rows 20 - 30
         if ($row == 1 || ($row >= 20 && $row <= 30)) {
             return true;
@@ -359,7 +359,7 @@ in the SYLK file:
 ```php
 class MyReadFilter implements \PhpOffice\PhpSpreadsheet\Reader\IReadFilter {
 
-    public function readCell($column, $row, $worksheetName = '') {
+    public function readCell($columnAddress, $row, $worksheetName = '') {
         // Read title row and rows 20 - 30
         if ($row == 1 || ($row >= 20 && $row <= 30)) {
             return true;
@@ -404,7 +404,7 @@ in the Calc file:
 ```php
 class MyReadFilter implements \PhpOffice\PhpSpreadsheet\Reader\IReadFilter {
 
-    public function readCell($column, $row, $worksheetName = '') {
+    public function readCell($columnAddress, $row, $worksheetName = '') {
         // Read title row and rows 20 - 30
         if ($row == 1 || ($row >= 20 && $row <= 30)) {
             return true;
@@ -436,14 +436,20 @@ You can read a .csv file using the following code:
 
 ```php
 $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
-$spreadsheet = $reader->load("sample.csv");
+$spreadsheet = $reader->load('sample.csv');
+```
+
+You can also treat a string as if it were the contents of a CSV file as follows:
+
+```php
+$reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
+$spreadsheet = $reader->loadSpreadsheetFromString($data);
 ```
 
 #### Setting CSV options
 
 Often, CSV files are not really "comma separated", or use semicolon (`;`)
-as a separator. You can instruct
-`\PhpOffice\PhpSpreadsheet\Reader\Csv` some options before reading a CSV
+as a separator. You can set some options before reading a CSV
 file.
 
 The separator will be auto-detected, so in most cases it should not be necessary
@@ -499,6 +505,12 @@ $reader->setSheetIndex(0);
 $spreadsheet = $reader->load('sample.csv');
 ```
 
+The CSV reader will normally not load null strings into the spreadsheet.
+To load them:
+```php
+$reader->setPreserveNullString(true);
+```
+
 Finally, you can set a callback to be invoked when the constructor is executed,
 either through `new Csv()` or `IOFactory::load`,
 and have that callback set the customizable attributes to whatever
@@ -544,6 +556,25 @@ $reader->setSheetIndex(5);
 $reader->loadIntoExisting("05featuredemo.csv", $spreadsheet);
 ```
 
+#### Line endings
+
+Line endings for Unix (`\n`) and Windows (`\r\n`) are supported.
+
+Mac line endings (`\r`) are supported as long as PHP itself
+supports them, which it does through release 8.0.
+Support for Mac line endings is deprecated for 8.1,
+and is scheduled to remain deprecated for all later PHP8 releases;
+PhpSpreadsheet will continue to support them for 8.*.
+Support is scheduled to be dropped with release 9;
+PhpSpreadsheet will then no longer handle CSV files
+with Mac line endings correctly.
+
+You can suppress testing for Mac line endings as follows:
+```php
+$reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
+$reader->setTestAutoDetect(false);
+```
+
 ### \PhpOffice\PhpSpreadsheet\Writer\Csv
 
 #### Writing a CSV file
@@ -558,8 +589,7 @@ $writer->save("05featuredemo.csv");
 #### Setting CSV options
 
 Often, CSV files are not really "comma separated", or use semicolon (`;`)
-as a separator. You can instruct
-`\PhpOffice\PhpSpreadsheet\Writer\Csv` some options before writing a CSV
+as a separator. You can set some options before writing a CSV
 file:
 
 ```php
@@ -860,7 +890,7 @@ $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Pdf')
 Or you can instantiate directly the writer of your choice like so:
 
 ```php
-$writer = \PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf($spreadsheet);
+$writer = new \PhpOffice\PhpSpreadsheet\Writer\Pdf\Mpdf($spreadsheet);
 ```
 
 #### Custom implementation or configuration
@@ -916,6 +946,16 @@ which sheet to write to PDF:
 
 ```php
 $writer->setSheetIndex(0);
+```
+
+#### Setting Orientation and PaperSize
+
+PhpSpreadsheet will attempt to honor the orientation and paper size specified
+in the worksheet for each page it prints, if the renderer supports that. However, you can set all pages
+to have the same orientation and paper size, e.g.
+
+```php
+$writer->setOrientation(\PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::ORIENTATION_LANDSCAPE);
 ```
 
 #### Formula pre-calculation

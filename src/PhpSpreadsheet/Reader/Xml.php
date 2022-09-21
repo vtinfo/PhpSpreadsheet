@@ -54,7 +54,7 @@ class Xml extends BaseReader
     /**
      * Can the current IReader read the file?
      */
-    public function canRead(string $pFilename): bool
+    public function canRead(string $filename): bool
     {
         //    Office                    xmlns:o="urn:schemas-microsoft-com:office:office"
         //    Excel                    xmlns:x="urn:schemas-microsoft-com:office:excel"
@@ -72,7 +72,7 @@ class Xml extends BaseReader
         ];
 
         // Open file
-        $data = file_get_contents($pFilename);
+        $data = file_get_contents($filename);
 
         // Why?
         //$data = str_replace("'", '"', $data); // fix headers with single quote
@@ -90,9 +90,9 @@ class Xml extends BaseReader
         //    Retrieve charset encoding
         if (preg_match('/<?xml.*encoding=[\'"](.*?)[\'"].*?>/m', $data, $matches)) {
             $charSet = strtoupper($matches[1]);
-            if (1 == preg_match('/^ISO-8859-\d[\dL]?$/i', $charSet)) {
+            if (preg_match('/^ISO-8859-\d[\dL]?$/i', $charSet) === 1) {
                 $data = StringHelper::convertEncoding($data, 'UTF-8', $charSet);
-                $data = preg_replace('/(<?xml.*encoding=[\'"]).*?([\'"].*?>)/um', '$1' . 'UTF-8' . '$2', $data, 1);
+                $data = (string) preg_replace('/(<?xml.*encoding=[\'"]).*?([\'"].*?>)/um', '$1' . 'UTF-8' . '$2', $data, 1);
             }
         }
         $this->fileContents = $data;
@@ -103,20 +103,20 @@ class Xml extends BaseReader
     /**
      * Check if the file is a valid SimpleXML.
      *
-     * @param string $pFilename
+     * @param string $filename
      *
      * @return false|SimpleXMLElement
      */
-    public function trySimpleXMLLoadString($pFilename)
+    public function trySimpleXMLLoadString($filename)
     {
         try {
             $xml = simplexml_load_string(
-                $this->securityScanner->scan($this->fileContents ?: file_get_contents($pFilename)),
+                $this->securityScanner->scan($this->fileContents ?: file_get_contents($filename)),
                 'SimpleXMLElement',
                 Settings::getLibXmlLoaderOptions()
             );
         } catch (\Exception $e) {
-            throw new Exception('Cannot load invalid XML file: ' . $pFilename, 0, $e);
+            throw new Exception('Cannot load invalid XML file: ' . $filename, 0, $e);
         }
         $this->fileContents = '';
 
@@ -231,19 +231,15 @@ class Xml extends BaseReader
 
     /**
      * Loads Spreadsheet from file.
-     *
-     * @return Spreadsheet
      */
-    public function load(string $pFilename, int $flags = 0)
+    protected function loadSpreadsheetFromFile(string $filename): Spreadsheet
     {
-        $this->processFlags($flags);
-
         // Create new Spreadsheet
         $spreadsheet = new Spreadsheet();
         $spreadsheet->removeSheetByIndex(0);
 
         // Load into this instance
-        return $this->loadIntoExisting($pFilename, $spreadsheet);
+        return $this->loadIntoExisting($filename, $spreadsheet);
     }
 
     /**
@@ -361,7 +357,7 @@ class Xml extends BaseReader
                             $columnTo = $columnID;
                             if (isset($cell_ss['MergeAcross'])) {
                                 $additionalMergedCells += (int) $cell_ss['MergeAcross'];
-                                $columnTo = Coordinate::stringFromColumnIndex(Coordinate::columnIndexFromString($columnID) + $cell_ss['MergeAcross']);
+                                $columnTo = Coordinate::stringFromColumnIndex((int) (Coordinate::columnIndexFromString($columnID) + $cell_ss['MergeAcross']));
                             }
                             $rowTo = $rowID;
                             if (isset($cell_ss['MergeDown'])) {
