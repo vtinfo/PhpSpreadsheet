@@ -87,12 +87,15 @@
     
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled">ArrayEnabled</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">8</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 </aside>
 
         
@@ -117,45 +120,98 @@
 </dt>
 <dd></dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#property_arrayArgumentHelper">$arrayArgumentHelper</a>
+    <span>
+                &nbsp;: <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Engine\ArrayArgumentHelper">ArrayArgumentHelper</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_BITAND">BITAND()</a>
     <span>
-                        &nbsp;: int|string    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|int|string    </span>
 </dt>
 <dd>BITAND.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_BITLSHIFT">BITLSHIFT()</a>
     <span>
-                        &nbsp;: float|int|string    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|float|int|string    </span>
 </dt>
 <dd>BITLSHIFT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_BITOR">BITOR()</a>
     <span>
-                        &nbsp;: int|string    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|int|string    </span>
 </dt>
 <dd>BITOR.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_BITRSHIFT">BITRSHIFT()</a>
     <span>
-                        &nbsp;: float|int|string    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|float|int|string    </span>
 </dt>
 <dd>BITRSHIFT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_BITXOR">BITXOR()</a>
     <span>
-                        &nbsp;: int|string    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|int|string    </span>
 </dt>
 <dd>BITXOR.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_nullFalseTrueToNumber">nullFalseTrueToNumber()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArguments">evaluateArrayArguments()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Handles array argument processing when the function accepts multiple arguments,
+    and any of them can be an array argument.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsIgnore">evaluateArrayArgumentsIgnore()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Handles array argument processing when the function accepts multiple arguments,
+    and any of them can be an array argument except for the one specified by ignore.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsSubset">evaluateArrayArgumentsSubset()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Handles array argument processing when the function accepts multiple arguments,
+    but only the first few (up to limit) can be an array arguments.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsSubsetFrom">evaluateArrayArgumentsSubsetFrom()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Handles array argument processing when the function accepts multiple arguments,
+    but only the last few (from start) can be an array arguments.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateSingleArgumentArray">evaluateSingleArgumentArray()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Handles array argument processing when the function accepts a single argument that can be an array argument.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_initialiseHelper">initialiseHelper()</a>
     <span>
                         &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_nullFalseTrueToNumber">nullFalseTrueToNumber()</a>
+    <span>
+                        &nbsp;: mixed    </span>
 </dt>
 <dd>Many functions accept null/false/true argument treated as 0/0/1.</dd>
 
@@ -167,9 +223,16 @@
 <dd>Split a number into upper and lower portions for full 32-bit support.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_testFalse">testFalse()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_validateBitwiseArgument">validateBitwiseArgument()</a>
     <span>
-                        &nbsp;: float|int    </span>
+                        &nbsp;: float    </span>
 </dt>
 <dd>Validate arguments passed to the bitwise functions.</dd>
 
@@ -199,7 +262,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 </aside>
 
     
@@ -218,6 +281,43 @@
             </section>
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_arrayArgumentHelper">
+        $arrayArgumentHelper
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#property_arrayArgumentHelper" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php"><a href="files/src-phpspreadsheet-calculation-arrayenabled.html"><abbr title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php">ArrayEnabled.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">13</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type"><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Engine\ArrayArgumentHelper">ArrayArgumentHelper</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$arrayArgumentHelper</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -237,14 +337,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 </aside>
 
         <p class="phpdocumentor-summary">BITAND.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITAND</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number1</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITAND</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number1</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|int|string</span></code>
 
         <section class="phpdocumentor-description"><p>Returns the bitwise AND of two integer values.</p>
 <p>Excel Function:
@@ -255,18 +355,20 @@ BITAND(number1, number2)</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$number1</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$number2</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
             </dl>
@@ -274,9 +376,11 @@ BITAND(number1, number2)</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|string</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|int|string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>If an array of numbers is passed as an argument, then the returned result will also be an array
+with the same dimensions</p>
+</section>
 
     
 </article>
@@ -293,14 +397,14 @@ BITAND(number1, number2)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 </aside>
 
         <p class="phpdocumentor-summary">BITLSHIFT.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITLSHIFT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$shiftAmount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|int|string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITLSHIFT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$shiftAmount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|float|int|string</span></code>
 
         <section class="phpdocumentor-description"><p>Returns the number value shifted left by shift_amount bits.</p>
 <p>Excel Function:
@@ -311,18 +415,20 @@ BITLSHIFT(number, shift_amount)</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$number</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$shiftAmount</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
             </dl>
@@ -330,9 +436,11 @@ BITLSHIFT(number, shift_amount)</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">float|int|string</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|float|int|string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>If an array of numbers is passed as an argument, then the returned result will also be an array
+with the same dimensions</p>
+</section>
 
     
 </article>
@@ -349,14 +457,14 @@ BITLSHIFT(number, shift_amount)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 </aside>
 
         <p class="phpdocumentor-summary">BITOR.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITOR</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number1</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITOR</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number1</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|int|string</span></code>
 
         <section class="phpdocumentor-description"><p>Returns the bitwise OR of two integer values.</p>
 <p>Excel Function:
@@ -367,18 +475,20 @@ BITOR(number1, number2)</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$number1</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$number2</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
             </dl>
@@ -386,9 +496,11 @@ BITOR(number1, number2)</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|string</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|int|string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>If an array of numbers is passed as an argument, then the returned result will also be an array
+with the same dimensions</p>
+</section>
 
     
 </article>
@@ -405,14 +517,14 @@ BITOR(number1, number2)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 </aside>
 
         <p class="phpdocumentor-summary">BITRSHIFT.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITRSHIFT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$shiftAmount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|int|string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITRSHIFT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$shiftAmount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|float|int|string</span></code>
 
         <section class="phpdocumentor-description"><p>Returns the number value shifted right by shift_amount bits.</p>
 <p>Excel Function:
@@ -423,18 +535,20 @@ BITRSHIFT(number, shift_amount)</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$number</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$shiftAmount</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
             </dl>
@@ -442,9 +556,11 @@ BITRSHIFT(number, shift_amount)</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">float|int|string</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|float|int|string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
+            <section class="phpdocumentor-description"><p>If an array of numbers is passed as an argument, then the returned result will also be an array
+with the same dimensions</p>
+</section>
 
     
 </article>
@@ -461,14 +577,14 @@ BITRSHIFT(number, shift_amount)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 </aside>
 
         <p class="phpdocumentor-summary">BITXOR.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITXOR</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number1</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">BITXOR</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number1</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|int|string</span></code>
 
         <section class="phpdocumentor-description"><p>Returns the bitwise XOR of two integer values.</p>
 <p>Excel Function:
@@ -479,15 +595,74 @@ BITXOR(number1, number2)</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$number1</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$number2</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Or can be an array of values</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|int|string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>If an array of numbers is passed as an argument, then the returned result will also be an array
+with the same dimensions</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_evaluateArrayArguments">
+        evaluateArrayArguments()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArguments" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php"><a href="files/src-phpspreadsheet-calculation-arrayenabled.html"><abbr title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php">ArrayEnabled.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Handles array argument processing when the function accepts multiple arguments,
+    and any of them can be an array argument.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">evaluateArrayArguments</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>Example use for:
+ROUND() or DATE().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$arguments</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -498,7 +673,7 @@ BITXOR(number1, number2)</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|string</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -507,35 +682,277 @@ BITXOR(number1, number2)</p>
                     <article
         class="phpdocumentor-element
             -method
-            -public
+            -protected
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_nullFalseTrueToNumber">
-        nullFalseTrueToNumber()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_nullFalseTrueToNumber" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_evaluateArrayArgumentsIgnore">
+        evaluateArrayArgumentsIgnore()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsIgnore" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php"><a href="files/src-phpspreadsheet-calculation-arrayenabled.html"><abbr title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php">ArrayEnabled.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Many functions accept null/false/true argument treated as 0/0/1.</p>
+        <p class="phpdocumentor-summary">Handles array argument processing when the function accepts multiple arguments,
+    and any of them can be an array argument except for the one specified by ignore.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">nullFalseTrueToNumber</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">evaluateArrayArgumentsIgnore</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ignore</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>Example use for:
+HLOOKUP() and VLOOKUP(), where argument 1 is a matrix that needs to be treated as a database
+rather than as an array argument.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ignore</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$arguments</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_evaluateArrayArgumentsSubset">
+        evaluateArrayArgumentsSubset()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsSubset" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php"><a href="files/src-phpspreadsheet-calculation-arrayenabled.html"><abbr title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php">ArrayEnabled.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Handles array argument processing when the function accepts multiple arguments,
+    but only the first few (up to limit) can be an array arguments.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">evaluateArrayArgumentsSubset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>Example use for:
+NETWORKDAYS() or CONCATENATE(), where the last argument is a matrix (or a series of values) that need
+to be treated as a such rather than as an array arguments.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$limit</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$arguments</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_evaluateArrayArgumentsSubsetFrom">
+        evaluateArrayArgumentsSubsetFrom()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsSubsetFrom" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php"><a href="files/src-phpspreadsheet-calculation-arrayenabled.html"><abbr title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php">ArrayEnabled.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">93</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Handles array argument processing when the function accepts multiple arguments,
+    but only the last few (from start) can be an array arguments.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">evaluateArrayArgumentsSubsetFrom</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>Example use for:
+Z.TEST() or INDEX(), where the first argument 1 is a matrix that needs to be treated as a dataset
+rather than as an array argument.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$arguments</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_evaluateSingleArgumentArray">
+        evaluateSingleArgumentArray()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateSingleArgumentArray" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php"><a href="files/src-phpspreadsheet-calculation-arrayenabled.html"><abbr title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php">ArrayEnabled.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Handles array argument processing when the function accepts a single argument that can be an array argument.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">evaluateSingleArgumentArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>Example use for:
+DAYOFMONTH() or FACT().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$values</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_initialiseHelper">
+        initialiseHelper()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_initialiseHelper" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php"><a href="files/src-phpspreadsheet-calculation-arrayenabled.html"><abbr title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php">ArrayEnabled.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">initialiseHelper</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|false&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$number</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$arguments</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|false</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>Can be changed to array for Php8.1+</p>
+</section>
 
             </dd>
             </dl>
@@ -555,6 +972,51 @@ BITXOR(number1, number2)</p>
             -private
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_nullFalseTrueToNumber">
+        nullFalseTrueToNumber()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_nullFalseTrueToNumber" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">265</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Many functions accept null/false/true argument treated as 0/0/1.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">nullFalseTrueToNumber</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$number</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_splitNumber">
         splitNumber()
         <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_splitNumber" class="headerlink"><i class="fas fa-link"></i></a>
@@ -562,7 +1024,7 @@ BITXOR(number1, number2)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 </aside>
 
         <p class="phpdocumentor-summary">Split a number into upper and lower portions for full 32-bit support.</p>
@@ -600,21 +1062,20 @@ BITXOR(number1, number2)</p>
             -private
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_validateBitwiseArgument">
-        validateBitwiseArgument()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_validateBitwiseArgument" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_testFalse">
+        testFalse()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_testFalse" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php"><a href="files/src-phpspreadsheet-calculation-arrayenabled.html"><abbr title="src/PhpSpreadsheet/Calculation/ArrayEnabled.php">ArrayEnabled.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Validate arguments passed to the bitwise functions.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">validateBitwiseArgument</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|int</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">testFalse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -633,7 +1094,52 @@ BITXOR(number1, number2)</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">float|int</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_validateBitwiseArgument">
+        validateBitwiseArgument()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BitWise.html#method_validateBitwiseArgument" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">216</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Validate arguments passed to the bitwise functions.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">validateBitwiseArgument</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">float</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -652,7 +1158,7 @@ BITXOR(number1, number2)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php"><a href="files/src-phpspreadsheet-calculation-engineering-bitwise.html"><abbr title="src/PhpSpreadsheet/Calculation/Engineering/BitWise.php">BitWise.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 </aside>
 
         <p class="phpdocumentor-summary">Validate arguments passed to the bitwise functions.</p>

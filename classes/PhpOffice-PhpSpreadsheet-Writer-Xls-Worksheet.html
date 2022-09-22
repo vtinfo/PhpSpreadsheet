@@ -95,7 +95,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 </aside>
 
         
@@ -177,6 +177,20 @@
 <dd>The active pane for the worksheet.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#property_always0">$always0</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#property_always1">$always1</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#property_byteOrder">$byteOrder</a>
     <span>
                 &nbsp;: int            </span>
@@ -207,7 +221,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#property_escher">$escher</a>
     <span>
-                &nbsp;: <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>            </span>
+                &nbsp;: null|<a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>            </span>
 </dt>
 <dd>Escher object corresponding to MSODRAWING.</dd>
 
@@ -364,7 +378,7 @@ sized chunks.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#method_getEscher">getEscher()</a>
     <span>
-                        &nbsp;: <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>    </span>
+                        &nbsp;: <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>|null    </span>
 </dt>
 <dd>Get Escher object.</dd>
 
@@ -518,7 +532,7 @@ See section 2.5.14 in OpenOffice.org&#039;s Documentation of the Microsoft Excel
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#method_writeCFHeader">writeCFHeader()</a>
     <span>
-                        &nbsp;: void    </span>
+                        &nbsp;: bool    </span>
 </dt>
 <dd>Write CFHeader record.</dd>
 
@@ -535,6 +549,13 @@ See section 2.5.14 in OpenOffice.org&#039;s Documentation of the Microsoft Excel
                         &nbsp;: void    </span>
 </dt>
 <dd>Write BIFF record COLINFO to define column widths.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#method_writeConditionalFormatting">writeConditionalFormatting()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#method_writeDataValidity">writeDataValidity()</a>
@@ -875,7 +896,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">804</span>
+    <span class="phpdocumentor-element-found-in__line">820</span>
 </aside>
 
     
@@ -900,7 +921,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">806</span>
+    <span class="phpdocumentor-element-found-in__line">822</span>
 </aside>
 
     
@@ -925,7 +946,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">803</span>
+    <span class="phpdocumentor-element-found-in__line">819</span>
 </aside>
 
     
@@ -950,7 +971,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">805</span>
+    <span class="phpdocumentor-element-found-in__line">821</span>
 </aside>
 
     
@@ -1054,7 +1075,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 </aside>
 
         <p class="phpdocumentor-summary">Array of font hashes associated to FONT records index.</p>
@@ -1086,7 +1107,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 </aside>
 
         <p class="phpdocumentor-summary">Sheet object.</p>
@@ -1118,7 +1139,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 </aside>
 
         <p class="phpdocumentor-summary">The active pane for the worksheet.</p>
@@ -1128,6 +1149,68 @@ simplicity we will store all fractions with a numerator of 100.</dd>
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$activePane</span>
     </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_always0">
+        $always0
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#property_always0" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$always0</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_always1">
+        $always1
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#property_always1" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$always1</span>
+     = <span class="phpdocumentor-signature__default-value">1</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1182,7 +1265,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 </aside>
 
         <p class="phpdocumentor-summary">Color cache.</p>
@@ -1214,7 +1297,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 </aside>
 
         <p class="phpdocumentor-summary">Array containing format information for columns.</p>
@@ -1246,7 +1329,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 </aside>
 
         <p class="phpdocumentor-summary">Count cell style Xfs.</p>
@@ -1278,14 +1361,14 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">193</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 </aside>
 
         <p class="phpdocumentor-summary">Escher object corresponding to MSODRAWING.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a></span>
+        <span class="phpdocumentor-signature__type">null|<a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a></span>
     <span class="phpdocumentor-signature__name">$escher</span>
     </code>
 
@@ -1310,7 +1393,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 </aside>
 
         <p class="phpdocumentor-summary">Index of first used column (at least 0).</p>
@@ -1342,7 +1425,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 </aside>
 
         <p class="phpdocumentor-summary">Index of first used row (at least 0).</p>
@@ -1374,7 +1457,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 </aside>
 
         <p class="phpdocumentor-summary">Index of last used column (no used columns means -1).</p>
@@ -1406,7 +1489,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 </aside>
 
         <p class="phpdocumentor-summary">Index of last used row. (no used rows means -1).</p>
@@ -1485,7 +1568,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 </aside>
 
         <p class="phpdocumentor-summary">Whether to have outline summary below.</p>
@@ -1517,7 +1600,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 </aside>
 
         <p class="phpdocumentor-summary">Whether to use outline.</p>
@@ -1549,7 +1632,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 </aside>
 
         <p class="phpdocumentor-summary">Whether to have outline summary at the right.</p>
@@ -1581,7 +1664,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 </aside>
 
         <p class="phpdocumentor-summary">Auto outline styles.</p>
@@ -1613,7 +1696,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 </aside>
 
         <p class="phpdocumentor-summary">Formula parser.</p>
@@ -1645,7 +1728,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 </aside>
 
     
@@ -1676,7 +1759,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 </aside>
 
     
@@ -1707,7 +1790,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 </aside>
 
         <p class="phpdocumentor-summary">Array containing the selected area for the worksheet.</p>
@@ -1739,7 +1822,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 </aside>
 
         <p class="phpdocumentor-summary">Reference to the array containing all the unique strings in the workbook.</p>
@@ -1771,7 +1854,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 </aside>
 
         <p class="phpdocumentor-summary">Reference to the total number of strings in the workbook.</p>
@@ -1803,7 +1886,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 </aside>
 
         <p class="phpdocumentor-summary">Reference to the number of unique strings in the workbook.</p>
@@ -1835,7 +1918,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 </aside>
 
         <p class="phpdocumentor-summary">Maximum number of characters for a string (LABEL record in BIFF5).</p>
@@ -1871,7 +1954,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">230</span>
 </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
@@ -1971,7 +2054,7 @@ simplicity we will store all fractions with a numerator of 100.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">285</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add data to the beginning of the workbook (note the reverse order)
@@ -2056,7 +2139,7 @@ recalculating it for each call to new().</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">609</span>
+    <span class="phpdocumentor-element-found-in__line">625</span>
 </aside>
 
         <p class="phpdocumentor-summary">Retrieves data from memory in one chunk, or from disk
@@ -2092,14 +2175,14 @@ sized chunks.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2513</span>
+    <span class="phpdocumentor-element-found-in__line">2531</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Escher object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getEscher</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">getEscher</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>|null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -2107,7 +2190,7 @@ sized chunks.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>|null</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -2126,7 +2209,7 @@ sized chunks.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2167</span>
+    <span class="phpdocumentor-element-found-in__line">2184</span>
 </aside>
 
         <p class="phpdocumentor-summary">Insert a 24bit bitmap image in a worksheet.</p>
@@ -2226,7 +2309,7 @@ sized chunks.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2242</span>
+    <span class="phpdocumentor-element-found-in__line">2259</span>
 </aside>
 
         <p class="phpdocumentor-summary">Calculate the vertices that define the position of the image as required by
@@ -2354,7 +2437,7 @@ percentage of 1024.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">628</span>
+    <span class="phpdocumentor-element-found-in__line">644</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set the option to print the row and column headers on the printed page.</p>
@@ -2400,7 +2483,7 @@ percentage of 1024.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2412</span>
+    <span class="phpdocumentor-element-found-in__line">2430</span>
 </aside>
 
         <p class="phpdocumentor-summary">Convert a 24 bit bitmap into the modified internal format used by Windows.</p>
@@ -2449,7 +2532,7 @@ MSDN library.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2381</span>
+    <span class="phpdocumentor-element-found-in__line">2398</span>
 </aside>
 
         <p class="phpdocumentor-summary">Convert a GD-image into the internal format.</p>
@@ -2496,26 +2579,25 @@ MSDN library.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2523</span>
+    <span class="phpdocumentor-element-found-in__line">2539</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set Escher object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setEscher</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">setEscher</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$escher</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$escher</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Escher.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\Escher">Escher</abbr></a>|null</span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -2541,7 +2623,7 @@ MSDN library.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">642</span>
+    <span class="phpdocumentor-element-found-in__line">658</span>
 </aside>
 
         <p class="phpdocumentor-summary">This method sets the properties for outlining and grouping. The defaults
@@ -2611,7 +2693,7 @@ correspond to Excel&#039;s defaults.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">768</span>
+    <span class="phpdocumentor-element-found-in__line">784</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a blank cell to the specified row and column (zero indexed).</p>
@@ -2762,7 +2844,7 @@ a BLANK record unless a format is specified.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">979</span>
+    <span class="phpdocumentor-element-found-in__line">995</span>
 </aside>
 
         <p class="phpdocumentor-summary">Used to write http, ftp and mailto hyperlinks.</p>
@@ -3040,7 +3122,7 @@ necessary.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3176</span>
+    <span class="phpdocumentor-element-found-in__line">3200</span>
 </aside>
 
     
@@ -3082,7 +3164,7 @@ necessary.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1887</span>
+    <span class="phpdocumentor-element-found-in__line">1904</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write the AUTOFILTERINFO BIFF record. This is used to configure the number of autofilter select used in the sheet.</p>
@@ -3116,7 +3198,7 @@ necessary.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">583</span>
+    <span class="phpdocumentor-element-found-in__line">599</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a cell range address in BIFF8
@@ -3165,7 +3247,7 @@ See section 2.5.14 in OpenOffice.org&#039;s Documentation of the Microsoft Excel
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">791</span>
+    <span class="phpdocumentor-element-found-in__line">807</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a boolean or an error type to the specified row and column (zero indexed).</p>
@@ -3245,7 +3327,7 @@ See section 2.5.14 in OpenOffice.org&#039;s Documentation of the Microsoft Excel
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1986</span>
+    <span class="phpdocumentor-element-found-in__line">2003</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write the HORIZONTALPAGEBREAKS and VERTICALPAGEBREAKS BIFF records.</p>
@@ -3279,22 +3361,40 @@ See section 2.5.14 in OpenOffice.org&#039;s Documentation of the Microsoft Excel
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">3129</span>
+    <span class="phpdocumentor-element-found-in__line">3152</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write CFHeader record.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeCFHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeCFHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellCoordinate</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Conditional">Conditional</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditionalStyles</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cellCoordinate</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$conditionalStyles</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Conditional">Conditional</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -3313,22 +3413,36 @@ See section 2.5.14 in OpenOffice.org&#039;s Documentation of the Microsoft Excel
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2775</span>
+    <span class="phpdocumentor-element-found-in__line">2791</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write CFRule Record.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeCFRule</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Conditional">Conditional</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditional</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeCFRule</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Xls\ConditionalHelper">ConditionalHelper</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditionalFormulaHelper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Conditional">Conditional</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditional</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellRange</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$conditionalFormulaHelper</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Xls\ConditionalHelper">ConditionalHelper</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$conditional</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Conditional">Conditional</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cellRange</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3357,7 +3471,7 @@ See section 2.5.14 in OpenOffice.org&#039;s Documentation of the Microsoft Excel
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1323</span>
+    <span class="phpdocumentor-element-found-in__line">1340</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write BIFF record COLINFO to define column widths.</p>
@@ -3404,6 +3518,38 @@ length record.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_writeConditionalFormatting">
+        writeConditionalFormatting()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#method_writeConditionalFormatting" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">556</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">writeConditionalFormatting</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_writeDataValidity">
         writeDataValidity()
         <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#method_writeDataValidity" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3411,7 +3557,7 @@ length record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2616</span>
+    <span class="phpdocumentor-element-found-in__line">2632</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the DATAVALIDATIONS and DATAVALIDATION records.</p>
@@ -3445,7 +3591,7 @@ length record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1275</span>
+    <span class="phpdocumentor-element-found-in__line">1292</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write BIFF record DEFAULTROWHEIGHT.</p>
@@ -3479,7 +3625,7 @@ length record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1297</span>
+    <span class="phpdocumentor-element-found-in__line">1314</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write BIFF record DEFCOLWIDTH if COLINFO records are in use.</p>
@@ -3513,7 +3659,7 @@ length record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1209</span>
+    <span class="phpdocumentor-element-found-in__line">1226</span>
 </aside>
 
         <p class="phpdocumentor-summary">Writes Excel DIMENSIONS to define the area in which there is data.</p>
@@ -3547,7 +3693,7 @@ length record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1709</span>
+    <span class="phpdocumentor-element-found-in__line">1726</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the footer caption BIFF record.</p>
@@ -3581,7 +3727,7 @@ length record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">826</span>
+    <span class="phpdocumentor-element-found-in__line">842</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a formula to the specified row and column (zero indexed).</p>
@@ -3669,7 +3815,7 @@ Parser.php which returns a packed binary string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1872</span>
+    <span class="phpdocumentor-element-found-in__line">1889</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write the GRIDSET BIFF record. Must be used in conjunction with the
@@ -3704,7 +3850,7 @@ PRINTGRIDLINES record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1907</span>
+    <span class="phpdocumentor-element-found-in__line">1924</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write the GUTS BIFF record. This is used to configure the gutter margins
@@ -3755,7 +3901,7 @@ controlled by a flag in WSBOOL.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1733</span>
+    <span class="phpdocumentor-element-found-in__line">1750</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the horizontal centering HCENTER BIFF record.</p>
@@ -3789,7 +3935,7 @@ controlled by a flag in WSBOOL.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1685</span>
+    <span class="phpdocumentor-element-found-in__line">1702</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the header caption BIFF record.</p>
@@ -3823,7 +3969,7 @@ controlled by a flag in WSBOOL.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">732</span>
+    <span class="phpdocumentor-element-found-in__line">748</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a string to the specified row and column (zero indexed).</p>
@@ -3898,7 +4044,7 @@ $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1821</span>
+    <span class="phpdocumentor-element-found-in__line">1838</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the BOTTOMMARGIN BIFF record.</p>
@@ -3932,7 +4078,7 @@ $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1764</span>
+    <span class="phpdocumentor-element-found-in__line">1781</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the LEFTMARGIN BIFF record.</p>
@@ -3966,7 +4112,7 @@ $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1783</span>
+    <span class="phpdocumentor-element-found-in__line">1800</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the RIGHTMARGIN BIFF record.</p>
@@ -4000,7 +4146,7 @@ $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1802</span>
+    <span class="phpdocumentor-element-found-in__line">1819</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the TOPMARGIN BIFF record.</p>
@@ -4034,7 +4180,7 @@ $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1404</span>
+    <span class="phpdocumentor-element-found-in__line">1421</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the MERGEDCELLS records for all ranges of merged cells.</p>
@@ -4068,7 +4214,7 @@ $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2531</span>
+    <span class="phpdocumentor-element-found-in__line">2547</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write MSODRAWING record.</p>
@@ -4102,7 +4248,7 @@ $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">665</span>
+    <span class="phpdocumentor-element-found-in__line">681</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a double to the specified row and column (zero indexed).</p>
@@ -4179,7 +4325,7 @@ integer. $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2114</span>
+    <span class="phpdocumentor-element-found-in__line">2131</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write OBJECTPROTECT.</p>
@@ -4213,7 +4359,7 @@ integer. $format is optional.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2309</span>
+    <span class="phpdocumentor-element-found-in__line">2326</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the OBJ record that precedes an IMDATA record. This could be generalise
@@ -4323,7 +4469,7 @@ to support other Excel objects.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2744</span>
+    <span class="phpdocumentor-element-found-in__line">2760</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write PLV Record.</p>
@@ -4357,7 +4503,7 @@ to support other Excel objects.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1580</span>
+    <span class="phpdocumentor-element-found-in__line">1597</span>
 </aside>
 
         <p class="phpdocumentor-summary">Writes the Excel BIFF PANE record.</p>
@@ -4394,7 +4540,7 @@ Thawed panes are specified in terms of Excel's units for rows and columns.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2138</span>
+    <span class="phpdocumentor-element-found-in__line">2155</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write the worksheet PASSWORD record.</p>
@@ -4428,7 +4574,7 @@ Thawed panes are specified in terms of Excel's units for rows and columns.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1856</span>
+    <span class="phpdocumentor-element-found-in__line">1873</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write the PRINTGRIDLINES BIFF record. Must be used in conjunction with the
@@ -4463,7 +4609,7 @@ GRIDSET record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1840</span>
+    <span class="phpdocumentor-element-found-in__line">1857</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write the PRINTHEADERS BIFF record.</p>
@@ -4497,7 +4643,7 @@ GRIDSET record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2069</span>
+    <span class="phpdocumentor-element-found-in__line">2086</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set the Biff PROTECT record to indicate that the worksheet is protected.</p>
@@ -4531,7 +4677,7 @@ GRIDSET record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1532</span>
+    <span class="phpdocumentor-element-found-in__line">1549</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write BIFF record RANGEPROTECTION.</p>
@@ -4567,7 +4713,7 @@ Microsoft Office Excel 97-2007 Binary File Format Specification uses term FEAT f
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">705</span>
+    <span class="phpdocumentor-element-found-in__line">721</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a LABELSST record or a LABEL record. Which one depends on BIFF version
@@ -4650,7 +4796,7 @@ It differs from writeString by the writing of rich text strings.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1160</span>
+    <span class="phpdocumentor-element-found-in__line">1177</span>
 </aside>
 
         <p class="phpdocumentor-summary">This method is used to set the height and format for a row.</p>
@@ -4733,7 +4879,7 @@ Use null to set XF without setting height</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2090</span>
+    <span class="phpdocumentor-element-found-in__line">2107</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write SCENPROTECT.</p>
@@ -4767,7 +4913,7 @@ Use null to set XF without setting height</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1351</span>
+    <span class="phpdocumentor-element-found-in__line">1368</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write BIFF record SELECTION.</p>
@@ -4801,7 +4947,7 @@ Use null to set XF without setting height</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1625</span>
+    <span class="phpdocumentor-element-found-in__line">1642</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the page setup SETUP BIFF record.</p>
@@ -4835,7 +4981,7 @@ Use null to set XF without setting height</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1458</span>
+    <span class="phpdocumentor-element-found-in__line">1475</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write SHEETLAYOUT record.</p>
@@ -4869,7 +5015,7 @@ Use null to set XF without setting height</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1485</span>
+    <span class="phpdocumentor-element-found-in__line">1502</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write SHEETPROTECTION.</p>
@@ -4903,7 +5049,7 @@ Use null to set XF without setting height</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">690</span>
+    <span class="phpdocumentor-element-found-in__line">706</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a LABELSST record or a LABEL record. Which one depends on BIFF version.</p>
@@ -4976,7 +5122,7 @@ Use null to set XF without setting height</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">907</span>
+    <span class="phpdocumentor-element-found-in__line">923</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a STRING record. This.</p>
@@ -5021,7 +5167,7 @@ Use null to set XF without setting height</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">933</span>
+    <span class="phpdocumentor-element-found-in__line">949</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a hyperlink.</p>
@@ -5092,7 +5238,7 @@ directory url.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1067</span>
+    <span class="phpdocumentor-element-found-in__line">1085</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write links to external directory names such as &#039;c:\foo.xls&#039;,
@@ -5192,7 +5338,7 @@ these cases for the sake of simpler code.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1019</span>
+    <span class="phpdocumentor-element-found-in__line">1037</span>
 </aside>
 
         <p class="phpdocumentor-summary">Used to write internal reference hyperlinks such as &quot;Sheet1!A1&quot;.</p>
@@ -5289,7 +5435,7 @@ these cases for the sake of simpler code.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">953</span>
+    <span class="phpdocumentor-element-found-in__line">969</span>
 </aside>
 
         <p class="phpdocumentor-summary">This is the more general form of writeUrl(). It allows a hyperlink to be
@@ -5389,7 +5535,7 @@ to be written. These are either, Web (http, ftp, mailto), Internal
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1749</span>
+    <span class="phpdocumentor-element-found-in__line">1766</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the vertical centering VCENTER BIFF record.</p>
@@ -5423,7 +5569,7 @@ to be written. These are either, Web (http, ftp, mailto), Internal
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1223</span>
+    <span class="phpdocumentor-element-found-in__line">1240</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write BIFF record Window2.</p>
@@ -5457,7 +5603,7 @@ to be written. These are either, Web (http, ftp, mailto), Internal
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1951</span>
+    <span class="phpdocumentor-element-found-in__line">1968</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write the WSBOOL BIFF record, mainly for fit-to-page. Used in conjunction
@@ -5492,7 +5638,7 @@ with the SETUP record.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php"><a href="files/src-phpspreadsheet-writer-xls-worksheet.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Worksheet.php">Worksheet.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2493</span>
+    <span class="phpdocumentor-element-found-in__line">2513</span>
 </aside>
 
         <p class="phpdocumentor-summary">Store the window zoom factor. This should be a reduced fraction but for

@@ -113,6 +113,13 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#constant_BODY_LINE">BODY_LINE</a>
+    <span>
+        &nbsp;= &#039;  &lt;body&gt;&#039; . PHP_EOL                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#constant_BORDER_ARR">BORDER_ARR</a>
     <span>
         &nbsp;= [PhpOfficePhpSpreadsheetStyleBorder::BORDER_NONE =&gt; &#039;none&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_DASHDOT =&gt; &#039;1px dashed&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_DASHDOTDOT =&gt; &#039;1px dotted&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_DASHED =&gt; &#039;1px dashed&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_DOTTED =&gt; &#039;1px dotted&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_DOUBLE =&gt; &#039;3px double&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_HAIR =&gt; &#039;1px solid&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_MEDIUM =&gt; &#039;2px solid&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_MEDIUMDASHDOT =&gt; &#039;2px dashed&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_MEDIUMDASHDOTDOT =&gt; &#039;2px dotted&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_SLANTDASHDOT =&gt; &#039;2px dashed&#039;, PhpOfficePhpSpreadsheetStyleBorder::BORDER_THICK =&gt; &#039;3px solid&#039;]                    </span>
@@ -165,14 +172,14 @@ Identifies whether the Writer should write definitions for any charts that exist
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#property_orientation">$orientation</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: string|null            </span>
 </dt>
 <dd>Orientation (Over-ride).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#property_paperSize">$paperSize</a>
     <span>
-                &nbsp;: int            </span>
+                &nbsp;: int|null            </span>
 </dt>
 <dd>Paper size (Over-ride).</dd>
 
@@ -434,14 +441,14 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#method_getOrientation">getOrientation()</a>
     <span>
-                        &nbsp;: string    </span>
+                        &nbsp;: string|null    </span>
 </dt>
 <dd>Get Orientation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#method_getPaperSize">getPaperSize()</a>
     <span>
-                        &nbsp;: int    </span>
+                        &nbsp;: int|null    </span>
 </dt>
 <dd>Get Paper Size.</dd>
 
@@ -460,7 +467,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_getSheetIndex">getSheetIndex()</a>
     <span>
-                        &nbsp;: int    </span>
+                        &nbsp;: int|null    </span>
 </dt>
 <dd>Get sheet index.</dd>
 
@@ -700,21 +707,21 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Create CSS style (\PhpOffice\PhpSpreadsheet\Style\Alignment).</dd>
+<dd>Create CSS style.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_createCSSStyleBorder">createCSSStyleBorder()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Create CSS style (Border).</dd>
+<dd>Create CSS style.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_createCSSStyleBorders">createCSSStyleBorders()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Create CSS style (Borders).</dd>
+<dd>Create CSS style.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_createCSSStyleFill">createCSSStyleFill()</a>
@@ -728,7 +735,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Create CSS style (\PhpOffice\PhpSpreadsheet\Style\Font).</dd>
+<dd>Create CSS style.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_extendRowsForCharts">extendRowsForCharts()</a>
@@ -922,6 +929,31 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
             Constants
             <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BODY_LINE">
+        BODY_LINE
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#constant_BODY_LINE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">357</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BODY_LINE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;  &lt;body&gt;&#039; . PHP_EOL</span>
+</code>
+
+
+    
+    
+
+</article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_BORDER_ARR">
         BORDER_ARR
@@ -1156,7 +1188,7 @@ Identifies whether the Writer should write definitions for any charts that exist
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$orientation</span>
     </code>
 
@@ -1188,7 +1220,7 @@ Identifies whether the Writer should write definitions for any charts that exist
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$paperSize</span>
     </code>
 
@@ -2068,7 +2100,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">889</span>
+    <span class="phpdocumentor-element-found-in__line">882</span>
 </aside>
 
         <p class="phpdocumentor-summary">Build CSS styles.</p>
@@ -2114,21 +2146,21 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1643</span>
+    <span class="phpdocumentor-element-found-in__line">1636</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add color to formatted string as inline style.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">formatColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pFormat</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">formatColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$value</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -2137,7 +2169,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pFormat</span>
+                <span class="phpdocumentor-signature__argument__name">$format</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -2203,7 +2235,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1110</span>
+    <span class="phpdocumentor-element-found-in__line">1101</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate HTML footer.</p>
@@ -2244,14 +2276,14 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">generateHTMLHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pIncludeStyles</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">generateHTMLHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$includeStyles</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pIncludeStyles</span>
+                <span class="phpdocumentor-signature__argument__name">$includeStyles</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -2283,7 +2315,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">515</span>
+    <span class="phpdocumentor-element-found-in__line">512</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate sheet tabs.</p>
@@ -2351,7 +2383,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">780</span>
+    <span class="phpdocumentor-element-found-in__line">773</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate CSS styles.</p>
@@ -2431,7 +2463,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1560</span>
+    <span class="phpdocumentor-element-found-in__line">1553</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get embed images.</p>
@@ -2499,7 +2531,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">321</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get sheet index.</p>
@@ -2533,7 +2565,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1536</span>
+    <span class="phpdocumentor-element-found-in__line">1529</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get images root.</p>
@@ -2603,14 +2635,14 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Pdf.php"><a href="files/src-phpspreadsheet-writer-pdf.html"><abbr title="src/PhpSpreadsheet/Writer/Pdf.php">Pdf.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Orientation.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOrientation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">getOrientation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -2618,7 +2650,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -2644,7 +2676,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getPaperSize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                <span class="phpdocumentor-signature__name">getPaperSize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -2652,7 +2684,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -2710,14 +2742,14 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">297</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get sheet index.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getSheetIndex</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                <span class="phpdocumentor-signature__name">getSheetIndex</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -2725,7 +2757,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -2744,7 +2776,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Pdf.php"><a href="files/src-phpspreadsheet-writer-pdf.html"><abbr title="src/PhpSpreadsheet/Writer/Pdf.php">Pdf.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get temporary storage directory.</p>
@@ -2812,7 +2844,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1612</span>
+    <span class="phpdocumentor-element-found-in__line">1605</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get use embedded CSS?</p>
@@ -2869,7 +2901,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1584</span>
+    <span class="phpdocumentor-element-found-in__line">1577</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get use inline CSS?</p>
@@ -2955,14 +2987,14 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">save</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pFilename</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">save</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flags</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pFilename</span>
+                <span class="phpdocumentor-signature__argument__name">$filename</span>
                 : <span class="phpdocumentor-signature__argument__return-type">resource|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3046,21 +3078,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1572</span>
+    <span class="phpdocumentor-element-found-in__line">1565</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set embed images.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setEmbedImages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">setEmbedImages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$embedImages</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$embedImages</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3140,21 +3172,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">333</span>
+    <span class="phpdocumentor-element-found-in__line">331</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set sheet index.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setGenerateSheetNavigationBlock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">setGenerateSheetNavigationBlock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$generateSheetNavigationBlock</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$generateSheetNavigationBlock</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3186,21 +3218,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1548</span>
+    <span class="phpdocumentor-element-found-in__line">1541</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set images root.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setImagesRoot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">setImagesRoot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$imagesRoot</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$imagesRoot</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3239,7 +3271,7 @@ and it must return the edited HTML as string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setIncludeCharts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-IWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">setIncludeCharts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$includeCharts</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-IWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>Set to false (the default) to ignore charts.</p>
 </section>
@@ -3247,7 +3279,7 @@ and it must return the edited HTML as string.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$includeCharts</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3278,21 +3310,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Pdf.php"><a href="files/src-phpspreadsheet-writer-pdf.html"><abbr title="src/PhpSpreadsheet/Writer/Pdf.php">Pdf.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">194</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set Orientation.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setOrientation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                <span class="phpdocumentor-signature__name">setOrientation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$orientation</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$orientation</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3331,14 +3363,14 @@ and it must return the edited HTML as string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setPaperSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                <span class="phpdocumentor-signature__name">setPaperSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paperSize</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$paperSize</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3379,14 +3411,14 @@ and it must return the edited HTML as string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setPreCalculateFormulas</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-IWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">setPreCalculateFormulas</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precalculateFormulas</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-IWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$precalculateFormulas</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3418,21 +3450,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">309</span>
+    <span class="phpdocumentor-element-found-in__line">307</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set sheet index.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setSheetIndex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">setSheetIndex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetIndex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$sheetIndex</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3464,21 +3496,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Pdf.php"><a href="files/src-phpspreadsheet-writer-pdf.html"><abbr title="src/PhpSpreadsheet/Writer/Pdf.php">Pdf.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set temporary storage directory.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setTempDir</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                <span class="phpdocumentor-signature__name">setTempDir</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$temporaryDirectory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$temporaryDirectory</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3517,14 +3549,14 @@ and it must return the edited HTML as string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setUseDiskCaching</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pDirectory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-IWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">setUseDiskCaching</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$useDiskCache</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cacheDirectory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-IWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\IWriter">IWriter</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$useDiskCache</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3532,7 +3564,7 @@ and it must return the edited HTML as string.</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pDirectory</span>
+                <span class="phpdocumentor-signature__argument__name">$cacheDirectory</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3564,21 +3596,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1628</span>
+    <span class="phpdocumentor-element-found-in__line">1621</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set use embedded CSS?</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setUseEmbeddedCSS</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">setUseEmbeddedCSS</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$useEmbeddedCSS</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$useEmbeddedCSS</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3632,21 +3664,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1596</span>
+    <span class="phpdocumentor-element-found-in__line">1589</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set use inline CSS?</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setUseInlineCss</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+                <span class="phpdocumentor-signature__name">setUseInlineCss</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$useInlineCss</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$useInlineCss</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3677,7 +3709,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">635</span>
+    <span class="phpdocumentor-element-found-in__line">631</span>
 </aside>
 
         <p class="phpdocumentor-summary">Convert Windows file name to file protocol URL.</p>
@@ -3723,7 +3755,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">345</span>
+    <span class="phpdocumentor-element-found-in__line">343</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write all sheets (resets sheetIndex to NULL).</p>
@@ -3757,7 +3789,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/BaseWriter.php"><a href="files/src-phpspreadsheet-writer-basewriter.html"><abbr title="src/PhpSpreadsheet/Writer/BaseWriter.php">BaseWriter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 </aside>
 
         <p class="phpdocumentor-summary">Close file handle only if we opened it ourselves.</p>
@@ -3791,21 +3823,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Pdf.php"><a href="files/src-phpspreadsheet-writer-pdf.html"><abbr title="src/PhpSpreadsheet/Writer/Pdf.php">Pdf.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 </aside>
 
         <p class="phpdocumentor-summary">Save Spreadsheet to PDF file, pre-save.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">prepareForSave</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pFilename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+                <span class="phpdocumentor-signature__name">prepareForSave</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pFilename</span>
+                <span class="phpdocumentor-signature__argument__name">$filename</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3879,7 +3911,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Pdf.php"><a href="files/src-phpspreadsheet-writer-pdf.html"><abbr title="src/PhpSpreadsheet/Writer/Pdf.php">Pdf.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 </aside>
 
         <p class="phpdocumentor-summary">Save PhpSpreadsheet to PDF file, post-save.</p>
@@ -3913,21 +3945,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1520</span>
+    <span class="phpdocumentor-element-found-in__line">1513</span>
 </aside>
 
         <p class="phpdocumentor-summary">Takes array where of CSS properties / values and converts to CSS string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">assembleCSS</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValue</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">assembleCSS</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValue</span>
+                <span class="phpdocumentor-signature__argument__name">$values</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -3957,7 +3989,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">831</span>
+    <span class="phpdocumentor-element-found-in__line">824</span>
 </aside>
 
     
@@ -4006,7 +4038,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">811</span>
+    <span class="phpdocumentor-element-found-in__line">804</span>
 </aside>
 
     
@@ -4062,7 +4094,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1669</span>
+    <span class="phpdocumentor-element-found-in__line">1662</span>
 </aside>
 
         <p class="phpdocumentor-summary">Calculate information about HTML colspan and rowspan which is not always the same as Excel&#039;s.</p>
@@ -4096,7 +4128,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1732</span>
+    <span class="phpdocumentor-element-found-in__line">1725</span>
 </aside>
 
     
@@ -4152,22 +4184,22 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">983</span>
+    <span class="phpdocumentor-element-found-in__line">976</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create CSS style.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">createCSSStyle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">createCSSStyle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pStyle</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$style</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4196,27 +4228,25 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1001</span>
+    <span class="phpdocumentor-element-found-in__line">992</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Create CSS style (\PhpOffice\PhpSpreadsheet\Style\Alignment).</p>
+        <p class="phpdocumentor-summary">Create CSS style.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">createCSSStyleAlignment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Alignment.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">createCSSStyleAlignment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Alignment.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$alignment</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pStyle</span>
+                <span class="phpdocumentor-signature__argument__name">$alignment</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Alignment.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Alignment">Alignment</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>\PhpOffice\PhpSpreadsheet\Style\Alignment</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -4242,21 +4272,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1079</span>
+    <span class="phpdocumentor-element-found-in__line">1070</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Create CSS style (Border).</p>
+        <p class="phpdocumentor-summary">Create CSS style.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">createCSSStyleBorder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Border.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Border">Border</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">createCSSStyleBorder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Border.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Border">Border</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$border</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pStyle</span>
+                <span class="phpdocumentor-signature__argument__name">$border</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Border.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Border">Border</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -4288,21 +4318,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1058</span>
+    <span class="phpdocumentor-element-found-in__line">1049</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Create CSS style (Borders).</p>
+        <p class="phpdocumentor-summary">Create CSS style.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">createCSSStyleBorders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Borders.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Borders">Borders</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">createCSSStyleBorders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Borders.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Borders">Borders</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$borders</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pStyle</span>
+                <span class="phpdocumentor-signature__argument__name">$borders</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Borders.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Borders">Borders</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -4334,21 +4364,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1094</span>
+    <span class="phpdocumentor-element-found-in__line">1085</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create CSS style (Fill).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">createCSSStyleFill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">createCSSStyleFill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fill</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pStyle</span>
+                <span class="phpdocumentor-signature__argument__name">$fill</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -4380,21 +4410,21 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1024</span>
+    <span class="phpdocumentor-element-found-in__line">1015</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Create CSS style (\PhpOffice\PhpSpreadsheet\Style\Font).</p>
+        <p class="phpdocumentor-summary">Create CSS style.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">createCSSStyleFont</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Font.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">createCSSStyleFont</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Font.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$font</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pStyle</span>
+                <span class="phpdocumentor-signature__argument__name">$font</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Font.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -4424,14 +4454,14 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">561</span>
+    <span class="phpdocumentor-element-found-in__line">557</span>
 </aside>
 
         <p class="phpdocumentor-summary">Extend Row if chart is placed after nominal end of row.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">extendRowsForCharts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">extendRowsForCharts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"><p>This code should be exercised by sample:
 Chart/32_Chart_read_write_PDF.php.
@@ -4443,13 +4473,11 @@ code coverage for this function till that is fixed.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$row</span>
@@ -4498,19 +4526,19 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">586</span>
+    <span class="phpdocumentor-element-found-in__line">582</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">extendRowsForChartsAndImages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">extendRowsForChartsAndImages</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -4547,7 +4575,7 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">352</span>
+    <span class="phpdocumentor-element-found-in__line">350</span>
 </aside>
 
     
@@ -4596,7 +4624,7 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1796</span>
+    <span class="phpdocumentor-element-found-in__line">1798</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate @page declarations.</p>
@@ -4641,30 +4669,28 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1457</span>
+    <span class="phpdocumentor-element-found-in__line">1450</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate row.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pValues</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pRow</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">generateRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pValues</span>
+                <span class="phpdocumentor-signature__argument__name">$values</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -4673,7 +4699,7 @@ code coverage for this function till that is fixed.</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pRow</span>
+                <span class="phpdocumentor-signature__argument__name">$row</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -4714,20 +4740,20 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1240</span>
+    <span class="phpdocumentor-element-found-in__line">1230</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateRowCellCss</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellAddress</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pRow</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colNum</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">generateRowCellCss</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellAddress</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnNumber</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4740,14 +4766,14 @@ code coverage for this function till that is fixed.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pRow</span>
+                <span class="phpdocumentor-signature__argument__name">$row</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$colNum</span>
+                <span class="phpdocumentor-signature__argument__name">$columnNumber</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -4777,20 +4803,20 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1321</span>
+    <span class="phpdocumentor-element-found-in__line">1315</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateRowCellData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cell</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$cssClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">generateRowCellData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cell</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$cssClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4840,20 +4866,20 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1299</span>
+    <span class="phpdocumentor-element-found-in__line">1289</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateRowCellDataValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cell</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$cellData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">generateRowCellDataValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cell</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$cellData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4896,7 +4922,7 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1266</span>
+    <span class="phpdocumentor-element-found-in__line">1256</span>
 </aside>
 
     
@@ -4945,20 +4971,20 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1374</span>
+    <span class="phpdocumentor-element-found-in__line">1368</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateRowIncludeCharts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinate</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">generateRowIncludeCharts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinate</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4994,7 +5020,7 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1379</span>
+    <span class="phpdocumentor-element-found-in__line">1373</span>
 </aside>
 
     
@@ -5050,27 +5076,25 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1207</span>
+    <span class="phpdocumentor-element-found-in__line">1197</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate row start.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateRowStart</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetIndex</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pRow</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">generateRowStart</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetIndex</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$sheetIndex</span>
@@ -5082,7 +5106,7 @@ code coverage for this function till that is fixed.</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pRow</span>
+                <span class="phpdocumentor-signature__argument__name">$row</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -5114,13 +5138,13 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1387</span>
+    <span class="phpdocumentor-element-found-in__line">1381</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateRowWriteCell</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$html</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinate</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellType</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellData</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colSpan</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowSpan</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cssClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colNum</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetIndex</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pRow</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">generateRowWriteCell</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$html</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinate</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellType</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellData</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colSpan</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowSpan</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cssClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$colNum</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetIndex</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -5133,8 +5157,8 @@ code coverage for this function till that is fixed.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -5196,7 +5220,7 @@ code coverage for this function till that is fixed.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pRow</span>
+                <span class="phpdocumentor-signature__argument__name">$row</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -5370,7 +5394,7 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1193</span>
+    <span class="phpdocumentor-element-found-in__line">1184</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate table footer.</p>
@@ -5404,21 +5428,21 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1159</span>
+    <span class="phpdocumentor-element-found-in__line">1150</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate table header.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateTableHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$showid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">generateTableHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$showid</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -5459,20 +5483,20 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1140</span>
+    <span class="phpdocumentor-element-found-in__line">1131</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateTableTag</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$html</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetIndex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">generateTableTag</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$html</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetIndex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -5522,20 +5546,20 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1120</span>
+    <span class="phpdocumentor-element-found-in__line">1111</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">generateTableTagInline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">generateTableTagInline</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -5709,14 +5733,14 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">734</span>
+    <span class="phpdocumentor-element-found-in__line">727</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate chart tag in cell.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeChartInCell</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinates</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">writeChartInCell</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinates</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"><p>This code should be exercised by sample:
 Chart/32_Chart_read_write_PDF.php.
@@ -5728,22 +5752,18 @@ code coverage for this function till that is fixed.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$coordinates</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Cell coordinates</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -5783,21 +5803,21 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1773</span>
+    <span class="phpdocumentor-element-found-in__line">1766</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write a comment in the same format as LibreOffice.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinate</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">writeComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinate</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -5850,21 +5870,21 @@ code coverage for this function till that is fixed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">653</span>
+    <span class="phpdocumentor-element-found-in__line">649</span>
 </aside>
 
         <p class="phpdocumentor-summary">Generate image tag in cell.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeImageInCell</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pSheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinates</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">writeImageInCell</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinates</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pSheet</span>
+                <span class="phpdocumentor-signature__argument__name">$worksheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">

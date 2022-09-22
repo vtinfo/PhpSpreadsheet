@@ -165,7 +165,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Style.html#method_allStyles">allStyles()</a>
     <span>
-                        &nbsp;: array&lt;string|int, <a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>&gt;    </span>
+                        &nbsp;: array&lt;string|int, <abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr>&gt;    </span>
 </dt>
 <dd>Get an array of all styles.</dd>
 
@@ -238,6 +238,13 @@
                         &nbsp;: void    </span>
 </dt>
 <dd>Write NumberFormat.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Style.html#method_writePatternColors">writePatternColors()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Style.html#method_writePatternFill">writePatternFill()</a>
@@ -317,14 +324,14 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Xlsx">Xlsx</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pWriter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Xlsx">Xlsx</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$writer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pWriter</span>
+                <span class="phpdocumentor-signature__argument__name">$writer</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Xlsx">Xlsx</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -354,7 +361,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">640</span>
+    <span class="phpdocumentor-element-found-in__line">621</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an array of all borders.</p>
@@ -399,7 +406,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">567</span>
+    <span class="phpdocumentor-element-found-in__line">548</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an array of all conditional styles.</p>
@@ -444,7 +451,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">589</span>
+    <span class="phpdocumentor-element-found-in__line">570</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an array of all fills.</p>
@@ -489,7 +496,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">619</span>
+    <span class="phpdocumentor-element-found-in__line">600</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an array of all fonts.</p>
@@ -534,7 +541,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">661</span>
+    <span class="phpdocumentor-element-found-in__line">642</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an array of all number formats.</p>
@@ -579,14 +586,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">557</span>
+    <span class="phpdocumentor-element-found-in__line">538</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an array of all styles.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">allStyles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>&gt;</span></code>
+                <span class="phpdocumentor-signature__name">allStyles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr>&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -604,7 +611,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr>&gt;</span>
             &mdash;
             <section class="phpdocumentor-description"><p>All styles in PhpSpreadsheet</p>
 </section>
@@ -703,14 +710,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">324</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write Border.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeBorder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Borders.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Borders">Borders</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pBorders</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeBorder</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Borders.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Borders">Borders</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$borders</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -721,18 +728,14 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pBorders</span>
+                <span class="phpdocumentor-signature__argument__name">$borders</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Borders.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Borders">Borders</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Borders style</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -758,14 +761,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">515</span>
+    <span class="phpdocumentor-element-found-in__line">498</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write BorderPr.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeBorderPr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Border.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Border">Border</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pBorder</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeBorderPr</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Border.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Border">Border</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$border</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -776,12 +779,10 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pName</span>
+                <span class="phpdocumentor-signature__argument__name">$name</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -790,13 +791,11 @@
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pBorder</span>
+                <span class="phpdocumentor-signature__argument__name">$border</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Border.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Border">Border</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Border style</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -822,14 +821,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">445</span>
+    <span class="phpdocumentor-element-found-in__line">430</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write Cell Style Dxf.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeCellStyleDxf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeCellStyleDxf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -840,18 +839,14 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pStyle</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$style</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Style</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -877,14 +872,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">371</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write Cell Style Xf.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeCellStyleXf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pStyle</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeCellStyleXf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -895,27 +890,21 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pStyle</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Style.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$style</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Style">Style</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Style</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$spreadsheet</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Workbook</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -941,14 +930,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write Fill.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeFill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pFill</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeFill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fill</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -959,18 +948,14 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pFill</span>
+                <span class="phpdocumentor-signature__argument__name">$fill</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fill style</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -996,14 +981,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write Font.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeFont</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Font.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pFont</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeFont</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Font.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$font</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1014,18 +999,14 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pFont</span>
+                <span class="phpdocumentor-signature__argument__name">$font</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Font.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Font">Font</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Font style</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -1051,14 +1032,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write Gradient Fill.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeGradientFill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pFill</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeGradientFill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fill</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1069,18 +1050,14 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pFill</span>
+                <span class="phpdocumentor-signature__argument__name">$fill</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fill style</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -1106,14 +1083,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">538</span>
+    <span class="phpdocumentor-element-found-in__line">519</span>
 </aside>
 
         <p class="phpdocumentor-summary">Write NumberFormat.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writeNumFmt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pNumberFormat</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writeNumFmt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numberFormat</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1124,21 +1101,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pNumberFormat</span>
+                <span class="phpdocumentor-signature__argument__name">$numberFormat</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\NumberFormat">NumberFormat</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Number Format</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pId</span>
+                <span class="phpdocumentor-signature__argument__name">$id</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -1152,6 +1125,48 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_writePatternColors">
+        writePatternColors()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Style.html#method_writePatternColors" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xlsx/Style.php"><a href="files/src-phpspreadsheet-writer-xlsx-style.html"><abbr title="src/PhpSpreadsheet/Writer/Xlsx/Style.php">Style.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">204</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">writePatternColors</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fill</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fill</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -1177,7 +1192,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">writePatternFill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pFill</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">writePatternFill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fill</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1188,18 +1203,14 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>XML Writer</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pFill</span>
+                <span class="phpdocumentor-signature__argument__name">$fill</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Style-Fill.html"><abbr title="\PhpOffice\PhpSpreadsheet\Style\Fill">Fill</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Fill style</p>
-</section>
-
+                
             </dd>
             </dl>
 

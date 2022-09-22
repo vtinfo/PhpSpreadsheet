@@ -1,6 +1,111 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled",
+            "name": "ArrayEnabled",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled\u003A\u003AinitialiseHelper\u0028\u0029",
+            "name": "initialiseHelper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_initialiseHelper"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled\u003A\u003AevaluateSingleArgumentArray\u0028\u0029",
+            "name": "evaluateSingleArgumentArray",
+            "summary": "Handles\u0020array\u0020argument\u0020processing\u0020when\u0020the\u0020function\u0020accepts\u0020a\u0020single\u0020argument\u0020that\u0020can\u0020be\u0020an\u0020array\u0020argument.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateSingleArgumentArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled\u003A\u003AevaluateArrayArguments\u0028\u0029",
+            "name": "evaluateArrayArguments",
+            "summary": "Handles\u0020array\u0020argument\u0020processing\u0020when\u0020the\u0020function\u0020accepts\u0020multiple\u0020arguments,\n\u0020\u0020\u0020\u0020and\u0020any\u0020of\u0020them\u0020can\u0020be\u0020an\u0020array\u0020argument.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArguments"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled\u003A\u003AevaluateArrayArgumentsSubset\u0028\u0029",
+            "name": "evaluateArrayArgumentsSubset",
+            "summary": "Handles\u0020array\u0020argument\u0020processing\u0020when\u0020the\u0020function\u0020accepts\u0020multiple\u0020arguments,\n\u0020\u0020\u0020\u0020but\u0020only\u0020the\u0020first\u0020few\u0020\u0028up\u0020to\u0020limit\u0029\u0020can\u0020be\u0020an\u0020array\u0020arguments.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsSubset"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled\u003A\u003AtestFalse\u0028\u0029",
+            "name": "testFalse",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_testFalse"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled\u003A\u003AevaluateArrayArgumentsSubsetFrom\u0028\u0029",
+            "name": "evaluateArrayArgumentsSubsetFrom",
+            "summary": "Handles\u0020array\u0020argument\u0020processing\u0020when\u0020the\u0020function\u0020accepts\u0020multiple\u0020arguments,\n\u0020\u0020\u0020\u0020but\u0020only\u0020the\u0020last\u0020few\u0020\u0028from\u0020start\u0029\u0020can\u0020be\u0020an\u0020array\u0020arguments.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsSubsetFrom"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled\u003A\u003AevaluateArrayArgumentsIgnore\u0028\u0029",
+            "name": "evaluateArrayArgumentsIgnore",
+            "summary": "Handles\u0020array\u0020argument\u0020processing\u0020when\u0020the\u0020function\u0020accepts\u0020multiple\u0020arguments,\n\u0020\u0020\u0020\u0020and\u0020any\u0020of\u0020them\u0020can\u0020be\u0020an\u0020array\u0020argument\u0020except\u0020for\u0020the\u0020one\u0020specified\u0020by\u0020ignore.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#method_evaluateArrayArgumentsIgnore"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\ArrayEnabled\u003A\u003A\u0024arrayArgumentHelper",
+            "name": "arrayArgumentHelper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-ArrayEnabled.html#property_arrayArgumentHelper"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison",
+            "name": "BinaryComparison",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003AstrcmpLowercaseFirst\u0028\u0029",
+            "name": "strcmpLowercaseFirst",
+            "summary": "Compare\u0020two\u0020strings\u0020in\u0020the\u0020same\u0020way\u0020as\u0020strcmp\u0028\u0029\u0020except\u0020that\u0020lowercase\u0020come\u0020before\u0020uppercase\u0020letters.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_strcmpLowercaseFirst"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003AstrcmpAllowNull\u0028\u0029",
+            "name": "strcmpAllowNull",
+            "summary": "PHP8.1\u0020deprecates\u0020passing\u0020null\u0020to\u0020strcmp.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_strcmpAllowNull"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003Acompare\u0028\u0029",
+            "name": "compare",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_compare"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003AevaluateComparison\u0028\u0029",
+            "name": "evaluateComparison",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_evaluateComparison"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003Aequal\u0028\u0029",
+            "name": "equal",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_equal"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003AgreaterThanOrEqual\u0028\u0029",
+            "name": "greaterThanOrEqual",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_greaterThanOrEqual"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003AlessThanOrEqual\u0028\u0029",
+            "name": "lessThanOrEqual",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_lessThanOrEqual"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003AgreaterThan\u0028\u0029",
+            "name": "greaterThan",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_greaterThan"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003AlessThan\u0028\u0029",
+            "name": "lessThan",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_lessThan"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003AnotEqual\u0028\u0029",
+            "name": "notEqual",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#method_notEqual"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\BinaryComparison\u003A\u003ADELTA",
+            "name": "DELTA",
+            "summary": "Epsilon\u0020Precision\u0020used\u0020for\u0020comparisons\u0020in\u0020calculations.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-BinaryComparison.html#constant_DELTA"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation",
             "name": "Calculation",
             "summary": "",
@@ -106,11 +211,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_disableBranchPruning"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AclearBranchStore\u0028\u0029",
-            "name": "clearBranchStore",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_clearBranchStore"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AgetLocale\u0028\u0029",
             "name": "getLocale",
             "summary": "Get\u0020the\u0020currently\u0020defined\u0020locale\u0020code.",
@@ -130,6 +230,11 @@ Search.appendIndex(
             "name": "translateSeparator",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_translateSeparator"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AtranslateFormulaBlock\u0028\u0029",
+            "name": "translateFormulaBlock",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_translateFormulaBlock"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AtranslateFormula\u0028\u0029",
             "name": "translateFormula",
@@ -261,16 +366,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_executeBinaryComparisonOperation"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AstrcmpLowercaseFirst\u0028\u0029",
-            "name": "strcmpLowercaseFirst",
-            "summary": "Compare\u0020two\u0020strings\u0020in\u0020the\u0020same\u0020way\u0020as\u0020strcmp\u0028\u0029\u0020except\u0020that\u0020lowercase\u0020come\u0020before\u0020uppercase\u0020letters.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_strcmpLowercaseFirst"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AstrcmpAllowNull\u0028\u0029",
-            "name": "strcmpAllowNull",
-            "summary": "PHP8.1\u0020deprecates\u0020passing\u0020null\u0020to\u0020strcmp.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_strcmpAllowNull"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AexecuteNumericBinaryOperation\u0028\u0029",
             "name": "executeNumericBinaryOperation",
             "summary": "",
@@ -278,7 +373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AraiseFormulaError\u0028\u0029",
             "name": "raiseFormulaError",
-            "summary": "",
+            "summary": "Trigger\u0020an\u0020error,\u0020but\u0020nicely,\u0020if\u0020need\u0020be.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_raiseFormulaError"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AextractCellRange\u0028\u0029",
@@ -320,11 +415,6 @@ Search.appendIndex(
             "name": "addCellReference",
             "summary": "Add\u0020cell\u0020reference\u0020if\u0020needed\u0020while\u0020making\u0020sure\u0020that\u0020it\u0020is\u0020the\u0020last\u0020argument.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_addCellReference"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AgetUnusedBranchStoreKey\u0028\u0029",
-            "name": "getUnusedBranchStoreKey",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#method_getUnusedBranchStoreKey"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AgetTokensAsString\u0028\u0029",
             "name": "getTokensAsString",
@@ -421,6 +511,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#constant_FORMULA_CLOSE_FUNCTION_BRACE"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AFORMULA_OPEN_MATRIX_BRACE",
+            "name": "FORMULA_OPEN_MATRIX_BRACE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#constant_FORMULA_OPEN_MATRIX_BRACE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AFORMULA_CLOSE_MATRIX_BRACE",
+            "name": "FORMULA_CLOSE_MATRIX_BRACE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#constant_FORMULA_CLOSE_MATRIX_BRACE"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003AFORMULA_STRING_QUOTE",
             "name": "FORMULA_STRING_QUOTE",
             "summary": "",
@@ -451,10 +551,10 @@ Search.appendIndex(
             "summary": "Calculation\u0020cache\u0020enabled.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#property_calculationCacheEnabled"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003A\u0024branchStoreKeyCounter",
-            "name": "branchStoreKeyCounter",
-            "summary": "Used\u0020to\u0020generate\u0020unique\u0020store\u0020keys.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#property_branchStoreKeyCounter"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003A\u0024branchPruner",
+            "name": "branchPruner",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#property_branchPruner"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003A\u0024branchPruningEnabled",
             "name": "branchPruningEnabled",
@@ -515,11 +615,6 @@ Search.appendIndex(
             "name": "cyclicFormulaCount",
             "summary": "Number\u0020of\u0020iterations\u0020for\u0020cyclic\u0020formulae.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#property_cyclicFormulaCount"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003A\u0024delta",
-            "name": "delta",
-            "summary": "Epsilon\u0020Precision\u0020used\u0020for\u0020comparisons\u0020in\u0020calculations.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Calculation.html#property_delta"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation\u003A\u003A\u0024localeLanguage",
             "name": "localeLanguage",
@@ -1461,6 +1556,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-DateTimeExcel-Helpers.html#method_silly1900"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\DateTimeExcel\\Helpers\u003A\u003AdateParse\u0028\u0029",
+            "name": "dateParse",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-DateTimeExcel-Helpers.html#method_dateParse"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\DateTimeExcel\\Helpers\u003A\u003AdateParseSucceeded\u0028\u0029",
+            "name": "dateParseSucceeded",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-DateTimeExcel-Helpers.html#method_dateParseSucceeded"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\DateTimeExcel\\Helpers\u003A\u003AforceArray\u0028\u0029",
+            "name": "forceArray",
+            "summary": "Despite\u0020documentation,\u0020date_parse\u0020probably\u0020never\u0020returns\u0020false.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-DateTimeExcel-Helpers.html#method_forceArray"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\DateTimeExcel\\Month",
             "name": "Month",
             "summary": "",
@@ -1671,6 +1781,276 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-DateTimeExcel-YearFrac.html#method_method1"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper",
+            "name": "ArrayArgumentHelper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003Ainitialise\u0028\u0029",
+            "name": "initialise",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_initialise"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003A\u0024arguments",
+            "name": "arguments",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#property_arguments"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AhasArrayArgument\u0028\u0029",
+            "name": "hasArrayArgument",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_hasArrayArgument"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AgetFirstArrayArgumentNumber\u0028\u0029",
+            "name": "getFirstArrayArgumentNumber",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_getFirstArrayArgumentNumber"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AgetSingleRowVector\u0028\u0029",
+            "name": "getSingleRowVector",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_getSingleRowVector"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AgetRowVectors\u0028\u0029",
+            "name": "getRowVectors",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_getRowVectors"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AgetSingleColumnVector\u0028\u0029",
+            "name": "getSingleColumnVector",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_getSingleColumnVector"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AgetColumnVectors\u0028\u0029",
+            "name": "getColumnVectors",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_getColumnVectors"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AgetMatrixPair\u0028\u0029",
+            "name": "getMatrixPair",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_getMatrixPair"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AisVector\u0028\u0029",
+            "name": "isVector",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_isVector"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AisRowVector\u0028\u0029",
+            "name": "isRowVector",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_isRowVector"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AisColumnVector\u0028\u0029",
+            "name": "isColumnVector",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_isColumnVector"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003ArowCount\u0028\u0029",
+            "name": "rowCount",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_rowCount"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AcolumnCount\u0028\u0029",
+            "name": "columnCount",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_columnCount"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#property_rows"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003A\u0024columns",
+            "name": "columns",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#property_columns"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AarrayArguments\u0028\u0029",
+            "name": "arrayArguments",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_arrayArguments"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AflattenSingleCellArrays\u0028\u0029",
+            "name": "flattenSingleCellArrays",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_flattenSingleCellArrays"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003AfilterArray\u0028\u0029",
+            "name": "filterArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#method_filterArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003A\u0024indexStart",
+            "name": "indexStart",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#property_indexStart"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentHelper\u003A\u003A\u0024argumentCount",
+            "name": "argumentCount",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentHelper.html#property_argumentCount"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentProcessor",
+            "name": "ArrayArgumentProcessor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentProcessor.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentProcessor\u003A\u003AprocessArguments\u0028\u0029",
+            "name": "processArguments",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentProcessor.html#method_processArguments"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentProcessor\u003A\u003AevaluateVectorMatrixPair\u0028\u0029",
+            "name": "evaluateVectorMatrixPair",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentProcessor.html#method_evaluateVectorMatrixPair"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentProcessor\u003A\u003AevaluateMatrixPair\u0028\u0029",
+            "name": "evaluateMatrixPair",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentProcessor.html#method_evaluateMatrixPair"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentProcessor\u003A\u003AevaluateVectorPair\u0028\u0029",
+            "name": "evaluateVectorPair",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentProcessor.html#method_evaluateVectorPair"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentProcessor\u003A\u003AevaluateNthArgumentAsArray\u0028\u0029",
+            "name": "evaluateNthArgumentAsArray",
+            "summary": "Note,\u0020offset\u0020is\u0020from\u00201\u0020\u0028for\u0020the\u0020first\u0020argument\u0029\u0020rather\u0020than\u0020from\u00200.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentProcessor.html#method_evaluateNthArgumentAsArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\ArrayArgumentProcessor\u003A\u003A\u0024arrayArgumentHelper",
+            "name": "arrayArgumentHelper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-ArrayArgumentProcessor.html#property_arrayArgumentHelper"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner",
+            "name": "BranchPruner",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AclearBranchStore\u0028\u0029",
+            "name": "clearBranchStore",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_clearBranchStore"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AinitialiseForLoop\u0028\u0029",
+            "name": "initialiseForLoop",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_initialiseForLoop"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AinitialiseCondition\u0028\u0029",
+            "name": "initialiseCondition",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_initialiseCondition"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AinitialiseThen\u0028\u0029",
+            "name": "initialiseThen",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_initialiseThen"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AinitialiseElse\u0028\u0029",
+            "name": "initialiseElse",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_initialiseElse"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AdecrementDepth\u0028\u0029",
+            "name": "decrementDepth",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_decrementDepth"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AincrementDepth\u0028\u0029",
+            "name": "incrementDepth",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_incrementDepth"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AfunctionCall\u0028\u0029",
+            "name": "functionCall",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_functionCall"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AargumentSeparator\u0028\u0029",
+            "name": "argumentSeparator",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_argumentSeparator"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AclosingBrace\u0028\u0029",
+            "name": "closingBrace",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_closingBrace"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024currentCondition",
+            "name": "currentCondition",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_currentCondition"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024currentOnlyIf",
+            "name": "currentOnlyIf",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_currentOnlyIf"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024currentOnlyIfNot",
+            "name": "currentOnlyIfNot",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_currentOnlyIfNot"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003AgetUnusedBranchStoreKey\u0028\u0029",
+            "name": "getUnusedBranchStoreKey",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#method_getUnusedBranchStoreKey"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024branchPruningEnabled",
+            "name": "branchPruningEnabled",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_branchPruningEnabled"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024branchStoreKeyCounter",
+            "name": "branchStoreKeyCounter",
+            "summary": "Used\u0020to\u0020generate\u0020unique\u0020store\u0020keys.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_branchStoreKeyCounter"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024pendingStoreKey",
+            "name": "pendingStoreKey",
+            "summary": "currently\u0020pending\u0020storeKey\u0020\u0028last\u0020item\u0020of\u0020the\u0020storeKeysStack.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_pendingStoreKey"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024storeKeysStack",
+            "name": "storeKeysStack",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_storeKeysStack"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024conditionMap",
+            "name": "conditionMap",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_conditionMap"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024thenMap",
+            "name": "thenMap",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_thenMap"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024elseMap",
+            "name": "elseMap",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_elseMap"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024braceDepthMap",
+            "name": "braceDepthMap",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_braceDepthMap"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\BranchPruner\u003A\u003A\u0024previousStoreKey",
+            "name": "previousStoreKey",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-BranchPruner.html#property_previousStoreKey"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engine\\CyclicReferenceStack",
             "name": "CyclicReferenceStack",
             "summary": "",
@@ -1861,6 +2241,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BesselK.html#method_calculate"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engineering\\BesselK\u003A\u003AcallBesselI\u0028\u0029",
+            "name": "callBesselI",
+            "summary": "Mollify\u0020Phpstan.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BesselK.html#method_callBesselI"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engineering\\BesselK\u003A\u003AbesselK0\u0028\u0029",
             "name": "besselK0",
             "summary": "",
@@ -1890,6 +2275,11 @@ Search.appendIndex(
             "name": "calculate",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BesselY.html#method_calculate"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engineering\\BesselY\u003A\u003AcallBesselJ\u0028\u0029",
+            "name": "callBesselJ",
+            "summary": "Mollify\u0020Phpstan.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Engineering-BesselY.html#method_callBesselJ"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Engineering\\BesselY\u003A\u003AbesselY0\u0028\u0029",
             "name": "besselY0",
@@ -3051,6 +3441,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Financial-CashFlow-Variable-NonPeriodic.html#constant_FINANCIAL_PRECISION"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Financial\\CashFlow\\Variable\\NonPeriodic\u003A\u003ADEFAULT_GUESS",
+            "name": "DEFAULT_GUESS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Financial-CashFlow-Variable-NonPeriodic.html#constant_DEFAULT_GUESS"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Financial\\CashFlow\\Variable\\Periodic",
             "name": "Periodic",
             "summary": "",
@@ -4038,7 +4433,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AsetReturnDateType\u0028\u0029",
             "name": "setReturnDateType",
-            "summary": "Set\u0020the\u0020Return\u0020Date\u0020Format\u0020used\u0020by\u0020functions\u0020that\u0020return\u0020a\u0020date\/time\u0020\u0028Excel,\u0020PHP\u0020Serialized\u0020Numeric\u0020or\u0020PHP\u0020Object\u0029.",
+            "summary": "Set\u0020the\u0020Return\u0020Date\u0020Format\u0020used\u0020by\u0020functions\u0020that\u0020return\u0020a\u0020date\/time\u0020\u0028Excel,\u0020PHP\u0020Serialized\u0020Numeric\u0020or\u0020PHP\u0020DateTime\u0020Object\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_setReturnDateType"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AgetReturnDateType\u0028\u0029",
@@ -4050,41 +4445,6 @@ Search.appendIndex(
             "name": "DUMMY",
             "summary": "DUMMY.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_DUMMY"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ADIV0\u0028\u0029",
-            "name": "DIV0",
-            "summary": "DIV0.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_DIV0"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ANA\u0028\u0029",
-            "name": "NA",
-            "summary": "NA.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_NA"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ANAN\u0028\u0029",
-            "name": "NAN",
-            "summary": "NaN.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_NAN"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ANAME\u0028\u0029",
-            "name": "NAME",
-            "summary": "NAME.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_NAME"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AREF\u0028\u0029",
-            "name": "REF",
-            "summary": "REF.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_REF"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003Anull\u0028\u0029",
-            "name": "null",
-            "summary": "NULL.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_null"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AVALUE\u0028\u0029",
-            "name": "VALUE",
-            "summary": "VALUE.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_VALUE"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AisMatrixValue\u0028\u0029",
             "name": "isMatrixValue",
@@ -4110,6 +4470,41 @@ Search.appendIndex(
             "name": "operandSpecialHandling",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_operandSpecialHandling"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003Anull\u0028\u0029",
+            "name": "null",
+            "summary": "NULL.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_null"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ANAN\u0028\u0029",
+            "name": "NAN",
+            "summary": "NaN.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_NAN"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AREF\u0028\u0029",
+            "name": "REF",
+            "summary": "REF.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_REF"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ANA\u0028\u0029",
+            "name": "NA",
+            "summary": "NA.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_NA"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AVALUE\u0028\u0029",
+            "name": "VALUE",
+            "summary": "VALUE.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_VALUE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ANAME\u0028\u0029",
+            "name": "NAME",
+            "summary": "NAME.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_NAME"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ADIV0\u0028\u0029",
+            "name": "DIV0",
+            "summary": "DIV0.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_DIV0"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AerrorType\u0028\u0029",
             "name": "errorType",
@@ -4181,6 +4576,11 @@ Search.appendIndex(
             "summary": "Convert\u0020a\u0020multi\u002Ddimensional\u0020array\u0020to\u0020a\u0020simple\u00201\u002Ddimensional\u0020array.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_flattenArray"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003Ascalar\u0028\u0029",
+            "name": "scalar",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_scalar"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AflattenArrayIndexed\u0028\u0029",
             "name": "flattenArrayIndexed",
             "summary": "Convert\u0020a\u0020multi\u002Ddimensional\u0020array\u0020to\u0020a\u0020simple\u00201\u002Ddimensional\u0020array,\u0020but\u0020retain\u0020an\u0020element\u0020of\u0020indexing.",
@@ -4206,6 +4606,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_trimTrailingRange"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003AtrimSheetFromCellReference\u0028\u0029",
+            "name": "trimSheetFromCellReference",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#method_trimSheetFromCellReference"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003APRECISION",
             "name": "PRECISION",
             "summary": "",
@@ -4218,7 +4623,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ACOMPATIBILITY_EXCEL",
             "name": "COMPATIBILITY_EXCEL",
-            "summary": "constants",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#constant_COMPATIBILITY_EXCEL"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ACOMPATIBILITY_GNUMERIC",
@@ -4233,12 +4638,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ARETURNDATE_PHP_NUMERIC",
             "name": "RETURNDATE_PHP_NUMERIC",
-            "summary": "",
+            "summary": "Use\u0020of\u0020RETURNDATE_PHP_NUMERIC\u0020is\u0020discouraged\u0020\u002D\u0020not\u002032\u002Dbit\u0020Y2038\u002Dsafe,\u0020no\u0020timezone.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#constant_RETURNDATE_PHP_NUMERIC"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ARETURNDATE_UNIX_TIMESTAMP",
             "name": "RETURNDATE_UNIX_TIMESTAMP",
-            "summary": "",
+            "summary": "Use\u0020of\u0020RETURNDATE_UNIX_TIMESTAMP\u0020is\u0020discouraged\u0020\u002D\u0020not\u002032\u002Dbit\u0020Y2038\u002Dsafe,\u0020no\u0020timezone.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#constant_RETURNDATE_UNIX_TIMESTAMP"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003ARETURNDATE_PHP_OBJECT",
@@ -4266,10 +4671,150 @@ Search.appendIndex(
             "summary": "Data\u0020Type\u0020to\u0020use\u0020when\u0020returning\u0020date\u0020values.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#property_returnDateType"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Functions\u003A\u003A\u0024errorCodes",
-            "name": "errorCodes",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ErrorValue",
+            "name": "ErrorValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ErrorValue.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ErrorValue\u003A\u003AisErr\u0028\u0029",
+            "name": "isErr",
+            "summary": "IS_ERR.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ErrorValue.html#method_isErr"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ErrorValue\u003A\u003AisError\u0028\u0029",
+            "name": "isError",
+            "summary": "IS_ERROR.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ErrorValue.html#method_isError"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ErrorValue\u003A\u003AisNa\u0028\u0029",
+            "name": "isNa",
+            "summary": "IS_NA.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ErrorValue.html#method_isNa"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError",
+            "name": "ExcelError",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003AthrowError\u0028\u0029",
+            "name": "throwError",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_throwError"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "ERROR_TYPE.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_type"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003Anull\u0028\u0029",
+            "name": "null",
+            "summary": "NULL.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_null"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003ANAN\u0028\u0029",
+            "name": "NAN",
+            "summary": "NaN.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_NAN"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003AREF\u0028\u0029",
+            "name": "REF",
+            "summary": "REF.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_REF"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003ANA\u0028\u0029",
+            "name": "NA",
+            "summary": "NA.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_NA"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003AVALUE\u0028\u0029",
+            "name": "VALUE",
+            "summary": "VALUE.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_VALUE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003ANAME\u0028\u0029",
+            "name": "NAME",
+            "summary": "NAME.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_NAME"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003ADIV0\u0028\u0029",
+            "name": "DIV0",
+            "summary": "DIV0.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_DIV0"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003ACALC\u0028\u0029",
+            "name": "CALC",
+            "summary": "CALC.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#method_CALC"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003AERROR_CODES",
+            "name": "ERROR_CODES",
             "summary": "List\u0020of\u0020error\u0020codes.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Functions.html#property_errorCodes"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#constant_ERROR_CODES"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\ExcelError\u003A\u003A\u0024errorCodes",
+            "name": "errorCodes",
+            "summary": "List\u0020of\u0020error\u0020codes.\u0020Replaced\u0020by\u0020constant\u003B\npreviously\u0020it\u0020was\u0020public\u0020and\u0020updateable,\u0020allowing\nuser\u0020to\u0020make\u0020inappropriate\u0020alterations.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html#property_errorCodes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value",
+            "name": "Value",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisBlank\u0028\u0029",
+            "name": "isBlank",
+            "summary": "IS_BLANK.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isBlank"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisRef\u0028\u0029",
+            "name": "isRef",
+            "summary": "IS_REF.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isRef"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisEven\u0028\u0029",
+            "name": "isEven",
+            "summary": "IS_EVEN.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isEven"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisOdd\u0028\u0029",
+            "name": "isOdd",
+            "summary": "IS_ODD.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isOdd"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisNumber\u0028\u0029",
+            "name": "isNumber",
+            "summary": "IS_NUMBER.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isNumber"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisLogical\u0028\u0029",
+            "name": "isLogical",
+            "summary": "IS_LOGICAL.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isLogical"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisText\u0028\u0029",
+            "name": "isText",
+            "summary": "IS_TEXT.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isText"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisNonText\u0028\u0029",
+            "name": "isNonText",
+            "summary": "IS_NONTEXT.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isNonText"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AisFormula\u0028\u0029",
+            "name": "isFormula",
+            "summary": "ISFORMULA.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_isFormula"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003AasNumber\u0028\u0029",
+            "name": "asNumber",
+            "summary": "N.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_asNumber"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information\\Value\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "TYPE.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html#method_type"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Internal\\MakeMatrix",
             "name": "MakeMatrix",
@@ -4556,6 +5101,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-ExcelMatch.html#constant_MATCHTYPE_LARGEST_VALUE"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Filter",
+            "name": "Filter",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Filter.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Filter\u003A\u003Afilter\u0028\u0029",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Filter.html#method_filter"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Filter\u003A\u003AenumerateArrayKeys\u0028\u0029",
+            "name": "enumerateArrayKeys",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Filter.html#method_enumerateArrayKeys"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Filter\u003A\u003AfilterByRow\u0028\u0029",
+            "name": "filterByRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Filter.html#method_filterByRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Filter\u003A\u003AfilterByColumn\u0028\u0029",
+            "name": "filterByColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Filter.html#method_filterByColumn"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Formula",
             "name": "Formula",
             "summary": "",
@@ -4616,6 +5186,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-HLookup.html#method_hLookupSearch"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\HLookup\u003A\u003AconvertLiteralArray\u0028\u0029",
+            "name": "convertLiteralArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-HLookup.html#method_convertLiteralArray"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Hyperlink",
             "name": "Hyperlink",
             "summary": "",
@@ -4650,6 +5225,11 @@ Search.appendIndex(
             "name": "extractRequiredCells",
             "summary": "Extract\u0020range\u0020values.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Indirect.html#method_extractRequiredCells"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Indirect\u003A\u003AhandleRowColumnRanges\u0028\u0029",
+            "name": "handleRowColumnRanges",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Indirect.html#method_handleRowColumnRanges"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Lookup",
             "name": "Lookup",
@@ -4686,6 +5266,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-LookupBase.html"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\LookupBase\u003A\u003AvalidateLookupArray\u0028\u0029",
+            "name": "validateLookupArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-LookupBase.html#method_validateLookupArray"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\LookupBase\u003A\u003AvalidateIndexLookup\u0028\u0029",
             "name": "validateIndexLookup",
             "summary": "",
@@ -4715,6 +5300,16 @@ Search.appendIndex(
             "name": "Matrix",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Matrix.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Matrix\u003A\u003AisColumnVector\u0028\u0029",
+            "name": "isColumnVector",
+            "summary": "Helper\u0020function\u003B\u0020NOT\u0020an\u0020implementation\u0020of\u0020any\u0020Excel\u0020Function.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Matrix.html#method_isColumnVector"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Matrix\u003A\u003AisRowVector\u0028\u0029",
+            "name": "isRowVector",
+            "summary": "Helper\u0020function\u003B\u0020NOT\u0020an\u0020implementation\u0020of\u0020any\u0020Excel\u0020Function.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Matrix.html#method_isRowVector"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Matrix\u003A\u003Atranspose\u0028\u0029",
             "name": "transpose",
@@ -4810,6 +5405,126 @@ Search.appendIndex(
             "name": "choose",
             "summary": "CHOOSE.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Selection.html#method_choose"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort",
+            "name": "Sort",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003Asort\u0028\u0029",
+            "name": "sort",
+            "summary": "SORT\nThe\u0020SORT\u0020function\u0020returns\u0020a\u0020sorted\u0020array\u0020of\u0020the\u0020elements\u0020in\u0020an\u0020array.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_sort"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AsortBy\u0028\u0029",
+            "name": "sortBy",
+            "summary": "SORTBY\nThe\u0020SORTBY\u0020function\u0020sorts\u0020the\u0020contents\u0020of\u0020a\u0020range\u0020or\u0020array\u0020based\u0020on\u0020the\u0020values\u0020in\u0020a\u0020corresponding\u0020range\u0020or\u0020array.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_sortBy"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AenumerateArrayKeys\u0028\u0029",
+            "name": "enumerateArrayKeys",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_enumerateArrayKeys"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AvalidateScalarArgumentsForSort\u0028\u0029",
+            "name": "validateScalarArgumentsForSort",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_validateScalarArgumentsForSort"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AvalidateSortVector\u0028\u0029",
+            "name": "validateSortVector",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_validateSortVector"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AvalidateSortOrder\u0028\u0029",
+            "name": "validateSortOrder",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_validateSortOrder"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AvalidateArrayArgumentsForSort\u0028\u0029",
+            "name": "validateArrayArgumentsForSort",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_validateArrayArgumentsForSort"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AprepareSortVectorValues\u0028\u0029",
+            "name": "prepareSortVectorValues",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_prepareSortVectorValues"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AprocessSortBy\u0028\u0029",
+            "name": "processSortBy",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_processSortBy"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AsortByRow\u0028\u0029",
+            "name": "sortByRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_sortByRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AsortByColumn\u0028\u0029",
+            "name": "sortByColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_sortByColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AbuildVectorForSort\u0028\u0029",
+            "name": "buildVectorForSort",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_buildVectorForSort"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AexecuteVectorSortQuery\u0028\u0029",
+            "name": "executeVectorSortQuery",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_executeVectorSortQuery"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AsortLookupArrayFromVector\u0028\u0029",
+            "name": "sortLookupArrayFromVector",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_sortLookupArrayFromVector"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AapplyPHP7Patch\u0028\u0029",
+            "name": "applyPHP7Patch",
+            "summary": "Hack\u0020to\u0020handle\u0020PHP\u00207\u003A\nFrom\u0020PHP\u00208.0.0,\u0020If\u0020two\u0020members\u0020compare\u0020as\u0020equal\u0020in\u0020a\u0020sort,\u0020they\u0020retain\u0020their\u0020original\u0020order\u003B\n\u0020\u0020\u0020\u0020\u0020but\u0020prior\u0020to\u0020PHP\u00208.0.0,\u0020their\u0020relative\u0020order\u0020in\u0020the\u0020sorted\u0020array\u0020was\u0020undefined.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#method_applyPHP7Patch"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AORDER_ASCENDING",
+            "name": "ORDER_ASCENDING",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#constant_ORDER_ASCENDING"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Sort\u003A\u003AORDER_DESCENDING",
+            "name": "ORDER_DESCENDING",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Sort.html#constant_ORDER_DESCENDING"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Unique",
+            "name": "Unique",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Unique.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Unique\u003A\u003Aunique\u0028\u0029",
+            "name": "unique",
+            "summary": "UNIQUE\nThe\u0020UNIQUE\u0020function\u0020searches\u0020for\u0020value\u0020either\u0020from\u0020a\u0020one\u002Drow\u0020or\u0020one\u002Dcolumn\u0020range\u0020or\u0020from\u0020an\u0020array.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Unique.html#method_unique"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Unique\u003A\u003AuniqueByRow\u0028\u0029",
+            "name": "uniqueByRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Unique.html#method_uniqueByRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Unique\u003A\u003AuniqueByColumn\u0028\u0029",
+            "name": "uniqueByColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Unique.html#method_uniqueByColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Unique\u003A\u003AcountValuesCaseInsensitive\u0028\u0029",
+            "name": "countValuesCaseInsensitive",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Unique.html#method_countValuesCaseInsensitive"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\Unique\u003A\u003AexactlyOnceFilter\u0028\u0029",
+            "name": "exactlyOnceFilter",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-LookupRef-Unique.html#method_exactlyOnceFilter"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\LookupRef\\VLookup",
             "name": "VLookup",
@@ -4981,6 +5696,11 @@ Search.appendIndex(
             "summary": "BASE.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Base.html#method_evaluate"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\Base\u003A\u003Acalculate\u0028\u0029",
+            "name": "calculate",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Base.html#method_calculate"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\Ceiling",
             "name": "Ceiling",
             "summary": "",
@@ -5028,7 +5748,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\Combinations\u003A\u003AwithRepetition\u0028\u0029",
             "name": "withRepetition",
-            "summary": "COMBIN.",
+            "summary": "COMBINA.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Combinations.html#method_withRepetition"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\Exp",
@@ -5233,8 +5953,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\MatrixFunctions\u003A\u003AgetMatrix\u0028\u0029",
             "name": "getMatrix",
-            "summary": "Convert\u0020parameter\u0020to\u0020matrix.",
+            "summary": "Convert\u0020parameter\u0020to\u0020Matrix.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-MatrixFunctions.html#method_getMatrix"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\MatrixFunctions\u003A\u003Asequence\u0028\u0029",
+            "name": "sequence",
+            "summary": "SEQUENCE.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-MatrixFunctions.html#method_sequence"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\MatrixFunctions\u003A\u003Adeterminant\u0028\u0029",
             "name": "determinant",
@@ -5295,6 +6020,11 @@ Search.appendIndex(
             "name": "randBetween",
             "summary": "RANDBETWEEN.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Random.html#method_randBetween"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\Random\u003A\u003ArandArray\u0028\u0029",
+            "name": "randArray",
+            "summary": "RANDARRAY.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Random.html#method_randArray"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\MathTrig\\Roman",
             "name": "Roman",
@@ -6343,7 +7073,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Statistical\\Distributions\\Binomial\u003A\u003Ainverse\u0028\u0029",
             "name": "inverse",
-            "summary": "CRITBINOM.",
+            "summary": "BINOM.INV.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Statistical-Distributions-Binomial.html#method_inverse"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Statistical\\Distributions\\Binomial\u003A\u003AcalculateCumulativeBinomial\u0028\u0029",
@@ -7681,6 +8411,11 @@ Search.appendIndex(
             "summary": "SUBSTITUTE.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-TextData-Replace.html#method_substitute"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\TextData\\Replace\u003A\u003AexecuteSubstitution\u0028\u0029",
+            "name": "executeSubstitution",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-TextData-Replace.html#method_executeSubstitution"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\TextData\\Search",
             "name": "Search",
             "summary": "",
@@ -7768,12 +8503,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\TextData\u003A\u003ASEARCHSENSITIVE\u0028\u0029",
             "name": "SEARCHSENSITIVE",
-            "summary": "SEARCHSENSITIVE.",
+            "summary": "FIND.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-TextData.html#method_SEARCHSENSITIVE"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\TextData\u003A\u003ASEARCHINSENSITIVE\u0028\u0029",
             "name": "SEARCHINSENSITIVE",
-            "summary": "SEARCHINSENSITIVE.",
+            "summary": "SEARCH.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-TextData.html#method_SEARCHINSENSITIVE"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\TextData\u003A\u003AFIXEDFORMAT\u0028\u0029",
@@ -7866,6 +8601,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Token-Stack.html"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Token\\Stack\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Token-Stack.html#method___construct"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Token\\Stack\u003A\u003A\u0024count",
             "name": "count",
             "summary": "Count\u0020of\u0020entries\u0020in\u0020the\u0020parser\u0020stack.",
@@ -7875,6 +8615,11 @@ Search.appendIndex(
             "name": "push",
             "summary": "Push\u0020a\u0020new\u0020entry\u0020onto\u0020the\u0020stack.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Token-Stack.html#method_push"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Token\\Stack\u003A\u003ApushStackItem\u0028\u0029",
+            "name": "pushStackItem",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Token-Stack.html#method_pushStackItem"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Token\\Stack\u003A\u003AgetStackItem\u0028\u0029",
             "name": "getStackItem",
@@ -7896,10 +8641,10 @@ Search.appendIndex(
             "summary": "Clear\u0020the\u0020stack.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Token-Stack.html#method_clear"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Token\\Stack\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Token\\Stack\u003A\u003A\u0024branchPruner",
+            "name": "branchPruner",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Token-Stack.html#method___toString"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Calculation-Token-Stack.html#property_branchPruner"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Token\\Stack\u003A\u003A\u0024stack",
             "name": "stack",
@@ -7960,6 +8705,36 @@ Search.appendIndex(
             "name": "R1C1_COORDINATE_REGEX",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Cell-AddressHelper.html#constant_R1C1_COORDINATE_REGEX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\AddressRange",
+            "name": "AddressRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-AddressRange.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\AddressRange\u003A\u003Afrom\u0028\u0029",
+            "name": "from",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-AddressRange.html#method_from"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\AddressRange\u003A\u003Ato\u0028\u0029",
+            "name": "to",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-AddressRange.html#method_to"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\AddressRange\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-AddressRange.html#method___toString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\AddressRange\u003A\u003AMAX_ROW",
+            "name": "MAX_ROW",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-AddressRange.html#constant_MAX_ROW"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\AddressRange\u003A\u003AMAX_COLUMN",
+            "name": "MAX_COLUMN",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-AddressRange.html#constant_MAX_COLUMN"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\AdvancedValueBinder",
             "name": "AdvancedValueBinder",
@@ -8151,6 +8926,11 @@ Search.appendIndex(
             "summary": "Get\u0020cell\u0020style.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Cell-Cell.html#method_getStyle"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\Cell\u003A\u003AgetAppliedStyle\u0028\u0029",
+            "name": "getAppliedStyle",
+            "summary": "Get\u0020cell\u0020style.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-Cell.html#method_getAppliedStyle"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\Cell\u003A\u003ArebindParent\u0028\u0029",
             "name": "rebindParent",
             "summary": "Re\u002Dbind\u0020parent.",
@@ -8241,6 +9021,206 @@ Search.appendIndex(
             "summary": "Attributes\u0020of\u0020the\u0020formula.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Cell-Cell.html#property_formulaAttributes"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress",
+            "name": "CellAddress",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003AvalidateColumnAndRow\u0028\u0029",
+            "name": "validateColumnAndRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_validateColumnAndRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003AfromColumnAndRow\u0028\u0029",
+            "name": "fromColumnAndRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_fromColumnAndRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003AfromColumnRowArray\u0028\u0029",
+            "name": "fromColumnRowArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_fromColumnRowArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003AfromCellAddress\u0028\u0029",
+            "name": "fromCellAddress",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_fromCellAddress"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003AfullCellAddress\u0028\u0029",
+            "name": "fullCellAddress",
+            "summary": "The\u0020returned\u0020address\u0020string\u0020will\u0020contain\u0020the\u0020worksheet\u0020name\u0020as\u0020well,\u0020if\u0020available,\n\u0020\u0020\u0020\u0020\u0028ie.\u0020if\u0020a\u0020Worksheet\u0020was\u0020provided\u0020to\u0020the\u0020constructor\u0029.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_fullCellAddress"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003A\u0024worksheet",
+            "name": "worksheet",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#property_worksheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003A\u0024cellAddress",
+            "name": "cellAddress",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#property_cellAddress"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003A\u0024rowId",
+            "name": "rowId",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#property_rowId"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003A\u0024columnId",
+            "name": "columnId",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#property_columnId"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003A\u0024columnName",
+            "name": "columnName",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#property_columnName"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003AnextRow\u0028\u0029",
+            "name": "nextRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_nextRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003ApreviousRow\u0028\u0029",
+            "name": "previousRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_previousRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003AnextColumn\u0028\u0029",
+            "name": "nextColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_nextColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003ApreviousColumn\u0028\u0029",
+            "name": "previousColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method_previousColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellAddress\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "The\u0020returned\u0020address\u0020string\u0020will\u0020contain\u0020the\u0020worksheet\u0020name\u0020as\u0020well,\u0020if\u0020available,\n\u0020\u0020\u0020\u0020\u0028ie.\u0020if\u0020a\u0020Worksheet\u0020was\u0020provided\u0020to\u0020the\u0020constructor\u0029.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellAddress.html#method___toString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellRange",
+            "name": "CellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellRange.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellRange\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellRange.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellRange\u003A\u003AvalidateFromTo\u0028\u0029",
+            "name": "validateFromTo",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellRange.html#method_validateFromTo"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellRange\u003A\u003AvalidateWorksheets\u0028\u0029",
+            "name": "validateWorksheets",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellRange.html#method_validateWorksheets"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellRange\u003A\u003AcellAddressWrapper\u0028\u0029",
+            "name": "cellAddressWrapper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellRange.html#method_cellAddressWrapper"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellRange\u003A\u003A\u0024from",
+            "name": "from",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellRange.html#property_from"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellRange\u003A\u003A\u0024to",
+            "name": "to",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellRange.html#property_to"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\CellRange\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-CellRange.html#method___toString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange",
+            "name": "ColumnRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AfromColumnIndexes\u0028\u0029",
+            "name": "fromColumnIndexes",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_fromColumnIndexes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_fromArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AvalidateFromTo\u0028\u0029",
+            "name": "validateFromTo",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_validateFromTo"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AcolumnCount\u0028\u0029",
+            "name": "columnCount",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_columnCount"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AshiftDown\u0028\u0029",
+            "name": "shiftDown",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_shiftDown"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AshiftUp\u0028\u0029",
+            "name": "shiftUp",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_shiftUp"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003A\u0024from",
+            "name": "from",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#property_from"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003A\u0024to",
+            "name": "to",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#property_to"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AfromIndex\u0028\u0029",
+            "name": "fromIndex",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_fromIndex"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AtoIndex\u0028\u0029",
+            "name": "toIndex",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_toIndex"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003AtoCellRange\u0028\u0029",
+            "name": "toCellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method_toCellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#method___toString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\ColumnRange\u003A\u003A\u0024worksheet",
+            "name": "worksheet",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-ColumnRange.html#property_worksheet"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\Coordinate",
             "name": "Coordinate",
             "summary": "Helper\u0020class\u0020to\u0020manipulate\u0020cell\u0020coordinates.",
@@ -8258,7 +9238,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\Coordinate\u003A\u003AcoordinateIsRange\u0028\u0029",
             "name": "coordinateIsRange",
-            "summary": "Checks\u0020if\u0020a\u0020coordinate\u0020represents\u0020a\u0020range\u0020of\u0020cells.",
+            "summary": "Checks\u0020if\u0020a\u0020Cell\u0020Address\u0020represents\u0020a\u0020range\u0020of\u0020cells.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Cell-Coordinate.html#method_coordinateIsRange"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\Coordinate\u003A\u003AabsoluteReference\u0028\u0029",
@@ -8410,6 +9390,16 @@ Search.appendIndex(
             "name": "TYPE_ERROR",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Cell-DataType.html#constant_TYPE_ERROR"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\DataType\u003A\u003ATYPE_ISO_DATE",
+            "name": "TYPE_ISO_DATE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-DataType.html#constant_TYPE_ISO_DATE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\DataType\u003A\u003AMAX_STRING_LENGTH",
+            "name": "MAX_STRING_LENGTH",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-DataType.html#constant_MAX_STRING_LENGTH"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\DataType\u003A\u003A\u0024errorCodes",
             "name": "errorCodes",
@@ -8836,6 +9826,66 @@ Search.appendIndex(
             "summary": "Bind\u0020value\u0020to\u0020a\u0020cell.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Cell-IValueBinder.html#method_bindValue"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange",
+            "name": "RowRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#method_fromArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003AvalidateFromTo\u0028\u0029",
+            "name": "validateFromTo",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#method_validateFromTo"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003A\u0024from",
+            "name": "from",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#property_from"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003A\u0024to",
+            "name": "to",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#property_to"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003ArowCount\u0028\u0029",
+            "name": "rowCount",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#method_rowCount"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003AshiftRight\u0028\u0029",
+            "name": "shiftRight",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#method_shiftRight"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003AshiftLeft\u0028\u0029",
+            "name": "shiftLeft",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#method_shiftLeft"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003AtoCellRange\u0028\u0029",
+            "name": "toCellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#method_toCellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#method___toString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\RowRange\u003A\u003A\u0024worksheet",
+            "name": "worksheet",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-RowRange.html#property_worksheet"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\StringValueBinder",
             "name": "StringValueBinder",
             "summary": "",
@@ -8850,6 +9900,11 @@ Search.appendIndex(
             "name": "setBooleanConversion",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Cell-StringValueBinder.html#method_setBooleanConversion"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\StringValueBinder\u003A\u003AgetBooleanConversion\u0028\u0029",
+            "name": "getBooleanConversion",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Cell-StringValueBinder.html#method_getBooleanConversion"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Cell\\StringValueBinder\u003A\u003AsetNumericConversion\u0028\u0029",
             "name": "setNumericConversion",
@@ -8896,10 +9951,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Cell-StringValueBinder.html#property_convertFormula"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper",
+            "name": "CellReferenceHelper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003A\u0024beforeCellAddress",
+            "name": "beforeCellAddress",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#property_beforeCellAddress"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003ArefreshRequired\u0028\u0029",
+            "name": "refreshRequired",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#method_refreshRequired"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003AupdateCellReference\u0028\u0029",
+            "name": "updateCellReference",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#method_updateCellReference"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003AcellAddressInDeleteRange\u0028\u0029",
+            "name": "cellAddressInDeleteRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#method_cellAddressInDeleteRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003A\u0024beforeColumn",
+            "name": "beforeColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#property_beforeColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003A\u0024beforeRow",
+            "name": "beforeRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#property_beforeRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003A\u0024numberOfColumns",
+            "name": "numberOfColumns",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#property_numberOfColumns"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\CellReferenceHelper\u003A\u003A\u0024numberOfRows",
+            "name": "numberOfRows",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-CellReferenceHelper.html#property_numberOfRows"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis",
             "name": "Axis",
             "summary": "Created\u0020by\u0020PhpStorm.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method___construct"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetAxisNumberProperties\u0028\u0029",
             "name": "setAxisNumberProperties",
@@ -8916,6 +10026,16 @@ Search.appendIndex(
             "summary": "Get\u0020Axis\u0020Number\u0020Source\u0020Linked.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getAxisNumberSourceLinked"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetAxisIsNumericFormat\u0028\u0029",
+            "name": "getAxisIsNumericFormat",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getAxisIsNumericFormat"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetAxisOption\u0028\u0029",
+            "name": "setAxisOption",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setAxisOption"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetAxisOptionsProperties\u0028\u0029",
             "name": "setAxisOptionsProperties",
             "summary": "Set\u0020Axis\u0020Options\u0020Properties.",
@@ -8931,155 +10051,105 @@ Search.appendIndex(
             "summary": "Set\u0020Axis\u0020Orientation\u0020Property.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setAxisOrientation"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetAxisType\u0028\u0029",
+            "name": "getAxisType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getAxisType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetAxisType\u0028\u0029",
+            "name": "setAxisType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setAxisType"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetFillParameters\u0028\u0029",
             "name": "setFillParameters",
             "summary": "Set\u0020Fill\u0020Property.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setFillParameters"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetLineParameters\u0028\u0029",
-            "name": "setLineParameters",
-            "summary": "Set\u0020Line\u0020Property.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setLineParameters"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetFillProperty\u0028\u0029",
             "name": "getFillProperty",
             "summary": "Get\u0020Fill\u0020Property.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getFillProperty"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetFillColorObject\u0028\u0029",
+            "name": "getFillColorObject",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getFillColorObject"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetLineProperty\u0028\u0029",
             "name": "getLineProperty",
-            "summary": "Get\u0020Line\u0020Property.",
+            "summary": "Get\u0020Line\u0020Color\u0020Property.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getLineProperty"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetLineStyleProperties\u0028\u0029",
-            "name": "setLineStyleProperties",
-            "summary": "Set\u0020Line\u0020Style\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setLineStyleProperties"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetCrossBetween\u0028\u0029",
+            "name": "setCrossBetween",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setCrossBetween"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetLineStyleProperty\u0028\u0029",
-            "name": "getLineStyleProperty",
-            "summary": "Get\u0020Line\u0020Style\u0020Property.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getLineStyleProperty"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetCrossBetween\u0028\u0029",
+            "name": "getCrossBetween",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getCrossBetween"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetLineStyleArrowWidth\u0028\u0029",
-            "name": "getLineStyleArrowWidth",
-            "summary": "Get\u0020Line\u0020Style\u0020Arrow\u0020Excel\u0020Width.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getLineStyleArrowWidth"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetMajorGridlines\u0028\u0029",
+            "name": "getMajorGridlines",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getMajorGridlines"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetLineStyleArrowLength\u0028\u0029",
-            "name": "getLineStyleArrowLength",
-            "summary": "Get\u0020Line\u0020Style\u0020Arrow\u0020Excel\u0020Length.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getLineStyleArrowLength"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetMinorGridlines\u0028\u0029",
+            "name": "getMinorGridlines",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getMinorGridlines"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetShadowProperties\u0028\u0029",
-            "name": "setShadowProperties",
-            "summary": "Set\u0020Shadow\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setShadowProperties"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetMajorGridlines\u0028\u0029",
+            "name": "setMajorGridlines",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setMajorGridlines"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetShadowPresetsProperties\u0028\u0029",
-            "name": "setShadowPresetsProperties",
-            "summary": "Set\u0020Shadow\u0020Color.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setShadowPresetsProperties"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetMinorGridlines\u0028\u0029",
+            "name": "setMinorGridlines",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setMinorGridlines"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetShadowProperiesMapValues\u0028\u0029",
-            "name": "setShadowProperiesMapValues",
-            "summary": "Set\u0020Shadow\u0020Properties\u0020from\u0020Mapped\u0020Values.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setShadowProperiesMapValues"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003ANUMERIC_FORMAT",
+            "name": "NUMERIC_FORMAT",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#constant_NUMERIC_FORMAT"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetShadowColor\u0028\u0029",
-            "name": "setShadowColor",
-            "summary": "Set\u0020Shadow\u0020Color.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setShadowColor"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024majorGridlines",
+            "name": "majorGridlines",
+            "summary": "Chart\u0020Major\u0020Gridlines\u0020as.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_majorGridlines"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetShadowBlur\u0028\u0029",
-            "name": "setShadowBlur",
-            "summary": "Set\u0020Shadow\u0020Blur.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setShadowBlur"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetShadowAngle\u0028\u0029",
-            "name": "setShadowAngle",
-            "summary": "Set\u0020Shadow\u0020Angle.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setShadowAngle"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetShadowDistance\u0028\u0029",
-            "name": "setShadowDistance",
-            "summary": "Set\u0020Shadow\u0020Distance.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setShadowDistance"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetShadowProperty\u0028\u0029",
-            "name": "getShadowProperty",
-            "summary": "Get\u0020Shadow\u0020Property.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getShadowProperty"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetGlowProperties\u0028\u0029",
-            "name": "setGlowProperties",
-            "summary": "Set\u0020Glow\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setGlowProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetGlowProperty\u0028\u0029",
-            "name": "getGlowProperty",
-            "summary": "Get\u0020Glow\u0020Property.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getGlowProperty"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetGlowSize\u0028\u0029",
-            "name": "setGlowSize",
-            "summary": "Set\u0020Glow\u0020Color.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setGlowSize"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetGlowColor\u0028\u0029",
-            "name": "setGlowColor",
-            "summary": "Set\u0020Glow\u0020Color.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setGlowColor"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AsetSoftEdges\u0028\u0029",
-            "name": "setSoftEdges",
-            "summary": "Set\u0020Soft\u0020Edges\u0020Size.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_setSoftEdges"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003AgetSoftEdgesSize\u0028\u0029",
-            "name": "getSoftEdgesSize",
-            "summary": "Get\u0020Soft\u0020Edges\u0020Size.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#method_getSoftEdgesSize"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024minorGridlines",
+            "name": "minorGridlines",
+            "summary": "Chart\u0020Minor\u0020Gridlines\u0020as.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_minorGridlines"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024axisNumber",
             "name": "axisNumber",
             "summary": "Axis\u0020Number.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_axisNumber"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024axisType",
+            "name": "axisType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_axisType"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024axisOptions",
             "name": "axisOptions",
             "summary": "Axis\u0020Options.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_axisOptions"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024fillProperties",
-            "name": "fillProperties",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024fillColor",
+            "name": "fillColor",
             "summary": "Fill\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_fillProperties"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_fillColor"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024lineProperties",
-            "name": "lineProperties",
-            "summary": "Line\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_lineProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024lineStyleProperties",
-            "name": "lineStyleProperties",
-            "summary": "Line\u0020Style\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_lineStyleProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024shadowProperties",
-            "name": "shadowProperties",
-            "summary": "Shadow\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_shadowProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024glowProperties",
-            "name": "glowProperties",
-            "summary": "Glow\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_glowProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024softEdges",
-            "name": "softEdges",
-            "summary": "Soft\u0020Edge\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_softEdges"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Axis\u003A\u003A\u0024crossBetween",
+            "name": "crossBetween",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Axis.html#property_crossBetween"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart",
             "name": "Chart",
@@ -9108,7 +10178,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetTitle\u0028\u0029",
             "name": "getTitle",
-            "summary": "Get\u0020Title.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getTitle"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetTitle\u0028\u0029",
@@ -9118,7 +10188,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetLegend\u0028\u0029",
             "name": "getLegend",
-            "summary": "Get\u0020Legend.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getLegend"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetLegend\u0028\u0029",
@@ -9128,7 +10198,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetXAxisLabel\u0028\u0029",
             "name": "getXAxisLabel",
-            "summary": "Get\u0020X\u002DAxis\u0020Label.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getXAxisLabel"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetXAxisLabel\u0028\u0029",
@@ -9138,7 +10208,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetYAxisLabel\u0028\u0029",
             "name": "getYAxisLabel",
-            "summary": "Get\u0020Y\u002DAxis\u0020Label.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getYAxisLabel"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetYAxisLabel\u0028\u0029",
@@ -9148,8 +10218,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetPlotArea\u0028\u0029",
             "name": "getPlotArea",
-            "summary": "Get\u0020Plot\u0020Area.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getPlotArea"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetPlotArea\u0028\u0029",
+            "name": "setPlotArea",
+            "summary": "Set\u0020Plot\u0020Area.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setPlotArea"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetPlotVisibleOnly\u0028\u0029",
             "name": "getPlotVisibleOnly",
@@ -9173,13 +10248,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetChartAxisY\u0028\u0029",
             "name": "getChartAxisY",
-            "summary": "Get\u0020yAxis.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getChartAxisY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetChartAxisY\u0028\u0029",
+            "name": "setChartAxisY",
+            "summary": "Set\u0020yAxis.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setChartAxisY"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetChartAxisX\u0028\u0029",
             "name": "getChartAxisX",
-            "summary": "Get\u0020xAxis.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getChartAxisX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetChartAxisX\u0028\u0029",
+            "name": "setChartAxisX",
+            "summary": "Set\u0020xAxis.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setChartAxisX"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetMajorGridlines\u0028\u0029",
             "name": "getMajorGridlines",
@@ -9253,7 +10338,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetBottomRightCell\u0028\u0029",
             "name": "setBottomRightCell",
-            "summary": "",
+            "summary": "Set\u0020the\u0020Bottom\u0020Right\u0020cell\u0020for\u0020the\u0020chart.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setBottomRightCell"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetBottomRightCell\u0028\u0029",
@@ -9300,6 +10385,66 @@ Search.appendIndex(
             "name": "render",
             "summary": "Render\u0020the\u0020chart\u0020to\u0020given\u0020file\u0020\u0028or\u0020stream\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_render"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetRotX\u0028\u0029",
+            "name": "getRotX",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getRotX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetRotX\u0028\u0029",
+            "name": "setRotX",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setRotX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetRotY\u0028\u0029",
+            "name": "getRotY",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getRotY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetRotY\u0028\u0029",
+            "name": "setRotY",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setRotY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetRAngAx\u0028\u0029",
+            "name": "getRAngAx",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getRAngAx"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetRAngAx\u0028\u0029",
+            "name": "setRAngAx",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setRAngAx"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetPerspective\u0028\u0029",
+            "name": "getPerspective",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getPerspective"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetPerspective\u0028\u0029",
+            "name": "setPerspective",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setPerspective"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetOneCellAnchor\u0028\u0029",
+            "name": "getOneCellAnchor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getOneCellAnchor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetOneCellAnchor\u0028\u0029",
+            "name": "setOneCellAnchor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setOneCellAnchor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AgetAutoTitleDeleted\u0028\u0029",
+            "name": "getAutoTitleDeleted",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_getAutoTitleDeleted"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003AsetAutoTitleDeleted\u0028\u0029",
+            "name": "setAutoTitleDeleted",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#method_setAutoTitleDeleted"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024name",
             "name": "name",
@@ -9356,16 +10501,6 @@ Search.appendIndex(
             "summary": "Chart\u0020Asix\u0020X\u0020as.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_xAxis"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024majorGridlines",
-            "name": "majorGridlines",
-            "summary": "Chart\u0020Major\u0020Gridlines\u0020as.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_majorGridlines"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024minorGridlines",
-            "name": "minorGridlines",
-            "summary": "Chart\u0020Minor\u0020Gridlines\u0020as.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_minorGridlines"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024topLeftCellRef",
             "name": "topLeftCellRef",
             "summary": "Top\u002DLeft\u0020Cell\u0020Position.",
@@ -9395,6 +10530,146 @@ Search.appendIndex(
             "name": "bottomRightYOffset",
             "summary": "Bottom\u002DRight\u0020Y\u002DOffset.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_bottomRightYOffset"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024rotX",
+            "name": "rotX",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_rotX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024rotY",
+            "name": "rotY",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_rotY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024rAngAx",
+            "name": "rAngAx",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_rAngAx"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024perspective",
+            "name": "perspective",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_perspective"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024oneCellAnchor",
+            "name": "oneCellAnchor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_oneCellAnchor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Chart\u003A\u003A\u0024autoTitleDeleted",
+            "name": "autoTitleDeleted",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Chart.html#property_autoTitleDeleted"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor",
+            "name": "ChartColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AgetValue\u0028\u0029",
+            "name": "getValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_getValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AsetValue\u0028\u0029",
+            "name": "setValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_setValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_getType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AsetType\u0028\u0029",
+            "name": "setType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_setType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AgetAlpha\u0028\u0029",
+            "name": "getAlpha",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_getAlpha"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AsetAlpha\u0028\u0029",
+            "name": "setAlpha",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_setAlpha"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AsetColorProperties\u0028\u0029",
+            "name": "setColorProperties",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_setColorProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AsetColorPropertiesArray\u0028\u0029",
+            "name": "setColorPropertiesArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_setColorPropertiesArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AisUsable\u0028\u0029",
+            "name": "isUsable",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_isUsable"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AgetColorProperty\u0028\u0029",
+            "name": "getColorProperty",
+            "summary": "Get\u0020Color\u0020Property.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_getColorProperty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AalphaToXml\u0028\u0029",
+            "name": "alphaToXml",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_alphaToXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AalphaFromXml\u0028\u0029",
+            "name": "alphaFromXml",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#method_alphaFromXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AEXCEL_COLOR_TYPE_STANDARD",
+            "name": "EXCEL_COLOR_TYPE_STANDARD",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#constant_EXCEL_COLOR_TYPE_STANDARD"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AEXCEL_COLOR_TYPE_SCHEME",
+            "name": "EXCEL_COLOR_TYPE_SCHEME",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#constant_EXCEL_COLOR_TYPE_SCHEME"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AEXCEL_COLOR_TYPE_RGB",
+            "name": "EXCEL_COLOR_TYPE_RGB",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#constant_EXCEL_COLOR_TYPE_RGB"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AEXCEL_COLOR_TYPE_ARGB",
+            "name": "EXCEL_COLOR_TYPE_ARGB",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#constant_EXCEL_COLOR_TYPE_ARGB"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003AEXCEL_COLOR_TYPES",
+            "name": "EXCEL_COLOR_TYPES",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#constant_EXCEL_COLOR_TYPES"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#property_value"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#property_type"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\ChartColor\u003A\u003A\u0024alpha",
+            "name": "alpha",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-ChartColor.html#property_alpha"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeries",
             "name": "DataSeries",
@@ -9480,6 +10755,16 @@ Search.appendIndex(
             "name": "getPlotValuesByIndex",
             "summary": "Get\u0020Plot\u0020Values\u0020by\u0020Index.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeries.html#method_getPlotValuesByIndex"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeries\u003A\u003AgetPlotBubbleSizes\u0028\u0029",
+            "name": "getPlotBubbleSizes",
+            "summary": "Get\u0020Plot\u0020Bubble\u0020Sizes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeries.html#method_getPlotBubbleSizes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeries\u003A\u003AsetPlotBubbleSizes\u0028\u0029",
+            "name": "setPlotBubbleSizes",
+            "summary": "Set\u0020Plot\u0020Bubble\u0020Sizes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeries.html#method_setPlotBubbleSizes"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeries\u003A\u003AgetPlotSeriesCount\u0028\u0029",
             "name": "getPlotSeriesCount",
@@ -9711,9 +10996,14 @@ Search.appendIndex(
             "summary": "Plot\u0020Values.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeries.html#property_plotValues"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeries\u003A\u003A\u0024plotBubbleSizes",
+            "name": "plotBubbleSizes",
+            "summary": "Plot\u0020Bubble\u0020Sizes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeries.html#property_plotBubbleSizes"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues",
             "name": "DataSeriesValues",
-            "summary": "",
+            "summary": "Created\u0020by\u0020PhpStorm.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A__construct\u0028\u0029",
@@ -9751,6 +11041,26 @@ Search.appendIndex(
             "summary": "Set\u0020Point\u0020Marker.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_setPointMarker"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetMarkerFillColor\u0028\u0029",
+            "name": "getMarkerFillColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getMarkerFillColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetMarkerBorderColor\u0028\u0029",
+            "name": "getMarkerBorderColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getMarkerBorderColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetPointSize\u0028\u0029",
+            "name": "getPointSize",
+            "summary": "Get\u0020Point\u0020Size.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getPointSize"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AsetPointSize\u0028\u0029",
+            "name": "setPointSize",
+            "summary": "Set\u0020Point\u0020Size.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_setPointSize"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetFormatCode\u0028\u0029",
             "name": "getFormatCode",
             "summary": "Get\u0020Series\u0020Format\u0020Code.",
@@ -9765,6 +11075,21 @@ Search.appendIndex(
             "name": "getPointCount",
             "summary": "Get\u0020Series\u0020Point\u0020Count.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getPointCount"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetFillColorObject\u0028\u0029",
+            "name": "getFillColorObject",
+            "summary": "Get\u0020fill\u0020color\u0020object.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getFillColorObject"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AstringToChartColor\u0028\u0029",
+            "name": "stringToChartColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_stringToChartColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AchartColorToString\u0028\u0029",
+            "name": "chartColorToString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_chartColorToString"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetFillColor\u0028\u0029",
             "name": "getFillColor",
@@ -9821,6 +11146,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_refresh"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetScatterLines\u0028\u0029",
+            "name": "getScatterLines",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getScatterLines"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AsetScatterLines\u0028\u0029",
+            "name": "setScatterLines",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_setScatterLines"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetBubble3D\u0028\u0029",
+            "name": "getBubble3D",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getBubble3D"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AsetBubble3D\u0028\u0029",
+            "name": "setBubble3D",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_setBubble3D"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetSmoothLine\u0028\u0029",
+            "name": "getSmoothLine",
+            "summary": "Get\u0020Smooth\u0020Line.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getSmoothLine"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AsetSmoothLine\u0028\u0029",
+            "name": "setSmoothLine",
+            "summary": "Set\u0020Smooth\u0020Line.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_setSmoothLine"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AgetLabelLayout\u0028\u0029",
+            "name": "getLabelLayout",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_getLabelLayout"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003AsetLabelLayout\u0028\u0029",
+            "name": "setLabelLayout",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#method_setLabelLayout"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003ADATASERIES_TYPE_STRING",
             "name": "DATASERIES_TYPE_STRING",
             "summary": "",
@@ -9831,10 +11196,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#constant_DATASERIES_TYPE_NUMBER"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024dataTypeValues",
-            "name": "dataTypeValues",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003ADATA_TYPE_VALUES",
+            "name": "DATA_TYPE_VALUES",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_dataTypeValues"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#constant_DATA_TYPE_VALUES"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024dataType",
             "name": "dataType",
@@ -9856,6 +11221,21 @@ Search.appendIndex(
             "summary": "Series\u0020Point\u0020Marker.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_pointMarker"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024markerFillColor",
+            "name": "markerFillColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_markerFillColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024markerBorderColor",
+            "name": "markerBorderColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_markerBorderColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024pointSize",
+            "name": "pointSize",
+            "summary": "Series\u0020Point\u0020Size.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_pointSize"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024pointCount",
             "name": "pointCount",
             "summary": "Point\u0020Count\u0020\u0028The\u0020number\u0020of\u0020datapoints\u0020in\u0020the\u0020dataseries\u0029.",
@@ -9871,10 +11251,25 @@ Search.appendIndex(
             "summary": "Fill\u0020color\u0020\u0028can\u0020be\u0020array\u0020with\u0020colors\u0020if\u0020dataseries\u0020have\u0020custom\u0020colors\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_fillColor"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024lineWidth",
-            "name": "lineWidth",
-            "summary": "Line\u0020Width.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_lineWidth"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024scatterLines",
+            "name": "scatterLines",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_scatterLines"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024bubble3D",
+            "name": "bubble3D",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_bubble3D"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024labelLayout",
+            "name": "labelLayout",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_labelLayout"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\DataSeriesValues\u003A\u003A\u0024smoothLine",
+            "name": "smoothLine",
+            "summary": "Smooth\u0020Line.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-DataSeriesValues.html#property_smoothLine"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Exception",
             "name": "Exception",
@@ -9886,141 +11281,6 @@ Search.appendIndex(
             "summary": "Created\u0020by\u0020PhpStorm.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AgetObjectState\u0028\u0029",
-            "name": "getObjectState",
-            "summary": "Get\u0020Object\u0020State.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_getObjectState"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AactivateObject\u0028\u0029",
-            "name": "activateObject",
-            "summary": "Change\u0020Object\u0020State\u0020to\u0020True.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_activateObject"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetLineColorProperties\u0028\u0029",
-            "name": "setLineColorProperties",
-            "summary": "Set\u0020Line\u0020Color\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setLineColorProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetLineStyleProperties\u0028\u0029",
-            "name": "setLineStyleProperties",
-            "summary": "Set\u0020Line\u0020Color\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setLineStyleProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AgetLineColorProperty\u0028\u0029",
-            "name": "getLineColorProperty",
-            "summary": "Get\u0020Line\u0020Color\u0020Property.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_getLineColorProperty"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AgetLineStyleProperty\u0028\u0029",
-            "name": "getLineStyleProperty",
-            "summary": "Get\u0020Line\u0020Style\u0020Property.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_getLineStyleProperty"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetGlowProperties\u0028\u0029",
-            "name": "setGlowProperties",
-            "summary": "Set\u0020Glow\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setGlowProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AgetGlowColor\u0028\u0029",
-            "name": "getGlowColor",
-            "summary": "Get\u0020Glow\u0020Color\u0020Property.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_getGlowColor"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AgetGlowSize\u0028\u0029",
-            "name": "getGlowSize",
-            "summary": "Get\u0020Glow\u0020Size.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_getGlowSize"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetGlowSize\u0028\u0029",
-            "name": "setGlowSize",
-            "summary": "Set\u0020Glow\u0020Size.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setGlowSize"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetGlowColor\u0028\u0029",
-            "name": "setGlowColor",
-            "summary": "Set\u0020Glow\u0020Color.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setGlowColor"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AgetLineStyleArrowParameters\u0028\u0029",
-            "name": "getLineStyleArrowParameters",
-            "summary": "Get\u0020Line\u0020Style\u0020Arrow\u0020Parameters.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_getLineStyleArrowParameters"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetShadowProperties\u0028\u0029",
-            "name": "setShadowProperties",
-            "summary": "Set\u0020Shadow\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setShadowProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetShadowPresetsProperties\u0028\u0029",
-            "name": "setShadowPresetsProperties",
-            "summary": "Set\u0020Shadow\u0020Presets\u0020Properties.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setShadowPresetsProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetShadowProperiesMapValues\u0028\u0029",
-            "name": "setShadowProperiesMapValues",
-            "summary": "Set\u0020Shadow\u0020Properties\u0020Values.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setShadowProperiesMapValues"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetShadowColor\u0028\u0029",
-            "name": "setShadowColor",
-            "summary": "Set\u0020Shadow\u0020Color.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setShadowColor"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetShadowBlur\u0028\u0029",
-            "name": "setShadowBlur",
-            "summary": "Set\u0020Shadow\u0020Blur.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setShadowBlur"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetShadowAngle\u0028\u0029",
-            "name": "setShadowAngle",
-            "summary": "Set\u0020Shadow\u0020Angle.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setShadowAngle"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetShadowDistance\u0028\u0029",
-            "name": "setShadowDistance",
-            "summary": "Set\u0020Shadow\u0020Distance.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setShadowDistance"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AgetShadowProperty\u0028\u0029",
-            "name": "getShadowProperty",
-            "summary": "Get\u0020Shadow\u0020Property.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_getShadowProperty"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AsetSoftEdgesSize\u0028\u0029",
-            "name": "setSoftEdgesSize",
-            "summary": "Set\u0020Soft\u0020Edges\u0020Size.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_setSoftEdgesSize"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003AgetSoftEdgesSize\u0028\u0029",
-            "name": "getSoftEdgesSize",
-            "summary": "Get\u0020Soft\u0020Edges\u0020Size.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#method_getSoftEdgesSize"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003A\u0024objectState",
-            "name": "objectState",
-            "summary": "Properties\u0020of\u0020Class\u003A\nObject\u0020State\u0020\u0028State\u0020for\u0020Minor\u0020Tick\u0020Mark\u0029\u0020\u0040var\u0020bool\nLine\u0020Properties\u0020\u0040var\u0020\u0020array\u0020of\u0020mixed\nShadow\u0020Properties\u0020\u0040var\u0020\u0020array\u0020of\u0020mixed\nGlow\u0020Properties\u0020\u0040var\u0020\u0020array\u0020of\u0020mixed\nSoft\u0020Properties\u0020\u0040var\u0020\u0020array\u0020of\u0020mixed.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#property_objectState"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003A\u0024lineProperties",
-            "name": "lineProperties",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#property_lineProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003A\u0024shadowProperties",
-            "name": "shadowProperties",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#property_shadowProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003A\u0024glowProperties",
-            "name": "glowProperties",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#property_glowProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\GridLines\u003A\u003A\u0024softEdges",
-            "name": "softEdges",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-GridLines.html#property_softEdges"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout",
             "name": "Layout",
             "summary": "",
@@ -10030,6 +11290,16 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Create\u0020a\u0020new\u0020Layout.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AinitBoolean\u0028\u0029",
+            "name": "initBoolean",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_initBoolean"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AinitColor\u0028\u0029",
+            "name": "initColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_initColor"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetLayoutTarget\u0028\u0029",
             "name": "getLayoutTarget",
@@ -10103,7 +11373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetShowLegendKey\u0028\u0029",
             "name": "getShowLegendKey",
-            "summary": "Get\u0020show\u0020legend\u0020key.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getShowLegendKey"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetShowLegendKey\u0028\u0029",
@@ -10113,7 +11383,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetShowVal\u0028\u0029",
             "name": "getShowVal",
-            "summary": "Get\u0020show\u0020value.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getShowVal"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetShowVal\u0028\u0029",
@@ -10123,7 +11393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetShowCatName\u0028\u0029",
             "name": "getShowCatName",
-            "summary": "Get\u0020show\u0020category\u0020name.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getShowCatName"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetShowCatName\u0028\u0029",
@@ -10133,43 +11403,103 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetShowSerName\u0028\u0029",
             "name": "getShowSerName",
-            "summary": "Get\u0020show\u0020data\u0020series\u0020name.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getShowSerName"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetShowSerName\u0028\u0029",
             "name": "setShowSerName",
-            "summary": "Set\u0020show\u0020ser\u0020name\nSpecifies\u0020that\u0020the\u0020series\u0020name\u0020should\u0020be\u0020shown\u0020in\u0020data\u0020labels.",
+            "summary": "Set\u0020show\u0020data\u0020series\u0020name.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setShowSerName"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetShowPercent\u0028\u0029",
             "name": "getShowPercent",
-            "summary": "Get\u0020show\u0020percentage.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getShowPercent"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetShowPercent\u0028\u0029",
             "name": "setShowPercent",
-            "summary": "Set\u0020show\u0020percentage\nSpecifies\u0020that\u0020the\u0020percentage\u0020should\u0020be\u0020shown\u0020in\u0020data\u0020labels.",
+            "summary": "Set\u0020show\u0020percentage.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setShowPercent"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetShowBubbleSize\u0028\u0029",
             "name": "getShowBubbleSize",
-            "summary": "Get\u0020show\u0020bubble\u0020size.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getShowBubbleSize"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetShowBubbleSize\u0028\u0029",
             "name": "setShowBubbleSize",
-            "summary": "Set\u0020show\u0020bubble\u0020size\nSpecifies\u0020that\u0020the\u0020bubble\u0020size\u0020should\u0020be\u0020shown\u0020in\u0020data\u0020labels.",
+            "summary": "Set\u0020show\u0020bubble\u0020size.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setShowBubbleSize"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetShowLeaderLines\u0028\u0029",
             "name": "getShowLeaderLines",
-            "summary": "Get\u0020show\u0020leader\u0020lines.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getShowLeaderLines"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetShowLeaderLines\u0028\u0029",
             "name": "setShowLeaderLines",
-            "summary": "Set\u0020show\u0020leader\u0020lines\nSpecifies\u0020that\u0020leader\u0020lines\u0020should\u0020be\u0020shown\u0020in\u0020data\u0020labels.",
+            "summary": "Set\u0020show\u0020leader\u0020lines.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setShowLeaderLines"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetLabelFillColor\u0028\u0029",
+            "name": "getLabelFillColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getLabelFillColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetLabelFillColor\u0028\u0029",
+            "name": "setLabelFillColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setLabelFillColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetLabelBorderColor\u0028\u0029",
+            "name": "getLabelBorderColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getLabelBorderColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetLabelBorderColor\u0028\u0029",
+            "name": "setLabelBorderColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setLabelBorderColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetLabelFontColor\u0028\u0029",
+            "name": "getLabelFontColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getLabelFontColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetLabelFontColor\u0028\u0029",
+            "name": "setLabelFontColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setLabelFontColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetDLblPos\u0028\u0029",
+            "name": "getDLblPos",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getDLblPos"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetDLblPos\u0028\u0029",
+            "name": "setDLblPos",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setDLblPos"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetNumFmtCode\u0028\u0029",
+            "name": "getNumFmtCode",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getNumFmtCode"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetNumFmtCode\u0028\u0029",
+            "name": "setNumFmtCode",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setNumFmtCode"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AgetNumFmtLinked\u0028\u0029",
+            "name": "getNumFmtLinked",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_getNumFmtLinked"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003AsetNumFmtLinked\u0028\u0029",
+            "name": "setNumFmtLinked",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#method_setNumFmtLinked"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003A\u0024layoutTarget",
             "name": "layoutTarget",
@@ -10206,6 +11536,21 @@ Search.appendIndex(
             "summary": "height.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#property_height"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003A\u0024dLblPos",
+            "name": "dLblPos",
+            "summary": "Position\u0020\u002D\u0020t\u003Dtop.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#property_dLblPos"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003A\u0024numFmtCode",
+            "name": "numFmtCode",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#property_numFmtCode"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003A\u0024numFmtLinked",
+            "name": "numFmtLinked",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#property_numFmtLinked"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003A\u0024showLegendKey",
             "name": "showLegendKey",
             "summary": "show\u0020legend\u0020key\nSpecifies\u0020that\u0020legend\u0020keys\u0020should\u0020be\u0020shown\u0020in\u0020data\u0020labels.",
@@ -10240,6 +11585,21 @@ Search.appendIndex(
             "name": "showLeaderLines",
             "summary": "show\u0020leader\u0020lines\nSpecifies\u0020that\u0020leader\u0020lines\u0020should\u0020be\u0020shown\u0020for\u0020the\u0020data\u0020label.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#property_showLeaderLines"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003A\u0024labelFillColor",
+            "name": "labelFillColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#property_labelFillColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003A\u0024labelBorderColor",
+            "name": "labelBorderColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#property_labelBorderColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Layout\u003A\u003A\u0024labelFontColor",
+            "name": "labelFontColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Layout.html#property_labelFontColor"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Legend",
             "name": "Legend",
@@ -10341,10 +11701,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Legend.html#constant_POSITION_TOPRIGHT"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Legend\u003A\u003A\u0024positionXLref",
-            "name": "positionXLref",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Legend\u003A\u003APOSITION_XLREF",
+            "name": "POSITION_XLREF",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Legend.html#property_positionXLref"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Legend.html#constant_POSITION_XLREF"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Legend\u003A\u003A\u0024position",
             "name": "position",
@@ -10373,7 +11733,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\PlotArea\u003A\u003AgetLayout\u0028\u0029",
             "name": "getLayout",
-            "summary": "Get\u0020Layout.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-PlotArea.html#method_getLayout"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\PlotArea\u003A\u003AgetPlotGroupCount\u0028\u0029",
@@ -10421,30 +11781,55 @@ Search.appendIndex(
             "summary": "Created\u0020by\u0020PhpStorm.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetExcelPointsWidth\u0028\u0029",
-            "name": "getExcelPointsWidth",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getExcelPointsWidth"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method___construct"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetExcelPointsAngle\u0028\u0029",
-            "name": "getExcelPointsAngle",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getExcelPointsAngle"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetObjectState\u0028\u0029",
+            "name": "getObjectState",
+            "summary": "Get\u0020Object\u0020State.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getObjectState"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetTrueAlpha\u0028\u0029",
-            "name": "getTrueAlpha",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AactivateObject\u0028\u0029",
+            "name": "activateObject",
+            "summary": "Change\u0020Object\u0020State\u0020to\u0020True.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_activateObject"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003ApointsToXml\u0028\u0029",
+            "name": "pointsToXml",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getTrueAlpha"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_pointsToXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AxmlToPoints\u0028\u0029",
+            "name": "xmlToPoints",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_xmlToPoints"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AangleToXml\u0028\u0029",
+            "name": "angleToXml",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_angleToXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AxmlToAngle\u0028\u0029",
+            "name": "xmlToAngle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_xmlToAngle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AtenthOfPercentToXml\u0028\u0029",
+            "name": "tenthOfPercentToXml",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_tenthOfPercentToXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AxmlToTenthOfPercent\u0028\u0029",
+            "name": "xmlToTenthOfPercent",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_xmlToTenthOfPercent"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetColorProperties\u0028\u0029",
             "name": "setColorProperties",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setColorProperties"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineStyleArrowSize\u0028\u0029",
-            "name": "getLineStyleArrowSize",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineStyleArrowSize"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetShadowPresetsMap\u0028\u0029",
             "name": "getShadowPresetsMap",
@@ -10453,8 +11838,163 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetArrayElementsValue\u0028\u0029",
             "name": "getArrayElementsValue",
-            "summary": "",
+            "summary": "Get\u0020value\u0020of\u0020array\u0020element.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getArrayElementsValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetGlowProperties\u0028\u0029",
+            "name": "setGlowProperties",
+            "summary": "Set\u0020Glow\u0020Properties.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setGlowProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetGlowProperty\u0028\u0029",
+            "name": "getGlowProperty",
+            "summary": "Get\u0020Glow\u0020Property.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getGlowProperty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetGlowColor\u0028\u0029",
+            "name": "getGlowColor",
+            "summary": "Get\u0020Glow\u0020Color\u0020Property.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getGlowColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetGlowColorObject\u0028\u0029",
+            "name": "getGlowColorObject",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getGlowColorObject"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetGlowSize\u0028\u0029",
+            "name": "getGlowSize",
+            "summary": "Get\u0020Glow\u0020Size.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getGlowSize"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetGlowSize\u0028\u0029",
+            "name": "setGlowSize",
+            "summary": "Set\u0020Glow\u0020Size.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setGlowSize"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetSoftEdges\u0028\u0029",
+            "name": "setSoftEdges",
+            "summary": "Set\u0020Soft\u0020Edges\u0020Size.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setSoftEdges"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetSoftEdgesSize\u0028\u0029",
+            "name": "getSoftEdgesSize",
+            "summary": "Get\u0020Soft\u0020Edges\u0020Size.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getSoftEdgesSize"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetShadowProperty\u0028\u0029",
+            "name": "setShadowProperty",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setShadowProperty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetShadowProperties\u0028\u0029",
+            "name": "setShadowProperties",
+            "summary": "Set\u0020Shadow\u0020Properties.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setShadowProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetShadowPresetsProperties\u0028\u0029",
+            "name": "setShadowPresetsProperties",
+            "summary": "Set\u0020Shadow\u0020Presets\u0020Properties.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setShadowPresetsProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetShadowPropertiesMapValues\u0028\u0029",
+            "name": "setShadowPropertiesMapValues",
+            "summary": "Set\u0020Shadow\u0020Properties\u0020Values.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setShadowPropertiesMapValues"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetShadowBlur\u0028\u0029",
+            "name": "setShadowBlur",
+            "summary": "Set\u0020Shadow\u0020Blur.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setShadowBlur"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetShadowAngle\u0028\u0029",
+            "name": "setShadowAngle",
+            "summary": "Set\u0020Shadow\u0020Angle.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setShadowAngle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetShadowDistance\u0028\u0029",
+            "name": "setShadowDistance",
+            "summary": "Set\u0020Shadow\u0020Distance.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setShadowDistance"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetShadowColorObject\u0028\u0029",
+            "name": "getShadowColorObject",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getShadowColorObject"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetShadowProperty\u0028\u0029",
+            "name": "getShadowProperty",
+            "summary": "Get\u0020Shadow\u0020Property.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getShadowProperty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetShadowArray\u0028\u0029",
+            "name": "getShadowArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getShadowArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AcopyLineStyles\u0028\u0029",
+            "name": "copyLineStyles",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_copyLineStyles"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineColor\u0028\u0029",
+            "name": "getLineColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetLineColorProperties\u0028\u0029",
+            "name": "setLineColorProperties",
+            "summary": "Set\u0020Line\u0020Color\u0020Properties.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setLineColorProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineColorProperty\u0028\u0029",
+            "name": "getLineColorProperty",
+            "summary": "Get\u0020Line\u0020Color\u0020Property.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineColorProperty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetLineStyleProperties\u0028\u0029",
+            "name": "setLineStyleProperties",
+            "summary": "Set\u0020Line\u0020Style\u0020Properties.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setLineStyleProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineStyleArray\u0028\u0029",
+            "name": "getLineStyleArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineStyleArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetLineStyleArray\u0028\u0029",
+            "name": "setLineStyleArray",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setLineStyleArray"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AsetLineStyleProperty\u0028\u0029",
+            "name": "setLineStyleProperty",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_setLineStyleProperty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineStyleProperty\u0028\u0029",
+            "name": "getLineStyleProperty",
+            "summary": "Get\u0020Line\u0020Style\u0020Property.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineStyleProperty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineStyleArrowSize\u0028\u0029",
+            "name": "getLineStyleArrowSize",
+            "summary": "Get\u0020Line\u0020Style\u0020Arrow\u0020Size.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineStyleArrowSize"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineStyleArrowParameters\u0028\u0029",
+            "name": "getLineStyleArrowParameters",
+            "summary": "Get\u0020Line\u0020Style\u0020Arrow\u0020Parameters.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineStyleArrowParameters"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineStyleArrowWidth\u0028\u0029",
+            "name": "getLineStyleArrowWidth",
+            "summary": "Get\u0020Line\u0020Style\u0020Arrow\u0020Width.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineStyleArrowWidth"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AgetLineStyleArrowLength\u0028\u0029",
+            "name": "getLineStyleArrowLength",
+            "summary": "Get\u0020Line\u0020Style\u0020Arrow\u0020Excel\u0020Length.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#method_getLineStyleArrowLength"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AEXCEL_COLOR_TYPE_STANDARD",
             "name": "EXCEL_COLOR_TYPE_STANDARD",
@@ -10546,6 +12086,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_FORMAT_CODE_DATE"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AFORMAT_CODE_DATE_ISO8601",
+            "name": "FORMAT_CODE_DATE_ISO8601",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_FORMAT_CODE_DATE_ISO8601"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AFORMAT_CODE_TIME",
             "name": "FORMAT_CODE_TIME",
             "summary": "",
@@ -10620,6 +12165,11 @@ Search.appendIndex(
             "name": "LINE_STYLE_DASH_ROUND_DOT",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_LINE_STYLE_DASH_ROUND_DOT"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003ALINE_STYLE_DASH_SQUARE_DOT",
+            "name": "LINE_STYLE_DASH_SQUARE_DOT",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_LINE_STYLE_DASH_SQUARE_DOT"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003ALINE_STYLE_DASH_SQUERE_DOT",
             "name": "LINE_STYLE_DASH_SQUERE_DOT",
@@ -10876,6 +12426,76 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_SHADOW_PRESETS_PERSPECTIVE_LOWER_LEFT"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003APOINTS_WIDTH_MULTIPLIER",
+            "name": "POINTS_WIDTH_MULTIPLIER",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_POINTS_WIDTH_MULTIPLIER"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AANGLE_MULTIPLIER",
+            "name": "ANGLE_MULTIPLIER",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_ANGLE_MULTIPLIER"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003APERCENTAGE_MULTIPLIER",
+            "name": "PERCENTAGE_MULTIPLIER",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_PERCENTAGE_MULTIPLIER"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003APRESETS_OPTIONS",
+            "name": "PRESETS_OPTIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_PRESETS_OPTIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003ASHADOW_ARRAY_KEYS",
+            "name": "SHADOW_ARRAY_KEYS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_SHADOW_ARRAY_KEYS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003AARROW_SIZES",
+            "name": "ARROW_SIZES",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#constant_ARROW_SIZES"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A\u0024objectState",
+            "name": "objectState",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#property_objectState"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A\u0024glowSize",
+            "name": "glowSize",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#property_glowSize"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A\u0024glowColor",
+            "name": "glowColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#property_glowColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A\u0024softEdges",
+            "name": "softEdges",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#property_softEdges"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A\u0024shadowProperties",
+            "name": "shadowProperties",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#property_shadowProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A\u0024shadowColor",
+            "name": "shadowColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#property_shadowColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A\u0024lineColor",
+            "name": "lineColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#property_lineColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Properties\u003A\u003A\u0024lineStyleProperties",
+            "name": "lineStyleProperties",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Properties.html#property_lineStyleProperties"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Renderer\\IRenderer",
             "name": "IRenderer",
             "summary": "",
@@ -10893,7 +12513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Renderer\\JpGraph",
             "name": "JpGraph",
-            "summary": "",
+            "summary": "Jpgraph\u0020is\u0020not\u0020maintained\u0020in\u0020Composer,\u0020and\u0020the\u0020version\u0020there\nis\u0020extremely\u0020out\u0020of\u0020date.\u0020For\u0020that\u0020reason,\u0020all\u0020unit\u0020test\nrequiring\u0020Jpgraph\u0020are\u0020skipped.\u0020So,\u0020do\u0020not\u0020measure\ncode\u0020coverage\u0020for\u0020this\u0020class\u0020till\u0020that\u0020is\u0020fixed.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Renderer-JpGraph.html"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Renderer\\JpGraph\u003A\u003A__construct\u0028\u0029",
@@ -11108,7 +12728,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Title\u003A\u003AgetLayout\u0028\u0029",
             "name": "getLayout",
-            "summary": "Get\u0020Layout.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Chart-Title.html#method_getLayout"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart\\Title\u003A\u003A\u0024caption",
@@ -11161,11 +12781,6 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020sorted\u0020list\u0020of\u0020all\u0020cell\u0020coordinates\u0020currently\u0020held\u0020in\u0020the\u0020collection\u0020by\u0020row\u0020and\u0020column.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#method_getSortedCoordinates"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003AgetHighestRowAndColumn\u0028\u0029",
-            "name": "getHighestRowAndColumn",
-            "summary": "Get\u0020highest\u0020worksheet\u0020column\u0020and\u0020highest\u0020row\u0020that\u0020have\u0020cell\u0020records.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#method_getHighestRowAndColumn"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003AgetCurrentCoordinate\u0028\u0029",
             "name": "getCurrentCoordinate",
             "summary": "Return\u0020the\u0020cell\u0020coordinate\u0020of\u0020the\u0020currently\u0020active\u0020cell\u0020object.",
@@ -11180,6 +12795,11 @@ Search.appendIndex(
             "name": "getCurrentRow",
             "summary": "Return\u0020the\u0020row\u0020coordinate\u0020of\u0020the\u0020currently\u0020active\u0020cell\u0020object.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#method_getCurrentRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003AgetHighestRowAndColumn\u0028\u0029",
+            "name": "getHighestRowAndColumn",
+            "summary": "Get\u0020highest\u0020worksheet\u0020column\u0020and\u0020highest\u0020row\u0020that\u0020have\u0020cell\u0020records.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#method_getHighestRowAndColumn"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003AgetHighestColumn\u0028\u0029",
             "name": "getHighestColumn",
@@ -11216,6 +12836,11 @@ Search.appendIndex(
             "summary": "Store\u0020cell\u0020data\u0020in\u0020cache\u0020for\u0020the\u0020current\u0020cell\u0020object\u0020if\u0020it\u0027s\u0020\u0022dirty\u0022,\nand\u0020the\u0020\u0027nullify\u0027\u0020the\u0020current\u0020cell\u0020object.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#method_storeCurrentCell"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003AdestructIfNeeded\u0028\u0029",
+            "name": "destructIfNeeded",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#method_destructIfNeeded"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "Add\u0020or\u0020update\u0020a\u0020cell\u0020identified\u0020by\u0020its\u0020coordinate\u0020into\u0020the\u0020collection.",
@@ -11240,6 +12865,11 @@ Search.appendIndex(
             "name": "getAllCacheKeys",
             "summary": "Returns\u0020all\u0020known\u0020cache\u0020keys.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#method_getAllCacheKeys"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003AMAX_COLUMN_ID",
+            "name": "MAX_COLUMN_ID",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#constant_MAX_COLUMN_ID"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003A\u0024cache",
             "name": "cache",
@@ -11268,7 +12898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003A\u0024index",
             "name": "index",
-            "summary": "An\u0020index\u0020of\u0020existing\u0020cells.\u0020Booleans\u0020indexed\u0020by\u0020their\u0020coordinate.",
+            "summary": "An\u0020index\u0020of\u0020existing\u0020cells.\u0020int\u0020pointer\u0020to\u0020the\u0020coordinate\u0020\u00280\u002Dbase\u002Dindexed\u0020row\u0020\u002A\u002016,384\u0020\u002B\u00201\u002Dbase\u0020indexed\u0020column\u0029\n\u0020\u0020\u0020indexed\u0020by\u0020their\u0020coordinate.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Collection-Cells.html#property_index"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Collection\\Cells\u003A\u003A\u0024cachePrefix",
@@ -11373,7 +13003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AsetWidth\u0028\u0029",
             "name": "setWidth",
-            "summary": "Set\u0020comment\u0020width\u0020\u0028CSS\u0020style,\u0020i.e.\u0020XXpx\u0020or\u0020YYpt\u0029.",
+            "summary": "Set\u0020comment\u0020width\u0020\u0028CSS\u0020style,\u0020i.e.\u0020XXpx\u0020or\u0020YYpt\u0029.\u0020Default\u0020unit\u0020is\u0020pt.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_setWidth"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AgetHeight\u0028\u0029",
@@ -11383,7 +13013,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AsetHeight\u0028\u0029",
             "name": "setHeight",
-            "summary": "Set\u0020comment\u0020height\u0020\u0028CSS\u0020style,\u0020i.e.\u0020XXpx\u0020or\u0020YYpt\u0029.",
+            "summary": "Set\u0020comment\u0020height\u0020\u0028CSS\u0020style,\u0020i.e.\u0020XXpx\u0020or\u0020YYpt\u0029.\u0020Default\u0020unit\u0020is\u0020pt.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_setHeight"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AgetMarginLeft\u0028\u0029",
@@ -11393,7 +13023,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AsetMarginLeft\u0028\u0029",
             "name": "setMarginLeft",
-            "summary": "Set\u0020left\u0020margin\u0020\u0028CSS\u0020style,\u0020i.e.\u0020XXpx\u0020or\u0020YYpt\u0029.",
+            "summary": "Set\u0020left\u0020margin\u0020\u0028CSS\u0020style,\u0020i.e.\u0020XXpx\u0020or\u0020YYpt\u0029.\u0020Default\u0020unit\u0020is\u0020pt.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_setMarginLeft"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AgetMarginTop\u0028\u0029",
@@ -11403,7 +13033,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AsetMarginTop\u0028\u0029",
             "name": "setMarginTop",
-            "summary": "Set\u0020top\u0020margin\u0020\u0028CSS\u0020style,\u0020i.e.\u0020XXpx\u0020or\u0020YYpt\u0029.",
+            "summary": "Set\u0020top\u0020margin\u0020\u0028CSS\u0020style,\u0020i.e.\u0020XXpx\u0020or\u0020YYpt\u0029.\u0020Default\u0020unit\u0020is\u0020pt.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_setMarginTop"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AgetVisible\u0028\u0029",
@@ -11415,6 +13045,11 @@ Search.appendIndex(
             "name": "setVisible",
             "summary": "Set\u0020comment\u0020default\u0020visibility.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_setVisible"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AsetFillColor\u0028\u0029",
+            "name": "setFillColor",
+            "summary": "Set\u0020fill\u0020color.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_setFillColor"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AgetFillColor\u0028\u0029",
             "name": "getFillColor",
@@ -11445,6 +13080,26 @@ Search.appendIndex(
             "name": "__toString",
             "summary": "Convert\u0020to\u0020string.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method___toString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AhasBackgroundImage\u0028\u0029",
+            "name": "hasBackgroundImage",
+            "summary": "Check\u0020is\u0020background\u0020image\u0020exists.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_hasBackgroundImage"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AgetBackgroundImage\u0028\u0029",
+            "name": "getBackgroundImage",
+            "summary": "Returns\u0020background\u0020image.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_getBackgroundImage"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AsetBackgroundImage\u0028\u0029",
+            "name": "setBackgroundImage",
+            "summary": "Sets\u0020background\u0020image.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_setBackgroundImage"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003AsetSizeAsBackgroundImage\u0028\u0029",
+            "name": "setSizeAsBackgroundImage",
+            "summary": "Sets\u0020size\u0020of\u0020comment\u0020as\u0020size\u0020of\u0020background\u0020image.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#method_setSizeAsBackgroundImage"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003A\u0024author",
             "name": "author",
@@ -11490,6 +13145,11 @@ Search.appendIndex(
             "name": "alignment",
             "summary": "Alignment.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#property_alignment"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Comment\u003A\u003A\u0024backgroundImage",
+            "name": "backgroundImage",
+            "summary": "Background\u0020image\u0020in\u0020comment.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Comment.html#property_backgroundImage"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\DefinedName",
             "name": "DefinedName",
@@ -11933,7 +13593,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Document\\Security\u003A\u003AsetRevisionsPassword\u0028\u0029",
             "name": "setRevisionsPassword",
-            "summary": "",
+            "summary": "Set\u0020RevisionsPassword.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Document-Security.html#method_setRevisionsPassword"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Document\\Security\u003A\u003AgetWorkbookPassword\u0028\u0029",
@@ -11943,7 +13603,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Document\\Security\u003A\u003AsetWorkbookPassword\u0028\u0029",
             "name": "setWorkbookPassword",
-            "summary": "",
+            "summary": "Set\u0020WorkbookPassword.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Document-Security.html#method_setWorkbookPassword"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Document\\Security\u003A\u003A\u0024lockRevision",
@@ -11983,7 +13643,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\HashTable\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Create\u0020a\u0020new\u0020\\PhpOffice\\PhpSpreadsheet\\HashTable.",
+            "summary": "Create\u0020a\u0020new\u0020HashTable.",
             "url": "classes/PhpOffice-PhpSpreadsheet-HashTable.html#method___construct"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\HashTable\u003A\u003AaddFromSource\u0028\u0029",
@@ -12406,6 +14066,41 @@ Search.appendIndex(
             "summary": "Log\u0020a\u0020line\u0020about\u0020the\u0020read\u0020operation.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Helper-Sample.html#method_logRead"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Helper\\Size",
+            "name": "Size",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Helper-Size.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Helper\\Size\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Helper-Size.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Helper\\Size\u003A\u003A\u0024valid",
+            "name": "valid",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Helper-Size.html#property_valid"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Helper\\Size\u003A\u003A\u0024size",
+            "name": "size",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Helper-Size.html#property_size"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Helper\\Size\u003A\u003A\u0024unit",
+            "name": "unit",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Helper-Size.html#property_unit"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Helper\\Size\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Helper-Size.html#method___toString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Helper\\Size\u003A\u003AREGEXP_SIZE_VALIDATION",
+            "name": "REGEXP_SIZE_VALIDATION",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Helper-Size.html#constant_REGEXP_SIZE_VALIDATION"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IComparable",
             "name": "IComparable",
             "summary": "",
@@ -12428,7 +14123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AcreateReader\u0028\u0029",
             "name": "createReader",
-            "summary": "Create\u0020Reader\\IReader.",
+            "summary": "Create\u0020IReader.",
             "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#method_createReader"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003Aload\u0028\u0029",
@@ -12438,12 +14133,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003Aidentify\u0028\u0029",
             "name": "identify",
-            "summary": "Identify\u0020file\u0020type\u0020using\u0020automatic\u0020Reader\\IReader\u0020resolution.",
+            "summary": "Identify\u0020file\u0020type\u0020using\u0020automatic\u0020IReader\u0020resolution.",
             "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#method_identify"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AcreateReaderForFile\u0028\u0029",
             "name": "createReaderForFile",
-            "summary": "Create\u0020Reader\\IReader\u0020for\u0020file\u0020using\u0020automatic\u0020Reader\\IReader\u0020resolution.",
+            "summary": "Create\u0020Reader\\IReader\u0020for\u0020file\u0020using\u0020automatic\u0020IReader\u0020resolution.",
             "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#method_createReaderForFile"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AgetReaderTypeFromExtension\u0028\u0029",
@@ -12460,6 +14155,76 @@ Search.appendIndex(
             "name": "registerReader",
             "summary": "Register\u0020a\u0020reader\u0020with\u0020its\u0020type\u0020and\u0020class\u0020name.",
             "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#method_registerReader"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_XLSX",
+            "name": "READER_XLSX",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_XLSX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_XLS",
+            "name": "READER_XLS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_XLS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_XML",
+            "name": "READER_XML",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_XML"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_ODS",
+            "name": "READER_ODS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_ODS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_SYLK",
+            "name": "READER_SYLK",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_SYLK"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_SLK",
+            "name": "READER_SLK",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_SLK"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_GNUMERIC",
+            "name": "READER_GNUMERIC",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_GNUMERIC"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_HTML",
+            "name": "READER_HTML",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_HTML"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AREADER_CSV",
+            "name": "READER_CSV",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_READER_CSV"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AWRITER_XLSX",
+            "name": "WRITER_XLSX",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_WRITER_XLSX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AWRITER_XLS",
+            "name": "WRITER_XLS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_WRITER_XLS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AWRITER_ODS",
+            "name": "WRITER_ODS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_WRITER_ODS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AWRITER_CSV",
+            "name": "WRITER_CSV",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_WRITER_CSV"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003AWRITER_HTML",
+            "name": "WRITER_HTML",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-IOFactory.html#constant_WRITER_HTML"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\IOFactory\u003A\u003A\u0024readers",
             "name": "readers",
@@ -12590,6 +14355,16 @@ Search.appendIndex(
             "name": "processFlags",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-BaseReader.html#method_processFlags"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\BaseReader\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-BaseReader.html#method_loadSpreadsheetFromFile"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\BaseReader\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "Loads\u0020Spreadsheet\u0020from\u0020file.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-BaseReader.html#method_load"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\BaseReader\u003A\u003AopenFile\u0028\u0029",
             "name": "openFile",
@@ -12766,30 +14541,60 @@ Search.appendIndex(
             "summary": "Return\u0020worksheet\u0020info\u0020\u0028Name,\u0020Last\u0020Column\u0020Letter,\u0020Last\u0020Column\u0020Index,\u0020Total\u0020Rows,\u0020Total\u0020Columns\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_listWorksheetInfo"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
             "summary": "Loads\u0020Spreadsheet\u0020from\u0020file.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_load"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_loadSpreadsheetFromFile"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AloadSpreadsheetFromString\u0028\u0029",
+            "name": "loadSpreadsheetFromString",
+            "summary": "Loads\u0020Spreadsheet\u0020from\u0020string.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_loadSpreadsheetFromString"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AopenFileOrMemory\u0028\u0029",
             "name": "openFileOrMemory",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_openFileOrMemory"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AsetTestAutoDetect\u0028\u0029",
+            "name": "setTestAutoDetect",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_setTestAutoDetect"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AsetAutoDetect\u0028\u0029",
             "name": "setAutoDetect",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_setAutoDetect"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003A\u0024castFormattedNumberToNumeric",
+            "name": "castFormattedNumberToNumeric",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#property_castFormattedNumberToNumeric"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AopenDataUri\u0028\u0029",
+            "name": "openDataUri",
+            "summary": "Open\u0020data\u0020uri\u0020for\u0020reading.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_openDataUri"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AloadIntoExisting\u0028\u0029",
             "name": "loadIntoExisting",
             "summary": "Loads\u0020PhpSpreadsheet\u0020from\u0020file\u0020into\u0020PhpSpreadsheet\u0020instance.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_loadIntoExisting"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AloadStringOrFile\u0028\u0029",
+            "name": "loadStringOrFile",
+            "summary": "Loads\u0020PhpSpreadsheet\u0020from\u0020file\u0020into\u0020PhpSpreadsheet\u0020instance.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_loadStringOrFile"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AconvertBoolean\u0028\u0029",
             "name": "convertBoolean",
             "summary": "Convert\u0020string\u0020true\/false\u0020to\u0020boolean,\u0020and\u0020null\u0020to\u0020null\u002Dstring.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_convertBoolean"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AconvertFormattedNumber\u0028\u0029",
+            "name": "convertFormattedNumber",
+            "summary": "Convert\u0020numeric\u0020strings\u0020to\u0020int\u0020or\u0020float\u0020values.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_convertFormattedNumber"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AgetDelimiter\u0028\u0029",
             "name": "getDelimiter",
@@ -12841,11 +14646,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_getEscapeCharacter"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AextractStringLower\u0028\u0029",
-            "name": "extractStringLower",
-            "summary": "Scrutinizer\u0020believes,\u0020incorrectly,\u0020that\u0020the\u0020specific\u0020pathinfo\ncall\u0020in\u0020canRead\u0020can\u0020return\u0020something\u0020other\u0020than\u0020an\u0020array.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_extractStringLower"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AcanRead\u0028\u0029",
             "name": "canRead",
             "summary": "Can\u0020the\u0020current\u0020IReader\u0020read\u0020the\u0020file\u003F",
@@ -12875,6 +14675,16 @@ Search.appendIndex(
             "name": "guessEncoding",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_guessEncoding"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AsetPreserveNullString\u0028\u0029",
+            "name": "setPreserveNullString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_setPreserveNullString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003AgetPreserveNullString\u0028\u0029",
+            "name": "getPreserveNullString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#method_getPreserveNullString"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003ADEFAULT_FALLBACK_ENCODING",
             "name": "DEFAULT_FALLBACK_ENCODING",
@@ -12995,6 +14805,21 @@ Search.appendIndex(
             "name": "constructorCallback",
             "summary": "Callback\u0020for\u0020setting\u0020defaults\u0020in\u0020construction.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#property_constructorCallback"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003A\u0024testAutodetect",
+            "name": "testAutodetect",
+            "summary": "Attempt\u0020autodetect\u0020line\u0020endings\u0020\u0028deprecated\u0020after\u0020PHP8.1\u0029\u003F",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#property_testAutodetect"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003A\u0024preserveNumericFormatting",
+            "name": "preserveNumericFormatting",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#property_preserveNumericFormatting"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Csv\u003A\u003A\u0024preserveNullString",
+            "name": "preserveNullString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Csv.html#property_preserveNullString"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\DefaultReadFilter",
             "name": "DefaultReadFilter",
@@ -13226,15 +15051,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Gnumeric.html#method_testSimpleXml"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Gnumeric\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Gnumeric\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
             "summary": "Loads\u0020Spreadsheet\u0020from\u0020file.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Gnumeric.html#method_load"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Gnumeric.html#method_loadSpreadsheetFromFile"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Gnumeric\u003A\u003AloadIntoExisting\u0028\u0029",
             "name": "loadIntoExisting",
             "summary": "Loads\u0020from\u0020file\u0020into\u0020Spreadsheet\u0020instance.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Gnumeric.html#method_loadIntoExisting"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Gnumeric\u003A\u003AsetSelectedSheet\u0028\u0029",
+            "name": "setSelectedSheet",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Gnumeric.html#method_setSelectedSheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Gnumeric\u003A\u003AsetSelectedCells\u0028\u0029",
+            "name": "setSelectedCells",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Gnumeric.html#method_setSelectedCells"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Gnumeric\u003A\u003AprocessMergedCells\u0028\u0029",
             "name": "processMergedCells",
@@ -13296,6 +15131,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Gnumeric.html#method_parseRichText"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Gnumeric\u003A\u003AloadCell\u0028\u0029",
+            "name": "loadCell",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Gnumeric.html#method_loadCell"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Gnumeric\u003A\u003ANAMESPACE_GNM",
             "name": "NAMESPACE_GNM",
             "summary": "",
@@ -13353,7 +15193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html",
             "name": "Html",
-            "summary": "PhpSpreadsheet\u0020root\u0020directory",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Html.html"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html\u003A\u003A__construct\u0028\u0029",
@@ -13391,10 +15231,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Html.html#method_containsTags"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
             "summary": "Loads\u0020Spreadsheet\u0020from\u0020file.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Html.html#method_load"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Html.html#method_loadSpreadsheetFromFile"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html\u003A\u003AsetInputEncoding\u0028\u0029",
             "name": "setInputEncoding",
@@ -13526,15 +15366,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Html.html#method_processDomElement"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html\u003A\u003AensureString\u0028\u0029",
-            "name": "ensureString",
-            "summary": "Make\u0020sure\u0020mb_convert_encoding\u0020returns\u0020string.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Html.html#method_ensureString"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html\u003A\u003AloadIntoExisting\u0028\u0029",
             "name": "loadIntoExisting",
             "summary": "Loads\u0020PhpSpreadsheet\u0020from\u0020file\u0020into\u0020PhpSpreadsheet\u0020instance.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Html.html#method_loadIntoExisting"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html\u003A\u003AreplaceNonAscii\u0028\u0029",
+            "name": "replaceNonAscii",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Html.html#method_replaceNonAscii"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Html\u003A\u003AloadFromString\u0028\u0029",
             "name": "loadFromString",
@@ -13751,40 +15591,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-AutoFilter.html#method_getAttributeValue"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseReader",
-            "name": "BaseReader",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseLoader",
+            "name": "BaseLoader",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseReader.html"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseLoader.html"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseReader\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseLoader\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseReader.html#method___construct"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseLoader.html#method___construct"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseReader\u003A\u003Aread\u0028\u0029",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseLoader\u003A\u003Aread\u0028\u0029",
             "name": "read",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseReader.html#method_read"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseLoader.html#method_read"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseReader\u003A\u003AconvertToExcelAddressValue\u0028\u0029",
-            "name": "convertToExcelAddressValue",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseReader.html#method_convertToExcelAddressValue"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseReader\u003A\u003AconvertToExcelFormulaValue\u0028\u0029",
-            "name": "convertToExcelFormulaValue",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseReader.html#method_convertToExcelFormulaValue"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseReader\u003A\u003A\u0024spreadsheet",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseLoader\u003A\u003A\u0024spreadsheet",
             "name": "spreadsheet",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseReader.html#property_spreadsheet"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseLoader.html#property_spreadsheet"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseReader\u003A\u003A\u0024tableNs",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\BaseLoader\u003A\u003A\u0024tableNs",
             "name": "tableNs",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseReader.html#property_tableNs"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-BaseLoader.html#property_tableNs"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\DefinedNames",
             "name": "DefinedNames",
@@ -13810,6 +15640,21 @@ Search.appendIndex(
             "name": "addDefinedName",
             "summary": "Assess\u0020scope\u0020and\u0020store\u0020the\u0020Defined\u0020Name.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-DefinedNames.html#method_addDefinedName"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\FormulaTranslator",
+            "name": "FormulaTranslator",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-FormulaTranslator.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\FormulaTranslator\u003A\u003AconvertToExcelAddressValue\u0028\u0029",
+            "name": "convertToExcelAddressValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-FormulaTranslator.html#method_convertToExcelAddressValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\FormulaTranslator\u003A\u003AconvertToExcelFormulaValue\u0028\u0029",
+            "name": "convertToExcelFormulaValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-FormulaTranslator.html#method_convertToExcelFormulaValue"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\PageSettings",
             "name": "PageSettings",
@@ -13841,6 +15686,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-PageSettings.html#method_readStyleCrossReferences"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\PageSettings\u003A\u003AsetVisibilityForWorksheet\u0028\u0029",
+            "name": "setVisibilityForWorksheet",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-PageSettings.html#method_setVisibilityForWorksheet"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\PageSettings\u003A\u003AsetPrintSettingsForWorksheet\u0028\u0029",
             "name": "setPrintSettingsForWorksheet",
             "summary": "",
@@ -13860,6 +15710,16 @@ Search.appendIndex(
             "name": "stylesFo",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-PageSettings.html#property_stylesFo"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\PageSettings\u003A\u003A\u0024tableNs",
+            "name": "tableNs",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-PageSettings.html#property_tableNs"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\PageSettings\u003A\u003A\u0024tableStylesCrossReference",
+            "name": "tableStylesCrossReference",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods-PageSettings.html#property_tableStylesCrossReference"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\\PageSettings\u003A\u003A\u0024pageLayoutStyles",
             "name": "pageLayoutStyles",
@@ -13936,10 +15796,15 @@ Search.appendIndex(
             "summary": "Return\u0020worksheet\u0020info\u0020\u0028Name,\u0020Last\u0020Column\u0020Letter,\u0020Last\u0020Column\u0020Index,\u0020Total\u0020Rows,\u0020Total\u0020Columns\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_listWorksheetInfo"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003AgetXmlName\u0028\u0029",
+            "name": "getXmlName",
+            "summary": "Counteract\u0020Phpstan\u0020caching.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_getXmlName"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
             "summary": "Loads\u0020PhpSpreadsheet\u0020from\u0020file.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_load"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_loadSpreadsheetFromFile"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003AloadIntoExisting\u0028\u0029",
             "name": "loadIntoExisting",
@@ -13971,15 +15836,20 @@ Search.appendIndex(
             "summary": "Recursively\u0020scan\u0020element.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_scanElementForText"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003AgetMultiplier\u0028\u0029",
+            "name": "getMultiplier",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_getMultiplier"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003AparseRichText\u0028\u0029",
             "name": "parseRichText",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_parseRichText"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003AconvertToExcelFormulaValue\u0028\u0029",
-            "name": "convertToExcelFormulaValue",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003AprocessMergedCells\u0028\u0029",
+            "name": "processMergedCells",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_convertToExcelFormulaValue"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Ods.html#method_processMergedCells"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Ods\u003A\u003AINITIAL_FILE",
             "name": "INITIAL_FILE",
@@ -14096,10 +15966,10 @@ Search.appendIndex(
             "summary": "Return\u0020worksheet\u0020info\u0020\u0028Name,\u0020Last\u0020Column\u0020Letter,\u0020Last\u0020Column\u0020Index,\u0020Total\u0020Rows,\u0020Total\u0020Columns\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Slk.html#method_listWorksheetInfo"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Slk\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Slk\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
             "summary": "Loads\u0020PhpSpreadsheet\u0020from\u0020file.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Slk.html#method_load"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Slk.html#method_loadSpreadsheetFromFile"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Slk\u003A\u003AprocessFormula\u0028\u0029",
             "name": "processFormula",
@@ -14290,6 +16160,66 @@ Search.appendIndex(
             "name": "map",
             "summary": "Read\u0020color.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-Color.html#method_map"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\ConditionalFormatting",
+            "name": "ConditionalFormatting",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-ConditionalFormatting.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\ConditionalFormatting\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-ConditionalFormatting.html#method_type"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\ConditionalFormatting\u003A\u003Aoperator\u0028\u0029",
+            "name": "operator",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-ConditionalFormatting.html#method_operator"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\ConditionalFormatting\u003A\u003A\u0024types",
+            "name": "types",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-ConditionalFormatting.html#property_types"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\ConditionalFormatting\u003A\u003A\u0024operators",
+            "name": "operators",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-ConditionalFormatting.html#property_operators"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\DataValidationHelper",
+            "name": "DataValidationHelper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-DataValidationHelper.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\DataValidationHelper\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-DataValidationHelper.html#method_type"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\DataValidationHelper\u003A\u003AerrorStyle\u0028\u0029",
+            "name": "errorStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-DataValidationHelper.html#method_errorStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\DataValidationHelper\u003A\u003Aoperator\u0028\u0029",
+            "name": "operator",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-DataValidationHelper.html#method_operator"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\DataValidationHelper\u003A\u003A\u0024types",
+            "name": "types",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-DataValidationHelper.html#property_types"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\DataValidationHelper\u003A\u003A\u0024errorStyles",
+            "name": "errorStyles",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-DataValidationHelper.html#property_errorStyles"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\DataValidationHelper\u003A\u003A\u0024operators",
+            "name": "operators",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-DataValidationHelper.html#property_operators"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\ErrorCode",
             "name": "ErrorCode",
@@ -14591,6 +16521,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-MD5.html#method_step"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\MD5\u003A\u003AsignedInt\u0028\u0029",
+            "name": "signedInt",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-MD5.html#method_signedInt"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\MD5\u003A\u003Arotate\u0028\u0029",
             "name": "rotate",
             "summary": "",
@@ -14615,6 +16550,11 @@ Search.appendIndex(
             "name": "d",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-MD5.html#property_d"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\MD5\u003A\u003A\u0024allOneBits",
+            "name": "allOneBits",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls-MD5.html#property_allOneBits"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\\RC4",
             "name": "RC4",
@@ -14756,10 +16696,10 @@ Search.appendIndex(
             "summary": "Return\u0020worksheet\u0020info\u0020\u0028Name,\u0020Last\u0020Column\u0020Letter,\u0020Last\u0020Column\u0020Index,\u0020Total\u0020Rows,\u0020Total\u0020Columns\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_listWorksheetInfo"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
             "summary": "Loads\u0020PhpSpreadsheet\u0020from\u0020file.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_load"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_loadSpreadsheetFromFile"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AreadRecordData\u0028\u0029",
             "name": "readRecordData",
@@ -15291,6 +17231,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_parseRichText"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AgetMapCellStyleXfIndex\u0028\u0029",
+            "name": "getMapCellStyleXfIndex",
+            "summary": "Phpstan\u00201.4.4\u0020complains\u0020that\u0020this\u0020property\u0020is\u0020never\u0020read.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_getMapCellStyleXfIndex"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AreadCFHeader\u0028\u0029",
+            "name": "readCFHeader",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_readCFHeader"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AreadCFRule\u0028\u0029",
+            "name": "readCFRule",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_readCFRule"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AgetCFStyleOptions\u0028\u0029",
+            "name": "getCFStyleOptions",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_getCFStyleOptions"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AgetCFFontStyle\u0028\u0029",
+            "name": "getCFFontStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_getCFFontStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AgetCFAlignmentStyle\u0028\u0029",
+            "name": "getCFAlignmentStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_getCFAlignmentStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AgetCFBorderStyle\u0028\u0029",
+            "name": "getCFBorderStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_getCFBorderStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AgetCFFillStyle\u0028\u0029",
+            "name": "getCFFillStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_getCFFillStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AgetCFProtectionStyle\u0028\u0029",
+            "name": "getCFProtectionStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_getCFProtectionStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AreadCFFormula\u0028\u0029",
+            "name": "readCFFormula",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_readCFFormula"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AsetCFRules\u0028\u0029",
+            "name": "setCFRules",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#method_setCFRules"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AXLS_BIFF8",
             "name": "XLS_BIFF8",
             "summary": "",
@@ -15676,6 +17671,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#constant_XLS_TYPE_PAGELAYOUTVIEW"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AXLS_TYPE_CFHEADER",
+            "name": "XLS_TYPE_CFHEADER",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#constant_XLS_TYPE_CFHEADER"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AXLS_TYPE_CFRULE",
+            "name": "XLS_TYPE_CFRULE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xls.html#constant_XLS_TYPE_CFRULE"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xls\u003A\u003AXLS_TYPE_UNKNOWN",
             "name": "XLS_TYPE_UNKNOWN",
             "summary": "",
@@ -15951,15 +17956,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#method___construct"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003AgetAttribute\u0028\u0029",
             "name": "getAttribute",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#method_getAttribute"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003AreadColor\u0028\u0029",
-            "name": "readColor",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#method_readColor"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003AreadChart\u0028\u0029",
             "name": "readChart",
@@ -16010,6 +18015,41 @@ Search.appendIndex(
             "name": "setChartAttributes",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#method_setChartAttributes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003AreadEffects\u0028\u0029",
+            "name": "readEffects",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#method_readEffects"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003AreadColor\u0028\u0029",
+            "name": "readColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#method_readColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003AreadLineStyle\u0028\u0029",
+            "name": "readLineStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#method_readLineStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003AsetAxisProperties\u0028\u0029",
+            "name": "setAxisProperties",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#method_setAxisProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003ASHADOW_TYPES",
+            "name": "SHADOW_TYPES",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#constant_SHADOW_TYPES"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003A\u0024cNamespace",
+            "name": "cNamespace",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#property_cNamespace"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Chart\u003A\u003A\u0024aNamespace",
+            "name": "aNamespace",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Chart.html#property_aNamespace"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ColumnAndRowAttributes",
             "name": "ColumnAndRowAttributes",
@@ -16086,6 +18126,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-ConditionalStyles.html#method_load"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ConditionalStyles\u003A\u003AloadFromExt\u0028\u0029",
+            "name": "loadFromExt",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-ConditionalStyles.html#method_loadFromExt"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ConditionalStyles\u003A\u003AsetConditionalsFromExt\u0028\u0029",
+            "name": "setConditionalsFromExt",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-ConditionalStyles.html#method_setConditionalsFromExt"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ConditionalStyles\u003A\u003AreadConditionalsFromExt\u0028\u0029",
+            "name": "readConditionalsFromExt",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-ConditionalStyles.html#method_readConditionalsFromExt"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ConditionalStyles\u003A\u003AreadConditionalRuleFromExt\u0028\u0029",
+            "name": "readConditionalRuleFromExt",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-ConditionalStyles.html#method_readConditionalRuleFromExt"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ConditionalStyles\u003A\u003AreadStyleFromExt\u0028\u0029",
+            "name": "readStyleFromExt",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-ConditionalStyles.html#method_readStyleFromExt"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ConditionalStyles\u003A\u003AreadConditionalStyles\u0028\u0029",
             "name": "readConditionalStyles",
             "summary": "",
@@ -16120,6 +18185,11 @@ Search.appendIndex(
             "name": "worksheetXml",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-ConditionalStyles.html#property_worksheetXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ConditionalStyles\u003A\u003A\u0024ns",
+            "name": "ns",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-ConditionalStyles.html#property_ns"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\ConditionalStyles\u003A\u003A\u0024dxfs",
             "name": "dxfs",
@@ -16211,6 +18281,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Namespaces.html#constant_CORE_PROPERTIES2"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Namespaces\u003A\u003ATHUMBNAIL",
+            "name": "THUMBNAIL",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Namespaces.html#constant_THUMBNAIL"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Namespaces\u003A\u003ATHEME",
             "name": "THEME",
             "summary": "",
@@ -16286,6 +18361,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Namespaces.html#constant_WORKSHEET"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Namespaces\u003A\u003ACHARTSHEET",
+            "name": "CHARTSHEET",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Namespaces.html#constant_CHARTSHEET"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Namespaces\u003A\u003ASCHEMA_MICROSOFT",
             "name": "SCHEMA_MICROSOFT",
             "summary": "",
@@ -16345,6 +18425,11 @@ Search.appendIndex(
             "name": "PURL_DRAWING",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Namespaces.html#constant_PURL_DRAWING"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Namespaces\u003A\u003APURL_CHART",
+            "name": "PURL_CHART",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Namespaces.html#constant_PURL_CHART"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Namespaces\u003A\u003APURL_WORKSHEET",
             "name": "PURL_WORKSHEET",
@@ -16591,10 +18676,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AsetNamespace\u0028\u0029",
+            "name": "setNamespace",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method___construct"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_setNamespace"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AsetWorkbookPalette\u0028\u0029",
+            "name": "setWorkbookPalette",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_setWorkbookPalette"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AcastBool\u0028\u0029",
+            "name": "castBool",
+            "summary": "Cast\u0020SimpleXMLElement\u0020to\u0020bool\u0020to\u0020overcome\u0020Scrutinizer\u0020problem.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_castBool"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AgetStyleAttributes\u0028\u0029",
+            "name": "getStyleAttributes",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_getStyleAttributes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AsetStyleXml\u0028\u0029",
+            "name": "setStyleXml",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_setStyleXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AsetTheme\u0028\u0029",
+            "name": "setTheme",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_setTheme"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AsetStyleBaseData\u0028\u0029",
             "name": "setStyleBaseData",
@@ -16621,6 +18731,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_readBorderStyle"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AgetAttribute\u0028\u0029",
+            "name": "getAttribute",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_getAttribute"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AreadBorder\u0028\u0029",
             "name": "readBorder",
             "summary": "",
@@ -16631,19 +18746,24 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_readAlignmentStyle"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AformatGeneral\u0028\u0029",
+            "name": "formatGeneral",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_formatGeneral"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AreadStyle\u0028\u0029",
             "name": "readStyle",
-            "summary": "",
+            "summary": "Read\u0020style.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_readStyle"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AreadProtectionLocked\u0028\u0029",
             "name": "readProtectionLocked",
-            "summary": "",
+            "summary": "Read\u0020protection\u0020locked\u0020attribute.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_readProtectionLocked"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AreadProtectionHidden\u0028\u0029",
             "name": "readProtectionHidden",
-            "summary": "",
+            "summary": "Read\u0020protection\u0020hidden\u0020attribute.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_readProtectionHidden"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AreadColor\u0028\u0029",
@@ -16663,13 +18783,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003AgetArrayItem\u0028\u0029",
             "name": "getArrayItem",
-            "summary": "",
+            "summary": "Get\u0020array\u0020item.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#method_getArrayItem"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003A\u0024theme",
             "name": "theme",
             "summary": "Theme\u0020instance.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#property_theme"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003A\u0024workbookPalette",
+            "name": "workbookPalette",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#property_workbookPalette"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003A\u0024cellStyles",
             "name": "cellStyles",
@@ -16680,6 +18805,11 @@ Search.appendIndex(
             "name": "styleXml",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#property_styleXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Styles\u003A\u003A\u0024namespace",
+            "name": "namespace",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Styles.html#property_namespace"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Theme",
             "name": "Theme",
@@ -16693,23 +18823,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Theme\u003A\u003AgetThemeName\u0028\u0029",
             "name": "getThemeName",
-            "summary": "Get\u0020Theme\u0020Name.",
+            "summary": "Not\u0020called\u0020by\u0020Reader,\u0020never\u0020accessible\u0020any\u0020other\u0020time.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Theme.html#method_getThemeName"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Theme\u003A\u003AgetColourSchemeName\u0028\u0029",
             "name": "getColourSchemeName",
-            "summary": "Get\u0020colour\u0020Scheme\u0020Name.",
+            "summary": "Not\u0020called\u0020by\u0020Reader,\u0020never\u0020accessible\u0020any\u0020other\u0020time.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Theme.html#method_getColourSchemeName"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Theme\u003A\u003AgetColourByIndex\u0028\u0029",
             "name": "getColourByIndex",
             "summary": "Get\u0020colour\u0020Map\u0020Value\u0020by\u0020Position.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Theme.html#method_getColourByIndex"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Theme\u003A\u003A__clone\u0028\u0029",
-            "name": "__clone",
-            "summary": "Implement\u0020PHP\u0020__clone\u0020to\u0020create\u0020a\u0020deep\u0020clone,\u0020not\u0020just\u0020a\u0020shallow\u0020copy.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Theme.html#method___clone"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\Theme\u003A\u003A\u0024themeName",
             "name": "themeName",
@@ -16725,6 +18850,81 @@ Search.appendIndex(
             "name": "colourMap",
             "summary": "Colour\u0020Map.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-Theme.html#property_colourMap"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView",
+            "name": "WorkbookView",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AviewSettings\u0028\u0029",
+            "name": "viewSettings",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_viewSettings"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AtestSimpleXml\u0028\u0029",
+            "name": "testSimpleXml",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_testSimpleXml"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AgetAttributes\u0028\u0029",
+            "name": "getAttributes",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_getAttributes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AcastXsdBooleanToBool\u0028\u0029",
+            "name": "castXsdBooleanToBool",
+            "summary": "Convert\u0020an\u0020\u0027xsd\u003Aboolean\u0027\u0020XML\u0020value\u0020to\u0020a\u0020PHP\u0020boolean\u0020value.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_castXsdBooleanToBool"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AhorizontalScroll\u0028\u0029",
+            "name": "horizontalScroll",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_horizontalScroll"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AverticalScroll\u0028\u0029",
+            "name": "verticalScroll",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_verticalScroll"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AsheetTabs\u0028\u0029",
+            "name": "sheetTabs",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_sheetTabs"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003Aminimized\u0028\u0029",
+            "name": "minimized",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_minimized"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AautoFilterDateGrouping\u0028\u0029",
+            "name": "autoFilterDateGrouping",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_autoFilterDateGrouping"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AfirstSheet\u0028\u0029",
+            "name": "firstSheet",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_firstSheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003Avisibility\u0028\u0029",
+            "name": "visibility",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_visibility"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003AtabRatio\u0028\u0029",
+            "name": "tabRatio",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#method_tabRatio"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\\WorkbookView\u003A\u003A\u0024spreadsheet",
+            "name": "spreadsheet",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx-WorkbookView.html#property_spreadsheet"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx",
             "name": "Xlsx",
@@ -16811,15 +19011,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_getFromZipArchive"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
             "summary": "Loads\u0020Spreadsheet\u0020from\u0020file.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_load"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AreadStyle\u0028\u0029",
-            "name": "readStyle",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_readStyle"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_loadSpreadsheetFromFile"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AparseRichText\u0028\u0029",
             "name": "parseRichText",
@@ -16881,11 +19076,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_readPrinterSettings"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AcastXsdBooleanToBool\u0028\u0029",
-            "name": "castXsdBooleanToBool",
-            "summary": "Convert\u0020an\u0020\u0027xsd\u003Aboolean\u0027\u0020XML\u0020value\u0020to\u0020a\u0020PHP\u0020boolean\u0020value.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_castXsdBooleanToBool"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AgetWorkbookBaseName\u0028\u0029",
             "name": "getWorkbookBaseName",
             "summary": "",
@@ -16906,6 +19096,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_readAutoFilterTablesInTablesFile"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AextractStyles\u0028\u0029",
+            "name": "extractStyles",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_extractStyles"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AextractPalette\u0028\u0029",
+            "name": "extractPalette",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#method_extractPalette"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AINITIAL_FILE",
             "name": "INITIAL_FILE",
             "summary": "",
@@ -16921,20 +19121,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#constant_REL_TO_DRAWING"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003AREL_TO_CHART",
+            "name": "REL_TO_CHART",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#constant_REL_TO_CHART"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003A\u0024referenceHelper",
             "name": "referenceHelper",
             "summary": "ReferenceHelper\u0020instance.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#property_referenceHelper"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003A\u0024theme",
-            "name": "theme",
-            "summary": "Xlsx\\Theme\u0020instance.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#property_theme"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003A\u0024zip",
             "name": "zip",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#property_zip"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xlsx\u003A\u003A\u0024styleReader",
+            "name": "styleReader",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xlsx.html#property_styleReader"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xml\\PageSettings",
             "name": "PageSettings",
@@ -17196,10 +19401,10 @@ Search.appendIndex(
             "summary": "Return\u0020worksheet\u0020info\u0020\u0028Name,\u0020Last\u0020Column\u0020Letter,\u0020Last\u0020Column\u0020Index,\u0020Total\u0020Rows,\u0020Total\u0020Columns\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xml.html#method_listWorksheetInfo"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xml\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xml\u003A\u003AloadSpreadsheetFromFile\u0028\u0029",
+            "name": "loadSpreadsheetFromFile",
             "summary": "Loads\u0020Spreadsheet\u0020from\u0020file.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xml.html#method_load"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Reader-Xml.html#method_loadSpreadsheetFromFile"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Reader\\Xml\u003A\u003AloadIntoExisting\u0028\u0029",
             "name": "loadIntoExisting",
@@ -17266,11 +19471,6 @@ Search.appendIndex(
             "summary": "Compare\u0020two\u0020cell\u0020addresses\nIntended\u0020for\u0020use\u0020as\u0020a\u0020Callback\u0020function\u0020for\u0020sorting\u0020cell\u0020addresses\u0020by\u0020column\u0020and\u0020row.",
             "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_cellReverseSort"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AcellAddressInDeleteRange\u0028\u0029",
-            "name": "cellAddressInDeleteRange",
-            "summary": "Test\u0020whether\u0020a\u0020cell\u0020address\u0020falls\u0020within\u0020a\u0020defined\u0020range\u0020of\u0020cells.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_cellAddressInDeleteRange"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustPageBreaks\u0028\u0029",
             "name": "adjustPageBreaks",
             "summary": "Update\u0020page\u0020breaks\u0020when\u0020inserting\/deleting\u0020rows\/columns.",
@@ -17285,6 +19485,11 @@ Search.appendIndex(
             "name": "adjustHyperlinks",
             "summary": "Update\u0020hyperlinks\u0020when\u0020inserting\/deleting\u0020rows\/columns.",
             "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustHyperlinks"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustConditionalFormatting\u0028\u0029",
+            "name": "adjustConditionalFormatting",
+            "summary": "Update\u0020conditional\u0020formatting\u0020styles\u0020when\u0020inserting\/deleting\u0020rows\/columns.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustConditionalFormatting"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustDataValidations\u0028\u0029",
             "name": "adjustDataValidations",
@@ -17356,10 +19561,70 @@ Search.appendIndex(
             "summary": "Update\u0020cell\u0020range.",
             "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_updateCellRange"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AupdateSingleCellReference\u0028\u0029",
-            "name": "updateSingleCellReference",
-            "summary": "Update\u0020single\u0020cell\u0020reference.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_updateSingleCellReference"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AclearColumnStrips\u0028\u0029",
+            "name": "clearColumnStrips",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_clearColumnStrips"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AclearRowStrips\u0028\u0029",
+            "name": "clearRowStrips",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_clearRowStrips"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AclearStripCell\u0028\u0029",
+            "name": "clearStripCell",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_clearStripCell"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustAutoFilter\u0028\u0029",
+            "name": "adjustAutoFilter",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustAutoFilter"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustAutoFilterDeleteRules\u0028\u0029",
+            "name": "adjustAutoFilterDeleteRules",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustAutoFilterDeleteRules"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustAutoFilterInsert\u0028\u0029",
+            "name": "adjustAutoFilterInsert",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustAutoFilterInsert"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustAutoFilterDelete\u0028\u0029",
+            "name": "adjustAutoFilterDelete",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustAutoFilterDelete"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustTable\u0028\u0029",
+            "name": "adjustTable",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustTable"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustTableDeleteRules\u0028\u0029",
+            "name": "adjustTableDeleteRules",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustTableDeleteRules"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustTableInsert\u0028\u0029",
+            "name": "adjustTableInsert",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustTableInsert"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AadjustTableDelete\u0028\u0029",
+            "name": "adjustTableDelete",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_adjustTableDelete"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AduplicateStylesByColumn\u0028\u0029",
+            "name": "duplicateStylesByColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_duplicateStylesByColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003AduplicateStylesByRow\u0028\u0029",
+            "name": "duplicateStylesByRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#method_duplicateStylesByRow"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003A__clone\u0028\u0029",
             "name": "__clone",
@@ -17390,6 +19655,11 @@ Search.appendIndex(
             "name": "instance",
             "summary": "Instance\u0020of\u0020this\u0020class.",
             "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#property_instance"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\ReferenceHelper\u003A\u003A\u0024cellReferenceHelper",
+            "name": "cellReferenceHelper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-ReferenceHelper.html#property_cellReferenceHelper"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\RichText\\ITextElement",
             "name": "ITextElement",
@@ -17536,11 +19806,6 @@ Search.appendIndex(
             "summary": "Get\u0020hash\u0020code.",
             "url": "classes/PhpOffice-PhpSpreadsheet-RichText-TextElement.html#method_getHashCode"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\RichText\\TextElement\u003A\u003A__clone\u0028\u0029",
-            "name": "__clone",
-            "summary": "Implement\u0020PHP\u0020__clone\u0020to\u0020create\u0020a\u0020deep\u0020clone,\u0020not\u0020just\u0020a\u0020shallow\u0020copy.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-RichText-TextElement.html#method___clone"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\RichText\\TextElement\u003A\u003A\u0024text",
             "name": "text",
             "summary": "Text.",
@@ -17588,12 +19853,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Settings\u003A\u003AsetLibXmlDisableEntityLoader\u0028\u0029",
             "name": "setLibXmlDisableEntityLoader",
-            "summary": "Enable\/Disable\u0020the\u0020entity\u0020loader\u0020for\u0020libxml\u0020loader.",
+            "summary": "Deprecated,\u0020has\u0020no\u0020effect.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Settings.html#method_setLibXmlDisableEntityLoader"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Settings\u003A\u003AgetLibXmlDisableEntityLoader\u0028\u0029",
             "name": "getLibXmlDisableEntityLoader",
-            "summary": "Return\u0020the\u0020state\u0020of\u0020the\u0020entity\u0020loader\u0020\u0028disabled\/enabled\u0029\u0020for\u0020libxml\u0020loader.",
+            "summary": "Deprecated,\u0020has\u0020no\u0020effect.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Settings.html#method_getLibXmlDisableEntityLoader"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Settings\u003A\u003AsetCache\u0028\u0029",
@@ -17603,7 +19868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Settings\u003A\u003AgetCache\u0028\u0029",
             "name": "getCache",
-            "summary": "Gets\u0020the\u0020implementation\u0020of\u0020cache\u0020that\u0020should\u0020be\u0020used\u0020for\u0020cell\u0020collection.",
+            "summary": "Gets\u0020the\u0020implementation\u0020of\u0020cache\u0020that\u0020is\u0020being\u0020used\u0020for\u0020cell\u0020collection.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Settings.html#method_getCache"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Settings\u003A\u003AsetHttpClient\u0028\u0029",
@@ -17640,11 +19905,6 @@ Search.appendIndex(
             "name": "libXmlLoaderOptions",
             "summary": "Default\u0020options\u0020for\u0020libxml\u0020loader.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Settings.html#property_libXmlLoaderOptions"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Settings\u003A\u003A\u0024libXmlDisableEntityLoader",
-            "name": "libXmlDisableEntityLoader",
-            "summary": "Allow\/disallow\u0020libxml_disable_entity_loader\u0028\u0029\u0020call\u0020when\u0020not\u0020thread\u0020safe.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Settings.html#property_libXmlDisableEntityLoader"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Settings\u003A\u003A\u0024cache",
             "name": "cache",
@@ -17730,6 +19990,11 @@ Search.appendIndex(
             "name": "validateTimeZone",
             "summary": "Validate\u0020a\u0020timezone.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Shared-Date.html#method_validateTimeZone"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Shared\\Date\u003A\u003AconvertIsoDate\u0028\u0029",
+            "name": "convertIsoDate",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Shared-Date.html#method_convertIsoDate"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Shared\\Date\u003A\u003AexcelToDateTimeObject\u0028\u0029",
             "name": "excelToDateTimeObject",
@@ -20123,7 +22388,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Shared\\StringHelper\u003A\u003AsanitizeUTF8\u0028\u0029",
             "name": "sanitizeUTF8",
-            "summary": "Try\u0020to\u0020sanitize\u0020UTF8,\u0020stripping\u0020invalid\u0020byte\u0020sequences.\u0020Not\u0020perfect.\u0020Does\u0020not\u0020surrogate\u0020characters.",
+            "summary": "Try\u0020to\u0020sanitize\u0020UTF8,\u0020replacing\u0020invalid\u0020sequences\u0020with\u0020Unicode\u0020substitution\u0020characters.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Shared-StringHelper.html#method_sanitizeUTF8"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Shared\\StringHelper\u003A\u003AisUTF8\u0028\u0029",
@@ -20183,7 +22448,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Shared\\StringHelper\u003A\u003AmbStrSplit\u0028\u0029",
             "name": "mbStrSplit",
-            "summary": "",
+            "summary": "Splits\u0020a\u0020UTF\u002D8\u0020string\u0020into\u0020an\u0020array\u0020of\u0020individual\u0020characters.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Shared-StringHelper.html#method_mbStrSplit"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Shared\\StringHelper\u003A\u003AstrCaseReverse\u0028\u0029",
@@ -21351,6 +23616,16 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020ratio\u0020between\u0020the\u0020workbook\u0020tabs\u0020bar\u0020and\u0020the\u0020horizontal\u0020scroll\u0020bar\nTabRatio\u0020is\u0020assumed\u0020to\u0020be\u0020out\u0020of\u00201000\u0020of\u0020the\u0020horizontal\u0020window\u0020width.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html#method_setTabRatio"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Spreadsheet\u003A\u003AreevaluateAutoFilters\u0028\u0029",
+            "name": "reevaluateAutoFilters",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html#method_reevaluateAutoFilters"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Spreadsheet\u003A\u003AgetSharedComponent\u0028\u0029",
+            "name": "getSharedComponent",
+            "summary": "Silliness\u0020to\u0020mollify\u0020Scrutinizer.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html#method_getSharedComponent"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Spreadsheet\u003A\u003AVISIBILITY_VISIBLE",
             "name": "VISIBILITY_VISIBLE",
             "summary": "",
@@ -22061,6 +24336,11 @@ Search.appendIndex(
             "summary": "Apply\u0020styles\u0020from\u0020array.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#method_applyFromArray"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003AvalidateColor\u0028\u0029",
+            "name": "validateColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#method_validateColor"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003AgetARGB\u0028\u0029",
             "name": "getARGB",
             "summary": "Get\u0020ARGB.",
@@ -22121,6 +24401,11 @@ Search.appendIndex(
             "summary": "Abstract\u0020method\u0020to\u0020be\u0020implemented\u0020in\u0020anything\u0020which\nextends\u0020this\u0020class.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#method_exportArray1"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003AgetHasChanged\u0028\u0029",
+            "name": "getHasChanged",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#method_getHasChanged"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003ANAMED_COLORS",
             "name": "NAMED_COLORS",
             "summary": "",
@@ -22176,15 +24461,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_COLOR_DARKYELLOW"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003A\u0024indexedColors",
-            "name": "indexedColors",
-            "summary": "Indexed\u0020colors\u0020array.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#property_indexedColors"
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003ACOLOR_MAGENTA",
+            "name": "COLOR_MAGENTA",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_COLOR_MAGENTA"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003ACOLOR_CYAN",
+            "name": "COLOR_CYAN",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_COLOR_CYAN"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003ANAMED_COLOR_TRANSLATIONS",
+            "name": "NAMED_COLOR_TRANSLATIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_NAMED_COLOR_TRANSLATIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003AVALIDATE_ARGB_SIZE",
+            "name": "VALIDATE_ARGB_SIZE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_VALIDATE_ARGB_SIZE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003AVALIDATE_RGB_SIZE",
+            "name": "VALIDATE_RGB_SIZE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_VALIDATE_RGB_SIZE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003AVALIDATE_COLOR_6",
+            "name": "VALIDATE_COLOR_6",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_VALIDATE_COLOR_6"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003AVALIDATE_COLOR_8",
+            "name": "VALIDATE_COLOR_8",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_VALIDATE_COLOR_8"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003AINDEXED_COLORS",
+            "name": "INDEXED_COLORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#constant_INDEXED_COLORS"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003A\u0024argb",
             "name": "argb",
             "summary": "ARGB\u0020\u002D\u0020Alpha\u0020RGB.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#property_argb"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Color\u003A\u003A\u0024hasChanged",
+            "name": "hasChanged",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Color.html#property_hasChanged"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional",
             "name": "Conditional",
@@ -22291,50 +24616,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_NONE"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_BEGINSWITH",
+            "name": "CONDITION_BEGINSWITH",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_BEGINSWITH"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_CELLIS",
             "name": "CONDITION_CELLIS",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_CELLIS"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_CONTAINSTEXT",
-            "name": "CONDITION_CONTAINSTEXT",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_CONTAINSTEXT"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_EXPRESSION",
-            "name": "CONDITION_EXPRESSION",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_EXPRESSION"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_CONTAINSBLANKS",
             "name": "CONDITION_CONTAINSBLANKS",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_CONTAINSBLANKS"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_NOTCONTAINSBLANKS",
-            "name": "CONDITION_NOTCONTAINSBLANKS",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_CONTAINSERRORS",
+            "name": "CONDITION_CONTAINSERRORS",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_NOTCONTAINSBLANKS"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_CONTAINSERRORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_CONTAINSTEXT",
+            "name": "CONDITION_CONTAINSTEXT",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_CONTAINSTEXT"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_DATABAR",
             "name": "CONDITION_DATABAR",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_DATABAR"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_ENDSWITH",
+            "name": "CONDITION_ENDSWITH",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_ENDSWITH"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_EXPRESSION",
+            "name": "CONDITION_EXPRESSION",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_EXPRESSION"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_NOTCONTAINSBLANKS",
+            "name": "CONDITION_NOTCONTAINSBLANKS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_NOTCONTAINSBLANKS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_NOTCONTAINSERRORS",
+            "name": "CONDITION_NOTCONTAINSERRORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_NOTCONTAINSERRORS"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_NOTCONTAINSTEXT",
             "name": "CONDITION_NOTCONTAINSTEXT",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_NOTCONTAINSTEXT"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_DUPLICATEVALUES",
-            "name": "CONDITION_DUPLICATEVALUES",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_TIMEPERIOD",
+            "name": "CONDITION_TIMEPERIOD",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_DUPLICATEVALUES"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_TIMEPERIOD"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_UNIQUEVALUES",
-            "name": "CONDITION_UNIQUEVALUES",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_DUPLICATES",
+            "name": "CONDITION_DUPLICATES",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_UNIQUEVALUES"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_DUPLICATES"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_UNIQUE",
+            "name": "CONDITION_UNIQUE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_CONDITION_UNIQUE"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ACONDITION_ABOVEAVERAGE",
             "name": "CONDITION_ABOVEAVERAGE",
@@ -22421,6 +24771,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_OPERATOR_NOTBETWEEN"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_TODAY",
+            "name": "TIMEPERIOD_TODAY",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_TODAY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_YESTERDAY",
+            "name": "TIMEPERIOD_YESTERDAY",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_YESTERDAY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_TOMORROW",
+            "name": "TIMEPERIOD_TOMORROW",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_TOMORROW"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_LAST_7_DAYS",
+            "name": "TIMEPERIOD_LAST_7_DAYS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_LAST_7_DAYS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_LAST_WEEK",
+            "name": "TIMEPERIOD_LAST_WEEK",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_LAST_WEEK"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_THIS_WEEK",
+            "name": "TIMEPERIOD_THIS_WEEK",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_THIS_WEEK"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_NEXT_WEEK",
+            "name": "TIMEPERIOD_NEXT_WEEK",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_NEXT_WEEK"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_LAST_MONTH",
+            "name": "TIMEPERIOD_LAST_MONTH",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_LAST_MONTH"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_THIS_MONTH",
+            "name": "TIMEPERIOD_THIS_MONTH",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_THIS_MONTH"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003ATIMEPERIOD_NEXT_MONTH",
+            "name": "TIMEPERIOD_NEXT_MONTH",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#constant_TIMEPERIOD_NEXT_MONTH"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Conditional\u003A\u003A\u0024conditionType",
             "name": "conditionType",
             "summary": "Condition\u0020type.",
@@ -22455,6 +24855,161 @@ Search.appendIndex(
             "name": "style",
             "summary": "Style.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Conditional.html#property_style"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher",
+            "name": "CellMatcher",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AsetReferenceCellForExpressions\u0028\u0029",
+            "name": "setReferenceCellForExpressions",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_setReferenceCellForExpressions"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AevaluateConditional\u0028\u0029",
+            "name": "evaluateConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_evaluateConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AwrapValue\u0028\u0029",
+            "name": "wrapValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_wrapValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AwrapCellValue\u0028\u0029",
+            "name": "wrapCellValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_wrapCellValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AconditionCellAdjustment\u0028\u0029",
+            "name": "conditionCellAdjustment",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_conditionCellAdjustment"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AcellConditionCheck\u0028\u0029",
+            "name": "cellConditionCheck",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_cellConditionCheck"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AadjustConditionsForCellReferences\u0028\u0029",
+            "name": "adjustConditionsForCellReferences",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_adjustConditionsForCellReferences"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AprocessOperatorComparison\u0028\u0029",
+            "name": "processOperatorComparison",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_processOperatorComparison"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AprocessRangeOperator\u0028\u0029",
+            "name": "processRangeOperator",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_processRangeOperator"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AprocessDuplicatesComparison\u0028\u0029",
+            "name": "processDuplicatesComparison",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_processDuplicatesComparison"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AprocessExpression\u0028\u0029",
+            "name": "processExpression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_processExpression"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003AevaluateExpression\u0028\u0029",
+            "name": "evaluateExpression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#method_evaluateExpression"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003ACOMPARISON_OPERATORS",
+            "name": "COMPARISON_OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#constant_COMPARISON_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003ACOMPARISON_RANGE_OPERATORS",
+            "name": "COMPARISON_RANGE_OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#constant_COMPARISON_RANGE_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003ACOMPARISON_DUPLICATES_OPERATORS",
+            "name": "COMPARISON_DUPLICATES_OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#constant_COMPARISON_DUPLICATES_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024cell",
+            "name": "cell",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_cell"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024cellRow",
+            "name": "cellRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_cellRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024worksheet",
+            "name": "worksheet",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_worksheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024cellColumn",
+            "name": "cellColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_cellColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024conditionalRange",
+            "name": "conditionalRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_conditionalRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024referenceCell",
+            "name": "referenceCell",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_referenceCell"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024referenceRow",
+            "name": "referenceRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_referenceRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024referenceColumn",
+            "name": "referenceColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_referenceColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellMatcher\u003A\u003A\u0024engine",
+            "name": "engine",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellMatcher.html#property_engine"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellStyleAssessor",
+            "name": "CellStyleAssessor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellStyleAssessor.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellStyleAssessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellStyleAssessor.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellStyleAssessor\u003A\u003AmatchConditions\u0028\u0029",
+            "name": "matchConditions",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellStyleAssessor.html#method_matchConditions"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellStyleAssessor\u003A\u003A\u0024cellMatcher",
+            "name": "cellMatcher",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellStyleAssessor.html#property_cellMatcher"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\CellStyleAssessor\u003A\u003A\u0024styleMerger",
+            "name": "styleMerger",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-CellStyleAssessor.html#property_styleMerger"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\ConditionalDataBar",
             "name": "ConditionalDataBar",
@@ -22896,6 +25451,631 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-ConditionalFormatValueObject.html#property_cellFormula"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger",
+            "name": "StyleMerger",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger\u003A\u003AgetStyle\u0028\u0029",
+            "name": "getStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html#method_getStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger\u003A\u003AmergeStyle\u0028\u0029",
+            "name": "mergeStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html#method_mergeStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger\u003A\u003AmergeFontStyle\u0028\u0029",
+            "name": "mergeFontStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html#method_mergeFontStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger\u003A\u003AmergeFillStyle\u0028\u0029",
+            "name": "mergeFillStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html#method_mergeFillStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger\u003A\u003AmergeBordersStyle\u0028\u0029",
+            "name": "mergeBordersStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html#method_mergeBordersStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger\u003A\u003AmergeBorderStyle\u0028\u0029",
+            "name": "mergeBorderStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html#method_mergeBorderStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\StyleMerger\u003A\u003A\u0024baseStyle",
+            "name": "baseStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-StyleMerger.html#property_baseStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks",
+            "name": "Blanks",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks\u003A\u003A\u0024inverse",
+            "name": "inverse",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html#property_inverse"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks\u003A\u003AgetExpression\u0028\u0029",
+            "name": "getExpression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html#method_getExpression"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks\u003A\u003AgetConditional\u0028\u0029",
+            "name": "getConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html#method_getConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html#method___call"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks\u003A\u003AOPERATORS",
+            "name": "OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html#constant_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Blanks\u003A\u003AEXPRESSIONS",
+            "name": "EXPRESSIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Blanks.html#constant_EXPRESSIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue",
+            "name": "CellValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003A\u0024operator",
+            "name": "operator",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#property_operator"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003A\u0024operand",
+            "name": "operand",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#property_operand"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003AwrapValue\u0028\u0029",
+            "name": "wrapValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#method_wrapValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003AgetConditional\u0028\u0029",
+            "name": "getConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#method_getConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003AunwrapString\u0028\u0029",
+            "name": "unwrapString",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#method_unwrapString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#method___call"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003AMAGIC_OPERATIONS",
+            "name": "MAGIC_OPERATIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#constant_MAGIC_OPERATIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003ASINGLE_OPERATORS",
+            "name": "SINGLE_OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#constant_SINGLE_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003ARANGE_OPERATORS",
+            "name": "RANGE_OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#constant_RANGE_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\CellValue\u003A\u003A\u0024operandValueType",
+            "name": "operandValueType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-CellValue.html#property_operandValueType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue",
+            "name": "DateValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue\u003A\u003A\u0024operator",
+            "name": "operator",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html#property_operator"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue\u003A\u003AsetExpression\u0028\u0029",
+            "name": "setExpression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html#method_setExpression"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue\u003A\u003AgetConditional\u0028\u0029",
+            "name": "getConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html#method_getConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html#method___call"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue\u003A\u003AMAGIC_OPERATIONS",
+            "name": "MAGIC_OPERATIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html#constant_MAGIC_OPERATIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\DateValue\u003A\u003AEXPRESSIONS",
+            "name": "EXPRESSIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-DateValue.html#constant_EXPRESSIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Duplicates",
+            "name": "Duplicates",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Duplicates.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Duplicates\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Duplicates.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Duplicates\u003A\u003A\u0024inverse",
+            "name": "inverse",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Duplicates.html#property_inverse"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Duplicates\u003A\u003AgetConditional\u0028\u0029",
+            "name": "getConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Duplicates.html#method_getConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Duplicates\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Duplicates.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Duplicates\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Duplicates.html#method___call"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Duplicates\u003A\u003AOPERATORS",
+            "name": "OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Duplicates.html#constant_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors",
+            "name": "Errors",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors\u003A\u003A\u0024inverse",
+            "name": "inverse",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html#property_inverse"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors\u003A\u003AgetExpression\u0028\u0029",
+            "name": "getExpression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html#method_getExpression"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors\u003A\u003AgetConditional\u0028\u0029",
+            "name": "getConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html#method_getConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html#method___call"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors\u003A\u003AOPERATORS",
+            "name": "OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html#constant_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Errors\u003A\u003AEXPRESSIONS",
+            "name": "EXPRESSIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Errors.html#constant_EXPRESSIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Expression",
+            "name": "Expression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Expression.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Expression\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Expression.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Expression\u003A\u003A\u0024expression",
+            "name": "expression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Expression.html#property_expression"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Expression\u003A\u003AgetConditional\u0028\u0029",
+            "name": "getConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Expression.html#method_getConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Expression\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Expression.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\Expression\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-Expression.html#method___call"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue",
+            "name": "TextValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003A\u0024operator",
+            "name": "operator",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#property_operator"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003A\u0024operand",
+            "name": "operand",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#property_operand"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003AwrapValue\u0028\u0029",
+            "name": "wrapValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#method_wrapValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003AsetExpression\u0028\u0029",
+            "name": "setExpression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#method_setExpression"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003AgetConditional\u0028\u0029",
+            "name": "getConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#method_getConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#method___call"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003AMAGIC_OPERATIONS",
+            "name": "MAGIC_OPERATIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#constant_MAGIC_OPERATIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003AOPERATORS",
+            "name": "OPERATORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#constant_OPERATORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003AEXPRESSIONS",
+            "name": "EXPRESSIONS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#constant_EXPRESSIONS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\TextValue\u003A\u003A\u0024operandValueType",
+            "name": "operandValueType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-TextValue.html#property_operandValueType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract",
+            "name": "WizardAbstract",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AgetCellRange\u0028\u0029",
+            "name": "getCellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_getCellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AsetCellRange\u0028\u0029",
+            "name": "setCellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_setCellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AsetReferenceCellForExpressions\u0028\u0029",
+            "name": "setReferenceCellForExpressions",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_setReferenceCellForExpressions"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AgetStopIfTrue\u0028\u0029",
+            "name": "getStopIfTrue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_getStopIfTrue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AsetStopIfTrue\u0028\u0029",
+            "name": "setStopIfTrue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_setStopIfTrue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AgetStyle\u0028\u0029",
+            "name": "getStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_getStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AsetStyle\u0028\u0029",
+            "name": "setStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_setStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AvalidateOperand\u0028\u0029",
+            "name": "validateOperand",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_validateOperand"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AreverseCellAdjustment\u0028\u0029",
+            "name": "reverseCellAdjustment",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_reverseCellAdjustment"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AreverseAdjustCellRef\u0028\u0029",
+            "name": "reverseAdjustCellRef",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_reverseAdjustCellRef"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AconditionCellAdjustment\u0028\u0029",
+            "name": "conditionCellAdjustment",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_conditionCellAdjustment"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AcellConditionCheck\u0028\u0029",
+            "name": "cellConditionCheck",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_cellConditionCheck"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003AadjustConditionsForCellReferences\u0028\u0029",
+            "name": "adjustConditionsForCellReferences",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#method_adjustConditionsForCellReferences"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003A\u0024style",
+            "name": "style",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#property_style"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003A\u0024expression",
+            "name": "expression",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#property_expression"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003A\u0024cellRange",
+            "name": "cellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#property_cellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003A\u0024referenceCell",
+            "name": "referenceCell",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#property_referenceCell"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003A\u0024referenceRow",
+            "name": "referenceRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#property_referenceRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003A\u0024stopIfTrue",
+            "name": "stopIfTrue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#property_stopIfTrue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardAbstract\u003A\u003A\u0024referenceColumn",
+            "name": "referenceColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardAbstract.html#property_referenceColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface",
+            "name": "WizardInterface",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface\u003A\u003AgetCellRange\u0028\u0029",
+            "name": "getCellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html#method_getCellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface\u003A\u003AsetCellRange\u0028\u0029",
+            "name": "setCellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html#method_setCellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface\u003A\u003AgetStyle\u0028\u0029",
+            "name": "getStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html#method_getStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface\u003A\u003AsetStyle\u0028\u0029",
+            "name": "setStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html#method_setStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface\u003A\u003AgetStopIfTrue\u0028\u0029",
+            "name": "getStopIfTrue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html#method_getStopIfTrue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface\u003A\u003AsetStopIfTrue\u0028\u0029",
+            "name": "setStopIfTrue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html#method_setStopIfTrue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface\u003A\u003AgetConditional\u0028\u0029",
+            "name": "getConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html#method_getConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\\WizardInterface\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard-WizardInterface.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard",
+            "name": "Wizard",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AnewRule\u0028\u0029",
+            "name": "newRule",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#method_newRule"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AfromConditional\u0028\u0029",
+            "name": "fromConditional",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#method_fromConditional"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003ACELL_VALUE",
+            "name": "CELL_VALUE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_CELL_VALUE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003ATEXT_VALUE",
+            "name": "TEXT_VALUE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_TEXT_VALUE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003ABLANKS",
+            "name": "BLANKS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_BLANKS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003ANOT_BLANKS",
+            "name": "NOT_BLANKS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_NOT_BLANKS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AERRORS",
+            "name": "ERRORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_ERRORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003ANOT_ERRORS",
+            "name": "NOT_ERRORS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_NOT_ERRORS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AEXPRESSION",
+            "name": "EXPRESSION",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_EXPRESSION"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AFORMULA",
+            "name": "FORMULA",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_FORMULA"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003ADATES_OCCURRING",
+            "name": "DATES_OCCURRING",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_DATES_OCCURRING"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003ADUPLICATES",
+            "name": "DUPLICATES",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_DUPLICATES"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AUNIQUE",
+            "name": "UNIQUE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_UNIQUE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AVALUE_TYPE_LITERAL",
+            "name": "VALUE_TYPE_LITERAL",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_VALUE_TYPE_LITERAL"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AVALUE_TYPE_CELL",
+            "name": "VALUE_TYPE_CELL",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_VALUE_TYPE_CELL"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003AVALUE_TYPE_FORMULA",
+            "name": "VALUE_TYPE_FORMULA",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#constant_VALUE_TYPE_FORMULA"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard\u003A\u003A\u0024cellRange",
+            "name": "cellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-ConditionalFormatting-Wizard.html#property_cellRange"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Fill",
             "name": "Fill",
             "summary": "",
@@ -22960,6 +26140,11 @@ Search.appendIndex(
             "name": "setEndColor",
             "summary": "Set\u0020End\u0020Color.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Fill.html#method_setEndColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Fill\u003A\u003AgetColorsChanged\u0028\u0029",
+            "name": "getColorsChanged",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Fill.html#method_getColorsChanged"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Fill\u003A\u003AgetHashCode\u0028\u0029",
             "name": "getHashCode",
@@ -23106,6 +26291,11 @@ Search.appendIndex(
             "summary": "End\u0020color.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Fill.html#property_endColor"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Fill\u003A\u003A\u0024colorChanged",
+            "name": "colorChanged",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Fill.html#property_colorChanged"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font",
             "name": "Font",
             "summary": "",
@@ -23136,10 +26326,40 @@ Search.appendIndex(
             "summary": "Get\u0020Name.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_getName"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetLatin\u0028\u0029",
+            "name": "getLatin",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_getLatin"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetEastAsian\u0028\u0029",
+            "name": "getEastAsian",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_getEastAsian"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetComplexScript\u0028\u0029",
+            "name": "getComplexScript",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_getComplexScript"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AsetName\u0028\u0029",
             "name": "setName",
             "summary": "Set\u0020Name.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setName"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AsetLatin\u0028\u0029",
+            "name": "setLatin",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setLatin"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AsetEastAsian\u0028\u0029",
+            "name": "setEastAsian",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setEastAsian"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AsetComplexScript\u0028\u0029",
+            "name": "setComplexScript",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setComplexScript"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetSize\u0028\u0029",
             "name": "getSize",
@@ -23191,6 +26411,46 @@ Search.appendIndex(
             "summary": "Set\u0020Subscript.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setSubscript"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetBaseLine\u0028\u0029",
+            "name": "getBaseLine",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_getBaseLine"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AsetBaseLine\u0028\u0029",
+            "name": "setBaseLine",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setBaseLine"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetStrikeType\u0028\u0029",
+            "name": "getStrikeType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_getStrikeType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AsetStrikeType\u0028\u0029",
+            "name": "setStrikeType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setStrikeType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetUnderlineColor\u0028\u0029",
+            "name": "getUnderlineColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_getUnderlineColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AsetUnderlineColor\u0028\u0029",
+            "name": "setUnderlineColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setUnderlineColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetChartColor\u0028\u0029",
+            "name": "getChartColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_getChartColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AsetChartColor\u0028\u0029",
+            "name": "setChartColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setChartColor"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetUnderline\u0028\u0029",
             "name": "getUnderline",
             "summary": "Get\u0020Underline.",
@@ -23220,6 +26480,11 @@ Search.appendIndex(
             "name": "setColor",
             "summary": "Set\u0020Color.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_setColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AhashChartColor\u0028\u0029",
+            "name": "hashChartColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#method_hashChartColor"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003AgetHashCode\u0028\u0029",
             "name": "getHashCode",
@@ -23260,6 +26525,41 @@ Search.appendIndex(
             "name": "name",
             "summary": "Font\u0020Name.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#property_name"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003A\u0024latin",
+            "name": "latin",
+            "summary": "The\u0020following\u00207\u0020are\u0020used\u0020only\u0020for\u0020chart\u0020titles,\u0020I\u0020think.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#property_latin"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003A\u0024eastAsian",
+            "name": "eastAsian",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#property_eastAsian"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003A\u0024complexScript",
+            "name": "complexScript",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#property_complexScript"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003A\u0024baseLine",
+            "name": "baseLine",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#property_baseLine"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003A\u0024strikeType",
+            "name": "strikeType",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#property_strikeType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003A\u0024underlineColor",
+            "name": "underlineColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#property_underlineColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003A\u0024chartColor",
+            "name": "chartColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Font.html#property_chartColor"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u003A\u003A\u0024size",
             "name": "size",
@@ -23321,6 +26621,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003AtryInterval\u0028\u0029",
+            "name": "tryInterval",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#method_tryInterval"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003Aformat\u0028\u0029",
             "name": "format",
             "summary": "",
@@ -23336,20 +26641,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#method_escapeQuotesCallback"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003A\u0024dateFormatReplacements",
-            "name": "dateFormatReplacements",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003ADATE_FORMAT_REPLACEMENTS",
+            "name": "DATE_FORMAT_REPLACEMENTS",
             "summary": "Search\/replace\u0020values\u0020to\u0020convert\u0020Excel\u0020date\/time\u0020format\u0020masks\u0020to\u0020PHP\u0020format\u0020masks.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#property_dateFormatReplacements"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_DATE_FORMAT_REPLACEMENTS"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003A\u0024dateFormatReplacements24",
-            "name": "dateFormatReplacements24",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003ADATE_FORMAT_REPLACEMENTS24",
+            "name": "DATE_FORMAT_REPLACEMENTS24",
             "summary": "Search\/replace\u0020values\u0020to\u0020convert\u0020Excel\u0020date\/time\u0020format\u0020masks\u0020hours\u0020to\u0020PHP\u0020format\u0020masks\u0020\u002824\u0020hr\u0020clock\u0029.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#property_dateFormatReplacements24"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_DATE_FORMAT_REPLACEMENTS24"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003A\u0024dateFormatReplacements12",
-            "name": "dateFormatReplacements12",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003ADATE_FORMAT_REPLACEMENTS12",
+            "name": "DATE_FORMAT_REPLACEMENTS12",
             "summary": "Search\/replace\u0020values\u0020to\u0020convert\u0020Excel\u0020date\/time\u0020format\u0020masks\u0020hours\u0020to\u0020PHP\u0020format\u0020masks\u0020\u002812\u0020hr\u0020clock\u0029.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#property_dateFormatReplacements12"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_DATE_FORMAT_REPLACEMENTS12"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003AHOURS_IN_DAY",
+            "name": "HOURS_IN_DAY",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_HOURS_IN_DAY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003AMINUTES_IN_DAY",
+            "name": "MINUTES_IN_DAY",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_MINUTES_IN_DAY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003ASECONDS_IN_DAY",
+            "name": "SECONDS_IN_DAY",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_SECONDS_IN_DAY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003AINTERVAL_PRECISION",
+            "name": "INTERVAL_PRECISION",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_INTERVAL_PRECISION"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003AINTERVAL_LEADING_ZERO",
+            "name": "INTERVAL_LEADING_ZERO",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_INTERVAL_LEADING_ZERO"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003AINTERVAL_ROUND_PRECISION",
+            "name": "INTERVAL_ROUND_PRECISION",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_INTERVAL_ROUND_PRECISION"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\DateFormatter\u003A\u003AINTERVAL_MULTIPLIER",
+            "name": "INTERVAL_MULTIPLIER",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat-DateFormatter.html#constant_INTERVAL_MULTIPLIER"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\\Formatter",
             "name": "Formatter",
@@ -23531,6 +26871,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat.html#constant_FORMAT_NUMBER"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\u003A\u003AFORMAT_NUMBER_0",
+            "name": "FORMAT_NUMBER_0",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat.html#constant_FORMAT_NUMBER_0"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\u003A\u003AFORMAT_NUMBER_00",
             "name": "FORMAT_NUMBER_00",
             "summary": "",
@@ -23550,6 +26895,11 @@ Search.appendIndex(
             "name": "FORMAT_PERCENTAGE",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat.html#constant_FORMAT_PERCENTAGE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\u003A\u003AFORMAT_PERCENTAGE_0",
+            "name": "FORMAT_PERCENTAGE_0",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-NumberFormat.html#constant_FORMAT_PERCENTAGE_0"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat\u003A\u003AFORMAT_PERCENTAGE_00",
             "name": "FORMAT_PERCENTAGE_00",
@@ -23791,156 +27141,6 @@ Search.appendIndex(
             "summary": "Hidden.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Protection.html#property_hidden"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style",
-            "name": "Style",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Create\u0020a\u0020new\u0020Style.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method___construct"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetSharedComponent\u0028\u0029",
-            "name": "getSharedComponent",
-            "summary": "Get\u0020the\u0020shared\u0020style\u0020component\u0020for\u0020the\u0020currently\u0020active\u0020cell\u0020in\u0020currently\u0020active\u0020sheet.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getSharedComponent"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetParent\u0028\u0029",
-            "name": "getParent",
-            "summary": "Get\u0020parent.\u0020Only\u0020used\u0020for\u0020style\u0020supervisor.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getParent"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetStyleArray\u0028\u0029",
-            "name": "getStyleArray",
-            "summary": "Build\u0020style\u0020array\u0020from\u0020subcomponents.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getStyleArray"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AapplyFromArray\u0028\u0029",
-            "name": "applyFromArray",
-            "summary": "Apply\u0020styles\u0020from\u0020array.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_applyFromArray"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetOldXfIndexes\u0028\u0029",
-            "name": "getOldXfIndexes",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getOldXfIndexes"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetFill\u0028\u0029",
-            "name": "getFill",
-            "summary": "Get\u0020Fill.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getFill"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetFont\u0028\u0029",
-            "name": "getFont",
-            "summary": "Get\u0020Font.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getFont"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AsetFont\u0028\u0029",
-            "name": "setFont",
-            "summary": "Set\u0020font.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_setFont"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetBorders\u0028\u0029",
-            "name": "getBorders",
-            "summary": "Get\u0020Borders.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getBorders"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetAlignment\u0028\u0029",
-            "name": "getAlignment",
-            "summary": "Get\u0020Alignment.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getAlignment"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetNumberFormat\u0028\u0029",
-            "name": "getNumberFormat",
-            "summary": "Get\u0020Number\u0020Format.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getNumberFormat"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetConditionalStyles\u0028\u0029",
-            "name": "getConditionalStyles",
-            "summary": "Get\u0020Conditional\u0020Styles.\u0020Only\u0020used\u0020on\u0020supervisor.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getConditionalStyles"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AsetConditionalStyles\u0028\u0029",
-            "name": "setConditionalStyles",
-            "summary": "Set\u0020Conditional\u0020Styles.\u0020Only\u0020used\u0020on\u0020supervisor.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_setConditionalStyles"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetProtection\u0028\u0029",
-            "name": "getProtection",
-            "summary": "Get\u0020Protection.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getProtection"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetQuotePrefix\u0028\u0029",
-            "name": "getQuotePrefix",
-            "summary": "Get\u0020quote\u0020prefix.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getQuotePrefix"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AsetQuotePrefix\u0028\u0029",
-            "name": "setQuotePrefix",
-            "summary": "Set\u0020quote\u0020prefix.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_setQuotePrefix"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetHashCode\u0028\u0029",
-            "name": "getHashCode",
-            "summary": "Get\u0020hash\u0020code.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getHashCode"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AgetIndex\u0028\u0029",
-            "name": "getIndex",
-            "summary": "Get\u0020own\u0020index\u0020in\u0020style\u0020collection.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_getIndex"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AsetIndex\u0028\u0029",
-            "name": "setIndex",
-            "summary": "Set\u0020own\u0020index\u0020in\u0020style\u0020collection.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_setIndex"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003AexportArray1\u0028\u0029",
-            "name": "exportArray1",
-            "summary": "Abstract\u0020method\u0020to\u0020be\u0020implemented\u0020in\u0020anything\u0020which\nextends\u0020this\u0020class.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#method_exportArray1"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A\u0024font",
-            "name": "font",
-            "summary": "Font.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#property_font"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A\u0024fill",
-            "name": "fill",
-            "summary": "Fill.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#property_fill"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A\u0024borders",
-            "name": "borders",
-            "summary": "Borders.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#property_borders"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A\u0024alignment",
-            "name": "alignment",
-            "summary": "Alignment.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#property_alignment"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A\u0024numberFormat",
-            "name": "numberFormat",
-            "summary": "Number\u0020Format.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#property_numberFormat"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A\u0024protection",
-            "name": "protection",
-            "summary": "Protection.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#property_protection"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A\u0024index",
-            "name": "index",
-            "summary": "Index\u0020of\u0020style\u0020in\u0020collection.\u0020Only\u0020used\u0020for\u0020real\u0020style.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#property_index"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Style\u003A\u003A\u0024quotePrefix",
-            "name": "quotePrefix",
-            "summary": "Use\u0020Quote\u0020Prefix\u0020when\u0020displaying\u0020in\u0020cell\u0020editor.\u0020Only\u0020used\u0020for\u0020real\u0020style.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Style.html#property_quotePrefix"
-        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Supervisor",
             "name": "Supervisor",
             "summary": "",
@@ -23996,6 +27196,16 @@ Search.appendIndex(
             "summary": "Populate\u0020array\u0020from\u0020exportArray1.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Style-Supervisor.html#method_exportArray2"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Supervisor\u003A\u003AgetSharedComponent\u0028\u0029",
+            "name": "getSharedComponent",
+            "summary": "Get\u0020the\u0020shared\u0020style\u0020component\u0020for\u0020the\u0020currently\u0020active\u0020cell\u0020in\u0020currently\u0020active\u0020sheet.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Supervisor.html#method_getSharedComponent"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Supervisor\u003A\u003AgetStyleArray\u0028\u0029",
+            "name": "getStyleArray",
+            "summary": "Build\u0020style\u0020array\u0020from\u0020subcomponents.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Style-Supervisor.html#method_getStyleArray"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\Supervisor\u003A\u003A\u0024isSupervisor",
             "name": "isSupervisor",
             "summary": "Supervisor\u003F",
@@ -24020,6 +27230,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Create\u0020a\u0020new\u0020Rule.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter-Column-Rule.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\\Column\\Rule\u003A\u003AsetEvaluatedFalse\u0028\u0029",
+            "name": "setEvaluatedFalse",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter-Column-Rule.html#method_setEvaluatedFalse"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\\Column\\Rule\u003A\u003AgetRuleType\u0028\u0029",
             "name": "getRuleType",
@@ -24481,6 +27696,11 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020new\u0020Column.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter-Column.html#method___construct"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\\Column\u003A\u003AsetEvaluatedFalse\u0028\u0029",
+            "name": "setEvaluatedFalse",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter-Column.html#method_setEvaluatedFalse"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\\Column\u003A\u003AgetColumnIndex\u0028\u0029",
             "name": "getColumnIndex",
             "summary": "Get\u0020AutoFilter\u0020column\u0020index\u0020as\u0020string\u0020eg\u003A\u0020\u0027A\u0027.",
@@ -24656,6 +27876,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter.html"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\u003A\u003AgetEvaluated\u0028\u0029",
+            "name": "getEvaluated",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter.html#method_getEvaluated"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\u003A\u003AsetEvaluated\u0028\u0029",
+            "name": "setEvaluated",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter.html#method_setEvaluated"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Create\u0020a\u0020new\u0020AutoFilter.",
@@ -24678,8 +27908,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\u003A\u003AsetRange\u0028\u0029",
             "name": "setRange",
-            "summary": "Set\u0020AutoFilter\u0020Range.",
+            "summary": "Set\u0020AutoFilter\u0020Cell\u0020Range.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter.html#method_setRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\u003A\u003AsetRangeToMaxRow\u0028\u0029",
+            "name": "setRangeToMaxRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter.html#method_setRangeToMaxRow"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\u003A\u003AgetColumns\u0028\u0029",
             "name": "getColumns",
@@ -24876,6 +28111,11 @@ Search.appendIndex(
             "summary": "Autofilter\u0020Column\u0020Ruleset.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter.html#property_columns"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\AutoFilter\u003A\u003A\u0024evaluated",
+            "name": "evaluated",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-AutoFilter.html#property_evaluated"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing",
             "name": "BaseDrawing",
             "summary": "",
@@ -24888,32 +28128,32 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetImageIndex\u0028\u0029",
             "name": "getImageIndex",
-            "summary": "Get\u0020image\u0020index.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getImageIndex"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetName\u0028\u0029",
             "name": "getName",
-            "summary": "Get\u0020Name.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getName"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetName\u0028\u0029",
             "name": "setName",
-            "summary": "Set\u0020Name.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setName"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetDescription\u0028\u0029",
             "name": "getDescription",
-            "summary": "Get\u0020Description.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getDescription"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetDescription\u0028\u0029",
             "name": "setDescription",
-            "summary": "Set\u0020Description.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setDescription"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetWorksheet\u0028\u0029",
             "name": "getWorksheet",
-            "summary": "Get\u0020Worksheet.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getWorksheet"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetWorksheet\u0028\u0029",
@@ -24923,52 +28163,82 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetCoordinates\u0028\u0029",
             "name": "getCoordinates",
-            "summary": "Get\u0020Coordinates.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getCoordinates"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetCoordinates\u0028\u0029",
             "name": "setCoordinates",
-            "summary": "Set\u0020Coordinates.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setCoordinates"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetOffsetX\u0028\u0029",
             "name": "getOffsetX",
-            "summary": "Get\u0020OffsetX.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getOffsetX"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetOffsetX\u0028\u0029",
             "name": "setOffsetX",
-            "summary": "Set\u0020OffsetX.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setOffsetX"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetOffsetY\u0028\u0029",
             "name": "getOffsetY",
-            "summary": "Get\u0020OffsetY.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getOffsetY"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetOffsetY\u0028\u0029",
             "name": "setOffsetY",
-            "summary": "Set\u0020OffsetY.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setOffsetY"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetCoordinates2\u0028\u0029",
+            "name": "getCoordinates2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getCoordinates2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetCoordinates2\u0028\u0029",
+            "name": "setCoordinates2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setCoordinates2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetOffsetX2\u0028\u0029",
+            "name": "getOffsetX2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getOffsetX2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetOffsetX2\u0028\u0029",
+            "name": "setOffsetX2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setOffsetX2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetOffsetY2\u0028\u0029",
+            "name": "getOffsetY2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getOffsetY2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetOffsetY2\u0028\u0029",
+            "name": "setOffsetY2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setOffsetY2"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetWidth\u0028\u0029",
             "name": "getWidth",
-            "summary": "Get\u0020Width.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getWidth"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetWidth\u0028\u0029",
             "name": "setWidth",
-            "summary": "Set\u0020Width.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setWidth"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetHeight\u0028\u0029",
             "name": "getHeight",
-            "summary": "Get\u0020Height.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getHeight"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetHeight\u0028\u0029",
             "name": "setHeight",
-            "summary": "Set\u0020Height.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setHeight"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetWidthAndHeight\u0028\u0029",
@@ -24978,32 +28248,32 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetResizeProportional\u0028\u0029",
             "name": "getResizeProportional",
-            "summary": "Get\u0020ResizeProportional.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getResizeProportional"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetResizeProportional\u0028\u0029",
             "name": "setResizeProportional",
-            "summary": "Set\u0020ResizeProportional.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setResizeProportional"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetRotation\u0028\u0029",
             "name": "getRotation",
-            "summary": "Get\u0020Rotation.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getRotation"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetRotation\u0028\u0029",
             "name": "setRotation",
-            "summary": "Set\u0020Rotation.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setRotation"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetShadow\u0028\u0029",
             "name": "getShadow",
-            "summary": "Get\u0020Shadow.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getShadow"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetShadow\u0028\u0029",
             "name": "setShadow",
-            "summary": "Set\u0020Shadow.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setShadow"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetHashCode\u0028\u0029",
@@ -25025,6 +28295,66 @@ Search.appendIndex(
             "name": "getHyperlink",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getHyperlink"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetSizesAndType\u0028\u0029",
+            "name": "setSizesAndType",
+            "summary": "Set\u0020Fact\u0020Sizes\u0020and\u0020Type\u0020of\u0020Image.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setSizesAndType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "Get\u0020Image\u0020Type.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetImageWidth\u0028\u0029",
+            "name": "getImageWidth",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getImageWidth"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetImageHeight\u0028\u0029",
+            "name": "getImageHeight",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getImageHeight"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AgetEditAs\u0028\u0029",
+            "name": "getEditAs",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_getEditAs"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AsetEditAs\u0028\u0029",
+            "name": "setEditAs",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_setEditAs"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AvalidEditAs\u0028\u0029",
+            "name": "validEditAs",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#method_validEditAs"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AEDIT_AS_ABSOLUTE",
+            "name": "EDIT_AS_ABSOLUTE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#constant_EDIT_AS_ABSOLUTE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AEDIT_AS_ONECELL",
+            "name": "EDIT_AS_ONECELL",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#constant_EDIT_AS_ONECELL"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AEDIT_AS_TWOCELL",
+            "name": "EDIT_AS_TWOCELL",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#constant_EDIT_AS_TWOCELL"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003AVALID_EDIT_AS",
+            "name": "VALID_EDIT_AS",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#constant_VALID_EDIT_AS"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024editAs",
+            "name": "editAs",
+            "summary": "The\u0020editAs\u0020attribute,\u0020used\u0020only\u0020with\u0020two\u0020cell\u0020anchor.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_editAs"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024imageCounter",
             "name": "imageCounter",
@@ -25066,6 +28396,21 @@ Search.appendIndex(
             "summary": "Offset\u0020Y.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_offsetY"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024coordinates2",
+            "name": "coordinates2",
+            "summary": "Coordinates2.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_coordinates2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024offsetX2",
+            "name": "offsetX2",
+            "summary": "Offset\u0020X2.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_offsetX2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024offsetY2",
+            "name": "offsetY2",
+            "summary": "Offset\u0020Y2.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_offsetY2"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024width",
             "name": "width",
             "summary": "Width.",
@@ -25075,6 +28420,16 @@ Search.appendIndex(
             "name": "height",
             "summary": "Height.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_height"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024imageWidth",
+            "name": "imageWidth",
+            "summary": "Pixel\u0020width\u0020of\u0020image.\u0020See\u0020\u0024width\u0020for\u0020the\u0020size\u0020the\u0020Drawing\u0020will\u0020be\u0020in\u0020the\u0020sheet.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_imageWidth"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024imageHeight",
+            "name": "imageHeight",
+            "summary": "Pixel\u0020width\u0020of\u0020image.\u0020See\u0020\u0024height\u0020for\u0020the\u0020size\u0020the\u0020Drawing\u0020will\u0020be\u0020in\u0020the\u0020sheet.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_imageHeight"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024resizeProportional",
             "name": "resizeProportional",
@@ -25095,6 +28450,11 @@ Search.appendIndex(
             "name": "hyperlink",
             "summary": "Image\u0020hyperlink.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_hyperlink"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\BaseDrawing\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "Image\u0020type.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-BaseDrawing.html#property_type"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\CellIterator",
             "name": "CellIterator",
@@ -25121,10 +28481,25 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020iterator\u0020to\u0020loop\u0020only\u0020existing\u0020cells.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-CellIterator.html#method_setIterateOnlyExistingCells"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\CellIterator\u003A\u003ATREAT_NULL_VALUE_AS_EMPTY_CELL",
+            "name": "TREAT_NULL_VALUE_AS_EMPTY_CELL",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-CellIterator.html#constant_TREAT_NULL_VALUE_AS_EMPTY_CELL"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\CellIterator\u003A\u003ATREAT_EMPTY_STRING_AS_EMPTY_CELL",
+            "name": "TREAT_EMPTY_STRING_AS_EMPTY_CELL",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-CellIterator.html#constant_TREAT_EMPTY_STRING_AS_EMPTY_CELL"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\CellIterator\u003A\u003A\u0024worksheet",
             "name": "worksheet",
             "summary": "Worksheet\u0020to\u0020iterate.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-CellIterator.html#property_worksheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\CellIterator\u003A\u003A\u0024cellCollection",
+            "name": "cellCollection",
+            "summary": "Cell\u0020Collection\u0020to\u0020iterate.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-CellIterator.html#property_cellCollection"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\CellIterator\u003A\u003A\u0024onlyExistingCells",
             "name": "onlyExistingCells",
@@ -25156,10 +28531,20 @@ Search.appendIndex(
             "summary": "Get\u0020cell\u0020iterator.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Column.html#method_getCellIterator"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Column\u003A\u003A\u0024parent",
-            "name": "parent",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Column\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "Returns\u0020a\u0020boolean\u0020true\u0020if\u0020the\u0020column\u0020contains\u0020no\u0020cells.\u0020By\u0020default,\u0020this\u0020means\u0020that\u0020no\u0020cell\u0020records\u0020exist\u0020in\u0020the\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020collection\u0020for\u0020this\u0020column.\u0020false\u0020will\u0020be\u0020returned\u0020otherwise.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Column.html#method_isEmpty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Column\u003A\u003AgetWorksheet\u0028\u0029",
+            "name": "getWorksheet",
+            "summary": "Returns\u0020bound\u0020worksheet.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Column.html#method_getWorksheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Column\u003A\u003A\u0024worksheet",
+            "name": "worksheet",
             "summary": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Column.html#property_parent"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Column.html#property_worksheet"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Column\u003A\u003A\u0024columnIndex",
             "name": "columnIndex",
@@ -25265,6 +28650,16 @@ Search.appendIndex(
             "name": "setColumnIndex",
             "summary": "Set\u0020column\u0020index\u0020as\u0020string\u0020eg\u003A\u0020\u0027A\u0027.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-ColumnDimension.html#method_setColumnIndex"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\ColumnDimension\u003A\u003AgetColumnNumeric\u0028\u0029",
+            "name": "getColumnNumeric",
+            "summary": "Get\u0020column\u0020index\u0020as\u0020numeric.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-ColumnDimension.html#method_getColumnNumeric"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\ColumnDimension\u003A\u003AsetColumnNumeric\u0028\u0029",
+            "name": "setColumnNumeric",
+            "summary": "Set\u0020column\u0020index\u0020as\u0020numeric.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-ColumnDimension.html#method_setColumnNumeric"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\ColumnDimension\u003A\u003AgetWidth\u0028\u0029",
             "name": "getWidth",
@@ -25430,11 +28825,6 @@ Search.appendIndex(
             "name": "setXfIndex",
             "summary": "Set\u0020index\u0020to\u0020cellXf.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Dimension.html#method_setXfIndex"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Dimension\u003A\u003A__clone\u0028\u0029",
-            "name": "__clone",
-            "summary": "Implement\u0020PHP\u0020__clone\u0020to\u0020create\u0020a\u0020deep\u0020clone,\u0020not\u0020just\u0020a\u0020shallow\u0020copy.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Dimension.html#method___clone"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Dimension\u003A\u003A\u0024visible",
             "name": "visible",
@@ -25646,6 +29036,11 @@ Search.appendIndex(
             "summary": "Get\u0020Extension.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Drawing.html#method_getExtension"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Drawing\u003A\u003AgetMediaFilename\u0028\u0029",
+            "name": "getMediaFilename",
+            "summary": "Get\u0020full\u0020filepath\u0020to\u0020store\u0020drawing\u0020in\u0020zip\u0020archive.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Drawing.html#method_getMediaFilename"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Drawing\u003A\u003AgetPath\u0028\u0029",
             "name": "getPath",
             "summary": "Get\u0020Path.",
@@ -25670,6 +29065,26 @@ Search.appendIndex(
             "name": "getHashCode",
             "summary": "Get\u0020hash\u0020code.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Drawing.html#method_getHashCode"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Drawing\u003A\u003AgetImageTypeForSave\u0028\u0029",
+            "name": "getImageTypeForSave",
+            "summary": "Get\u0020Image\u0020Type\u0020for\u0020Save.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Drawing.html#method_getImageTypeForSave"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Drawing\u003A\u003AgetImageFileExtensionForSave\u0028\u0029",
+            "name": "getImageFileExtensionForSave",
+            "summary": "Get\u0020Image\u0020file\u0020extention\u0020for\u0020Save.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Drawing.html#method_getImageFileExtensionForSave"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Drawing\u003A\u003AgetImageMimeType\u0028\u0029",
+            "name": "getImageMimeType",
+            "summary": "Get\u0020Image\u0020mime\u0020type.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Drawing.html#method_getImageMimeType"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Drawing\u003A\u003AIMAGE_TYPES_CONVERTION_MAP",
+            "name": "IMAGE_TYPES_CONVERTION_MAP",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Drawing.html#constant_IMAGE_TYPES_CONVERTION_MAP"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Drawing\u003A\u003A\u0024path",
             "name": "path",
@@ -26081,6 +29496,11 @@ Search.appendIndex(
             "summary": "Unique\u0020name.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-MemoryDrawing.html#property_uniqueName"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\MemoryDrawing\u003A\u003A\u0024alwaysNull",
+            "name": "alwaysNull",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-MemoryDrawing.html#property_alwaysNull"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageMargins",
             "name": "PageMargins",
             "summary": "",
@@ -26236,6 +29656,16 @@ Search.appendIndex(
             "summary": "Set\u0020Paper\u0020Size.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#method_setPaperSize"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003AgetPaperSizeDefault\u0028\u0029",
+            "name": "getPaperSizeDefault",
+            "summary": "Get\u0020Paper\u0020Size\u0020default.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#method_getPaperSizeDefault"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003AsetPaperSizeDefault\u0028\u0029",
+            "name": "setPaperSizeDefault",
+            "summary": "Set\u0020Paper\u0020Size\u0020Default.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#method_setPaperSizeDefault"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003AgetOrientation\u0028\u0029",
             "name": "getOrientation",
             "summary": "Get\u0020Orientation.",
@@ -26245,6 +29675,16 @@ Search.appendIndex(
             "name": "setOrientation",
             "summary": "Set\u0020Orientation.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#method_setOrientation"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003AgetOrientationDefault\u0028\u0029",
+            "name": "getOrientationDefault",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#method_getOrientationDefault"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003AsetOrientationDefault\u0028\u0029",
+            "name": "setOrientationDefault",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#method_setOrientationDefault"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003AgetScale\u0028\u0029",
             "name": "getScale",
@@ -26776,10 +30216,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#constant_PAGEORDER_DOWN_THEN_OVER"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003A\u0024paperSizeDefault",
+            "name": "paperSizeDefault",
+            "summary": "Paper\u0020size\u0020default.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#property_paperSizeDefault"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003A\u0024paperSize",
             "name": "paperSize",
             "summary": "Paper\u0020size.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#property_paperSize"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003A\u0024orientationDefault",
+            "name": "orientationDefault",
+            "summary": "Orientation\u0020default.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-PageSetup.html#property_orientationDefault"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\PageSetup\u003A\u003A\u0024orientation",
             "name": "orientation",
@@ -27246,6 +30696,11 @@ Search.appendIndex(
             "summary": "Get\u0020cell\u0020iterator.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Row.html#method_getCellIterator"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Row\u003A\u003AisEmpty\u0028\u0029",
+            "name": "isEmpty",
+            "summary": "Returns\u0020a\u0020boolean\u0020true\u0020if\u0020the\u0020row\u0020contains\u0020no\u0020cells.\u0020By\u0020default,\u0020this\u0020means\u0020that\u0020no\u0020cell\u0020records\u0020exist\u0020in\u0020the\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020collection\u0020for\u0020this\u0020row.\u0020false\u0020will\u0020be\u0020returned\u0020otherwise.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Row.html#method_isEmpty"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Row\u003A\u003AgetWorksheet\u0028\u0029",
             "name": "getWorksheet",
             "summary": "Returns\u0020bound\u0020worksheet.",
@@ -27571,6 +31026,711 @@ Search.appendIndex(
             "summary": "View.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-SheetView.html#property_sheetviewType"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column",
+            "name": "Column",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020a\u0020new\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AgetColumnIndex\u0028\u0029",
+            "name": "getColumnIndex",
+            "summary": "Get\u0020Table\u0020column\u0020index\u0020as\u0020string\u0020eg\u003A\u0020\u0027A\u0027.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_getColumnIndex"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AsetColumnIndex\u0028\u0029",
+            "name": "setColumnIndex",
+            "summary": "Set\u0020Table\u0020column\u0020index\u0020as\u0020string\u0020eg\u003A\u0020\u0027A\u0027.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_setColumnIndex"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AgetShowFilterButton\u0028\u0029",
+            "name": "getShowFilterButton",
+            "summary": "Get\u0020show\u0020Filter\u0020Button.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_getShowFilterButton"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AsetShowFilterButton\u0028\u0029",
+            "name": "setShowFilterButton",
+            "summary": "Set\u0020show\u0020Filter\u0020Button.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_setShowFilterButton"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AgetTotalsRowLabel\u0028\u0029",
+            "name": "getTotalsRowLabel",
+            "summary": "Get\u0020total\u0020Row\u0020Label.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_getTotalsRowLabel"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AsetTotalsRowLabel\u0028\u0029",
+            "name": "setTotalsRowLabel",
+            "summary": "Set\u0020total\u0020Row\u0020Label.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_setTotalsRowLabel"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AgetTotalsRowFunction\u0028\u0029",
+            "name": "getTotalsRowFunction",
+            "summary": "Get\u0020total\u0020Row\u0020Function.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_getTotalsRowFunction"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AsetTotalsRowFunction\u0028\u0029",
+            "name": "setTotalsRowFunction",
+            "summary": "Set\u0020total\u0020Row\u0020Function.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_setTotalsRowFunction"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AgetTotalsRowFormula\u0028\u0029",
+            "name": "getTotalsRowFormula",
+            "summary": "Get\u0020total\u0020Row\u0020Formula.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_getTotalsRowFormula"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AsetTotalsRowFormula\u0028\u0029",
+            "name": "setTotalsRowFormula",
+            "summary": "Set\u0020total\u0020Row\u0020Formula.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_setTotalsRowFormula"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AgetColumnFormula\u0028\u0029",
+            "name": "getColumnFormula",
+            "summary": "Get\u0020column\u0020Formula.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_getColumnFormula"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AsetColumnFormula\u0028\u0029",
+            "name": "setColumnFormula",
+            "summary": "Set\u0020column\u0020Formula.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_setColumnFormula"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AgetTable\u0028\u0029",
+            "name": "getTable",
+            "summary": "Get\u0020this\u0020Column\u0027s\u0020Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_getTable"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003AsetTable\u0028\u0029",
+            "name": "setTable",
+            "summary": "Set\u0020this\u0020Column\u0027s\u0020Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#method_setTable"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003A\u0024columnIndex",
+            "name": "columnIndex",
+            "summary": "Table\u0020Column\u0020Index.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#property_columnIndex"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003A\u0024showFilterButton",
+            "name": "showFilterButton",
+            "summary": "Show\u0020Filter\u0020Button.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#property_showFilterButton"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003A\u0024totalsRowLabel",
+            "name": "totalsRowLabel",
+            "summary": "Total\u0020Row\u0020Label.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#property_totalsRowLabel"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003A\u0024totalsRowFunction",
+            "name": "totalsRowFunction",
+            "summary": "Total\u0020Row\u0020Function.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#property_totalsRowFunction"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003A\u0024totalsRowFormula",
+            "name": "totalsRowFormula",
+            "summary": "Total\u0020Row\u0020Formula.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#property_totalsRowFormula"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003A\u0024columnFormula",
+            "name": "columnFormula",
+            "summary": "Column\u0020Formula.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#property_columnFormula"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\Column\u003A\u003A\u0024table",
+            "name": "table",
+            "summary": "Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html#property_table"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle",
+            "name": "TableStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020a\u0020new\u0020Table\u0020Style.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AgetTheme\u0028\u0029",
+            "name": "getTheme",
+            "summary": "Get\u0020theme.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_getTheme"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AsetTheme\u0028\u0029",
+            "name": "setTheme",
+            "summary": "Set\u0020theme.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_setTheme"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AgetShowFirstColumn\u0028\u0029",
+            "name": "getShowFirstColumn",
+            "summary": "Get\u0020show\u0020First\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_getShowFirstColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AsetShowFirstColumn\u0028\u0029",
+            "name": "setShowFirstColumn",
+            "summary": "Set\u0020show\u0020First\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_setShowFirstColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AgetShowLastColumn\u0028\u0029",
+            "name": "getShowLastColumn",
+            "summary": "Get\u0020show\u0020Last\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_getShowLastColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AsetShowLastColumn\u0028\u0029",
+            "name": "setShowLastColumn",
+            "summary": "Set\u0020show\u0020Last\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_setShowLastColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AgetShowRowStripes\u0028\u0029",
+            "name": "getShowRowStripes",
+            "summary": "Get\u0020show\u0020Row\u0020Stripes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_getShowRowStripes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AsetShowRowStripes\u0028\u0029",
+            "name": "setShowRowStripes",
+            "summary": "Set\u0020show\u0020Row\u0020Stripes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_setShowRowStripes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AgetShowColumnStripes\u0028\u0029",
+            "name": "getShowColumnStripes",
+            "summary": "Get\u0020show\u0020Column\u0020Stripes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_getShowColumnStripes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AsetShowColumnStripes\u0028\u0029",
+            "name": "setShowColumnStripes",
+            "summary": "Set\u0020show\u0020Column\u0020Stripes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_setShowColumnStripes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AgetTable\u0028\u0029",
+            "name": "getTable",
+            "summary": "Get\u0020this\u0020Style\u0027s\u0020Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_getTable"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003AsetTable\u0028\u0029",
+            "name": "setTable",
+            "summary": "Set\u0020this\u0020Style\u0027s\u0020Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#method_setTable"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_NONE",
+            "name": "TABLE_STYLE_NONE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_NONE"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT1",
+            "name": "TABLE_STYLE_LIGHT1",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT1"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT2",
+            "name": "TABLE_STYLE_LIGHT2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT3",
+            "name": "TABLE_STYLE_LIGHT3",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT3"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT4",
+            "name": "TABLE_STYLE_LIGHT4",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT4"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT5",
+            "name": "TABLE_STYLE_LIGHT5",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT5"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT6",
+            "name": "TABLE_STYLE_LIGHT6",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT6"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT7",
+            "name": "TABLE_STYLE_LIGHT7",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT7"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT8",
+            "name": "TABLE_STYLE_LIGHT8",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT8"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT9",
+            "name": "TABLE_STYLE_LIGHT9",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT9"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT10",
+            "name": "TABLE_STYLE_LIGHT10",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT10"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT11",
+            "name": "TABLE_STYLE_LIGHT11",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT11"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT12",
+            "name": "TABLE_STYLE_LIGHT12",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT12"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT13",
+            "name": "TABLE_STYLE_LIGHT13",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT13"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT14",
+            "name": "TABLE_STYLE_LIGHT14",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT14"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT15",
+            "name": "TABLE_STYLE_LIGHT15",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT15"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT16",
+            "name": "TABLE_STYLE_LIGHT16",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT16"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT17",
+            "name": "TABLE_STYLE_LIGHT17",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT17"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT18",
+            "name": "TABLE_STYLE_LIGHT18",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT18"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT19",
+            "name": "TABLE_STYLE_LIGHT19",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT19"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT20",
+            "name": "TABLE_STYLE_LIGHT20",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT20"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_LIGHT21",
+            "name": "TABLE_STYLE_LIGHT21",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_LIGHT21"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM1",
+            "name": "TABLE_STYLE_MEDIUM1",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM1"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM2",
+            "name": "TABLE_STYLE_MEDIUM2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM3",
+            "name": "TABLE_STYLE_MEDIUM3",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM3"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM4",
+            "name": "TABLE_STYLE_MEDIUM4",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM4"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM5",
+            "name": "TABLE_STYLE_MEDIUM5",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM5"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM6",
+            "name": "TABLE_STYLE_MEDIUM6",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM6"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM7",
+            "name": "TABLE_STYLE_MEDIUM7",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM7"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM8",
+            "name": "TABLE_STYLE_MEDIUM8",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM8"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM9",
+            "name": "TABLE_STYLE_MEDIUM9",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM9"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM10",
+            "name": "TABLE_STYLE_MEDIUM10",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM10"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM11",
+            "name": "TABLE_STYLE_MEDIUM11",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM11"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM12",
+            "name": "TABLE_STYLE_MEDIUM12",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM12"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM13",
+            "name": "TABLE_STYLE_MEDIUM13",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM13"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM14",
+            "name": "TABLE_STYLE_MEDIUM14",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM14"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM15",
+            "name": "TABLE_STYLE_MEDIUM15",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM15"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM16",
+            "name": "TABLE_STYLE_MEDIUM16",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM16"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM17",
+            "name": "TABLE_STYLE_MEDIUM17",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM17"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM18",
+            "name": "TABLE_STYLE_MEDIUM18",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM18"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM19",
+            "name": "TABLE_STYLE_MEDIUM19",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM19"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM20",
+            "name": "TABLE_STYLE_MEDIUM20",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM20"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM21",
+            "name": "TABLE_STYLE_MEDIUM21",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM21"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM22",
+            "name": "TABLE_STYLE_MEDIUM22",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM22"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM23",
+            "name": "TABLE_STYLE_MEDIUM23",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM23"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM24",
+            "name": "TABLE_STYLE_MEDIUM24",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM24"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM25",
+            "name": "TABLE_STYLE_MEDIUM25",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM25"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM26",
+            "name": "TABLE_STYLE_MEDIUM26",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM26"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM27",
+            "name": "TABLE_STYLE_MEDIUM27",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM27"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_MEDIUM28",
+            "name": "TABLE_STYLE_MEDIUM28",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_MEDIUM28"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK1",
+            "name": "TABLE_STYLE_DARK1",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK1"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK2",
+            "name": "TABLE_STYLE_DARK2",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK2"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK3",
+            "name": "TABLE_STYLE_DARK3",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK3"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK4",
+            "name": "TABLE_STYLE_DARK4",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK4"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK5",
+            "name": "TABLE_STYLE_DARK5",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK5"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK6",
+            "name": "TABLE_STYLE_DARK6",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK6"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK7",
+            "name": "TABLE_STYLE_DARK7",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK7"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK8",
+            "name": "TABLE_STYLE_DARK8",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK8"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK9",
+            "name": "TABLE_STYLE_DARK9",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK9"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK10",
+            "name": "TABLE_STYLE_DARK10",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK10"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003ATABLE_STYLE_DARK11",
+            "name": "TABLE_STYLE_DARK11",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#constant_TABLE_STYLE_DARK11"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003A\u0024theme",
+            "name": "theme",
+            "summary": "Theme.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#property_theme"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003A\u0024showFirstColumn",
+            "name": "showFirstColumn",
+            "summary": "Show\u0020First\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#property_showFirstColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003A\u0024showLastColumn",
+            "name": "showLastColumn",
+            "summary": "Show\u0020Last\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#property_showLastColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003A\u0024showRowStripes",
+            "name": "showRowStripes",
+            "summary": "Show\u0020Row\u0020Stripes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#property_showRowStripes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003A\u0024showColumnStripes",
+            "name": "showColumnStripes",
+            "summary": "Show\u0020Column\u0020Stripes.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#property_showColumnStripes"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\\TableStyle\u003A\u003A\u0024table",
+            "name": "table",
+            "summary": "Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html#property_table"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table",
+            "name": "Table",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020a\u0020new\u0020Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Get\u0020Table\u0020name.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getName"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AsetName\u0028\u0029",
+            "name": "setName",
+            "summary": "Set\u0020Table\u0020name.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_setName"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetShowHeaderRow\u0028\u0029",
+            "name": "getShowHeaderRow",
+            "summary": "Get\u0020show\u0020Header\u0020Row.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getShowHeaderRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AsetShowHeaderRow\u0028\u0029",
+            "name": "setShowHeaderRow",
+            "summary": "Set\u0020show\u0020Header\u0020Row.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_setShowHeaderRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetShowTotalsRow\u0028\u0029",
+            "name": "getShowTotalsRow",
+            "summary": "Get\u0020show\u0020Totals\u0020Row.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getShowTotalsRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AsetShowTotalsRow\u0028\u0029",
+            "name": "setShowTotalsRow",
+            "summary": "Set\u0020show\u0020Totals\u0020Row.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_setShowTotalsRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetRange\u0028\u0029",
+            "name": "getRange",
+            "summary": "Get\u0020Table\u0020Range.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AsetRange\u0028\u0029",
+            "name": "setRange",
+            "summary": "Set\u0020Table\u0020Cell\u0020Range.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_setRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AsetRangeToMaxRow\u0028\u0029",
+            "name": "setRangeToMaxRow",
+            "summary": "Set\u0020Table\u0020Cell\u0020Range\u0020to\u0020max\u0020row.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_setRangeToMaxRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetWorksheet\u0028\u0029",
+            "name": "getWorksheet",
+            "summary": "Get\u0020Table\u0027s\u0020Worksheet.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getWorksheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AsetWorksheet\u0028\u0029",
+            "name": "setWorksheet",
+            "summary": "Set\u0020Table\u0027s\u0020Worksheet.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_setWorksheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetColumns\u0028\u0029",
+            "name": "getColumns",
+            "summary": "Get\u0020all\u0020Table\u0020Columns.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getColumns"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AisColumnInRange\u0028\u0029",
+            "name": "isColumnInRange",
+            "summary": "Validate\u0020that\u0020the\u0020specified\u0020column\u0020is\u0020in\u0020the\u0020Table\u0020range.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_isColumnInRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetColumnOffset\u0028\u0029",
+            "name": "getColumnOffset",
+            "summary": "Get\u0020a\u0020specified\u0020Table\u0020Column\u0020Offset\u0020within\u0020the\u0020defined\u0020Table\u0020range.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getColumnOffset"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetColumn\u0028\u0029",
+            "name": "getColumn",
+            "summary": "Get\u0020a\u0020specified\u0020Table\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetColumnByOffset\u0028\u0029",
+            "name": "getColumnByOffset",
+            "summary": "Get\u0020a\u0020specified\u0020Table\u0020Column\u0020by\u0020it\u0027s\u0020offset.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getColumnByOffset"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AsetColumn\u0028\u0029",
+            "name": "setColumn",
+            "summary": "Set\u0020Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_setColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AclearColumn\u0028\u0029",
+            "name": "clearColumn",
+            "summary": "Clear\u0020a\u0020specified\u0020Table\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_clearColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AshiftColumn\u0028\u0029",
+            "name": "shiftColumn",
+            "summary": "Shift\u0020an\u0020Table\u0020Column\u0020Rule\u0020to\u0020a\u0020different\u0020column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_shiftColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AgetStyle\u0028\u0029",
+            "name": "getStyle",
+            "summary": "Get\u0020table\u0020Style.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_getStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003AsetStyle\u0028\u0029",
+            "name": "setStyle",
+            "summary": "Set\u0020table\u0020Style.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method_setStyle"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A__clone\u0028\u0029",
+            "name": "__clone",
+            "summary": "Implement\u0020PHP\u0020__clone\u0020to\u0020create\u0020a\u0020deep\u0020clone,\u0020not\u0020just\u0020a\u0020shallow\u0020copy.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method___clone"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "toString\u0020method\u0020replicates\u0020previous\u0020behavior\u0020by\u0020returning\u0020the\u0020range\u0020if\u0020object\u0020is\nreferenced\u0020as\u0020a\u0020property\u0020of\u0020its\u0020worksheet.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#method___toString"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "Table\u0020Name.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#property_name"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A\u0024showHeaderRow",
+            "name": "showHeaderRow",
+            "summary": "Show\u0020Header\u0020Row.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#property_showHeaderRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A\u0024showTotalsRow",
+            "name": "showTotalsRow",
+            "summary": "Show\u0020Totals\u0020Row.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#property_showTotalsRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A\u0024range",
+            "name": "range",
+            "summary": "Table\u0020Range.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#property_range"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A\u0024workSheet",
+            "name": "workSheet",
+            "summary": "Table\u0020Worksheet.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#property_workSheet"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A\u0024columns",
+            "name": "columns",
+            "summary": "Table\u0020Column.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#property_columns"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table\u003A\u003A\u0024style",
+            "name": "style",
+            "summary": "Table\u0020Style.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Table.html#property_style"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Validations",
+            "name": "Validations",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Validations.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Validations\u003A\u003AvalidateCellAddress\u0028\u0029",
+            "name": "validateCellAddress",
+            "summary": "Validate\u0020a\u0020cell\u0020address.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Validations.html#method_validateCellAddress"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Validations\u003A\u003AvalidateCellOrCellRange\u0028\u0029",
+            "name": "validateCellOrCellRange",
+            "summary": "Validate\u0020a\u0020cell\u0020address\u0020or\u0020cell\u0020range.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Validations.html#method_validateCellOrCellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Validations\u003A\u003AvalidateCellRange\u0028\u0029",
+            "name": "validateCellRange",
+            "summary": "Validate\u0020a\u0020cell\u0020range.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Validations.html#method_validateCellRange"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Validations\u003A\u003AdefinedNameToCoordinate\u0028\u0029",
+            "name": "definedNameToCoordinate",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Validations.html#method_definedNameToCoordinate"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet",
             "name": "Worksheet",
             "summary": "",
@@ -27861,6 +32021,11 @@ Search.appendIndex(
             "summary": "Get\u0020row\u0020dimension\u0020at\u0020a\u0020specific\u0020row.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getRowDimension"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003ArowDimensionExists\u0028\u0029",
+            "name": "rowDimensionExists",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_rowDimensionExists"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetColumnDimension\u0028\u0029",
             "name": "getColumnDimension",
             "summary": "Get\u0020column\u0020dimension\u0020at\u0020a\u0020specific\u0020column.",
@@ -27881,10 +32046,20 @@ Search.appendIndex(
             "summary": "Get\u0020style\u0020for\u0020cell.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getStyle"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetStyleByColumnAndRow\u0028\u0029",
+            "name": "getStyleByColumnAndRow",
+            "summary": "Get\u0020style\u0020for\u0020cell\u0020by\u0020using\u0020numeric\u0020cell\u0020coordinates.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getStyleByColumnAndRow"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetConditionalStyles\u0028\u0029",
             "name": "getConditionalStyles",
             "summary": "Get\u0020conditional\u0020styles\u0020for\u0020a\u0020cell.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getConditionalStyles"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetConditionalRange\u0028\u0029",
+            "name": "getConditionalRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getConditionalRange"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AconditionalStylesExists\u0028\u0029",
             "name": "conditionalStylesExists",
@@ -27905,11 +32080,6 @@ Search.appendIndex(
             "name": "setConditionalStyles",
             "summary": "Set\u0020conditional\u0020styles.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_setConditionalStyles"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetStyleByColumnAndRow\u0028\u0029",
-            "name": "getStyleByColumnAndRow",
-            "summary": "Get\u0020style\u0020for\u0020cell\u0020by\u0020using\u0020numeric\u0020cell\u0020coordinates.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getStyleByColumnAndRow"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AduplicateStyle\u0028\u0029",
             "name": "duplicateStyle",
@@ -27941,6 +32111,16 @@ Search.appendIndex(
             "summary": "Collection\u0020of\u0020merged\u0020cell\u0020ranges.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#property_mergeCells"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AclearMergeCellsByColumn\u0028\u0029",
+            "name": "clearMergeCellsByColumn",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_clearMergeCellsByColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AclearMergeCellsByRow\u0028\u0029",
+            "name": "clearMergeCellsByRow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_clearMergeCellsByRow"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AmergeCellsByColumnAndRow\u0028\u0029",
             "name": "mergeCellsByColumnAndRow",
             "summary": "Set\u0020merge\u0020on\u0020a\u0020cell\u0020range\u0020by\u0020using\u0020numeric\u0020cell\u0020coordinates.",
@@ -27968,7 +32148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AprotectCells\u0028\u0029",
             "name": "protectCells",
-            "summary": "Set\u0020protection\u0020on\u0020a\u0020cell\u0020range.",
+            "summary": "Set\u0020protection\u0020on\u0020a\u0020cell\u0020or\u0020cell\u0020range.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_protectCells"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AprotectCellsByColumnAndRow\u0028\u0029",
@@ -27978,7 +32158,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AunprotectCells\u0028\u0029",
             "name": "unprotectCells",
-            "summary": "Remove\u0020protection\u0020on\u0020a\u0020cell\u0020range.",
+            "summary": "Remove\u0020protection\u0020on\u0020a\u0020cell\u0020or\u0020cell\u0020range.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_unprotectCells"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AunprotectCellsByColumnAndRow\u0028\u0029",
@@ -28010,6 +32190,26 @@ Search.appendIndex(
             "name": "removeAutoFilter",
             "summary": "Remove\u0020autofilter.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_removeAutoFilter"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetTableCollection\u0028\u0029",
+            "name": "getTableCollection",
+            "summary": "Get\u0020collection\u0020of\u0020Tables.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getTableCollection"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AaddTable\u0028\u0029",
+            "name": "addTable",
+            "summary": "Add\u0020Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_addTable"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AremoveTableByName\u0028\u0029",
+            "name": "removeTableByName",
+            "summary": "Remove\u0020Table\u0020by\u0020name.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_removeTableByName"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AremoveTableCollection\u0028\u0029",
+            "name": "removeTableCollection",
+            "summary": "Remove\u0020collection\u0020of\u0020Tables.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_removeTableCollection"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetFreezePane\u0028\u0029",
             "name": "getFreezePane",
@@ -28061,10 +32261,20 @@ Search.appendIndex(
             "summary": "Delete\u0020a\u0020row,\u0020updating\u0020all\u0020possible\u0020related\u0020data.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_removeRow"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AremoveRowDimensions\u0028\u0029",
+            "name": "removeRowDimensions",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_removeRowDimensions"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AremoveColumn\u0028\u0029",
             "name": "removeColumn",
             "summary": "Remove\u0020a\u0020column,\u0020updating\u0020all\u0020possible\u0020related\u0020data.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_removeColumn"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AremoveColumnDimensions\u0028\u0029",
+            "name": "removeColumnDimensions",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_removeColumnDimensions"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AremoveColumnByIndex\u0028\u0029",
             "name": "removeColumnByIndex",
@@ -28131,6 +32341,11 @@ Search.appendIndex(
             "summary": "Set\u0020comments\u0020array\u0020for\u0020the\u0020entire\u0020sheet.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_setComments"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AremoveComment\u0028\u0029",
+            "name": "removeComment",
+            "summary": "Remove\u0020comment\u0020from\u0020cell.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_removeComment"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetComment\u0028\u0029",
             "name": "getComment",
             "summary": "Get\u0020comment\u0020for\u0020cell.",
@@ -28155,21 +32370,6 @@ Search.appendIndex(
             "name": "setSelectedCell",
             "summary": "Selected\u0020cell.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_setSelectedCell"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AensureString\u0028\u0029",
-            "name": "ensureString",
-            "summary": "Sigh\u0020\u002D\u0020Phpstan\u0020thinks,\u0020correctly,\u0020that\u0020preg_replace\u0020can\u0020return\u0020null.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_ensureString"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003ApregReplace\u0028\u0029",
-            "name": "pregReplace",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_pregReplace"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AtryDefinedName\u0028\u0029",
-            "name": "tryDefinedName",
-            "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_tryDefinedName"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AsetSelectedCells\u0028\u0029",
             "name": "setSelectedCells",
@@ -28306,6 +32506,16 @@ Search.appendIndex(
             "summary": "Copy\u0020worksheet\u0020\u0028\u0021\u003D\u0020clone\u0021\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_copy"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AisEmptyRow\u0028\u0029",
+            "name": "isEmptyRow",
+            "summary": "Returns\u0020a\u0020boolean\u0020true\u0020if\u0020the\u0020specified\u0020row\u0020contains\u0020no\u0020cells.\u0020By\u0020default,\u0020this\u0020means\u0020that\u0020no\u0020cell\u0020records\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020exist\u0020in\u0020the\u0020collection\u0020for\u0020this\u0020row.\u0020false\u0020will\u0020be\u0020returned\u0020otherwise.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_isEmptyRow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AisEmptyColumn\u0028\u0029",
+            "name": "isEmptyColumn",
+            "summary": "Returns\u0020a\u0020boolean\u0020true\u0020if\u0020the\u0020specified\u0020column\u0020contains\u0020no\u0020cells.\u0020By\u0020default,\u0020this\u0020means\u0020that\u0020no\u0020cell\u0020records\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020exist\u0020in\u0020the\u0020collection\u0020for\u0020this\u0020column.\u0020false\u0020will\u0020be\u0020returned\u0020otherwise.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_isEmptyColumn"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003A__clone\u0028\u0029",
             "name": "__clone",
             "summary": "Implement\u0020PHP\u0020__clone\u0020to\u0020create\u0020a\u0020deep\u0020clone,\u0020not\u0020just\u0020a\u0020shallow\u0020copy.",
@@ -28406,6 +32616,11 @@ Search.appendIndex(
             "summary": "Collection\u0020of\u0020Chart\u0020objects.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#property_chartCollection"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003A\u0024tableCollection",
+            "name": "tableCollection",
+            "summary": "Collection\u0020of\u0020Table\u0020objects.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#property_tableCollection"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003A\u0024title",
             "name": "title",
             "summary": "Worksheet\u0020title.",
@@ -28450,11 +32665,6 @@ Search.appendIndex(
             "name": "conditionalStylesCollection",
             "summary": "Conditional\u0020styles.\u0020Indexed\u0020by\u0020cell\u0020coordinate,\u0020e.g.\u0020\u0027A1\u0027.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#property_conditionalStylesCollection"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003A\u0024cellCollectionIsSorted",
-            "name": "cellCollectionIsSorted",
-            "summary": "Is\u0020the\u0020current\u0020cell\u0020collection\u0020sorted\u0020already\u003F",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#property_cellCollectionIsSorted"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003A\u0024breaks",
             "name": "breaks",
@@ -28968,22 +33178,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003AcreateCSSStyleAlignment\u0028\u0029",
             "name": "createCSSStyleAlignment",
-            "summary": "Create\u0020CSS\u0020style\u0020\u0028\\PhpOffice\\PhpSpreadsheet\\Style\\Alignment\u0029.",
+            "summary": "Create\u0020CSS\u0020style.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_createCSSStyleAlignment"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003AcreateCSSStyleFont\u0028\u0029",
             "name": "createCSSStyleFont",
-            "summary": "Create\u0020CSS\u0020style\u0020\u0028\\PhpOffice\\PhpSpreadsheet\\Style\\Font\u0029.",
+            "summary": "Create\u0020CSS\u0020style.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_createCSSStyleFont"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003AcreateCSSStyleBorders\u0028\u0029",
             "name": "createCSSStyleBorders",
-            "summary": "Create\u0020CSS\u0020style\u0020\u0028Borders\u0029.",
+            "summary": "Create\u0020CSS\u0020style.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_createCSSStyleBorders"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003AcreateCSSStyleBorder\u0028\u0029",
             "name": "createCSSStyleBorder",
-            "summary": "Create\u0020CSS\u0020style\u0020\u0028Border\u0029.",
+            "summary": "Create\u0020CSS\u0020style.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_createCSSStyleBorder"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003AcreateCSSStyleFill\u0028\u0029",
@@ -29126,6 +33336,11 @@ Search.appendIndex(
             "summary": "Write\u0020a\u0020comment\u0020in\u0020the\u0020same\u0020format\u0020as\u0020LibreOffice.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_writeComment"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003AgetOrientation\u0028\u0029",
+            "name": "getOrientation",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_getOrientation"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003AgeneratePageDeclarations\u0028\u0029",
             "name": "generatePageDeclarations",
             "summary": "Generate\u0020\u0040page\u0020declarations.",
@@ -29145,6 +33360,11 @@ Search.appendIndex(
             "name": "BORDER_ARR",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#constant_BORDER_ARR"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003ABODY_LINE",
+            "name": "BODY_LINE",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#constant_BODY_LINE"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Html\u003A\u003A\u0024spreadsheet",
             "name": "spreadsheet",
@@ -29361,6 +33581,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#method_writeTextProperties"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003AwriteColumnProperties\u0028\u0029",
+            "name": "writeColumnProperties",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#method_writeColumnProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003AwriteColumnStyles\u0028\u0029",
+            "name": "writeColumnStyles",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#method_writeColumnStyles"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003AwriteRowProperties\u0028\u0029",
+            "name": "writeRowProperties",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#method_writeRowProperties"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003AwriteRowStyles\u0028\u0029",
+            "name": "writeRowStyles",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#method_writeRowStyles"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003AwriteTableStyle\u0028\u0029",
+            "name": "writeTableStyle",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#method_writeTableStyle"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003Awrite\u0028\u0029",
             "name": "write",
             "summary": "",
@@ -29370,6 +33615,21 @@ Search.appendIndex(
             "name": "CELL_STYLE_PREFIX",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#constant_CELL_STYLE_PREFIX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003ACOLUMN_STYLE_PREFIX",
+            "name": "COLUMN_STYLE_PREFIX",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#constant_COLUMN_STYLE_PREFIX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003AROW_STYLE_PREFIX",
+            "name": "ROW_STYLE_PREFIX",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#constant_ROW_STYLE_PREFIX"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003ATABLE_STYLE_PREFIX",
+            "name": "TABLE_STYLE_PREFIX",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Cell-Style.html#constant_TABLE_STYLE_PREFIX"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Cell\\Style\u003A\u003A\u0024writer",
             "name": "writer",
@@ -29560,6 +33820,31 @@ Search.appendIndex(
             "name": "write",
             "summary": "Write\u0020settings.xml\u0020to\u0020XML\u0020format.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Settings.html#method_write"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Settings\u003A\u003AwriteAllWorksheetSettings\u0028\u0029",
+            "name": "writeAllWorksheetSettings",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Settings.html#method_writeAllWorksheetSettings"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Settings\u003A\u003AwriteWorksheetSettings\u0028\u0029",
+            "name": "writeWorksheetSettings",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Settings.html#method_writeWorksheetSettings"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Settings\u003A\u003AwriteSelectedCells\u0028\u0029",
+            "name": "writeSelectedCells",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Settings.html#method_writeSelectedCells"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Settings\u003A\u003AwriteSplitValue\u0028\u0029",
+            "name": "writeSplitValue",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Settings.html#method_writeSplitValue"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Settings\u003A\u003AwriteFreezePane\u0028\u0029",
+            "name": "writeFreezePane",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Settings.html#method_writeFreezePane"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Ods\\Styles",
             "name": "Styles",
@@ -29950,6 +34235,46 @@ Search.appendIndex(
             "name": "operatorMap",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-CellDataValidation.html#property_operatorMap"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ConditionalHelper",
+            "name": "ConditionalHelper",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ConditionalHelper\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ConditionalHelper\u003A\u003AprocessCondition\u0028\u0029",
+            "name": "processCondition",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html#method_processCondition"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ConditionalHelper\u003A\u003A\u0024tokens",
+            "name": "tokens",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html#property_tokens"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ConditionalHelper\u003A\u003A\u0024size",
+            "name": "size",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html#property_size"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ConditionalHelper\u003A\u003A\u0024parser",
+            "name": "parser",
+            "summary": "Formula\u0020parser.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html#property_parser"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ConditionalHelper\u003A\u003A\u0024condition",
+            "name": "condition",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html#property_condition"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ConditionalHelper\u003A\u003A\u0024cellRange",
+            "name": "cellRange",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-ConditionalHelper.html#property_cellRange"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\ErrorCode",
             "name": "ErrorCode",
@@ -30591,6 +34916,11 @@ Search.appendIndex(
             "summary": "Add\u0020data\u0020to\u0020the\u0020beginning\u0020of\u0020the\u0020workbook\u0020\u0028note\u0020the\u0020reverse\u0020order\u0029\nand\u0020to\u0020the\u0020end\u0020of\u0020the\u0020workbook.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#method_close"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\Worksheet\u003A\u003AwriteConditionalFormatting\u0028\u0029",
+            "name": "writeConditionalFormatting",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#method_writeConditionalFormatting"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\Worksheet\u003A\u003AwriteBIFF8CellRangeAddressFixed\u0028\u0029",
             "name": "writeBIFF8CellRangeAddressFixed",
             "summary": "Write\u0020a\u0020cell\u0020range\u0020address\u0020in\u0020BIFF8\nalways\u0020fixed\u0020range\nSee\u0020section\u00202.5.14\u0020in\u0020OpenOffice.org\u0027s\u0020Documentation\u0020of\u0020the\u0020Microsoft\u0020Excel\u0020File\u0020Format.",
@@ -30925,6 +35255,16 @@ Search.appendIndex(
             "name": "WRITE_FORMULA_EXCEPTION",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#constant_WRITE_FORMULA_EXCEPTION"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\Worksheet\u003A\u003A\u0024always0",
+            "name": "always0",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#property_always0"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\Worksheet\u003A\u003A\u0024always1",
+            "name": "always1",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Worksheet.html#property_always1"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xls\\Worksheet\u003A\u003A\u0024parser",
             "name": "parser",
@@ -31326,6 +35666,11 @@ Search.appendIndex(
             "summary": "Write\u0020charts\u0020to\u0020XML\u0020format.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeChart"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteView3D\u0028\u0029",
+            "name": "writeView3D",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeView3D"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteTitle\u0028\u0029",
             "name": "writeTitle",
             "summary": "Write\u0020Chart\u0020Title.",
@@ -31341,6 +35686,11 @@ Search.appendIndex(
             "summary": "Write\u0020Chart\u0020Plot\u0020Area.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writePlotArea"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteDataLabelsBool\u0028\u0029",
+            "name": "writeDataLabelsBool",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeDataLabelsBool"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteDataLabels\u0028\u0029",
             "name": "writeDataLabels",
             "summary": "Write\u0020Data\u0020Labels.",
@@ -31355,6 +35705,11 @@ Search.appendIndex(
             "name": "writeValueAxis",
             "summary": "Write\u0020Value\u0020Axis.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeValueAxis"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteSerAxis\u0028\u0029",
+            "name": "writeSerAxis",
+            "summary": "Write\u0020Ser\u0020Axis,\u0020for\u0020Surface\u0020chart.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeSerAxis"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AgetChartType\u0028\u0029",
             "name": "getChartType",
@@ -31401,10 +35756,45 @@ Search.appendIndex(
             "summary": "Write\u0020Printer\u0020Settings.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writePrintSettings"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003A\u0024calculateCellValues",
-            "name": "calculateCellValues",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteEffects\u0028\u0029",
+            "name": "writeEffects",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#property_calculateCellValues"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeEffects"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteShadow\u0028\u0029",
+            "name": "writeShadow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeShadow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteGlow\u0028\u0029",
+            "name": "writeGlow",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeGlow"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteSoftEdge\u0028\u0029",
+            "name": "writeSoftEdge",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeSoftEdge"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteLineStyles\u0028\u0029",
+            "name": "writeLineStyles",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeLineStyles"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteNotEmpty\u0028\u0029",
+            "name": "writeNotEmpty",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeNotEmpty"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003AwriteColor\u0028\u0029",
+            "name": "writeColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#method_writeColor"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003ACUSTOM_COLOR_TYPES",
+            "name": "CUSTOM_COLOR_TYPES",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Chart.html#constant_CUSTOM_COLOR_TYPES"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Chart\u003A\u003A\u0024seriesIndex",
             "name": "seriesIndex",
@@ -31576,6 +35966,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Drawing.html#method_writeHyperLinkDrawing"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Drawing\u003A\u003AstringEmu\u0028\u0029",
+            "name": "stringEmu",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Drawing.html#method_stringEmu"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Rels",
             "name": "Rels",
             "summary": "",
@@ -31610,6 +36005,11 @@ Search.appendIndex(
             "name": "writeHeaderFooterDrawingRelationships",
             "summary": "Write\u0020header\/footer\u0020drawing\u0020relationships\u0020to\u0020XML\u0020format.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Rels.html#method_writeHeaderFooterDrawingRelationships"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Rels\u003A\u003AwriteVMLDrawingRelationships\u0028\u0029",
+            "name": "writeVMLDrawingRelationships",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Rels.html#method_writeVMLDrawingRelationships"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Rels\u003A\u003AwriteRelationship\u0028\u0029",
             "name": "writeRelationship",
@@ -31666,6 +36066,11 @@ Search.appendIndex(
             "summary": "Write\u0020Rich\u0020Text.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-StringTable.html#method_writeRichTextForCharts"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\StringTable\u003A\u003AwriteChartTextColor\u0028\u0029",
+            "name": "writeChartTextColor",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-StringTable.html#method_writeChartTextColor"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\StringTable\u003A\u003AflipStringTable\u0028\u0029",
             "name": "flipStringTable",
             "summary": "Flip\u0020string\u0020table\u0020\u0028for\u0020index\u0020searching\u0029.",
@@ -31690,6 +36095,11 @@ Search.appendIndex(
             "name": "writeGradientFill",
             "summary": "Write\u0020Gradient\u0020Fill.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Style.html#method_writeGradientFill"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Style\u003A\u003AwritePatternColors\u0028\u0029",
+            "name": "writePatternColors",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Style.html#method_writePatternColors"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Style\u003A\u003AwritePatternFill\u0028\u0029",
             "name": "writePatternFill",
@@ -31755,6 +36165,16 @@ Search.appendIndex(
             "name": "allNumberFormats",
             "summary": "Get\u0020an\u0020array\u0020of\u0020all\u0020number\u0020formats.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Style.html#method_allNumberFormats"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Table",
+            "name": "Table",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Table.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Table\u003A\u003AwriteTable\u0028\u0029",
+            "name": "writeTable",
+            "summary": "Write\u0020Table\u0020to\u0020XML\u0020format.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Table.html#method_writeTable"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Theme",
             "name": "Theme",
@@ -31896,6 +36316,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Worksheet.html#method_writeOtherCondElements"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet\u003A\u003AwriteTimePeriodCondElements\u0028\u0029",
+            "name": "writeTimePeriodCondElements",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Worksheet.html#method_writeTimePeriodCondElements"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet\u003A\u003AwriteTextCondElements\u0028\u0029",
             "name": "writeTextCondElements",
             "summary": "",
@@ -31950,6 +36375,11 @@ Search.appendIndex(
             "name": "writeAutoFilter",
             "summary": "Write\u0020AutoFilter.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Worksheet.html#method_writeAutoFilter"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet\u003A\u003AwriteTable\u0028\u0029",
+            "name": "writeTable",
+            "summary": "Write\u0020Table.",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Worksheet.html#method_writeTable"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet\u003A\u003AwritePageSetup\u0028\u0029",
             "name": "writePageSetup",
@@ -32136,6 +36566,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html#method_getWriterPartTheme"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\u003A\u003AgetWriterPartTable\u0028\u0029",
+            "name": "getWriterPartTable",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html#method_getWriterPartTable"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\u003A\u003AgetWriterPartWorkbook\u0028\u0029",
             "name": "getWriterPartWorkbook",
             "summary": "",
@@ -32220,6 +36655,11 @@ Search.appendIndex(
             "name": "addZipFiles",
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html#method_addZipFiles"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\u003A\u003AprocessDrawing\u0028\u0029",
+            "name": "processDrawing",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html#method_processDrawing"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\u003A\u003A\u0024office2003compatibility",
             "name": "office2003compatibility",
@@ -32331,6 +36771,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html#property_writerPartTheme"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\u003A\u003A\u0024writerPartTable",
+            "name": "writerPartTable",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx.html#property_writerPartTable"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\u003A\u003A\u0024writerPartWorkbook",
             "name": "writerPartWorkbook",
             "summary": "",
@@ -32406,6 +36851,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/phpoffice-phpspreadsheet-calculation-financial-securities.html"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Information",
+            "name": "Information",
+            "summary": "",
+            "url": "namespaces/phpoffice-phpspreadsheet-calculation-information.html"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Calculation\\Internal",
             "name": "Internal",
             "summary": "",
@@ -32466,6 +36916,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/phpoffice-phpspreadsheet-cell.html"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet",
+            "name": "PhpSpreadsheet",
+            "summary": "",
+            "url": "namespaces/phpoffice-phpspreadsheet.html"
+        },                {
+            "fqsen": "\\PhpOffice",
+            "name": "PhpOffice",
+            "summary": "",
+            "url": "namespaces/phpoffice.html"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Chart",
             "name": "Chart",
             "summary": "",
@@ -32480,16 +36940,6 @@ Search.appendIndex(
             "name": "Collection",
             "summary": "",
             "url": "namespaces/phpoffice-phpspreadsheet-collection.html"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet",
-            "name": "PhpSpreadsheet",
-            "summary": "",
-            "url": "namespaces/phpoffice-phpspreadsheet.html"
-        },                {
-            "fqsen": "\\PhpOffice",
-            "name": "PhpOffice",
-            "summary": "",
-            "url": "namespaces/phpoffice.html"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Document",
             "name": "Document",
@@ -32626,6 +37076,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/phpoffice-phpspreadsheet-style-conditionalformatting.html"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\ConditionalFormatting\\Wizard",
+            "name": "Wizard",
+            "summary": "",
+            "url": "namespaces/phpoffice-phpspreadsheet-style-conditionalformatting-wizard.html"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Style\\NumberFormat",
             "name": "NumberFormat",
             "summary": "",
@@ -32650,6 +37105,11 @@ Search.appendIndex(
             "name": "Drawing",
             "summary": "",
             "url": "namespaces/phpoffice-phpspreadsheet-worksheet-drawing.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Table",
+            "name": "Table",
+            "summary": "",
+            "url": "namespaces/phpoffice-phpspreadsheet-worksheet-table.html"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer",
             "name": "Writer",
