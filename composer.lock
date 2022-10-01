@@ -4,24 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cbb20f8d8f2daae0aeb72431cda0980",
+    "content-hash": "03ae6d232b34f581827b69e64b738051",
     "packages": [
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.14.0",
+            "version": "v4.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "12ab42bd6e742c70c0a52f7b82477fcd44e64b75"
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/12ab42bd6e742c70c0a52f7b82477fcd44e64b75",
-                "reference": "12ab42bd6e742c70c0a52f7b82477fcd44e64b75",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/523407fb06eb9e5f3d59889b3978d5bfe94299c8",
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2"
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "cerdic/css-tidy": "^1.7 || ^2.0",
+                "simpletest/simpletest": "dev-master"
+            },
+            "suggest": {
+                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
+                "ext-bcmath": "Used for unit conversion and imagecrash protection",
+                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
+                "ext-tidy": "Used for pretty-printing HTML"
             },
             "type": "library",
             "autoload": {
@@ -51,7 +61,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2021-12-25T01:21:49+00:00"
+            "time": "2022-09-18T07:06:19+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -763,12 +773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/composer-installer.git",
-                "reference": "04f4e8f6716241cb9200774ff73cb99fbb81e09a"
+                "reference": "231b4e82eee01f16537c8ac3fce31c1f83320c80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/composer-installer/zipball/04f4e8f6716241cb9200774ff73cb99fbb81e09a",
-                "reference": "04f4e8f6716241cb9200774ff73cb99fbb81e09a",
+                "url": "https://api.github.com/repos/PHPCSStandards/composer-installer/zipball/231b4e82eee01f16537c8ac3fce31c1f83320c80",
+                "reference": "231b4e82eee01f16537c8ac3fce31c1f83320c80",
                 "shasum": ""
             },
             "require": {
@@ -829,7 +839,7 @@
                 "stylecheck",
                 "tests"
             ],
-            "time": "2022-06-26T10:27:07+00:00"
+            "time": "2022-07-26T12:51:47+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1753,6 +1763,7 @@
             "keywords": [
                 "diff"
             ],
+            "abandoned": true,
             "time": "2020-10-14T08:32:19+00:00"
         },
         {
