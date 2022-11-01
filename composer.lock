@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cbb20f8d8f2daae0aeb72431cda0980",
+    "content-hash": "03ae6d232b34f581827b69e64b738051",
     "packages": [
         {
             "name": "ezyang/htmlpurifier",
@@ -763,12 +763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/composer-installer.git",
-                "reference": "04f4e8f6716241cb9200774ff73cb99fbb81e09a"
+                "reference": "9838aa941e2c71d7b627be577ba1fdaf32f4f4f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/composer-installer/zipball/04f4e8f6716241cb9200774ff73cb99fbb81e09a",
-                "reference": "04f4e8f6716241cb9200774ff73cb99fbb81e09a",
+                "url": "https://api.github.com/repos/PHPCSStandards/composer-installer/zipball/9838aa941e2c71d7b627be577ba1fdaf32f4f4f0",
+                "reference": "9838aa941e2c71d7b627be577ba1fdaf32f4f4f0",
                 "shasum": ""
             },
             "require": {
@@ -829,7 +829,7 @@
                 "stylecheck",
                 "tests"
             ],
-            "time": "2022-06-26T10:27:07+00:00"
+            "time": "2022-10-03T16:10:17+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1753,6 +1753,7 @@
             "keywords": [
                 "diff"
             ],
+            "abandoned": true,
             "time": "2020-10-14T08:32:19+00:00"
         },
         {
@@ -2076,16 +2077,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.8.0",
+            "version": "1.8.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "b7648d4ee9321665acaf112e49da9fd93df8fbd5"
+                "reference": "46e223dd68a620da18855c23046ddb00940b4014"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b7648d4ee9321665acaf112e49da9fd93df8fbd5",
-                "reference": "b7648d4ee9321665acaf112e49da9fd93df8fbd5",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/46e223dd68a620da18855c23046ddb00940b4014",
+                "reference": "46e223dd68a620da18855c23046ddb00940b4014",
                 "shasum": ""
             },
             "require": {
@@ -2109,6 +2110,10 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
             "funding": [
                 {
                     "url": "https://github.com/ondrejmirtes",
@@ -2119,15 +2124,11 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://www.patreon.com/phpstan",
-                    "type": "patreon"
-                },
-                {
                     "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-29T08:53:31+00:00"
+            "time": "2022-10-24T15:45:13+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
