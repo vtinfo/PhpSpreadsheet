@@ -1,35 +1,93 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Engineering;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Calculation\Exception as CalcExp;
+use PhpOffice\PhpSpreadsheet\Calculation\Engineering\BitWise;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception as CalculationException;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheetTests\Calculation\Functions\FormulaArguments;
 use PHPUnit\Framework\TestCase;
 
 class BitXorTest extends TestCase
 {
     /**
      * @dataProvider providerBITXOR
-     *
-     * @param mixed $expectedResult
      */
-    public function testBITXOR($expectedResult, string $formula): void
+    public function testDirectCallToBITXOR(float|int|string $expectedResult, null|bool|int|float|string $arg1, null|bool|int|float|string $arg2): void
     {
-        if ($expectedResult === 'exception') {
-            $this->expectException(CalcExp::class);
-        }
-        $spreadsheet = new Spreadsheet();
-        $sheet = $spreadsheet->getActiveSheet();
-        $sheet->setCellValue('A2', 8);
-        $sheet->getCell('A1')->setValue("=BITXOR($formula)");
-        $result = $sheet->getCell('A1')->getCalculatedValue();
-        self::assertEquals($expectedResult, $result);
+        $result = BitWise::BITXOR($arg1, $arg2);
+        self::assertSame($expectedResult, $result);
     }
 
-    public function providerBITXOR(): array
+    /**
+     * @dataProvider providerBITXOR
+     */
+    public function testBITXORAsFormula(float|int|string $expectedResult, mixed ...$args): void
+    {
+        $arguments = new FormulaArguments(...$args);
+
+        $calculation = Calculation::getInstance();
+        $formula = "=BITXOR({$arguments})";
+
+        $result = $calculation->_calculateFormulaValue($formula);
+        self::assertSame($expectedResult, $result);
+    }
+
+    /**
+     * @dataProvider providerBITXOR
+     */
+    public function testBITXORInWorksheet(float|int|string $expectedResult, mixed ...$args): void
+    {
+        $arguments = new FormulaArguments(...$args);
+
+        $spreadsheet = new Spreadsheet();
+        $worksheet = $spreadsheet->getActiveSheet();
+        $argumentCells = $arguments->populateWorksheet($worksheet);
+        $formula = "=BITXOR({$argumentCells})";
+
+        $result = $worksheet->setCellValue('A1', $formula)
+            ->getCell('A1')
+            ->getCalculatedValue();
+        self::assertSame($expectedResult, $result);
+
+        $spreadsheet->disconnectWorksheets();
+    }
+
+    public static function providerBITXOR(): array
     {
         return require 'tests/data/Calculation/Engineering/BITXOR.php';
+    }
+
+    /**
+     * @dataProvider providerUnhappyBITXOR
+     */
+    public function testBITXORUnhappyPath(string $expectedException, mixed ...$args): void
+    {
+        $arguments = new FormulaArguments(...$args);
+
+        $spreadsheet = new Spreadsheet();
+        $worksheet = $spreadsheet->getActiveSheet();
+        $argumentCells = $arguments->populateWorksheet($worksheet);
+        $formula = "=BITXOR({$argumentCells})";
+
+        $this->expectException(CalculationException::class);
+        $this->expectExceptionMessage($expectedException);
+        $worksheet->setCellValue('A1', $formula)
+            ->getCell('A1')
+            ->getCalculatedValue();
+
+        $spreadsheet->disconnectWorksheets();
+    }
+
+    public static function providerUnhappyBITXOR(): array
+    {
+        return [
+            ['Formula Error: Wrong number of arguments for BITXOR() function'],
+            ['Formula Error: Wrong number of arguments for BITXOR() function', 1234],
+        ];
     }
 
     /**
@@ -44,7 +102,7 @@ class BitXorTest extends TestCase
         self::assertEquals($expectedResult, $result);
     }
 
-    public function providerBitXorArray(): array
+    public static function providerBitXorArray(): array
     {
         return [
             'row/column vector' => [

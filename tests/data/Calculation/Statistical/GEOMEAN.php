@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     [
         5.47698696965696,
@@ -9,7 +11,7 @@ return [
         1.6226711115996,
         2.5, 3, 0.5, 1, 3,
     ],
-    [
-        '#NUM!',
+    'no arguments' => [
+        'exception',
     ],
 ];

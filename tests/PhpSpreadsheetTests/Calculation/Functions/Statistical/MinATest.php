@@ -1,24 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
-
-class MinATest extends TestCase
+class MinATest extends AllSetupTeardown
 {
     /**
      * @dataProvider providerMINA
-     *
-     * @param mixed $expectedResult
      */
-    public function testMINA($expectedResult, ...$args): void
+    public function testMINA(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::MINA(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCaseReference('MINA', $expectedResult, ...$args);
     }
 
-    public function providerMINA(): array
+    public static function providerMINA(): array
     {
         return require 'tests/data/Calculation/Statistical/MINA.php';
     }

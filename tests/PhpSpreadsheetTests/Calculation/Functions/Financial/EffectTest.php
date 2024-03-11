@@ -1,32 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class EffectTest extends TestCase
+class EffectTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerEFFECT
-     *
-     * @param mixed $expectedResult
-     * @param mixed $rate
-     * @param mixed $periods
      */
-    public function testEFFECT($expectedResult, $rate, $periods): void
+    public function testEFFECT(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Financial::EFFECT($rate, $periods);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('EFFECT', $expectedResult, $args);
     }
 
-    public function providerEFFECT(): array
+    public static function providerEFFECT(): array
     {
         return require 'tests/data/Calculation/Financial/EFFECT.php';
     }

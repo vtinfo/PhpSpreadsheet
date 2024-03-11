@@ -4,6 +4,7 @@ namespace PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use PhpOffice\PhpSpreadsheet\Comment;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
 use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
 
 class Comments extends WriterPart
@@ -13,7 +14,7 @@ class Comments extends WriterPart
      *
      * @return string XML Output
      */
-    public function writeComments(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $worksheet)
+    public function writeComments(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $worksheet): string
     {
         // Create XML writer
         $objWriter = null;
@@ -40,7 +41,7 @@ class Comments extends WriterPart
 
         // comments
         $objWriter->startElement('comments');
-        $objWriter->writeAttribute('xmlns', 'http://schemas.openxmlformats.org/spreadsheetml/2006/main');
+        $objWriter->writeAttribute('xmlns', Namespaces::MAIN);
 
         // Loop through authors
         $objWriter->startElement('authors');
@@ -69,7 +70,7 @@ class Comments extends WriterPart
      * @param Comment $comment Comment
      * @param array $authors Array of authors
      */
-    private function writeComment(XMLWriter $objWriter, $cellReference, Comment $comment, array $authors): void
+    private function writeComment(XMLWriter $objWriter, string $cellReference, Comment $comment, array $authors): void
     {
         // comment
         $objWriter->startElement('comment');
@@ -89,7 +90,7 @@ class Comments extends WriterPart
      *
      * @return string XML Output
      */
-    public function writeVMLComments(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $worksheet)
+    public function writeVMLComments(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $worksheet): string
     {
         // Create XML writer
         $objWriter = null;
@@ -107,9 +108,9 @@ class Comments extends WriterPart
 
         // xml
         $objWriter->startElement('xml');
-        $objWriter->writeAttribute('xmlns:v', 'urn:schemas-microsoft-com:vml');
-        $objWriter->writeAttribute('xmlns:o', 'urn:schemas-microsoft-com:office:office');
-        $objWriter->writeAttribute('xmlns:x', 'urn:schemas-microsoft-com:office:excel');
+        $objWriter->writeAttribute('xmlns:v', Namespaces::URN_VML);
+        $objWriter->writeAttribute('xmlns:o', Namespaces::URN_MSOFFICE);
+        $objWriter->writeAttribute('xmlns:x', Namespaces::URN_EXCEL);
 
         // o:shapelayout
         $objWriter->startElement('o:shapelayout');
@@ -160,12 +161,12 @@ class Comments extends WriterPart
      * @param string $cellReference Cell reference, eg: 'A1'
      * @param Comment $comment Comment
      */
-    private function writeVMLComment(XMLWriter $objWriter, $cellReference, Comment $comment): void
+    private function writeVMLComment(XMLWriter $objWriter, string $cellReference, Comment $comment): void
     {
         // Metadata
         [$column, $row] = Coordinate::indexesFromString($cellReference);
         $id = 1024 + $column + $row;
-        $id = substr($id, 0, 4);
+        $id = substr("$id", 0, 4);
 
         // v:shape
         $objWriter->startElement('v:shape');
@@ -223,10 +224,10 @@ class Comments extends WriterPart
         $objWriter->writeElement('x:AutoFill', 'False');
 
         // x:Row
-        $objWriter->writeElement('x:Row', ($row - 1));
+        $objWriter->writeElement('x:Row', (string) ($row - 1));
 
         // x:Column
-        $objWriter->writeElement('x:Column', ($column - 1));
+        $objWriter->writeElement('x:Column', (string) ($column - 1));
 
         $objWriter->endElement();
 

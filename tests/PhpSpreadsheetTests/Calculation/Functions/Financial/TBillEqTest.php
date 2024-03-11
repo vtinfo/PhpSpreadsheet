@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class TBillEqTest extends TestCase
+class TBillEqTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerTBILLEQ
-     *
-     * @param mixed $expectedResult
      */
-    public function testTBILLEQ($expectedResult, ...$args): void
+    public function testTBILLEQ(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Financial::TBILLEQ(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('TBILLEQ', $expectedResult, $args);
     }
 
-    public function providerTBILLEQ(): array
+    public static function providerTBILLEQ(): array
     {
         return require 'tests/data/Calculation/Financial/TBILLEQ.php';
     }

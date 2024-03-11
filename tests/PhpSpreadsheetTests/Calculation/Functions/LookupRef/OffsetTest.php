@@ -1,24 +1,24 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\LookupRef;
 
 use PhpOffice\PhpSpreadsheet\Calculation\LookupRef;
+use PhpOffice\PhpSpreadsheet\NamedRange;
 
 class OffsetTest extends AllSetupTeardown
 {
     /**
      * @dataProvider providerOFFSET
-     *
-     * @param mixed $expectedResult
-     * @param null|string $cellReference
      */
-    public function testOFFSET($expectedResult, $cellReference = null): void
+    public function testOFFSET(mixed $expectedResult, null|string $cellReference = null): void
     {
         $result = LookupRef\Offset::OFFSET($cellReference);
         self::assertSame($expectedResult, $result);
     }
 
-    public function providerOFFSET(): array
+    public static function providerOFFSET(): array
     {
         return require 'tests/data/Calculation/LookupRef/OFFSET.php';
     }
@@ -45,5 +45,19 @@ class OffsetTest extends AllSetupTeardown
         self::assertSame('#REF!', $sheet->getCell('A4')->getCalculatedValue());
         $sheet->getCell('A5')->setValue('=OFFSET(C1, 0, 0)');
         self::assertSame(5, $sheet->getCell('A5')->getCalculatedValue());
+    }
+
+    public function testOffsetNamedRange(): void
+    {
+        $workSheet = $this->getSheet();
+        $workSheet->setCellValue('A1', 1);
+        $workSheet->setCellValue('A2', 2);
+
+        $this->getSpreadsheet()->addNamedRange(new NamedRange('demo', $workSheet, '=$A$1'));
+
+        $workSheet->setCellValue('B1', '=demo');
+        $workSheet->setCellValue('B2', '=OFFSET(demo, 1, 0)');
+
+        self::assertSame(2, $workSheet->getCell('B2')->getCalculatedValue());
     }
 }

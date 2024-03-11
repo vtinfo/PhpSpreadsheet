@@ -1,32 +1,55 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Logical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Logical;
-use PHPUnit\Framework\TestCase;
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
 
-class IfsTest extends TestCase
+class IfsTest extends AllSetupTeardown
 {
-    protected function setUp(): void
+    /**
+     * @dataProvider providerIFS
+     */
+    public function testIFS(mixed $expectedResult, mixed ...$args): void
     {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
+        $this->runTestCase('IFS', $expectedResult, ...$args);
+    }
+
+    public static function providerIFS(): array
+    {
+        return require 'tests/data/Calculation/Logical/IFS.php';
     }
 
     /**
-     * @dataProvider providerIFS
-     *
-     * @param mixed $expectedResult
-     * @param mixed $args
+     * @dataProvider providerIfsArray
      */
-    public function testIFS($expectedResult, ...$args): void
+    public function testIfsArray(array $expectedResult, string $bool1, string $argument1, string $bool2, string $argument2): void
     {
-        $result = Logical::IFS(...$args);
+        $calculation = Calculation::getInstance();
+
+        $formula = "=IFS($bool1, {" . "$argument1}, $bool2, {" . "$argument2})";
+        $result = $calculation->_calculateFormulaValue($formula);
         self::assertEquals($expectedResult, $result);
     }
 
-    public function providerIFS(): array
+    public static function providerIfsArray(): array
     {
-        return require 'tests/data/Calculation/Logical/IFS.php';
+        return [
+            'array return first item' => [
+                [[1, 2, 3]],
+                'true',
+                '1, 2, 3',
+                'true',
+                '4, 5, 6',
+            ],
+            'array return second item' => [
+                [[4, 5, 6]],
+                'false',
+                '1, 2, 3',
+                'true',
+                '4, 5, 6',
+            ],
+        ];
     }
 }

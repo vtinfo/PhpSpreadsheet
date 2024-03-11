@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class IsPmtTest extends TestCase
+class IsPmtTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerISPMT
-     *
-     * @param mixed $expectedResult
      */
-    public function testISPMT($expectedResult, ...$args): void
+    public function testISPMT(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Financial::ISPMT(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('ISPMT', $expectedResult, $args);
     }
 
-    public function providerISPMT(): array
+    public static function providerISPMT(): array
     {
         return require 'tests/data/Calculation/Financial/ISPMT.php';
     }

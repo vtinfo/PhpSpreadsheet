@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Functional;
 
 use PhpOffice\PhpSpreadsheet\Reader\BaseReader;
@@ -7,7 +9,7 @@ use PhpOffice\PhpSpreadsheet\Spreadsheet;
 
 class PrintAreaTest extends AbstractFunctional
 {
-    public function providerFormats(): array
+    public static function providerFormats(): array
     {
         return [
             ['Xls'],
@@ -17,10 +19,8 @@ class PrintAreaTest extends AbstractFunctional
 
     /**
      * @dataProvider providerFormats
-     *
-     * @param string $format
      */
-    public function testPageSetup($format): void
+    public function testPageSetup(string $format): void
     {
         // Create new workbook with 6 sheets and different print areas
         $spreadsheet = new Spreadsheet();
@@ -58,8 +58,7 @@ class PrintAreaTest extends AbstractFunctional
 
     private static function getPrintArea(Spreadsheet $spreadsheet, string $name): string
     {
-        $sheet = $spreadsheet->getSheetByName($name);
-        self::assertNotNull($sheet, "Unable to get sheet $name");
+        $sheet = $spreadsheet->getSheetByNameOrThrow($name);
 
         return $sheet->getPageSetup()->getPrintArea();
     }

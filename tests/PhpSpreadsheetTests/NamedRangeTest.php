@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests;
 
 use PhpOffice\PhpSpreadsheet\NamedRange;
@@ -9,8 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 class NamedRangeTest extends TestCase
 {
-    /** @var Spreadsheet */
-    private $spreadsheet;
+    private \PhpOffice\PhpSpreadsheet\Spreadsheet $spreadsheet;
 
     protected function setUp(): void
     {
@@ -62,7 +63,7 @@ class NamedRangeTest extends TestCase
             new NamedRange('Foo', $this->spreadsheet->getActiveSheet(), '=A1')
         );
         $this->spreadsheet->addNamedRange(
-            new NamedRange('FOO', $this->spreadsheet->getSheetByName('Sheet #2'), '=B1', true)
+            new NamedRange('FOO', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'), '=B1', true)
         );
 
         self::assertCount(2, $this->spreadsheet->getNamedRanges());
@@ -72,7 +73,7 @@ class NamedRangeTest extends TestCase
             '=A1',
             $range->getValue()
         );
-        $range = $this->spreadsheet->getNamedRange('foo', $this->spreadsheet->getSheetByName('Sheet #2'));
+        $range = $this->spreadsheet->getNamedRange('foo', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'));
         self::assertNotNull($range);
         self::assertSame(
             '=B1',
@@ -100,13 +101,13 @@ class NamedRangeTest extends TestCase
             new NamedRange('Foo', $this->spreadsheet->getActiveSheet(), '=A1')
         );
         $this->spreadsheet->addNamedRange(
-            new NamedRange('FOO', $this->spreadsheet->getSheetByName('Sheet #2'), '=B1', true)
+            new NamedRange('FOO', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'), '=B1', true)
         );
 
         $this->spreadsheet->removeNamedRange('Foo', $this->spreadsheet->getActiveSheet());
 
         self::assertCount(1, $this->spreadsheet->getNamedRanges());
-        $sheet = $this->spreadsheet->getNamedRange('foo', $this->spreadsheet->getSheetByName('Sheet #2'));
+        $sheet = $this->spreadsheet->getNamedRange('foo', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'));
         self::assertNotNull($sheet);
         self::assertSame(
             '=B1',
@@ -120,10 +121,10 @@ class NamedRangeTest extends TestCase
             new NamedRange('Foo', $this->spreadsheet->getActiveSheet(), '=A1')
         );
         $this->spreadsheet->addNamedRange(
-            new NamedRange('FOO', $this->spreadsheet->getSheetByName('Sheet #2'), '=B1', true)
+            new NamedRange('FOO', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'), '=B1', true)
         );
 
-        $this->spreadsheet->removeNamedRange('Foo', $this->spreadsheet->getSheetByName('Sheet #2'));
+        $this->spreadsheet->removeNamedRange('Foo', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'));
 
         self::assertCount(1, $this->spreadsheet->getNamedRanges());
         $range = $this->spreadsheet->getNamedRange('foo');
@@ -132,5 +133,11 @@ class NamedRangeTest extends TestCase
             '=A1',
             $range->getValue()
         );
+    }
+
+    public function testRemoveNonExistentNamedRange(): void
+    {
+        self::assertCount(0, $this->spreadsheet->getNamedRanges());
+        $this->spreadsheet->removeNamedRange('Any');
     }
 }

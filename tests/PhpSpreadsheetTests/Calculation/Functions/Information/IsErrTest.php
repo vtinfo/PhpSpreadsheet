@@ -1,31 +1,31 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Information;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ErrorValue;
 use PHPUnit\Framework\TestCase;
 
 class IsErrTest extends TestCase
 {
     public function testIsErrNoArgument(): void
     {
-        $result = Functions::isErr();
+        $result = ErrorValue::isErr();
         self::assertFalse($result);
     }
 
     /**
      * @dataProvider providerIsErr
-     *
-     * @param mixed $value
      */
-    public function testIsErr(bool $expectedResult, $value): void
+    public function testIsErr(bool $expectedResult, mixed $value): void
     {
-        $result = Functions::isErr($value);
+        $result = ErrorValue::isErr($value);
         self::assertEquals($expectedResult, $result);
     }
 
-    public function providerIsErr(): array
+    public static function providerIsErr(): array
     {
         return require 'tests/data/Calculation/Information/IS_ERR.php';
     }
@@ -42,7 +42,7 @@ class IsErrTest extends TestCase
         self::assertEquals($expectedResult, $result);
     }
 
-    public function providerIsErrArray(): array
+    public static function providerIsErrArray(): array
     {
         return [
             'vector' => [

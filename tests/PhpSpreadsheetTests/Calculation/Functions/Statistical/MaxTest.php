@@ -1,24 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
-
-class MaxTest extends TestCase
+class MaxTest extends AllSetupTeardown
 {
     /**
      * @dataProvider providerMAX
-     *
-     * @param mixed $expectedResult
      */
-    public function testMAX($expectedResult, ...$args): void
+    public function testMAX(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::MAX(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCaseReference('MAX', $expectedResult, ...$args);
     }
 
-    public function providerMAX(): array
+    public static function providerMAX(): array
     {
         return require 'tests/data/Calculation/Statistical/MAX.php';
     }

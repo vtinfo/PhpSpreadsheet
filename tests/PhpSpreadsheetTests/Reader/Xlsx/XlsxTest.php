@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Reader\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
-use PhpOffice\PhpSpreadsheet\Cell\DataValidation;
 use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Reader\IReader;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use PhpOffice\PhpSpreadsheet\Shared\File;
 use PhpOffice\PhpSpreadsheet\Style\Conditional;
@@ -15,6 +17,8 @@ use PHPUnit\Framework\TestCase;
 
 class XlsxTest extends TestCase
 {
+    const XLSX_PRECISION = 1.0E-8;
+
     public function testLoadXlsxRowColumnAttributes(): void
     {
         $filename = 'tests/data/Reader/XLSX/rowColumnAttributeTest.xlsx';
@@ -133,10 +137,10 @@ class XlsxTest extends TestCase
 
         $pageMargins = $worksheet->getPageMargins();
         // Convert from inches to cm for testing
-        self::assertEquals(2.5, $pageMargins->getTop() * 2.54);
-        self::assertEquals(3.3, $pageMargins->getLeft() * 2.54);
-        self::assertEquals(3.3, $pageMargins->getRight() * 2.54);
-        self::assertEquals(1.3, $pageMargins->getHeader() * 2.54);
+        self::assertEqualsWithDelta(2.5, $pageMargins->getTop() * 2.54, self::XLSX_PRECISION);
+        self::assertEqualsWithDelta(3.3, $pageMargins->getLeft() * 2.54, self::XLSX_PRECISION);
+        self::assertEqualsWithDelta(3.3, $pageMargins->getRight() * 2.54, self::XLSX_PRECISION);
+        self::assertEqualsWithDelta(1.3, $pageMargins->getHeader() * 2.54, self::XLSX_PRECISION);
 
         self::assertEquals(PageSetup::PAPERSIZE_A4, $worksheet->getPageSetup()->getPaperSize());
         self::assertEquals(['A10', 'A20', 'A30', 'A40', 'A50'], array_keys($worksheet->getBreaks()));
@@ -159,42 +163,6 @@ class XlsxTest extends TestCase
         self::assertEquals(Conditional::OPERATOR_BETWEEN, $conditionalRule->getOperatorType());
         self::assertEquals(['200', '400'], $conditionalRule->getConditions());
         self::assertInstanceOf(Style::class, $conditionalRule->getStyle());
-    }
-
-    public function testLoadXlsxDataValidation(): void
-    {
-        $filename = 'tests/data/Reader/XLSX/dataValidationTest.xlsx';
-        $reader = new Xlsx();
-        $spreadsheet = $reader->load($filename);
-
-        $worksheet = $spreadsheet->getActiveSheet();
-
-        self::assertTrue($worksheet->getCell('B3')->hasDataValidation());
-    }
-
-    /*
-     * Test for load drop down lists of another sheet.
-     * Pull #2150, issue #2149
-     */
-    public function testLoadXlsxDataValidationOfAnotherSheet(): void
-    {
-        $filename = 'tests/data/Reader/XLSX/dataValidation2Test.xlsx';
-        $reader = new Xlsx();
-        $spreadsheet = $reader->load($filename);
-
-        $worksheet = $spreadsheet->getActiveSheet();
-
-        // same sheet
-        $validationCell = $worksheet->getCell('B5');
-        self::assertTrue($validationCell->hasDataValidation());
-        self::assertSame(DataValidation::TYPE_LIST, $validationCell->getDataValidation()->getType());
-        self::assertSame('$A$5:$A$7', $validationCell->getDataValidation()->getFormula1());
-
-        // another sheet
-        $validationCell = $worksheet->getCell('B14');
-        self::assertTrue($validationCell->hasDataValidation());
-        self::assertSame(DataValidation::TYPE_LIST, $validationCell->getDataValidation()->getType());
-        self::assertSame('Feuil2!$A$3:$A$5', $validationCell->getDataValidation()->getFormula1());
     }
 
     /**
@@ -267,7 +235,7 @@ class XlsxTest extends TestCase
         self::assertEquals(preg_match('/\s/', $string), 0);
     }
 
-    public function providerStripsWhiteSpaceFromStyleString(): array
+    public static function providerStripsWhiteSpaceFromStyleString(): array
     {
         return [
             ['position:absolute;margin-left:424.5pt;margin-top:169.5pt;width:67.5pt;
@@ -277,5 +245,31 @@ height:13.5pt;z-index:5;mso-wrap-style:tight'],
             ['position:absolute; margin-left:424.5pt; margin-top:169.5pt; width:67.5pt;
             height:13.5pt;z-index:5;mso-wrap-style:tight'],
         ];
+    }
+
+    public function testLoadDataOnlyLoadsAlsoTables(): void
+    {
+        $filename = 'tests/data/Reader/XLSX/data_with_tables.xlsx';
+        $reader = new Xlsx();
+        $excel = $reader->load($filename, IReader::READ_DATA_ONLY);
+
+        self::assertEquals(['First', 'Second'], $excel->getSheetNames());
+
+        $table = $excel->getTableByName('Tableau1');
+        $firstSheet = $excel->getSheetByName('First');
+        $secondSheet = $excel->getSheetByName('Second');
+        if (!$table || !$firstSheet || !$secondSheet) {
+            self::fail('Table or Sheet not found.');
+        }
+
+        self::assertEquals('A1:B5', $table->getRange());
+        self::assertEquals([['1', '2', '3']], $firstSheet->toArray());
+        self::assertEquals([
+            ['Colonne1', 'Colonne2'],
+            ['a', 'b'],
+            ['c', 'd'],
+            ['e', 'f'],
+            ['g', 'h'],
+        ], $secondSheet->toArray());
     }
 }

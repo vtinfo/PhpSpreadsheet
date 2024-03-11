@@ -1,27 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
 
-class TinvTest extends TestCase
+class TinvTest extends AllSetupTeardown
 {
     /**
      * @dataProvider providerTINV
-     *
-     * @param mixed $expectedResult
-     * @param mixed $probability
-     * @param mixed $degrees
      */
-    public function testTINV($expectedResult, $probability, $degrees): void
+    public function testTINV(mixed $expectedResult, mixed $probability, mixed $degrees): void
     {
-        $result = Statistical::TINV($probability, $degrees);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCaseReference('TINV', $expectedResult, $probability, $degrees);
     }
 
-    public function providerTINV(): array
+    public static function providerTINV(): array
     {
         return require 'tests/data/Calculation/Statistical/TINV.php';
     }
@@ -38,7 +33,7 @@ class TinvTest extends TestCase
         self::assertEqualsWithDelta($expectedResult, $result, 1.0e-14);
     }
 
-    public function providerTInvArray(): array
+    public static function providerTInvArray(): array
     {
         return [
             'row vector' => [

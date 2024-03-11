@@ -1,6 +1,8 @@
 <?php
 
-namespace PhpOffice\PhpSpreadsheetTests\Writer\Xlsx;
+declare(strict_types=1);
+
+namespace PhpOffice\PhpSpreadsheetTests\Calculation;
 
 use PhpOffice\PhpSpreadsheet\Shared\File;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;

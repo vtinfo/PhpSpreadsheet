@@ -1,31 +1,31 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Information;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\Value;
 use PHPUnit\Framework\TestCase;
 
 class IsLogicalTest extends TestCase
 {
     public function testIsLogicalNoArgument(): void
     {
-        $result = Functions::isLogical();
+        $result = Value::isLogical();
         self::assertFalse($result);
     }
 
     /**
      * @dataProvider providerIsLogical
-     *
-     * @param mixed $value
      */
-    public function testIsLogical(bool $expectedResult, $value): void
+    public function testIsLogical(bool $expectedResult, mixed $value): void
     {
-        $result = Functions::isLogical($value);
+        $result = Value::isLogical($value);
         self::assertEquals($expectedResult, $result);
     }
 
-    public function providerIsLogical(): array
+    public static function providerIsLogical(): array
     {
         return require 'tests/data/Calculation/Information/IS_LOGICAL.php';
     }
@@ -42,7 +42,7 @@ class IsLogicalTest extends TestCase
         self::assertEquals($expectedResult, $result);
     }
 
-    public function providerIsLogicalArray(): array
+    public static function providerIsLogicalArray(): array
     {
         return [
             'vector' => [

@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class CoupPcdTest extends TestCase
+class CoupPcdTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerCOUPPCD
-     *
-     * @param mixed $expectedResult
      */
-    public function testCOUPPCD($expectedResult, ...$args): void
+    public function testCOUPPCD(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Financial::COUPPCD(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('COUPPCD', $expectedResult, $args);
     }
 
-    public function providerCOUPPCD(): array
+    public static function providerCOUPPCD(): array
     {
         return require 'tests/data/Calculation/Financial/COUPPCD.php';
     }

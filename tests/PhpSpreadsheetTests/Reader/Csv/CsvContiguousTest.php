@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Reader\Csv;
 
 use PhpOffice\PhpSpreadsheet\Reader\Csv;
@@ -8,10 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class CsvContiguousTest extends TestCase
 {
-    /**
-     * @var string
-     */
-    private $inputFileName = 'samples/Reader/sampleData/example2.csv';
+    private string $inputFileName = 'samples/Reader/sampleData/example2.csv';
 
     public function testContiguous(): void
     {
@@ -56,13 +55,11 @@ class CsvContiguousTest extends TestCase
 
     private static function getCellValue(Spreadsheet $spreadsheet, string $sheetName, string $cellAddress): string
     {
-        $sheet = $spreadsheet->getSheetByName($sheetName);
+        $sheet = $spreadsheet->getSheetByNameOrThrow($sheetName);
         $result = '';
-        if ($sheet !== null) {
-            $value = $sheet->getCell($cellAddress)->getValue();
-            if (is_scalar($value) || (is_object($value) && method_exists($value, '__toString'))) {
-                $result = (string) $value;
-            }
+        $value = $sheet->getCell($cellAddress)->getValue();
+        if (is_scalar($value) || (is_object($value) && method_exists($value, '__toString'))) {
+            $result = (string) $value;
         }
 
         return $result;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Reader\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
@@ -28,10 +30,10 @@ class RibbonTest extends AbstractFunctional
         $vbaCode = (string) $spreadsheet->getMacrosCode();
         self::assertSame(13312, strlen($vbaCode));
         self::assertNull($spreadsheet->getRibbonBinObjects());
-        self::assertNull($spreadsheet->getRibbonBinObjects('names'));
-        self::assertNull($spreadsheet->getRibbonBinObjects('data'));
+        foreach (['names', 'data', 'xxxxx'] as $type) {
+            self::assertNull($spreadsheet->getRibbonBinObjects($type), "Expecting null when type is $type");
+        }
         self::assertEmpty($spreadsheet->getRibbonBinObjects('types'));
-        self::assertNull($spreadsheet->getRibbonBinObjects('xxxxx'));
 
         $reloadedSpreadsheet = $this->writeAndReload($spreadsheet, 'Xlsx');
         $spreadsheet->disconnectWorksheets();
@@ -41,6 +43,36 @@ class RibbonTest extends AbstractFunctional
         self::assertSame($target, $ribbonData['target'] ?? '');
         self::assertSame($data, $ribbonData['data'] ?? '');
         self::assertSame($vbaCode, $reloadedSpreadsheet->getMacrosCode());
+        self::assertNull($reloadedSpreadsheet->getRibbonBinObjects());
+        $reloadedSpreadsheet->disconnectWorksheets();
+    }
+
+    /**
+     * Same as above but discard macros.
+     */
+    public function testDiscardMacros(): void
+    {
+        $filename = 'tests/data/Reader/XLSX/ribbon.donotopen.zip';
+        $reader = IOFactory::createReader('Xlsx');
+        $spreadsheet = $reader->load($filename);
+        self::assertTrue($spreadsheet->hasRibbon());
+        $target = $spreadsheet->getRibbonXMLData('target');
+        self::assertSame('customUI/customUI.xml', $target);
+        $data = $spreadsheet->getRibbonXMLData('data');
+        self::assertIsString($data);
+        self::assertSame(1522, strlen($data));
+        $vbaCode = (string) $spreadsheet->getMacrosCode();
+        self::assertSame(13312, strlen($vbaCode));
+        $spreadsheet->discardMacros();
+
+        $reloadedSpreadsheet = $this->writeAndReload($spreadsheet, 'Xlsx');
+        $spreadsheet->disconnectWorksheets();
+        self::assertTrue($reloadedSpreadsheet->hasRibbon());
+        $ribbonData = $reloadedSpreadsheet->getRibbonXmlData();
+        self::assertIsArray($ribbonData);
+        self::assertSame($target, $ribbonData['target'] ?? '');
+        self::assertSame($data, $ribbonData['data'] ?? '');
+        self::assertNull($reloadedSpreadsheet->getMacrosCode());
         self::assertNull($reloadedSpreadsheet->getRibbonBinObjects());
         $reloadedSpreadsheet->disconnectWorksheets();
     }

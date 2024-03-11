@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class AmorLincTest extends TestCase
+class AmorLincTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerAMORLINC
-     *
-     * @param mixed $expectedResult
      */
-    public function testAMORLINC($expectedResult, ...$args): void
+    public function testAMORLINC(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Financial::AMORLINC(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('AMORLINC', $expectedResult, $args);
     }
 
-    public function providerAMORLINC(): array
+    public static function providerAMORLINC(): array
     {
         return require 'tests/data/Calculation/Financial/AMORLINC.php';
     }

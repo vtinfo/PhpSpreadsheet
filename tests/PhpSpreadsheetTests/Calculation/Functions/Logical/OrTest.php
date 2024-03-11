@@ -1,31 +1,36 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Logical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Logical;
-use PHPUnit\Framework\TestCase;
-
-class OrTest extends TestCase
+class OrTest extends AllSetupTeardown
 {
-    protected function setUp(): void
+    /**
+     * @dataProvider providerOR
+     */
+    public function testOR(mixed $expectedResult, mixed ...$args): void
     {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
+        $this->runTestCase('OR', $expectedResult, ...$args);
+    }
+
+    public static function providerOR(): array
+    {
+        return require 'tests/data/Calculation/Logical/OR.php';
     }
 
     /**
-     * @dataProvider providerOR
-     *
-     * @param mixed $expectedResult
+     * @dataProvider providerORLiteral
      */
-    public function testOR($expectedResult, ...$args): void
+    public function testORLiteral(bool|string $expectedResult, float|int|string $formula): void
     {
-        $result = Logical::logicalOr(...$args);
-        self::assertEquals($expectedResult, $result);
+        $sheet = $this->getSheet();
+        $sheet->getCell('A1')->setValue("=OR($formula)");
+        self::assertSame($expectedResult, $sheet->getCell('A1')->getCalculatedValue());
     }
 
-    public function providerOR(): array
+    public static function providerORLiteral(): array
     {
-        return require 'tests/data/Calculation/Logical/OR.php';
+        return require 'tests/data/Calculation/Logical/ORLiteral.php';
     }
 }

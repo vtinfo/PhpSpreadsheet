@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
@@ -9,15 +11,11 @@ use PHPUnit\Framework\TestCase;
 
 class TranslationTest extends TestCase
 {
-    /**
-     * @var string
-     */
-    private $compatibilityMode;
+    private string $compatibilityMode;
 
-    /**
-     * @var string
-     */
-    private $returnDate;
+    private string $returnDate;
+
+    private string $locale;
 
     protected function setUp(): void
     {
@@ -25,12 +23,14 @@ class TranslationTest extends TestCase
         $this->returnDate = Functions::getReturnDateType();
         Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
         Functions::setReturnDateType(Functions::RETURNDATE_EXCEL);
+        $this->locale = Settings::getLocale();
     }
 
     protected function tearDown(): void
     {
         Functions::setCompatibilityMode($this->compatibilityMode);
         Functions::setReturnDateType($this->returnDate);
+        Settings::setLocale($this->locale);
     }
 
     /**
@@ -47,10 +47,10 @@ class TranslationTest extends TestCase
         self::assertSame($expectedResult, $translatedFormula);
 
         $restoredFormula = Calculation::getInstance()->_translateFormulaToEnglish($translatedFormula);
-        self::assertSame($formula, $restoredFormula);
+        self::assertSame(preg_replace(Calculation::CALCULATION_REGEXP_STRIP_XLFN_XLWS, '', $formula), $restoredFormula);
     }
 
-    public function providerTranslations(): array
+    public static function providerTranslations(): array
     {
         return require 'tests/data/Calculation/Translations.php';
     }

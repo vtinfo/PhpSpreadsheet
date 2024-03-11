@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Helper;
 
 use PhpOffice\PhpSpreadsheet\Helper\Sample;
@@ -9,26 +11,23 @@ class SampleTest extends TestCase
 {
     /**
      * @runInSeparateProcess
+     *
      * @preserveGlobalState disabled
+     *
      * @dataProvider providerSample
      */
     public function testSample(string $sample): void
     {
-        // Suppress output to console
-        $this->setOutputCallback(function (): void {
-        });
-
+        ob_start();
         require $sample;
+        ob_end_clean();
 
         self::assertTrue(true);
     }
 
-    public function providerSample(): array
+    public static function providerSample(): array
     {
         $skipped = [
-            'Chart/32_Chart_read_write_PDF.php', // Unfortunately JpGraph is not up to date for latest PHP and raise many warnings
-            'Chart/32_Chart_read_write_HTML.php', // idem
-            'Chart/35_Chart_render.php', // idem
         ];
 
         // Unfortunately some tests are too long to run with code-coverage

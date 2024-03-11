@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Shared;
 
 use PhpOffice\PhpSpreadsheet\Exception;
@@ -11,10 +13,9 @@ class CodePageTest extends TestCase
     /**
      * @dataProvider providerCodePage
      *
-     * @param mixed $expectedResult
-     * @param mixed $codePageIndex
+     * @param string|string[] $expectedResult
      */
-    public function testCodePageNumberToName($expectedResult, $codePageIndex): void
+    public function testCodePageNumberToName(array|string $expectedResult, int $codePageIndex): void
     {
         if ($expectedResult === 'exception') {
             $this->expectException(Exception::class);
@@ -27,7 +28,7 @@ class CodePageTest extends TestCase
         }
     }
 
-    public function providerCodePage(): array
+    public static function providerCodePage(): array
     {
         return require 'tests/data/Shared/CodePage.php';
     }

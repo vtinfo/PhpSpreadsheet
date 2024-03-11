@@ -1,12 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Functional;
 
+use PhpOffice\PhpSpreadsheet\Reader\IReader;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 
 class ReadFilterTest extends AbstractFunctional
 {
-    public function providerCellsValues(): array
+    public static function providerCellsValues(): array
     {
         $cellValues = [
             // one argument as a multidimensional array
@@ -32,10 +35,8 @@ class ReadFilterTest extends AbstractFunctional
      * Test load Xlsx file with many empty cells with no filter used.
      *
      * @dataProvider providerCellsValues
-     *
-     * @param mixed $format
      */
-    public function testXlsxLoadWithoutReadFilter($format, array $arrayData): void
+    public function testXlsxLoadWithoutReadFilter(string $format, array $arrayData): void
     {
         $spreadsheet = new Spreadsheet();
 
@@ -59,15 +60,13 @@ class ReadFilterTest extends AbstractFunctional
      * Test load Xlsx file with many empty cells (and big max row number) with readfilter.
      *
      * @dataProvider providerCellsValues
-     *
-     * @param mixed $format
      */
-    public function testXlsxLoadWithReadFilter($format, array $arrayData): void
+    public function testXlsxLoadWithReadFilter(string $format, array $arrayData): void
     {
         $spreadsheet = new Spreadsheet();
         $spreadsheet->getActiveSheet()->fromArray($arrayData, null, 'A1');
 
-        $reloadedSpreadsheet = $this->writeAndReload($spreadsheet, $format, function ($reader): void {
+        $reloadedSpreadsheet = $this->writeAndReload($spreadsheet, $format, function (IReader $reader): void {
             // apply filter
             $reader->setReadFilter(new ReadFilterFilter());
         });

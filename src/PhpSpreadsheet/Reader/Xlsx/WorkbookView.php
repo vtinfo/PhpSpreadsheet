@@ -7,29 +7,20 @@ use SimpleXMLElement;
 
 class WorkbookView
 {
-    /**
-     * @var Spreadsheet
-     */
-    private $spreadsheet;
+    private Spreadsheet $spreadsheet;
 
     public function __construct(Spreadsheet $spreadsheet)
     {
         $this->spreadsheet = $spreadsheet;
     }
 
-    /**
-     * @param mixed $mainNS
-     */
-    public function viewSettings(SimpleXMLElement $xmlWorkbook, $mainNS, array $mapSheetId, bool $readDataOnly): void
+    public function viewSettings(SimpleXMLElement $xmlWorkbook, string $mainNS, array $mapSheetId, bool $readDataOnly): void
     {
-        if ($this->spreadsheet->getSheetCount() == 0) {
-            $this->spreadsheet->createSheet();
-        }
         // Default active sheet index to the first loaded worksheet from the file
         $this->spreadsheet->setActiveSheetIndex(0);
 
         $workbookView = $xmlWorkbook->children($mainNS)->bookViews->workbookView;
-        if (($readDataOnly !== true || !empty($this->loadSheetsOnly)) && !empty($workbookView)) {
+        if ($readDataOnly !== true && !empty($workbookView)) {
             $workbookViewAttributes = self::testSimpleXml(self::getAttributes($workbookView));
             // active sheet index
             $activeTab = (int) $workbookViewAttributes->activeTab; // refers to old sheet index
@@ -49,10 +40,7 @@ class WorkbookView
         }
     }
 
-    /**
-     * @param mixed $value
-     */
-    public static function testSimpleXml($value): SimpleXMLElement
+    public static function testSimpleXml(mixed $value): SimpleXMLElement
     {
         return ($value instanceof SimpleXMLElement)
             ? $value

@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class CoupDaysTest extends TestCase
+class CoupDaysTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerCOUPDAYS
-     *
-     * @param mixed $expectedResult
      */
-    public function testCOUPDAYS($expectedResult, ...$args): void
+    public function testCOUPDAYS(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Financial::COUPDAYS(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('COUPDAYS', $expectedResult, $args);
     }
 
-    public function providerCOUPDAYS(): array
+    public static function providerCOUPDAYS(): array
     {
         return require 'tests/data/Calculation/Financial/COUPDAYS.php';
     }

@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
-
-class DevSqTest extends TestCase
+class DevSqTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerDEVSQ
-     *
-     * @param mixed $expectedResult
      */
-    public function testDEVSQ($expectedResult, ...$args): void
+    public function testDEVSQ(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::DEVSQ(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCases('DEVSQ', $expectedResult, ...$args);
     }
 
-    public function providerDEVSQ(): array
+    public static function providerDEVSQ(): array
     {
         return require 'tests/data/Calculation/Statistical/DEVSQ.php';
     }

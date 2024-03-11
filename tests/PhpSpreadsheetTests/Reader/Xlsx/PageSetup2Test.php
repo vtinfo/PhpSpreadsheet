@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Reader\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
@@ -28,8 +30,7 @@ class PageSetup2Test extends TestCase
     public function testColumnBreak(): void
     {
         $spreadsheet = IOFactory::load(self::TESTBOOK);
-        $sheet = $spreadsheet->getSheetByName('colbreak');
-        self::assertNotNull($sheet);
+        $sheet = $spreadsheet->getSheetByNameOrThrow('colbreak');
         $breaks = $sheet->getBreaks();
         self::assertCount(1, $breaks);
         $break = $breaks['D1'] ?? null;

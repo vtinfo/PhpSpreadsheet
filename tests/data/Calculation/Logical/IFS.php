@@ -1,9 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 return [
-    [
-        '#N/A',
-    ],
+    'no arguments' => ['exception'],
     [
         1,
         true,
@@ -46,12 +46,5 @@ return [
         1,
         true,
         'ABC',
-    ],
-    'array return' => [
-        [[4, 5, 6]],
-        false,
-        [[1, 2, 3]],
-        true,
-        [[4, 5, 6]],
     ],
 ];

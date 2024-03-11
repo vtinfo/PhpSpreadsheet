@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     [
         [
@@ -129,5 +131,38 @@ return [
             'AA3',
         ],
         'Z2:AA3',
+    ],
+    [
+        [
+            'Sheet1!D3',
+        ],
+        'Sheet1!D3',
+    ],
+    [
+        [
+            'Sheet1!D3',
+            'Sheet1!E3',
+            'Sheet1!D4',
+            'Sheet1!E4',
+        ],
+        'Sheet1!D3:E4',
+    ],
+    [
+        [
+            "'Sheet 1'!D3",
+            "'Sheet 1'!E3",
+            "'Sheet 1'!D4",
+            "'Sheet 1'!E4",
+        ],
+        "'Sheet 1'!D3:E4",
+    ],
+    [
+        [
+            "'Mark''s Sheet'!D3",
+            "'Mark''s Sheet'!E3",
+            "'Mark''s Sheet'!D4",
+            "'Mark''s Sheet'!E4",
+        ],
+        "'Mark's Sheet'!D3:E4",
     ],
 ];

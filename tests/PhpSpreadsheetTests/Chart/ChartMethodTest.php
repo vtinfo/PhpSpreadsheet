@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Chart;
 
 use PhpOffice\PhpSpreadsheet\Chart\Axis;
@@ -93,8 +95,9 @@ class ChartMethodTest extends TestCase
             $xAxis, // xAxis
             $yAxis // yAxis
         );
-        $chart2 = new Chart('chart1');
+        $chart2 = new Chart('xyz');
         $chart2
+            ->setName('chart1')
             ->setLegend($legend)
             ->setPlotArea($plotArea)
             ->setPlotVisibleOnly(true)

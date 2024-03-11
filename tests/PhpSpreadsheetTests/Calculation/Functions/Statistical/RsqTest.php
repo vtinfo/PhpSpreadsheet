@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
-
-class RsqTest extends TestCase
+class RsqTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerRSQ
-     *
-     * @param mixed $expectedResult
      */
-    public function testRSQ($expectedResult, array $xargs, array $yargs): void
+    public function testRSQ(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::RSQ($xargs, $yargs);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCaseNoBracket('RSQ', $expectedResult, ...$args);
     }
 
-    public function providerRSQ(): array
+    public static function providerRSQ(): array
     {
         return require 'tests/data/Calculation/Statistical/RSQ.php';
     }

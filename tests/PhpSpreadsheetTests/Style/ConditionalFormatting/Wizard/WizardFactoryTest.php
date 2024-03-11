@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Style\ConditionalFormatting\Wizard;
 
 use PhpOffice\PhpSpreadsheet\Exception;
@@ -10,10 +12,7 @@ use PHPUnit\Framework\TestCase;
 
 class WizardFactoryTest extends TestCase
 {
-    /**
-     * @var Wizard
-     */
-    protected $wizardFactory;
+    protected Wizard $wizardFactory;
 
     protected function setUp(): void
     {
@@ -24,15 +23,15 @@ class WizardFactoryTest extends TestCase
     /**
      * @dataProvider basicWizardFactoryProvider
      *
-     * @param class-string<object> $expectedWizard
+     * @psalm-param class-string<object> $expectedWizard
      */
-    public function testBasicWizardFactory(string $ruleType, $expectedWizard): void
+    public function testBasicWizardFactory(string $ruleType, string $expectedWizard): void
     {
         $wizard = $this->wizardFactory->newRule($ruleType);
         self::assertInstanceOf($expectedWizard, $wizard);
     }
 
-    public function basicWizardFactoryProvider(): array
+    public static function basicWizardFactoryProvider(): array
     {
         return [
             'CellValue Wizard' => [Wizard::CELL_VALUE, Wizard\CellValue::class],
@@ -54,10 +53,7 @@ class WizardFactoryTest extends TestCase
         $filename = 'tests/data/Style/ConditionalFormatting/CellMatcher.xlsx';
         $reader = IOFactory::createReader('Xlsx');
         $spreadsheet = $reader->load($filename);
-        $worksheet = $spreadsheet->getSheetByName($sheetName);
-        if ($worksheet === null) {
-            self::markTestSkipped("{$sheetName} not found in test workbook");
-        }
+        $worksheet = $spreadsheet->getSheetByNameOrThrow($sheetName);
         $cell = $worksheet->getCell($cellAddress);
 
         $cfRange = $worksheet->getConditionalRange($cell->getCoordinate());
@@ -68,11 +64,11 @@ class WizardFactoryTest extends TestCase
 
         foreach ($conditionals as $index => $conditional) {
             $wizard = Wizard::fromConditional($conditional);
-            self::assertEquals($expectedWizads[$index], get_class($wizard));
+            self::assertEquals($expectedWizads[$index], $wizard::class);
         }
     }
 
-    public function conditionalProvider(): array
+    public static function conditionalProvider(): array
     {
         return [
             'cellIs Comparison A2' => ['cellIs Comparison', 'A2', [Wizard\CellValue::class, Wizard\CellValue::class, Wizard\CellValue::class]],

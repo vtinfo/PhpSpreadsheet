@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     [
-        null,
+        '',
         123456.789,
     ],
     [
@@ -14,11 +16,12 @@ return [
         'Mark Baker',
     ],
     [
-        null,
+        '',
         null,
     ],
     [
-        null,
+        '',
         true,
     ],
+    'no arguments' => ['exception'],
 ];

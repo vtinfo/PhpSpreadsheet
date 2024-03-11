@@ -1,25 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
 
-class NormInvTest extends TestCase
+class NormInvTest extends AllSetupTeardown
 {
     /**
      * @dataProvider providerNORMINV
-     *
-     * @param mixed $expectedResult
      */
-    public function testNORMINV($expectedResult, ...$args): void
+    public function testNORMINV(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::NORMINV(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCases('NORMINV', $expectedResult, ...$args);
     }
 
-    public function providerNORMINV(): array
+    public static function providerNORMINV(): array
     {
         return require 'tests/data/Calculation/Statistical/NORMINV.php';
     }
@@ -36,7 +33,7 @@ class NormInvTest extends TestCase
         self::assertEqualsWithDelta($expectedResult, $result, 1.0e-14);
     }
 
-    public function providerNormInvArray(): array
+    public static function providerNormInvArray(): array
     {
         return [
             'row/column vectors' => [

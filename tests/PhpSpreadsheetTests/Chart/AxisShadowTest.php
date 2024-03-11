@@ -1,13 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Chart;
 
 use PhpOffice\PhpSpreadsheet\Chart\Chart;
+use PhpOffice\PhpSpreadsheet\Chart\ChartColor;
 use PhpOffice\PhpSpreadsheet\Chart\DataSeries;
 use PhpOffice\PhpSpreadsheet\Chart\DataSeriesValues;
 use PhpOffice\PhpSpreadsheet\Chart\Legend as ChartLegend;
 use PhpOffice\PhpSpreadsheet\Chart\PlotArea;
-use PhpOffice\PhpSpreadsheet\Chart\Properties;
 use PhpOffice\PhpSpreadsheet\Chart\Title;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx as XlsxReader;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
@@ -113,7 +115,7 @@ class AxisShadowTest extends AbstractFunctional
             'distance' => 3,
             'rotWithShape' => 0,
             'color' => [
-                'type' => Properties::EXCEL_COLOR_TYPE_STANDARD,
+                'type' => ChartColor::EXCEL_COLOR_TYPE_STANDARD,
                 'value' => 'black',
                 'alpha' => 40,
             ],
@@ -139,7 +141,7 @@ class AxisShadowTest extends AbstractFunctional
                 'ky' => null,
             ],
             'color' => [
-                'type' => Properties::EXCEL_COLOR_TYPE_ARGB,
+                'type' => ChartColor::EXCEL_COLOR_TYPE_RGB,
                 'value' => 'FF0000',
                 'alpha' => 20,
             ],
