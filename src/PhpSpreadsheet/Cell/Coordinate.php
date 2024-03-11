@@ -149,7 +149,7 @@ abstract class Coordinate
             $range = self::DEFAULT_RANGE;
         }
 
-        if (strpos(trim($range), ' ') !== false) {
+        if (str_contains(trim($range), ' ')) {
             $delimiter = ' ';
         } else {
             $delimiter = ',';
