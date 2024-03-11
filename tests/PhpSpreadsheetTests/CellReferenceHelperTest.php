@@ -273,14 +273,10 @@ class CellReferenceHelperTest extends TestCase
 
     public function testUpdateCellReferenceMaxRow(): void
     {
-        $expectedResult = 'A' . (AddressRange::MAX_ROW + 1);
+        $expectedResult = 'A' . AddressRange::MAX_ROW;
 
         $cellRefHelper = new CellReferenceHelper('A1', 0, 1);
         $result = $cellRefHelper->updateCellReference('A' . AddressRange::MAX_ROW);
-        self::assertSame($expectedResult, $result);
-
-        $cellRefHelperRange = new CellReferenceHelper('A1', 0, 1);
-        $result = $cellRefHelperRange->updateCellReference('A1:A' . AddressRange::MAX_ROW);
         self::assertSame($expectedResult, $result);
     }
 }

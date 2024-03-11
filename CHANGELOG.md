@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com)
 and this project adheres to [Semantic Versioning](https://semver.org).
 
+## 2.0.0.1 - 2024-03-11
+
+### Added
+
+- Nothing
+
+### Changed
+
+- Nothing
+
+### Deprecated
+
+- Nothing
+
+### Removed
+
+- custom support for CONDITION_COLORSCALE that is now supported by default
+
+### Fixed
+
+- Test that confirms greater than max row cell address
+
 ## 2.0.0 - 2024-01-24
 
 ### BREAKING CHANGE

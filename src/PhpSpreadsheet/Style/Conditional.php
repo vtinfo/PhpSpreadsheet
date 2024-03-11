@@ -28,7 +28,6 @@ class Conditional implements IComparable
 
     // additional condition types not originally supported
     const CONDITION_ABOVEAVERAGE = 'aboveAverage';
-    const CONDITION_COLORSCALE = 'colorScale';
     const CONDITION_TOPTEN = 'top10';
 
     private const CONDITION_TYPES = [
