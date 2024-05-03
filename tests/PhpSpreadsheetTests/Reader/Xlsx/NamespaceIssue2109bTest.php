@@ -1,16 +1,15 @@
 <?php
 
-namespace PhpOffice\PhpSpreadsheetTests\Reader;
+declare(strict_types=1);
+
+namespace PhpOffice\PhpSpreadsheetTests\Reader\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
 class NamespaceIssue2109bTest extends \PHPUnit\Framework\TestCase
 {
-    /**
-     * @var string
-     */
-    private static $testbook = 'tests/data/Reader/XLSX/issue2109b.xlsx';
+    private static string $testbook = 'tests/data/Reader/XLSX/issue2109b.xlsx';
 
     public function testPreliminaries(): void
     {

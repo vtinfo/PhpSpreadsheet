@@ -1,15 +1,14 @@
 <?php
 
-namespace PhpOffice\PhpSpreadsheetTests\Reader;
+declare(strict_types=1);
+
+namespace PhpOffice\PhpSpreadsheetTests\Reader\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 
 class NamespacePurlTest extends \PHPUnit\Framework\TestCase
 {
-    /**
-     * @var string
-     */
-    private static $testbook = 'tests/data/Reader/XLSX/namespacepurl.xlsx';
+    private static string $testbook = 'tests/data/Reader/XLSX/namespacepurl.xlsx';
 
     public function testPreliminaries(): void
     {

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Style;
 
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx as XlsxReader;
@@ -12,8 +14,7 @@ use PHPUnit\Framework\TestCase;
 
 class ConditionalBoolTest extends TestCase
 {
-    /** @var string */
-    private $outfile = '';
+    private string $outfile = '';
 
     protected function tearDown(): void
     {

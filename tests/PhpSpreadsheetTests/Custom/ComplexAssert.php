@@ -1,21 +1,24 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Custom;
 
 use Complex\Complex;
+use PHPUnit\Framework\TestCase;
 
-class ComplexAssert
+class ComplexAssert extends TestCase
 {
-    /**
-     * @var string
-     */
-    private $errorMessage = '';
+    private string $errorMessage = '';
 
-    /**
-     * @param mixed $expected
-     * @param mixed $actual
-     */
-    private function testExpectedExceptions($expected, $actual): bool
+    private float $delta = 0.0;
+
+    public function __construct()
+    {
+        parent::__construct('complexAssert');
+    }
+
+    private function testExpectedExceptions(string|float $expected, string|float $actual): bool
     {
         //    Expecting an error, so we do a straight string comparison
         if ($expected === $actual) {
@@ -40,16 +43,22 @@ class ComplexAssert
         return $adjustedDelta > 1.0 ? 1.0 : $adjustedDelta;
     }
 
-    /**
-     * @param mixed $expected
-     * @param mixed $actual
-     */
-    public function assertComplexEquals($expected, $actual, float $delta = 0): bool
+    public function setDelta(float $delta): self
+    {
+        $this->delta = $delta;
+
+        return $this;
+    }
+
+    public function assertComplexEquals(mixed $expected, mixed $actual, ?float $delta = null): bool
     {
         if ($expected === INF || (is_string($expected) && $expected[0] === '#')) {
-            return $this->testExpectedExceptions($expected, $actual);
+            return $this->testExpectedExceptions($expected, (is_string($actual) || is_float($actual)) ? $actual : 'neither string nor float');
         }
 
+        if ($delta === null) {
+            $delta = $this->delta;
+        }
         $expectedComplex = new Complex($expected);
         $actualComplex = new Complex($actual);
 
@@ -79,5 +88,10 @@ class ComplexAssert
     public function getErrorMessage(): string
     {
         return $this->errorMessage;
+    }
+
+    public function runAssertComplexEquals(string $expected, array|float|string $actual, ?float $delta = null): void
+    {
+        self::assertTrue($this->assertComplexEquals($expected, $actual, $delta), $this->getErrorMessage());
     }
 }

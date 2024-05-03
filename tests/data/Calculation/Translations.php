@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     [
         '=DAGEN360(DATUM(2010;2;5);DATUM(2010;12;31);WAAR)',
@@ -79,5 +81,35 @@ return [
         '=STØRST(ABS({2,-3;-4,5}); ABS{-2,3;4,-5})',
         'nb',
         '=MAX(ABS({2,-3;-4,5}), ABS{-2,3;4,-5})',
+    ],
+    'not fooled by *RC' => [
+        '=3*RC(B1)',
+        'fr',
+        '=3*RC(B1)',
+    ],
+    'handle * for ROW' => [
+        '=3*LIGNE(B1)',
+        'fr',
+        '=3*ROW(B1)',
+    ],
+    'handle _xlfn' => [
+        '=MAXWENNS(C5:C10; C5:C10; "<30")',
+        'de',
+        '=_xlfn.MAXIFS(C5:C10, C5:C10, "<30")',
+    ],
+    'handle _xlfn and _xlws' => [
+        '=ФИЛЬТР(A5:D20;C5:C20=H2;"")',
+        'ru',
+        '=_xlfn._xlws.FILTER(A5:D20,C5:C20=H2,"")',
+    ],
+    'implicit intersection' => [
+        '=@INDEKS(A1:A10;B1)',
+        'nb',
+        '=@INDEX(A1:A10,B1)',
+    ],
+    'preserve literal _xlfn.' => [
+        '=@INDEKS(A1:A10;"_xlfn.")',
+        'nb',
+        '=@INDEX(A1:A10,"_xlfn.")',
     ],
 ];

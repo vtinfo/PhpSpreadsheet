@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     [
         '$C$2',
@@ -46,6 +48,22 @@ return [
         3,
         null,
         false,
+        'EXCEL SHEET',
+    ],
+    '0 instead of bool for 4th arg' => [
+        "'EXCEL SHEET'!R2C3",
+        2,
+        3,
+        null,
+        0,
+        'EXCEL SHEET',
+    ],
+    '1 instead of bool for 4th arg' => [
+        "'EXCEL SHEET'!\$C\$2",
+        2,
+        3,
+        null,
+        1,
         'EXCEL SHEET',
     ],
     [

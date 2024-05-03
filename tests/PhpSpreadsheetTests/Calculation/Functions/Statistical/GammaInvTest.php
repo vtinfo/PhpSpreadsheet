@@ -1,31 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
 
-class GammaInvTest extends TestCase
+class GammaInvTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerGAMMAINV
-     *
-     * @param mixed $expectedResult
      */
-    public function testGAMMAINV($expectedResult, ...$args): void
+    public function testGAMMAINV(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::GAMMAINV(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCases('GAMMA.INV', $expectedResult, ...$args);
     }
 
-    public function providerGAMMAINV(): array
+    public static function providerGAMMAINV(): array
     {
         return require 'tests/data/Calculation/Statistical/GAMMAINV.php';
     }
@@ -42,7 +33,7 @@ class GammaInvTest extends TestCase
         self::assertEqualsWithDelta($expectedResult, $result, 1.0e-14);
     }
 
-    public function providerGammaInvArray(): array
+    public static function providerGammaInvArray(): array
     {
         return [
             'row/column vectors' => [

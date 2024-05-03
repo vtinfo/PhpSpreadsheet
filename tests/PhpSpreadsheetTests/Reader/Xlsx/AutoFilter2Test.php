@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Reader\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
@@ -11,12 +13,14 @@ class AutoFilter2Test extends TestCase
 {
     private const TESTBOOK = 'tests/data/Reader/XLSX/autofilter2.xlsx';
 
-    public function getVisibleSheet(Worksheet $sheet, int $maxRow): array
+    public function getVisibleSheet(?Worksheet $sheet, int $maxRow): array
     {
         $actualVisible = [];
-        for ($row = 2; $row <= $maxRow; ++$row) {
-            if ($sheet->getRowDimension($row)->getVisible()) {
-                $actualVisible[] = $row;
+        if ($sheet !== null) {
+            for ($row = 2; $row <= $maxRow; ++$row) {
+                if ($sheet->getRowDimension($row)->getVisible()) {
+                    $actualVisible[] = $row;
+                }
             }
         }
 
@@ -26,8 +30,7 @@ class AutoFilter2Test extends TestCase
     public function testReadDateRange(): void
     {
         $spreadsheet = IOFactory::load(self::TESTBOOK);
-        $sheet = $spreadsheet->getSheetByName('daterange');
-        self::assertNotNull($sheet);
+        $sheet = $spreadsheet->getSheetByNameOrThrow('daterange');
         $filter = $sheet->getAutoFilter();
         $maxRow = 30;
         self::assertSame("A1:A$maxRow", $filter->getRange());
@@ -58,8 +61,7 @@ class AutoFilter2Test extends TestCase
     public function testReadTopTen(): void
     {
         $spreadsheet = IOFactory::load(self::TESTBOOK);
-        $sheet = $spreadsheet->getSheetByName('top10');
-        self::assertNotNull($sheet);
+        $sheet = $spreadsheet->getSheetByNameOrThrow('top10');
         $filter = $sheet->getAutoFilter();
         $maxRow = 65;
         self::assertSame("A1:A$maxRow", $filter->getRange());
@@ -83,8 +85,7 @@ class AutoFilter2Test extends TestCase
     public function testReadDynamic(): void
     {
         $spreadsheet = IOFactory::load(self::TESTBOOK);
-        $sheet = $spreadsheet->getSheetByName('dynamic');
-        self::assertNotNull($sheet);
+        $sheet = $spreadsheet->getSheetByNameOrThrow('dynamic');
         $filter = $sheet->getAutoFilter();
         $maxRow = 30;
         self::assertSame("A1:A$maxRow", $filter->getRange());

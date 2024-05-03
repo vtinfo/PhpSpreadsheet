@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class YieldMatTest extends TestCase
+class YieldMatTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerYIELDMAT
-     *
-     * @param mixed $expectedResult
      */
-    public function testYIELDMAT($expectedResult, ...$args): void
+    public function testYIELDMAT(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Financial::YIELDMAT(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('YIELDMAT', $expectedResult, $args);
     }
 
-    public function providerYIELDMAT(): array
+    public static function providerYIELDMAT(): array
     {
         return require 'tests/data/Calculation/Financial/YIELDMAT.php';
     }

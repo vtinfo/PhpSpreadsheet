@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class IPmtTest extends TestCase
+class IPmtTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerIPMT
-     *
-     * @param mixed $expectedResult
      */
-    public function testIPMT($expectedResult, array $args): void
+    public function testIPMT(mixed $expectedResult, array $args): void
     {
-        $result = Financial::IPMT(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('IPMT', $expectedResult, $args);
     }
 
-    public function providerIPMT(): array
+    public static function providerIPMT(): array
     {
         return require 'tests/data/Calculation/Financial/IPMT.php';
     }

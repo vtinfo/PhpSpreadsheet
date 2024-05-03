@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     [
         0.929581390070,
@@ -8,6 +10,10 @@ return [
     [
         0.035588864025,
         105, 20, 100, false,
+    ],
+    'too few arguments' => [
+        'exception',
+        105, 20, 100,
     ],
     [
         1.10363832351433,

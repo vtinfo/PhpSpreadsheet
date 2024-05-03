@@ -1,30 +1,48 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class IrrTest extends TestCase
+class IrrTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerIRR
-     *
-     * @param mixed $expectedResult
      */
-    public function testIRR($expectedResult, ...$args): void
+    public function testIRR(mixed $expectedResult, mixed $values = null): void
     {
-        $result = Financial::IRR(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->mightHaveException($expectedResult);
+        $sheet = $this->getSheet();
+        $formula = '=IRR(';
+        if ($values !== null) {
+            if (is_array($values)) {
+                $row = 0;
+                foreach ($values as $value) {
+                    if (is_array($value)) {
+                        foreach ($value as $arrayValue) {
+                            ++$row;
+                            $sheet->getCell("A$row")->setValue($arrayValue);
+                        }
+                    } else {
+                        ++$row;
+                        $sheet->getCell("A$row")->setValue($value);
+                    }
+                }
+                $formula .= "A1:A$row";
+            } else {
+                $sheet->getCell('A1')->setValue($values);
+                $formula .= 'A1';
+            }
+        }
+        $formula .= ')';
+        $sheet->getCell('D1')->setValue($formula);
+        $result = $sheet->getCell('D1')->getCalculatedValue();
+        $this->adjustResult($result, $expectedResult);
+
+        self::assertEqualsWithDelta($expectedResult, $result, 0.1E-8);
     }
 
-    public function providerIRR(): array
+    public static function providerIRR(): array
     {
         return require 'tests/data/Calculation/Financial/IRR.php';
     }

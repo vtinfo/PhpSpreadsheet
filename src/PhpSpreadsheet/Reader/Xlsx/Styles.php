@@ -22,22 +22,17 @@ class Styles extends BaseParserClass
      *
      * @var ?Theme
      */
-    private $theme;
+    private ?Theme $theme = null;
 
-    /** @var array */
-    private $workbookPalette = [];
+    private array $workbookPalette = [];
 
-    /** @var array */
-    private $styles = [];
+    private array $styles = [];
 
-    /** @var array */
-    private $cellStyles = [];
+    private array $cellStyles = [];
 
-    /** @var SimpleXMLElement */
-    private $styleXml;
+    private SimpleXMLElement $styleXml;
 
-    /** @var string */
-    private $namespace = '';
+    private string $namespace = '';
 
     public function setNamespace(string $namespace): void
     {
@@ -49,24 +44,11 @@ class Styles extends BaseParserClass
         $this->workbookPalette = $palette;
     }
 
-    /**
-     * Cast SimpleXMLElement to bool to overcome Scrutinizer problem.
-     *
-     * @param mixed $value
-     */
-    private static function castBool($value): bool
-    {
-        return (bool) $value;
-    }
-
     private function getStyleAttributes(SimpleXMLElement $value): SimpleXMLElement
     {
-        $attr = null;
-        if (self::castBool($value)) {
-            $attr = $value->attributes('');
-            if ($attr === null || count($attr) === 0) {
-                $attr = $value->attributes($this->namespace);
-            }
+        $attr = $value->attributes('');
+        if ($attr === null || count($attr) === 0) {
+            $attr = $value->attributes($this->namespace);
         }
 
         return Xlsx::testSimpleXml($attr);
@@ -135,6 +117,10 @@ class Styles extends BaseParserClass
                     $fontStyle->setSubscript(true);
                 }
             }
+        }
+        if (isset($fontStyleXml->scheme)) {
+            $attr = $this->getStyleAttributes($fontStyleXml->scheme);
+            $fontStyle->setScheme((string) $attr['val']);
         }
     }
 
@@ -206,11 +192,21 @@ class Styles extends BaseParserClass
             $borderStyle->setDiagonalDirection(Borders::DIAGONAL_BOTH);
         }
 
-        $this->readBorder($borderStyle->getLeft(), $borderStyleXml->left);
-        $this->readBorder($borderStyle->getRight(), $borderStyleXml->right);
-        $this->readBorder($borderStyle->getTop(), $borderStyleXml->top);
-        $this->readBorder($borderStyle->getBottom(), $borderStyleXml->bottom);
-        $this->readBorder($borderStyle->getDiagonal(), $borderStyleXml->diagonal);
+        if (isset($borderStyleXml->left)) {
+            $this->readBorder($borderStyle->getLeft(), $borderStyleXml->left);
+        }
+        if (isset($borderStyleXml->right)) {
+            $this->readBorder($borderStyle->getRight(), $borderStyleXml->right);
+        }
+        if (isset($borderStyleXml->top)) {
+            $this->readBorder($borderStyle->getTop(), $borderStyleXml->top);
+        }
+        if (isset($borderStyleXml->bottom)) {
+            $this->readBorder($borderStyle->getBottom(), $borderStyleXml->bottom);
+        }
+        if (isset($borderStyleXml->diagonal)) {
+            $this->readBorder($borderStyle->getDiagonal(), $borderStyleXml->diagonal);
+        }
     }
 
     private function getAttribute(SimpleXMLElement $xml, string $attribute): string
@@ -233,6 +229,8 @@ class Styles extends BaseParserClass
         $style = $this->getAttribute($borderXml, 'style');
         if ($style !== '') {
             $border->setBorderStyle((string) $style);
+        } else {
+            $border->setBorderStyle(Border::BORDER_NONE);
         }
         if (isset($borderXml->color)) {
             $border->getColor()->setARGB($this->readColor($borderXml->color));
@@ -241,10 +239,14 @@ class Styles extends BaseParserClass
 
     public function readAlignmentStyle(Alignment $alignment, SimpleXMLElement $alignmentXml): void
     {
-        $horizontal = $this->getAttribute($alignmentXml, 'horizontal');
-        $alignment->setHorizontal($horizontal);
-        $vertical = $this->getAttribute($alignmentXml, 'vertical');
-        $alignment->setVertical((string) $vertical);
+        $horizontal = (string) $this->getAttribute($alignmentXml, 'horizontal');
+        if ($horizontal !== '') {
+            $alignment->setHorizontal($horizontal);
+        }
+        $vertical = (string) $this->getAttribute($alignmentXml, 'vertical');
+        if ($vertical !== '') {
+            $alignment->setVertical($vertical);
+        }
 
         $textRotation = (int) $this->getAttribute($alignmentXml, 'textRotation');
         if ($textRotation > 90) {
@@ -273,12 +275,10 @@ class Styles extends BaseParserClass
 
     /**
      * Read style.
-     *
-     * @param SimpleXMLElement|stdClass $style
      */
-    public function readStyle(Style $docStyle, $style): void
+    public function readStyle(Style $docStyle, SimpleXMLElement|stdClass $style): void
     {
-        if ($style->numFmt instanceof SimpleXMLElement) {
+        if ($style instanceof SimpleXMLElement) {
             $this->readNumberFormat($docStyle->getNumberFormat(), $style->numFmt);
         } else {
             $docStyle->getNumberFormat()->setFormatCode(self::formatGeneral((string) $style->numFmt));
@@ -365,11 +365,12 @@ class Styles extends BaseParserClass
             return (string) $attr['rgb'];
         }
         if (isset($attr['indexed'])) {
-            if (empty($this->workbookPalette)) {
-                return Color::indexedColor((int) ($attr['indexed'] - 7), $background)->getARGB() ?? '';
+            $indexedColor = (int) $attr['indexed'];
+            if ($indexedColor >= count($this->workbookPalette)) {
+                return Color::indexedColor($indexedColor - 7, $background)->getARGB() ?? '';
             }
 
-            return Color::indexedColor((int) ($attr['indexed']), $background, $this->workbookPalette)->getARGB() ?? '';
+            return Color::indexedColor($indexedColor, $background, $this->workbookPalette)->getARGB() ?? '';
         }
         if (isset($attr['theme'])) {
             if ($this->theme !== null) {
@@ -427,11 +428,9 @@ class Styles extends BaseParserClass
      * Get array item.
      *
      * @param mixed $array (usually array, in theory can be false)
-     *
-     * @return stdClass
      */
-    private static function getArrayItem($array, int $key = 0)
+    private static function getArrayItem(mixed $array): ?SimpleXMLElement
     {
-        return is_array($array) ? ($array[$key] ?? null) : null;
+        return is_array($array) ? ($array[0] ?? null) : null;
     }
 }

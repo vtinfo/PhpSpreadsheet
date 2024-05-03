@@ -1,6 +1,8 @@
 <?php
 
-namespace PhpOffice\PhpSpreadsheetTests\Writer\Html;
+declare(strict_types=1);
+
+namespace PhpOffice\PhpSpreadsheetTests\Writer\Mpdf;
 
 use PhpOffice\PhpSpreadsheet\Reader\Xls as XlsReader;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx as XlsxReader;
@@ -11,8 +13,7 @@ use PhpOffice\PhpSpreadsheetTests\Functional;
 
 class ImageCopyPdfTest extends Functional\AbstractFunctional
 {
-    /** @var string */
-    private $xlsxFile = '';
+    private string $xlsxFile = '';
 
     protected function tearDown(): void
     {

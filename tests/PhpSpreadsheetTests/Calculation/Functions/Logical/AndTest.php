@@ -1,31 +1,36 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Logical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Logical;
-use PHPUnit\Framework\TestCase;
-
-class AndTest extends TestCase
+class AndTest extends AllSetupTeardown
 {
-    protected function setUp(): void
+    /**
+     * @dataProvider providerAND
+     */
+    public function testAND(mixed $expectedResult, mixed ...$args): void
     {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
+        $this->runTestCase('AND', $expectedResult, ...$args);
+    }
+
+    public static function providerAND(): array
+    {
+        return require 'tests/data/Calculation/Logical/AND.php';
     }
 
     /**
-     * @dataProvider providerAND
-     *
-     * @param mixed $expectedResult
+     * @dataProvider providerANDLiteral
      */
-    public function testAND($expectedResult, ...$args): void
+    public function testANDLiteral(bool|string $expectedResult, float|int|string $formula): void
     {
-        $result = Logical::logicalAnd(...$args);
-        self::assertEquals($expectedResult, $result);
+        $sheet = $this->getSheet();
+        $sheet->getCell('A1')->setValue("=AND($formula)");
+        self::assertSame($expectedResult, $sheet->getCell('A1')->getCalculatedValue());
     }
 
-    public function providerAND(): array
+    public static function providerANDLiteral(): array
     {
-        return require 'tests/data/Calculation/Logical/AND.php';
+        return require 'tests/data/Calculation/Logical/ANDLiteral.php';
     }
 }

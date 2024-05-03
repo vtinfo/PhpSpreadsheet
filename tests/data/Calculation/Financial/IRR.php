@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 // values, guess, Result
 
 return [
@@ -83,4 +85,5 @@ return [
             -21000,
         ],
     ],
+    'no arguments' => ['exception'],
 ];

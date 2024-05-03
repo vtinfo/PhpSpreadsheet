@@ -28,7 +28,7 @@ class Tcpdf extends Pdf
      *
      * @return \TCPDF implementation
      */
-    protected function createExternalWriterInstance($orientation, $unit, $paperSize)
+    protected function createExternalWriterInstance(string $orientation, string $unit, $paperSize): \TCPDF
     {
         return new \TCPDF($orientation, $unit, $paperSize);
     }
@@ -77,7 +77,7 @@ class Tcpdf extends Pdf
         $pdf->SetCreator($this->spreadsheet->getProperties()->getCreator());
 
         //  Write to file
-        fwrite($fileHandle, $pdf->output($filename, 'S'));
+        fwrite($fileHandle, $pdf->output('', 'S'));
 
         parent::restoreStateAfterSave();
     }

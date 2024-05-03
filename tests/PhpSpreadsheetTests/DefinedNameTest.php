@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests;
 
 use PhpOffice\PhpSpreadsheet\DefinedName;
@@ -10,8 +12,7 @@ use PHPUnit\Framework\TestCase;
 
 class DefinedNameTest extends TestCase
 {
-    /** @var Spreadsheet */
-    private $spreadsheet;
+    private \PhpOffice\PhpSpreadsheet\Spreadsheet $spreadsheet;
 
     protected function setUp(): void
     {
@@ -58,7 +59,7 @@ class DefinedNameTest extends TestCase
             DefinedName::createInstance('Foo', $this->spreadsheet->getActiveSheet(), '=A1')
         );
         $this->spreadsheet->addDefinedName(
-            DefinedName::createInstance('FOO', $this->spreadsheet->getSheetByName('Sheet #2'), '=B1', true)
+            DefinedName::createInstance('FOO', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'), '=B1', true)
         );
 
         self::assertCount(2, $this->spreadsheet->getDefinedNames());
@@ -66,7 +67,7 @@ class DefinedNameTest extends TestCase
         self::assertNotNull($definedName1);
         self::assertSame('=A1', $definedName1->getValue());
 
-        $definedName2 = $this->spreadsheet->getDefinedName('foo', $this->spreadsheet->getSheetByName('Sheet #2'));
+        $definedName2 = $this->spreadsheet->getDefinedName('foo', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'));
         self::assertNotNull($definedName2);
         self::assertSame('=B1', $definedName2->getValue());
     }
@@ -85,19 +86,31 @@ class DefinedNameTest extends TestCase
         self::assertCount(1, $this->spreadsheet->getDefinedNames());
     }
 
+    public function testRemoveGlobalDefinedName(): void
+    {
+        $this->spreadsheet->addDefinedName(
+            DefinedName::createInstance('Any', $this->spreadsheet->getActiveSheet(), '=A1')
+        );
+        self::assertCount(1, $this->spreadsheet->getDefinedNames());
+
+        $this->spreadsheet->removeDefinedName('Any');
+        self::assertCount(0, $this->spreadsheet->getDefinedNames());
+        $this->spreadsheet->removeDefinedName('Other');
+    }
+
     public function testRemoveGlobalDefinedNameWhenDuplicateNames(): void
     {
         $this->spreadsheet->addDefinedName(
             DefinedName::createInstance('Foo', $this->spreadsheet->getActiveSheet(), '=A1')
         );
         $this->spreadsheet->addDefinedName(
-            DefinedName::createInstance('FOO', $this->spreadsheet->getSheetByName('Sheet #2'), '=B1', true)
+            DefinedName::createInstance('FOO', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'), '=B1', true)
         );
 
         $this->spreadsheet->removeDefinedName('Foo', $this->spreadsheet->getActiveSheet());
 
         self::assertCount(1, $this->spreadsheet->getDefinedNames());
-        $definedName = $this->spreadsheet->getDefinedName('foo', $this->spreadsheet->getSheetByName('Sheet #2'));
+        $definedName = $this->spreadsheet->getDefinedName('foo', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'));
         self::assertNotNull($definedName);
         self::assertSame('=B1', $definedName->getValue());
     }
@@ -108,10 +121,10 @@ class DefinedNameTest extends TestCase
             DefinedName::createInstance('Foo', $this->spreadsheet->getActiveSheet(), '=A1')
         );
         $this->spreadsheet->addDefinedName(
-            DefinedName::createInstance('FOO', $this->spreadsheet->getSheetByName('Sheet #2'), '=B1', true)
+            DefinedName::createInstance('FOO', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'), '=B1', true)
         );
 
-        $this->spreadsheet->removeDefinedName('Foo', $this->spreadsheet->getSheetByName('Sheet #2'));
+        $this->spreadsheet->removeDefinedName('Foo', $this->spreadsheet->getSheetByNameOrThrow('Sheet #2'));
 
         self::assertCount(1, $this->spreadsheet->getDefinedNames());
         $definedName = $this->spreadsheet->getDefinedName('foo');
@@ -142,10 +155,8 @@ class DefinedNameTest extends TestCase
 
     public function testChangeWorksheet(): void
     {
-        $sheet1 = $this->spreadsheet->getSheetByName('Sheet #1');
-        $sheet2 = $this->spreadsheet->getSheetByName('Sheet #2');
-        self::assertNotNull($sheet1);
-        self::assertNotNull($sheet2);
+        $sheet1 = $this->spreadsheet->getSheetByNameOrThrow('Sheet #1');
+        $sheet2 = $this->spreadsheet->getSheetByNameOrThrow('Sheet #2');
 
         $sheet1->getCell('A1')->setValue(1);
         $sheet2->getCell('A1')->setValue(2);
@@ -160,10 +171,8 @@ class DefinedNameTest extends TestCase
 
     public function testLocalOnly(): void
     {
-        $sheet1 = $this->spreadsheet->getSheetByName('Sheet #1');
-        $sheet2 = $this->spreadsheet->getSheetByName('Sheet #2');
-        self::assertNotNull($sheet1);
-        self::assertNotNull($sheet2);
+        $sheet1 = $this->spreadsheet->getSheetByNameOrThrow('Sheet #1');
+        $sheet2 = $this->spreadsheet->getSheetByNameOrThrow('Sheet #2');
 
         $sheet1->getCell('A1')->setValue(1);
         $sheet2->getCell('A1')->setValue(2);
@@ -178,10 +187,8 @@ class DefinedNameTest extends TestCase
 
     public function testScope(): void
     {
-        $sheet1 = $this->spreadsheet->getSheetByName('Sheet #1');
-        $sheet2 = $this->spreadsheet->getSheetByName('Sheet #2');
-        self::assertNotNull($sheet1);
-        self::assertNotNull($sheet2);
+        $sheet1 = $this->spreadsheet->getSheetByNameOrThrow('Sheet #1');
+        $sheet2 = $this->spreadsheet->getSheetByNameOrThrow('Sheet #2');
 
         $sheet1->getCell('A1')->setValue(1);
         $sheet2->getCell('A1')->setValue(2);
@@ -196,10 +203,8 @@ class DefinedNameTest extends TestCase
 
     public function testClone(): void
     {
-        $sheet1 = $this->spreadsheet->getSheetByName('Sheet #1');
-        $sheet2 = $this->spreadsheet->getSheetByName('Sheet #2');
-        self::assertNotNull($sheet1);
-        self::assertNotNull($sheet2);
+        $sheet1 = $this->spreadsheet->getSheetByNameOrThrow('Sheet #1');
+        $sheet2 = $this->spreadsheet->getSheetByNameOrThrow('Sheet #2');
 
         $sheet1->getCell('A1')->setValue(1);
         $sheet2->getCell('A1')->setValue(2);

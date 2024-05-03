@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 return [
-    [
-        null,
+    'empty cell treated as 0' => [
+        0,
         null,
         'Error',
     ],

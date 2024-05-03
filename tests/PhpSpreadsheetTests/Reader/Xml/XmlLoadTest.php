@@ -1,21 +1,56 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Reader\Xml;
 
 use DateTimeZone;
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
 use PhpOffice\PhpSpreadsheet\Reader\Xml;
+use PhpOffice\PhpSpreadsheet\Settings;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PHPUnit\Framework\TestCase;
 
 class XmlLoadTest extends TestCase
 {
-    public function testLoad(): void
+    /** @var ?Spreadsheet */
+    private ?Spreadsheet $spreadsheet = null;
+
+    private string $locale;
+
+    protected function setUp(): void
+    {
+        $this->locale = Settings::getLocale();
+    }
+
+    protected function tearDown(): void
+    {
+        if ($this->spreadsheet !== null) {
+            $this->spreadsheet->disconnectWorksheets();
+            $this->spreadsheet = null;
+        }
+        Settings::setLocale($this->locale);
+    }
+
+    public function testLoadEnglish(): void
+    {
+        $this->xtestLoad();
+    }
+
+    public function testLoadFrench(): void
+    {
+        Settings::setLocale('fr');
+        $this->xtestLoad();
+    }
+
+    public function xtestLoad(): void
     {
         $filename = __DIR__
             . '/../../../..'
             . '/samples/templates/excel2003.xml';
         $reader = new Xml();
-        $spreadsheet = $reader->load($filename);
+        $this->spreadsheet = $spreadsheet = $reader->load($filename);
         self::assertEquals(2, $spreadsheet->getSheetCount());
 
         $sheet = $spreadsheet->getSheet(1);
@@ -31,6 +66,7 @@ class XmlLoadTest extends TestCase
         self::assertEquals('2010-09-03T21:48:39Z', $result);
         self::assertEquals('AbCd1234', $props->getCustomPropertyValue('my_API_Token'));
         self::assertEquals('2', $props->getCustomPropertyValue('myאInt'));
+        /** @var string */
         $creationDate = $props->getCustomPropertyValue('my_API_Token_Expiry');
         $result = Date::formattedDateTimeFromTimestamp("$creationDate", 'Y-m-d\\TH:i:s\\Z', new DateTimeZone('UTC'));
         self::assertEquals('2019-01-31T07:00:00Z', $result);
@@ -71,7 +107,7 @@ class XmlLoadTest extends TestCase
         $reader = new Xml();
         $filter = new XmlFilter();
         $reader->setReadFilter($filter);
-        $spreadsheet = $reader->load($filename);
+        $this->spreadsheet = $spreadsheet = $reader->load($filename);
         self::assertEquals(2, $spreadsheet->getSheetCount());
         $sheet = $spreadsheet->getSheet(1);
         self::assertEquals('Report Data', $sheet->getTitle());
@@ -87,11 +123,23 @@ class XmlLoadTest extends TestCase
             . '/samples/templates/excel2003.xml';
         $reader = new Xml();
         $reader->setLoadSheetsOnly(['Unknown Sheet', 'Report Data']);
-        $spreadsheet = $reader->load($filename);
+        $this->spreadsheet = $spreadsheet = $reader->load($filename);
         self::assertEquals(1, $spreadsheet->getSheetCount());
         $sheet = $spreadsheet->getSheet(0);
         self::assertEquals('Report Data', $sheet->getTitle());
         self::assertEquals('Third Heading', $sheet->getCell('C2')->getValue());
+    }
+
+    public function testLoadNoSelectedSheets(): void
+    {
+        $this->expectException(PhpSpreadsheetException::class);
+        $this->expectExceptionMessage('You tried to set a sheet active by the out of bounds index');
+        $filename = __DIR__
+            . '/../../../..'
+            . '/samples/templates/excel2003.xml';
+        $reader = new Xml();
+        $reader->setLoadSheetsOnly(['Unknown Sheet', 'xReport Data']);
+        $this->spreadsheet = $reader->load($filename);
     }
 
     public function testLoadUnusableSample(): void
@@ -102,7 +150,7 @@ class XmlLoadTest extends TestCase
             . '/../../../..'
             . '/samples/templates/excel2003.short.bad.xml';
         $reader = new Xml();
-        $spreadsheet = $reader->load($filename);
+        $this->spreadsheet = $spreadsheet = $reader->load($filename);
         self::assertEquals(1, $spreadsheet->getSheetCount());
         $sheet = $spreadsheet->getSheet(0);
         self::assertEquals('Sample Data', $sheet->getTitle());

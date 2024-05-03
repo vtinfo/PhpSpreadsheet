@@ -1,9 +1,17 @@
 <?php
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Helper\Sample;
 use PhpOffice\PhpSpreadsheet\Settings;
 
 require __DIR__ . '/../Header.php';
+
+$helper = new Sample();
+if ($helper->isCli()) {
+    $helper->log('This example should only be run from a Web Browser' . PHP_EOL);
+
+    return;
+}
 ?>
 <form action="45_Quadratic_equation_solver.php" method="POST">
     Enter the coefficients for the Ax<sup>2</sup> + Bx + C = 0
@@ -51,8 +59,12 @@ if (isset($_POST['submit'])) {
         $r1Formula = '=IMDIV(IMSUM(-' . $_POST['B'] . ',IMSQRT(' . $discriminant . ')),2 * ' . $_POST['A'] . ')';
         $r2Formula = '=IF(' . $discriminant . '=0,"Only one root",IMDIV(IMSUB(-' . $_POST['B'] . ',IMSQRT(' . $discriminant . ')),2 * ' . $_POST['A'] . '))';
 
-        $helper->log(Calculation::getInstance()->calculateFormula($r1Formula));
-        $helper->log(Calculation::getInstance()->calculateFormula($r2Formula));
+        /** @var string */
+        $output = Calculation::getInstance()->calculateFormula($r1Formula);
+        $helper->log("$output");
+        /** @var string */
+        $output = Calculation::getInstance()->calculateFormula($r2Formula);
+        $helper->log("$output");
         $callEndTime = microtime(true);
         $helper->logEndingNotes();
     }

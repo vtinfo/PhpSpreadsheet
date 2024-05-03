@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
-
-class QuartileTest extends TestCase
+class QuartileTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerQUARTILE
-     *
-     * @param mixed $expectedResult
      */
-    public function testQUARTILE($expectedResult, ...$args): void
+    public function testQUARTILE(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::QUARTILE(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCaseReference('QUARTILE', $expectedResult, ...$args);
     }
 
-    public function providerQUARTILE(): array
+    public static function providerQUARTILE(): array
     {
         return require 'tests/data/Calculation/Statistical/QUARTILE.php';
     }

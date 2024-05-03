@@ -10,6 +10,8 @@ For example, [setting a worksheet's page orientation and size
 orientation to A4. Other paper formats, like US Letter, are not covered
 in this document, but in the PhpSpreadsheet [API documentation](https://phpoffice.github.io/PhpSpreadsheet).
 
+My apologies if this documentation seems very basic to some of you; but I spend so much time having to provide help lessons in PHP 101 and Excel 101 that I feel I need to provide this level of very simple detail.
+
 ## Setting a spreadsheet's metadata
 
 PhpSpreadsheet allows an easy way to set a spreadsheet's metadata, using
@@ -18,12 +20,42 @@ finding a specific document in a file repository or a document
 management system. For example Microsoft Sharepoint uses document
 metadata to search for a specific document in its document lists.
 
-Setting spreadsheet metadata is done as follows:
+<details>
+  <summary>Click here for details of Spreadsheet Document Properties</summary>
+
+These are accessed in MS Excel from the "Info" option on the "File" menu:
+![99-Properties_File-Menu.png](images%2F99-Properties_File-Menu.png)
+
+Some of these properties can be edited "in situ" in the Properties Block:
+![99-Properties_Block.png](images%2F99-Properties_Block.png)
+
+For more advanced properties, click on the "Properties" dropdown:
+![99-Properties_Advanced.png](images%2F99-Properties_Advanced.png)
+
+And you will be able to add/edit/delete a lot of different property values.
+![99-Properties_Advanced-Form.png](images%2F99-Properties_Advanced-Form.png)
+
+Properties on the "General", "Statistics" and "Contents" tabs are informational, and cannot be user-defined in Excel itself.
+Properties on the "Summary" tab are all string values.
+
+The "Custom" tab allows you to define your own properties. More information from the Microsoft Documentation can be found [here](https://support.microsoft.com/en-us/office/view-or-change-the-properties-for-an-office-file-21d604c2-481e-4379-8e54-1dd4622c6b75).
+![99-Properties_Advanced-Form-2.png](images%2F99-Properties_Advanced-Form-2.png)
+
+You can select a property name from the dropdown, or type a new name of your choice; select a Type; enter a value; and then click on "Add".
+The new property will then be created and displayed in the list at the bottom of the form.
+
+While "Text", "Number" (can be an integer or a floating point value) and "Yes or No" types are straightforward to add a value, "Date" types are more difficult, and Microsoft provide very little help.
+However, you need to enter the date in the format that matches your locale, so an American would enter "7/4/2023 for the 4th of July; but in the UK I would enter "4/7/2023" for the same date.
+Although typically recognised as a date elsewhere in MS Excel, the almost universally recognised `2022-12-31` date format is not recognised as valid here.
+
+</details>
+
+Setting spreadsheet metadata in PhpSpreadsheet is done as follows:
 
 ```php
 $spreadsheet->getProperties()
     ->setCreator("Maarten Balliauw")
-    ->setLastModifiedBy("Maarten Balliauw")
+    ->setLastModifiedBy("Mark Baker")
     ->setTitle("Office 2007 XLSX Test Document")
     ->setSubject("Office 2007 XLSX Test Document")
     ->setDescription(
@@ -33,23 +65,154 @@ $spreadsheet->getProperties()
     ->setCategory("Test result file");
 ```
 
+You can choose which properties to set or ignore.
+
+<details>
+  <summary>Click here for details of Property Getters/Setters</summary>
+
+PhpSpreadsheet provides specific getters/setters for a number of pre-defined properties.
+
+| Property Name    | DataType                | Getter/Setter                                | Notes                                                     |
+|------------------|-------------------------|----------------------------------------------|-----------------------------------------------------------|
+| Creator          | string                  | getCreator()<br />setCreator()               |                                                           |
+| Last Modified By | string                  | getLastModifiedBy()<br />setLastModifiedBy() |                                                           |
+| Created          | float/int<br/>timestamp | getCreated()<br />setCreated()               | Cannot be modified in MS Excel; but is automatically set. |
+| Modified         | float/int<br/>timestamp | getModified()<br />setModified()             | Cannot be modified in MS Excel; but is automatically set. |
+| Title            | string                  | getTitle()<br />setTitle()                   |                                                           |
+| Description      | string                  | getDescription()<br />setDescription()       |                                                           |
+| Subject          | string                  | getSubject()<br />setSubject()               |                                                           |
+| Keywords         | string                  | getKeywords()<br />setKeywords()             |                                                           |
+| Category         | string                  | getCategory()<br />setCategory()             | Not supported in xls files.                               |
+| Company          | string                  | getCompany()<br />setCompany()               | Not supported in xls files.                               |
+| Manager          | string                  | getManager()<br />setManager()               | Not supported in xls files.                               |
+> **Note:** Not all Spreadsheet File Formats support all of these properties.
+> For example: "Category", "Company" and "Manager" are not supported in `xls` files.
+
+</details>
+
+<details>
+  <summary>Click here for details of Custom Properties</summary>
+
+Additionally, PhpSpreadsheet supports the creation and reading of custom properties for those file formats that accept custom properties.
+The following methods of the Properties class can be used when working with custom properties.
+ - `getCustomProperties()`<br />
+   Will return an array listing the names of all custom properties that are defined.
+ - `isCustomPropertySet(string $propertyName)`<br />
+   Will return a boolean indicating if the named custom property is defined.
+ - `getCustomPropertyValue(string $propertyName)`<br />
+   Will return the "raw" value of the named custom property; or null if the property doesn't exist.
+ - `getCustomPropertyType(string $propertyName)`<br />
+   Will return the datatype of the named custom property; or null if the property doesn't exist. 
+ - `setCustomProperty(string $propertyName, $propertyValue = '', $propertyType = null)`<br />
+   Will let you set (or modify) a custom property. If you don't provide a datatype, then PhpSpreadsheet will attempt to identify the datatype from the value that you set.
+
+The recognised Property Types are:
+
+| Constant                          | Datatype | Value |
+|-----------------------------------|----------|-------|
+| Properties::PROPERTY_TYPE_BOOLEAN | boolean  | b     |
+| Properties::PROPERTY_TYPE_INTEGER | integer  | i     |
+| Properties::PROPERTY_TYPE_FLOAT   | float    | f     |
+| Properties::PROPERTY_TYPE_DATE    | date     | d     |
+| Properties::PROPERTY_TYPE_STRING  | string   | s     |
+
+When reading property types, you might also encounter:
+
+| Datatype | Value        |
+|----------|--------------|
+| null     | null value   |
+| empty    | empty string |
+| u        | unknown      |
+
+Other more complex types, such as pointers and filetime, are not supported by PhpSpreadsheet; and are discarded when reading a file.
+
+</details>
+
+```php
+$spreadsheet->getProperties()
+    ->setCustomProperty('Editor', 'Mark Baker')
+    ->setCustomProperty('Version', 1.17)
+    ->setCustomProperty('Tested', true)
+    ->setCustomProperty('Test Date', '2021-03-17', Properties::PROPERTY_TYPE_DATE);
+```
+> **Warning:** If the datatype for a date is not explicitly used, then it will be treated as a string.
+
+> **Note:** Although MS Excel doesn't recognise `2022-12-31` as valid date format when entering Custom Date Properties, PhpSpreadsheet will accept it.
+
 ## Setting a spreadsheet's active sheet
 
-The following line of code sets the active sheet index to the first
-sheet:
+A Spreadsheet consists of (very rarely) none, one or more Worksheets. If you have 1 or more Worksheets, then one (and only one) of those Worksheets can be "Active" (viewed or updated) at a time, but there will always be an "Active" Worksheet (unless you explicitly delete all of the Worksheets in the Spreadsheet).
+
+<details>
+  <summary>Click here for details about Worksheets</summary>
+
+When you create a new Spreadsheet in MS Excel, it creates the Spreadsheet with a single Worksheet ("Sheet1")
+
+![101-Basic-Spreadsheet-with-Worksheet.png](images%2F101-Basic-Spreadsheet-with-Worksheet.png)
+
+and that is the "Active" Worksheet.
+
+![101-Active-Worksheet-1.png](images%2F101-Active-Worksheet-1.png)
+
+This is the same as
+```php
+$spreadsheet = new Spreadsheet();
+$activeWorksheet = $spreadsheet->getActiveSheet();
+```
+in PhpSpreadsheet.
+
+And you can then write values to Cells in `$activeWorksheet` (`Sheet1`).
+
+To create a new Worksheet in MS Excel, you click on the "+" button in the Worksheet Tab Bar. MS Excel will then create a new Worksheet ("Sheet2") in the Spreadsheet, and make that the current "Active" Worksheet.
+
+![101-Active-Worksheet-2.png](images%2F101-Active-Worksheet-2.png)
+
+Excel always shows the "Active" Worksheet in the Grid, and you can see which Worksheet is "Active" because it is highlighted in the Worksheet Tab Bar at the bottom of the Worksheet Grid.
+
+This is the same as
+```php
+$activeWorksheet = $spreadsheet->createSheet();
+```
+in PhpSpreadsheet.
+
+And you can then write values to Cells in `$activeWorksheet` (`Sheet2`).
+
+</details>
+
+To switch between Worksheets in MS Excel, you click on the Tab for the Worksheet that you want to be "Active" in the Worksheet Tab Bar. Excel will then set that as the "Active" Worksheet.
+
+![101-Active-Worksheet-Change.png](images%2F101-Active-Worksheet-Change.png)
+
+In PhpSpreadsheet, you do this by calling the Spreadsheet's `setActiveSheetIndex()` methods.
+Either:
 
 ```php
-$spreadsheet->setActiveSheetIndex(0);
+$activeWorksheet = $spreadsheet->setActiveSheetIndexByName('Sheet1')
 ```
+using the name/title of the Worksheet that you want as the "Active" Worksheet.
 
-You can also set the active sheet by its name/title
-
+Or:
 ```php
-$spreadsheet->setActiveSheetIndexByName('DataSheet')
+$activeWorksheet = $spreadsheet->setActiveSheetIndex(0);
 ```
+Where you set the "Active" Worksheet by its position in the Worksheet Tab Bar, with 0 as the first Worksheet, 1 as the second, etc.
 
-will change the currently active sheet to the worksheet called
-"DataSheet".
+And you can then write values to Cells in `$activeWorksheet` (`Sheet1`) again.
+
+
+You don't have to assign the return value from calls to `createSheet()` and `setActiveSheetIndex()` to a variable, but it means that you can call Worksheet methods directly against `$activeWorksheet`, rather than having to call `$spreadsheet->getActiveSheet()` all the time.
+And, unlike MS Excel where you can only update Cells in the "Active" Worksheet; PhpSpreadsheet allows you to update Cells in any Worksheet:
+```php
+// Create a Spreadsheet, with Worksheet Sheet1, which is the Active Worksheet
+$spreadsheet = new Spreadsheet();
+// Assign the Active Worksheet (Sheet1) to $worksheet1
+$worksheet1 = $spreadsheet->getActiveSheet();
+// Create a new Worksheet (Sheet2) and make that the Active Worksheet
+$worksheet2 = $spreadsheet->createSheet();
+
+$worksheet1->setCellValue('A1', 'I am a cell on Sheet1');
+$worksheet2->setCellValue('A1', 'I am a cell on Sheet2');
+```
 
 ## Write a date or time into a cell
 
@@ -69,7 +232,6 @@ Writing a date value in a cell consists of 2 lines of code. Select the
 method that suits you the best. Here are some examples:
 
 ```php
-
 // MySQL-like timestamp '2008-12-31' or date string
 \PhpOffice\PhpSpreadsheet\Cell\Cell::setValueBinder( new \PhpOffice\PhpSpreadsheet\Cell\AdvancedValueBinder() );
 
@@ -94,23 +256,69 @@ $spreadsheet->getActiveSheet()->getStyle('D1')
     ->getNumberFormat()
     ->setFormatCode(\PhpOffice\PhpSpreadsheet\Style\NumberFormat::FORMAT_DATE_YYYYMMDDSLASH);
 ```
-
 The above methods for entering a date all yield the same result.
-`\PhpOffice\PhpSpreadsheet\Style\NumberFormat` provides a lot of
-pre-defined date formats.
-
 The `\PhpOffice\PhpSpreadsheet\Shared\Date::PHPToExcel()` method will also
-work with a PHP DateTime object.
+work with a PHP DateTime object; or with strings containing different well-recognised date formats
+(although this is limited in the same ways as using the Advanced Value Binder).
 
 Similarly, times (or date and time values) can be entered in the same
 fashion: just remember to use an appropriate format code.
 
-**Note:**
-
-See section "Using value binders to facilitate data entry" to learn more
+> **Note:** See section "Using value binders to facilitate data entry" to learn more
 about the AdvancedValueBinder used in the first example. Excel can also
 operate in a 1904-based calendar (default for workbooks saved on Mac).
 Normally, you do not have to worry about this when using PhpSpreadsheet.
+
+`\PhpOffice\PhpSpreadsheet\Style\NumberFormat` provides a number of
+pre-defined date formats; but this is just a string value, and you can
+define your own values as long as they are a valid MS Excel format.
+PhpSpreadsheet also provides a number of Wizards to help you create
+Date, Time and DateTime format masks.
+
+<details>
+  <summary>Click here for an example of the Date/Time Wizards</summary>
+
+```php
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard\Date as DateWizard;
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard\Time as TimeWizard;
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard\DateTime as DateTimeWizard;
+
+$spreadsheet->getActiveSheet()->setCellValue('A1', '=NOW()')
+$spreadsheet->getActiveSheet()->setCellValue('A2', '=NOW()')
+$spreadsheet->getActiveSheet()->setCellValue('A3', '=NOW()')
+
+// yyyy-mm-dd
+$dateFormat = new DateWizard(
+    DateWizard::SEPARATOR_DASH,
+    DateWizard::YEAR_FULL,
+    DateWizard::MONTH_NUMBER_LONG,
+    DateWizard::DAY_NUMBER_LONG
+);
+
+$spreadsheet->getActiveSheet()->getStyle('A1')
+    ->getNumberFormat()
+    ->setFormatCode($dateFormat);
+
+// hh:mm
+$timeFormat = new TimeWizard(
+    TimeWizard::SEPARATOR_COLON,
+    TimeWizard::HOURS_LONG,
+    TimeWizard::MINUTES_LONG,
+);
+
+$spreadsheet->getActiveSheet()->getStyle('A2')
+    ->getNumberFormat()
+    ->setFormatCode($timeFormat);
+
+// yyyy-mm-dd hh:mm
+$dateTimeFormat = new DateTimeWizard(' ', $dateFormat, $timeFormat);
+
+$spreadsheet->getActiveSheet()->getStyle('A3')
+    ->getNumberFormat()
+    ->setFormatCode($dateTimeFormat);
+```
+
+</details>
 
 ## Write a formula into a cell
 
@@ -187,7 +395,7 @@ internal English coding.
 
 ```php
 $formula = $spreadsheet->getActiveSheet()->getCell('B8')->getValue();
-$translatedFormula = \PhpOffice\PhpSpreadsheet\Calculation\Calculation::getInstance()->_translateFormulaToLocale($formula);
+$translatedFormula = \PhpOffice\PhpSpreadsheet\Calculation\Calculation::getInstance()->translateFormulaToLocale($formula);
 ```
 
 You can also create a formula using the function names and argument
@@ -207,6 +415,7 @@ At present, the following locale settings are supported:
 
 Language             |                      | Locale Code
 ---------------------|----------------------|-------------
+Bulgarian            | български            | bg
 Czech                | Ceština              | cs
 Danish               | Dansk                | da
 German               | Deutsch              | de
@@ -479,6 +688,15 @@ row 10.
 $spreadsheet->getActiveSheet()->setBreak('A10', \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::BREAK_ROW);
 ```
 
+If your print break is inside a defined print area, it may be necessary to add an extra parameter to specify the max column (and this probably won't hurt if the break is not inside a defined print area):
+
+```php
+$spreadsheet->getActiveSheet()
+    ->setBreak('A10',
+        \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::BREAK_ROW,
+        \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::BREAK_ROW_MAX_COLUMN);
+```
+
 The following line of code sets a print break on column D:
 
 ```php
@@ -705,6 +923,20 @@ $spreadsheet->getDefaultStyle()->getFont()->setName('Arial');
 $spreadsheet->getDefaultStyle()->getFont()->setSize(8);
 ```
 
+Excel also offers "theme fonts", with separate font names for major (header) and minor (body) text. PhpSpreadsheet will use the Excel 2007 default (Cambria) for major (default is Calibri Light in Excel 2013+); PhpSpreadsheet default for minor is Calibri, which is used by Excel 2007+. To align the default font name with the minor font name:
+
+```php
+$spreadsheet->getTheme()
+    ->setThemeFontName('custom')
+    ->setMinorFontValues('Arial', 'Arial', 'Arial', []);
+$spreadsheet->getDefaultStyle()->getFont()->setScheme('minor');
+```
+
+All cells bound to the theme fonts (via the `Font::setScheme` method) can be easily changed to a different font in Excel. To do this in PhpSpreadsheet, an additional method call is needed:
+```php
+$spreadsheet->resetThemeFonts();
+```
+
 ### Styling cell borders
 
 In PhpSpreadsheet it is easy to apply various borders on a rectangular
@@ -762,6 +994,26 @@ vertical/horizontal, left/right/top/bottom/diagonal.
 This border hierarchy can be utilized to achieve various effects in an
 easy manner.
 
+#### Advanced borders
+
+There is a second parameter `$advancedBorders` which can be supplied to applyFromArray. The default is `true`; when set to this value, the border styles are applied to the range as a whole, not to the individual cells. When set to `false`, the border styles are applied to each cell. The following code and screenshot demonstrates the difference.
+
+```php
+$sheet->setShowGridlines(false);
+$styleArray = [
+    'borders' => [
+        'bottom' => ['borderStyle' => 'hair', 'color' => ['argb' => 'FFFF0000']],
+        'top' => ['borderStyle' => 'hair', 'color' => ['argb' => 'FFFF0000']],
+        'right' => ['borderStyle' => 'hair', 'color' => ['argb' => 'FF00FF00']],
+        'left' => ['borderStyle' => 'hair', 'color' => ['argb' => 'FF00FF00']],
+    ],
+];
+$sheet->getStyle('B2:C3')->applyFromArray($styleArray);
+$sheet->getStyle('B5:C6')->applyFromArray($styleArray, false);
+```
+
+![08-advance-borders.png](./images/08-advanced-borders.png)
+
 ### Valid array keys for style `applyFromArray()`
 
 The following table lists the valid array keys for
@@ -806,13 +1058,13 @@ color       | setColor()
 
 Array key         | Maps to property
 ------------------|-------------------
-allBorders        | setLeft(); setRight(); setTop(); setBottom()
-bottom            | setBottom()
-diagonal          | setDiagonal()
+allBorders        | getLeft(); getRight(); getTop(); getBottom()
+bottom            | getBottom()
+diagonal          | getDiagonal()
 diagonalDirection | setDiagonalDirection()
-left              | setLeft()
-right             | setRight()
-top               | setTop()
+left              | getLeft()
+right             | getRight()
+top               | getTop()
 
 **\PhpOffice\PhpSpreadsheet\Style\Color**
 
@@ -988,7 +1240,7 @@ $spreadsheet->getActiveSheet()->setAutoFilter('A1:C9');
 ```
 
 **Make sure that you always include the complete filter range!** Excel
-does support setting only the captionrow, but that's **not** a best
+does support setting only the caption row, but that's **not** a best
 practice...
 
 ## Setting security on a spreadsheet
@@ -1011,6 +1263,10 @@ code:
 $spreadsheet->getActiveSheet()->getProtection()->setSheet(true);
 ```
 
+> Note that "protection" is not the same as "encryption".
+> Protection is about preventing parts of a spreadsheet from being changed, not about preventing the spreadsheet from being looked at.<br /><br />
+PhpSpreadsheet does not support encrypting a spreadsheet; nor can it read encrypted spreadsheets.
+
 ### Document
 
 An example on setting document security:
@@ -1027,15 +1283,16 @@ which apply only to change tracking and history for shared workbooks.
 
 ### Worksheet
 
-An example on setting worksheet security:
+An example on setting worksheet security
+(user can sort, insert rows, or format cells without unprotecting):
 
 ```php
 $protection = $spreadsheet->getActiveSheet()->getProtection();
 $protection->setPassword('PhpSpreadsheet');
 $protection->setSheet(true);
-$protection->setSort(true);
-$protection->setInsertRows(true);
-$protection->setFormatCells(true);
+$protection->setSort(false);
+$protection->setInsertRows(false);
+$protection->setFormatCells(false);
 ```
 
 If writing Xlsx files you can specify the algorithm used to hash the password
@@ -1053,12 +1310,17 @@ when setting a new password.
 
 ### Cell
 
-An example on setting cell security:
+An example on setting cell security.
+Note that cell security is honored only when sheet is protected.
+Also note that the `hidden` property applies only to formulas,
+and tells whether the formula is hidden on the formula bar,
+not in the cell.
 
 ```php
 $spreadsheet->getActiveSheet()->getStyle('B1')
     ->getProtection()
-    ->setLocked(\PhpOffice\PhpSpreadsheet\Style\Protection::PROTECTION_UNPROTECTED);
+    ->setLocked(\PhpOffice\PhpSpreadsheet\Style\Protection::PROTECTION_UNPROTECTED)
+    ->setHidden(\PhpOffice\PhpSpreadsheet\Style\Protection::PROTECTION_PROTECTED);
 ```
 
 ## Reading protected spreadsheet
@@ -1161,7 +1423,7 @@ A column's width can be set using the following code:
 $spreadsheet->getActiveSheet()->getColumnDimension('D')->setWidth(12);
 ```
 
-If you want to set a column width using a different unit of measure,
+If you want to set a column width using a different UoM (Unit of Measure),
 then you can do so by telling PhpSpreadsheet what UoM the width value
 that you are setting is measured in.
 Valid units are `pt` (points), `px` (pixels), `pc` (pica), `in` (inches),
@@ -1258,7 +1520,7 @@ Excel measures row height in points, where 1 pt is 1/72 of an inch (or
 about 0.35mm). The default value is 12.75 pts; and the permitted range
 of values is between 0 and 409 pts, where 0 pts is a hidden row.
 
-If you want to set a row height using a different unit of measure,
+If you want to set a row height using a different UoM (Unit of Measure),
 then you can do so by telling PhpSpreadsheet what UoM the height value
 that you are setting is measured in.
 Valid units are `pt` (points), `px` (pixels), `pc` (pica), `in` (inches),
@@ -1332,21 +1594,71 @@ rows (default), or above. The following code adds the summary above:
 $spreadsheet->getActiveSheet()->setShowSummaryBelow(false);
 ```
 
-## Merge/unmerge cells
+## Merge/Unmerge cells
 
-If you have a big piece of data you want to display in a worksheet, you
-can merge two or more cells together, to become one cell. This can be
-done using the following code:
+If you have a big piece of data you want to display in a worksheet, or a
+heading that needs to span multiple sub-heading columns, you can merge
+two or more cells together, to become one cell. This can be done using
+the following code:
 
 ```php
 $spreadsheet->getActiveSheet()->mergeCells('A18:E22');
 ```
 
-Removing a merge can be done using the unmergeCells method:
+Removing a merge can be done using the `unmergeCells()` method:
 
 ```php
 $spreadsheet->getActiveSheet()->unmergeCells('A18:E22');
 ```
+
+MS Excel itself doesn't yet offer the functionality to simply hide the merged cells, or to merge the content of cells into a single cell, but it is available in Open/Libre Office.
+
+### Merge with MERGE_CELL_CONTENT_EMPTY
+
+The default behaviour is to empty all cells except for the top-left corner cell in the merge range; and this is also the default behaviour for the `mergeCells()` method in PhpSpreadsheet.
+When this behaviour is applied, those cell values will be set to null; and if they are subsequently Unmerged, they will be empty cells.
+
+Passing an extra flag value to the `mergeCells()` method in PhpSpreadsheet can change this behaviour.
+
+![12-01-MergeCells-Options.png](./images/12-01-MergeCells-Options.png)
+
+Possible flag values are:
+- Worksheet::MERGE_CELL_CONTENT_EMPTY (the default)
+- Worksheet::MERGE_CELL_CONTENT_HIDE
+- Worksheet::MERGE_CELL_CONTENT_MERGE
+
+### Merge with MERGE_CELL_CONTENT_HIDE
+
+The first alternative, available only in OpenOffice, is to hide those cells, but to leave their content intact.
+When a file saved as `Xlsx` in those applications is opened in MS Excel, and those cells are unmerged, the original content will still be present.
+
+```php
+$spreadsheet->getActiveSheet()->mergeCells('A1:C3', Worksheet::MERGE_CELL_CONTENT_HIDE);
+```
+
+Will replicate that behaviour.
+
+### Merge with MERGE_CELL_CONTENT_MERGE
+
+The second alternative, available in both OpenOffice and LibreOffice is to merge the content of every cell in the merge range into the top-left cell, while setting those hidden cells to empty.
+
+```php
+$spreadsheet->getActiveSheet()->mergeCells('A1:C3', Worksheet::MERGE_CELL_CONTENT_MERGE);
+```
+
+Particularly when the merged cells contain formulae, the logic for this merge seems strange:
+walking through the merge range, each cell is calculated in turn, and appended to the "master" cell, then it is emptied, so any subsequent calculations that reference the cell see an empty cell, not the pre-merge value. 
+For example, suppose our spreadsheet contains
+
+![12-01-MergeCells-Options-2.png](./images/12-01-MergeCells-Options-2.png)
+
+where `B2` is the formula `=5-B1` and `C2` is the formula `=A2/B2`,
+and we want to merge cells `A2` to `C2` with all the cell values merged.
+The result is:
+
+![12-01-MergeCells-Options-3.png](./images/12-01-MergeCells-Options-3.png)
+
+The cell value `12` from cell `A2` is fixed; the value from `B2` is the result of the formula `=5-B1` (`4`, which is appended to our merged value), and cell `B2` is then emptied, so when we evaluate cell `C2` with the formula `=A2/B2` it gives us `12 / 0` which results in a `#DIV/0!` error (so the error `#DIV/0!` is appended to our merged value rather than the original calculation result of `3`).
 
 ## Inserting or Removing rows/columns
 
@@ -1433,6 +1745,22 @@ $drawing->setHeight(36);
 $drawing->setWorksheet($spreadsheet->getActiveSheet());
 ```
 
+Note that GD images are memory-intensive.
+
+### Creating a Drawing from string or stream data
+
+If you want to create a drawing from a string containing the binary image data, or from an external datasource such as an S3 bucket, then you can create a new MemoryDrawing from these sources using the `fromString()` or `fromStream()` static methods.
+
+```php
+$drawing = MemoryDrawing::fromString($imageString);
+```
+
+```php
+$drawing = MemoryDrawing::fromStream($imageStreamFromS3Bucket);
+```
+
+Note that this is a memory-intensive process, like all gd images; and also creates a temporary file.
+
 ## Reading Images from a worksheet
 
 A commonly asked question is how to retrieve the images from a workbook
@@ -1500,8 +1828,8 @@ Adding rich text to a cell can be done using
 `\PhpOffice\PhpSpreadsheet\RichText\RichText` instances. Here''s an example, which
 creates the following rich text string:
 
-> This invoice is ***payable within thirty days after the end of the
-> month*** unless specified otherwise on the invoice.
+> This invoice is <font color="darkgreen">***payable within thirty days after the end of the
+> month***</font> unless specified otherwise on the invoice.
 
 ```php
 $richText = new \PhpOffice\PhpSpreadsheet\RichText\RichText();
@@ -1670,7 +1998,7 @@ $spreadsheet->getActiveSheet()->getDefaultColumnDimension()->setWidth(12);
 Excel measures column width in its own proprietary units, based on the number
 of characters that will be displayed in the default font.
 
-If you want to set the default column width using a different unit of measure,
+If you want to set the default column width using a different UoM (Unit of Measure),
 then you can do so by telling PhpSpreadsheet what UoM the width value
 that you are setting is measured in.
 Valid units are `pt` (points), `px` (pixels), `pc` (pica), `in` (inches),
@@ -1693,7 +2021,7 @@ Excel measures row height in points, where 1 pt is 1/72 of an inch (or
 about 0.35mm). The default value is 12.75 pts; and the permitted range
 of values is between 0 and 409 pts, where 0 pts is a hidden row.
 
-If you want to set a row height using a different unit of measure,
+If you want to set a row height using a different UoM (Unit of Measure),
 then you can do so by telling PhpSpreadsheet what UoM the height value
 that you are setting is measured in.
 Valid units are `pt` (points), `px` (pixels), `pc` (pica), `in` (inches),

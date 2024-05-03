@@ -1,31 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
 
-class ChiDistRightTailTest extends TestCase
+class ChiDistRightTailTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerCHIDIST
-     *
-     * @param mixed $expectedResult
      */
-    public function testCHIDIST($expectedResult, ...$args): void
+    public function testCHIDIST(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::CHIDIST(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCaseReference('CHISQ.DIST.RT', $expectedResult, ...$args);
     }
 
-    public function providerCHIDIST(): array
+    public static function providerCHIDIST(): array
     {
         return require 'tests/data/Calculation/Statistical/CHIDISTRightTail.php';
     }
@@ -42,7 +33,7 @@ class ChiDistRightTailTest extends TestCase
         self::assertEqualsWithDelta($expectedResult, $result, 1.0e-14);
     }
 
-    public function providerChiDistRightTailArray(): array
+    public static function providerChiDistRightTailArray(): array
     {
         return [
             'row/column vectors' => [

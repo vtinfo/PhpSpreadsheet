@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
-
-class SlopeTest extends TestCase
+class SlopeTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerSLOPE
-     *
-     * @param mixed $expectedResult
      */
-    public function testSLOPE($expectedResult, array $xargs, array $yargs): void
+    public function testSLOPE(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::SLOPE($xargs, $yargs);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCaseNoBracket('SLOPE', $expectedResult, ...$args);
     }
 
-    public function providerSLOPE(): array
+    public static function providerSLOPE(): array
     {
         return require 'tests/data/Calculation/Statistical/SLOPE.php';
     }

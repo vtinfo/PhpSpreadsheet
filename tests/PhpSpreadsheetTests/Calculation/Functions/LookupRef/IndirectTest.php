@@ -1,7 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\LookupRef;
 
+use PhpOffice\PhpSpreadsheet\NamedFormula;
 use PhpOffice\PhpSpreadsheet\NamedRange;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx as ReaderXlsx;
 
@@ -9,12 +12,8 @@ class IndirectTest extends AllSetupTeardown
 {
     /**
      * @dataProvider providerINDIRECT
-     *
-     * @param mixed $expectedResult
-     * @param mixed $cellReference
-     * @param mixed $a1
      */
-    public function testINDIRECT($expectedResult, $cellReference = 'omitted', $a1 = 'omitted'): void
+    public function testINDIRECT(mixed $expectedResult, mixed $cellReference = 'omitted', mixed $a1 = 'omitted'): void
     {
         $this->mightHaveException($expectedResult);
         $sheet = $this->getSheet();
@@ -54,7 +53,7 @@ class IndirectTest extends AllSetupTeardown
         self::assertSame($expectedResult, $result);
     }
 
-    public function providerINDIRECT(): array
+    public static function providerINDIRECT(): array
     {
         return require 'tests/data/Calculation/LookupRef/INDIRECT.php';
     }
@@ -128,8 +127,78 @@ class IndirectTest extends AllSetupTeardown
         $sheet = $this->getSheet();
         $sheet->getCell('A1')->setValue('A2');
         $sheet->getCell('A2')->setValue('This is it');
-        $result = \PhpOffice\PhpSpreadsheet\Calculation\LookupRef::INDIRECT('A2', $sheet->getCell('A1'));
+        $result = \PhpOffice\PhpSpreadsheet\Calculation\LookupRef\Indirect::INDIRECT('A2', true, $sheet->getCell('A1'));
         $result = \PhpOffice\PhpSpreadsheet\Calculation\Functions::flattenSingleValue($result);
         self::assertSame('This is it', $result);
+    }
+
+    /**
+     * @dataProvider providerRelative
+     */
+    public function testR1C1Relative(string|int|null $expectedResult, string $address): void
+    {
+        $sheet = $this->getSheet();
+        $sheet->fromArray([
+            ['a1', 'b1', 'c1'],
+            ['a2', 'b2', 'c2'],
+            ['a3', 'b3', 'c3'],
+            ['a4', 'b4', 'c4'],
+        ]);
+        $sheet->getCell('B2')->setValue('=INDIRECT("' . $address . '", false)');
+        self::assertSame($expectedResult, $sheet->getCell('B2')->getCalculatedValue());
+    }
+
+    public static function providerRelative(): array
+    {
+        return [
+            'same row with bracket next column' => ['c2', 'R[]C[+1]'],
+            'same row without bracket next column' => ['c2', 'RC[+1]'],
+            'same row without bracket next column no plus sign' => ['c2', 'RC[1]'],
+            'same row previous column' => ['a2', 'RC[-1]'],
+            'previous row previous column' => ['a1', 'R[-1]C[-1]'],
+            'previous row same column with bracket' => ['b1', 'R[-1]C[]'],
+            'previous row same column without bracket' => ['b1', 'R[-1]C'],
+            'previous row next column' => ['c1', 'R[-1]C[+1]'],
+            'next row no plus sign previous column' => ['a3', 'R[1]C[-1]'],
+            'next row previous column' => ['a3', 'R[+1]C[-1]'],
+            'next row same column' => ['b3', 'R[+1]C'],
+            'next row next column' => ['c3', 'R[+1]C[+1]'],
+            'two rows down same column' => ['b4', 'R[+2]C'],
+            'invalid row' => ['#REF!', 'R[-2]C'],
+            'invalid column' => ['#REF!', 'RC[-2]'],
+            'circular reference' => [0, 'RC'], // matches Excel's treatment
+            'absolute row absolute column' => ['c2', 'R2C3'],
+            'absolute row relative column' => ['a2', 'R2C[-1]'],
+            'relative row absolute column lowercase' => ['a2', 'rc1'],
+            'uninitialized cell' => [null, 'RC[+2]'], // Excel result is 0
+        ];
+    }
+
+    private static bool $definedFormulaWorking = false;
+
+    public function testAboveCell(): void
+    {
+        $spreadsheet = $this->getSpreadsheet();
+        $spreadsheet->addNamedFormula(
+            new NamedFormula('SumAbove', $spreadsheet->getActiveSheet(), '=SUM(INDIRECT(ADDRESS(1,COLUMN())):INDIRECT(ADDRESS(ROW()-1,COLUMN())))')
+        );
+        $sheet = $this->getSheet();
+        $sheet->getCell('A1')->setValue(100);
+        $sheet->getCell('A2')->setValue(200);
+        $sheet->getCell('A3')->setValue(300);
+        $sheet->getCell('A4')->setValue(400);
+        $sheet->getCell('A5')->setValue(500);
+        $sheet->getCell('A6')->setValue('=SUM(A$1:INDIRECT(ADDRESS(ROW()-1,COLUMN())))');
+        self::AssertSame(1500, $sheet->getCell('A6')->getCalculatedValue());
+        if (self::$definedFormulaWorking) {
+            $sheet->getCell('B1')->setValue(10);
+            $sheet->getCell('B2')->setValue(20);
+            $sheet->getCell('B3')->setValue(30);
+            $sheet->getCell('B4')->setValue(40);
+            $sheet->getCell('B5')->setValue('=SumAbove');
+            self::AssertSame(100, $sheet->getCell('B5')->getCalculatedValue());
+        } else {
+            self::markTestIncomplete('PhpSpreadsheet does not handle this correctly');
+        }
     }
 }

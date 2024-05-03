@@ -60,13 +60,24 @@ $worksheet
     ->setCellValue("B{$row}", '=SUM(COLUMN_DATA_VALUES)')
     ->setCellValue("C{$row}", '=SUM(COLUMN_DATA_VALUES)');
 
+$range = $spreadsheet->getNamedRange('CHARGE_RATE');
+if ($range === null || $range->getWorksheet() === null) {
+    throw new Exception('expected named range not found');
+}
+/** @var float */
+$chargeRateCellValue = $spreadsheet
+    ->getSheetByNameOrThrow($range->getWorksheet()->getTitle())
+    ->getCell($range->getCellsInRange()[0])->getValue();
+
+/** @var float */
+$calc1 = $worksheet->getCell("B{$row}")->getCalculatedValue();
+/** @var float */
+$calc2 = $worksheet->getCell("C{$row}")->getCalculatedValue();
 $helper->log(sprintf(
-    'Worked %.2f hours at a rate of %s - Charge to the client is %.2f',
-    $worksheet->getCell("B{$row}")->getCalculatedValue(),
-    $chargeRateCellValue = $spreadsheet
-        ->getSheetByName($spreadsheet->getNamedRange('CHARGE_RATE')->getWorksheet()->getTitle())
-        ->getCell($spreadsheet->getNamedRange('CHARGE_RATE')->getCellsInRange()[0])->getValue(),
-    $worksheet->getCell("C{$row}")->getCalculatedValue()
+    'Worked %.2f hours at a rate of %.2f - Charge to the client is %.2f',
+    $calc1,
+    $chargeRateCellValue,
+    $calc2
 ));
 
 $helper->write($spreadsheet, __FILE__, ['Xlsx']);

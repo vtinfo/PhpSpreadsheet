@@ -1,50 +1,34 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Statistical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Statistical;
-use PHPUnit\Framework\TestCase;
-
-class StDevPTest extends TestCase
+class StDevPTest extends AllSetupTeardown
 {
-    protected function tearDown(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerSTDEVP
-     *
-     * @param mixed $expectedResult
-     * @param mixed $values
      */
-    public function testSTDEVP($expectedResult, $values): void
+    public function testSTDEVP(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Statistical::STDEVP($values);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->runTestCaseReference('STDEVP', $expectedResult, ...$args);
     }
 
-    public function providerSTDEVP(): array
+    public static function providerSTDEVP(): array
     {
         return require 'tests/data/Calculation/Statistical/STDEVP.php';
     }
 
     /**
      * @dataProvider providerOdsSTDEVP
-     *
-     * @param mixed $expectedResult
-     * @param mixed $values
      */
-    public function testOdsSTDEVP($expectedResult, $values): void
+    public function testOdsSTDEVP(mixed $expectedResult, mixed ...$args): void
     {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_OPENOFFICE);
-
-        $result = Statistical::STDEVP($values);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-12);
+        $this->setOpenOffice();
+        $this->runTestCaseReference('STDEVP', $expectedResult, ...$args);
     }
 
-    public function providerOdsSTDEVP(): array
+    public static function providerOdsSTDEVP(): array
     {
         return require 'tests/data/Calculation/Statistical/STDEVP_ODS.php';
     }

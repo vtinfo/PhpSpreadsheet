@@ -1,6 +1,8 @@
 <?php
 
-namespace PhpOffice\PhpSpreadsheetTests\Reader;
+declare(strict_types=1);
+
+namespace PhpOffice\PhpSpreadsheetTests\Reader\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use PhpOffice\PhpSpreadsheet\Style\Border;
@@ -9,10 +11,7 @@ use PhpOffice\PhpSpreadsheet\Style\Font;
 
 class NamespaceNonStdTest extends \PHPUnit\Framework\TestCase
 {
-    /**
-     * @var string
-     */
-    private static $testbook = 'tests/data/Reader/XLSX/namespacenonstd.xlsx';
+    private static string $testbook = 'tests/data/Reader/XLSX/namespacenonstd.xlsx';
 
     public function testPreliminaries(): void
     {
@@ -24,7 +23,7 @@ class NamespaceNonStdTest extends \PHPUnit\Framework\TestCase
         if ($data === false) {
             self::fail('Unable to read file');
         } else {
-            if (strpos(__FILE__, 'NonStd') === false) {
+            if (!str_contains(__FILE__, 'NonStd')) {
                 self::assertStringNotContainsString('nonstd', self::$testbook);
                 self::assertStringContainsString('<workbook ', $data);
             } else {
@@ -62,13 +61,9 @@ class NamespaceNonStdTest extends \PHPUnit\Framework\TestCase
         self::assertSame('A2', $sheet->getFreezePane());
         self::assertSame('A2', $sheet->getTopLeftCell());
         self::assertSame('B3', $sheet->getSelectedCells());
-        $sheet = $spreadsheet->getSheetByName('SylkTest');
-        if ($sheet === null) {
-            self::fail('Unable to load expected sheet');
-        } else {
-            self::assertNull($sheet->getFreezePane());
-            self::assertNull($sheet->getTopLeftCell());
-        }
+        $sheet = $spreadsheet->getSheetByNameOrThrow('SylkTest');
+        self::assertNull($sheet->getFreezePane());
+        self::assertNull($sheet->getTopLeftCell());
     }
 
     public function testLoadXlsx(): void

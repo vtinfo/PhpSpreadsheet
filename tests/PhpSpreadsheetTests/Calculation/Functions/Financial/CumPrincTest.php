@@ -1,30 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PHPUnit\Framework\TestCase;
-
-class CumPrincTest extends TestCase
+class CumPrincTest extends AllSetupTeardown
 {
-    protected function setUp(): void
-    {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
-    }
-
     /**
      * @dataProvider providerCUMPRINC
-     *
-     * @param mixed $expectedResult
      */
-    public function testCUMPRINC($expectedResult, ...$args): void
+    public function testCUMPRINC(mixed $expectedResult, mixed ...$args): void
     {
-        $result = Financial::CUMPRINC(...$args);
-        self::assertEqualsWithDelta($expectedResult, $result, 1E-8);
+        $this->runTestCase('CUMPRINC', $expectedResult, $args);
     }
 
-    public function providerCUMPRINC(): array
+    public static function providerCUMPRINC(): array
     {
         return require 'tests/data/Calculation/Financial/CUMPRINC.php';
     }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Worksheet\Table;
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
@@ -11,17 +13,14 @@ class SetupTeardown extends TestCase
     /**
      * @var ?Spreadsheet
      */
-    private $spreadsheet;
+    private ?Spreadsheet $spreadsheet = null;
 
     /**
      * @var ?Worksheet
      */
-    private $sheet;
+    private ?Worksheet $sheet = null;
 
-    /**
-     * @var int
-     */
-    protected $maxRow = 4;
+    protected int $maxRow = 4;
 
     protected function tearDown(): void
     {

@@ -21,48 +21,34 @@ class LocaleGenerator
 
     private const ARGUMENT_SEPARATOR_ROW = 5;
     private const ERROR_CODES_FIRST_ROW = 8;
+    private const CURRENCY_SYMBOL_ROW = 19;
 
     private const FUNCTION_NAME_LIST_FIRST_ROW = 4;
     private const ENGLISH_FUNCTION_CATEGORIES_COLUMN = 'A';
     private const ENGLISH_REFERENCE_COLUMN = 'B';
     private const EOL = "\n"; // not PHP_EOL
 
-    /**
-     * @var string
-     */
-    protected $translationSpreadsheetName;
+    protected string $translationSpreadsheetName;
 
-    /**
-     * @var string
-     */
-    protected $translationBaseFolder;
+    protected string $translationBaseFolder;
 
-    protected $phpSpreadsheetFunctions;
+    protected array $phpSpreadsheetFunctions;
 
-    /**
-     * @var Spreadsheet
-     */
-    protected $translationSpreadsheet;
+    protected Spreadsheet $translationSpreadsheet;
 
-    protected $verbose;
+    protected bool $verbose;
 
-    /**
-     * @var Worksheet
-     */
-    protected $localeTranslations;
+    protected Worksheet $localeTranslations;
 
-    protected $localeLanguageMap = [];
+    protected array $localeLanguageMap = [];
 
-    protected $errorCodeMap = [];
+    protected array $errorCodeMap = [];
 
-    /**
-     * @var Worksheet
-     */
-    private $functionNameTranslations;
+    private Worksheet $functionNameTranslations;
 
-    protected $functionNameLanguageMap = [];
+    protected array $functionNameLanguageMap = [];
 
-    protected $functionNameMap = [];
+    protected array $functionNameMap = [];
 
     public function __construct(
         string $translationBaseFolder,
@@ -97,18 +83,28 @@ class LocaleGenerator
         }
     }
 
-    protected function buildConfigFileForLocale($column, $locale): void
+    protected function buildConfigFileForLocale(string $column, string $locale): void
     {
         $language = $this->localeTranslations->getCell($column . self::ENGLISH_LANGUAGE_NAME_ROW)->getValue();
+        if (!is_string($language)) {
+            throw new Exception('Non-string language value at ' . $column . self::ENGLISH_LANGUAGE_NAME_ROW);
+        }
         $localeLanguage = $this->localeTranslations->getCell($column . self::LOCALE_LANGUAGE_NAME_ROW)->getValue();
+        if (!is_string($localeLanguage)) {
+            throw new Exception('Non-string locale language value at ' . $column . self::LOCALE_LANGUAGE_NAME_ROW);
+        }
         $configFile = $this->openConfigFile($locale, $language, $localeLanguage);
 
         $this->writeConfigArgumentSeparator($configFile, $column);
+        $this->writeConfigCurrencySymbol($configFile, $column);
         $this->writeFileSectionHeader($configFile, 'Error Codes');
 
         foreach ($this->errorCodeMap as $errorCode => $row) {
             $translationCell = $this->localeTranslations->getCell($column . $row);
             $translationValue = $translationCell->getValue();
+            if ($translationValue !== null && !is_string($translationValue)) {
+                throw new Exception('Non-string translation value at ' . $column . $row);
+            }
             if (!empty($translationValue)) {
                 $errorCodeTranslation = "{$errorCode} = {$translationValue}" . self::EOL;
                 fwrite($configFile, $errorCodeTranslation);
@@ -122,10 +118,14 @@ class LocaleGenerator
         fclose($configFile);
     }
 
-    protected function writeConfigArgumentSeparator($configFile, $column): void
+    /** @param resource $configFile resource to write to */
+    protected function writeConfigArgumentSeparator($configFile, string $column): void
     {
         $translationCell = $this->localeTranslations->getCell($column . self::ARGUMENT_SEPARATOR_ROW);
         $localeValue = $translationCell->getValue();
+        if ($localeValue !== null && !is_string($localeValue)) {
+            throw new Exception('Non-string locale value at ' . $column . self::CURRENCY_SYMBOL_ROW);
+        }
         if (!empty($localeValue)) {
             $functionTranslation = "ArgumentSeparator = {$localeValue}" . self::EOL;
             fwrite($configFile, $functionTranslation);
@@ -134,19 +134,47 @@ class LocaleGenerator
         }
     }
 
-    protected function buildFunctionsFileForLocale($column, $locale): void
+    /** @param resource $configFile resource to write to */
+    protected function writeConfigCurrencySymbol($configFile, string $column): void
+    {
+        $translationCell = $this->localeTranslations->getCell($column . self::CURRENCY_SYMBOL_ROW);
+        $localeValue = $translationCell->getValue();
+        if ($localeValue !== null && !is_string($localeValue)) {
+            throw new Exception('Non-string locale value at ' . $column . self::CURRENCY_SYMBOL_ROW);
+        }
+        if (!empty($localeValue)) {
+            $functionTranslation = "currencySymbol = {$localeValue}" . self::EOL;
+            fwrite($configFile, '##' . self::EOL);
+            fwrite($configFile, '##  (For future use)' . self::EOL);
+            fwrite($configFile, '##' . self::EOL);
+            fwrite($configFile, $functionTranslation);
+        } else {
+            $this->log('No Currency Symbol defined');
+        }
+    }
+
+    protected function buildFunctionsFileForLocale(string $column, string $locale): void
     {
         $language = $this->functionNameTranslations->getCell($column . self::ENGLISH_LANGUAGE_NAME_ROW)->getValue();
+        if (!is_string($language)) {
+            throw new Exception('Non-string language value at ' . $column . self::ENGLISH_LANGUAGE_NAME_ROW);
+        }
         $localeLanguage = $this->functionNameTranslations->getCell($column . self::LOCALE_LANGUAGE_NAME_ROW)
             ->getValue();
+        if (!is_string($localeLanguage)) {
+            throw new Exception('Non-string locale language value at ' . $column . self::LOCALE_LANGUAGE_NAME_ROW);
+        }
         $functionFile = $this->openFunctionNameFile($locale, $language, $localeLanguage);
 
         foreach ($this->functionNameMap as $functionName => $row) {
             $translationCell = $this->functionNameTranslations->getCell($column . $row);
             $translationValue = $translationCell->getValue();
+            if ($translationValue !== null && !is_string($translationValue)) {
+                throw new Exception('Non-string translation value at ' . $column . $row);
+            }
             if ($this->isFunctionCategoryEntry($translationCell)) {
                 $this->writeFileSectionHeader($functionFile, "{$translationValue} ({$functionName})");
-            } elseif (!array_key_exists($functionName, $this->phpSpreadsheetFunctions)) {
+            } elseif (!array_key_exists($functionName, $this->phpSpreadsheetFunctions) && substr($functionName, 0, 1) !== '*') {
                 $this->log("Function {$functionName} is not defined in PhpSpreadsheet");
             } elseif (!empty($translationValue)) {
                 $functionTranslation = "{$functionName} = {$translationValue}" . self::EOL;
@@ -159,29 +187,37 @@ class LocaleGenerator
         fclose($functionFile);
     }
 
+    /** @return resource used by other methods in this class */
     protected function openConfigFile(string $locale, string $language, string $localeLanguage)
     {
         $this->log("Building locale {$locale} ($language) configuration");
         $localeFolder = $this->getLocaleFolder($locale);
 
-        $configFileName = realpath($localeFolder . DIRECTORY_SEPARATOR . 'config');
+        $configFileName = realpath($localeFolder) . DIRECTORY_SEPARATOR . 'config';
         $this->log("Writing locale configuration to {$configFileName}");
 
         $configFile = fopen($configFileName, 'wb');
+        if ($configFile === false) {
+            throw new Exception('Unable to open $configFileName for write');
+        }
         $this->writeFileHeader($configFile, $localeLanguage, $language, 'locale settings');
 
         return $configFile;
     }
 
+    /** @return resource used by other methods in this class */
     protected function openFunctionNameFile(string $locale, string $language, string $localeLanguage)
     {
         $this->log("Building locale {$locale} ($language) function names");
         $localeFolder = $this->getLocaleFolder($locale);
 
-        $functionFileName = realpath($localeFolder . DIRECTORY_SEPARATOR . 'functions');
+        $functionFileName = realpath($localeFolder) . DIRECTORY_SEPARATOR . 'functions';
         $this->log("Writing local function names to {$functionFileName}");
 
         $functionFile = fopen($functionFileName, 'wb');
+        if ($functionFile === false) {
+            throw new Exception('Unable to open $functionFileName for write');
+        }
         $this->writeFileHeader($functionFile, $localeLanguage, $language, 'function name translations');
 
         return $functionFile;
@@ -189,16 +225,19 @@ class LocaleGenerator
 
     protected function getLocaleFolder(string $locale): string
     {
-        $localeFolder = $this->translationBaseFolder .
-            DIRECTORY_SEPARATOR .
-            str_replace('_', DIRECTORY_SEPARATOR, $locale);
+        $lastchar = substr($this->translationBaseFolder, -1);
+        $dirsep = ($lastchar === '/' || $lastchar === '\\') ? '' : DIRECTORY_SEPARATOR;
+        $localeFolder = $this->translationBaseFolder
+            . $dirsep
+            . str_replace('_', DIRECTORY_SEPARATOR, $locale);
         if (!file_exists($localeFolder) || !is_dir($localeFolder)) {
-            mkdir($localeFolder, 0777, true);
+            mkdir($localeFolder, 7 * 64 + 7 * 8 + 7, true); // octal 777
         }
 
         return $localeFolder;
     }
 
+    /** @param resource $localeFile file being written to */
     protected function writeFileHeader($localeFile, string $localeLanguage, string $language, string $title): void
     {
         fwrite($localeFile, str_repeat('#', 60) . self::EOL);
@@ -210,6 +249,7 @@ class LocaleGenerator
         fwrite($localeFile, str_repeat('#', 60) . self::EOL . self::EOL);
     }
 
+    /** @param resource $localeFile file being written to */
     protected function writeFileSectionHeader($localeFile, string $header): void
     {
         fwrite($localeFile, self::EOL . '##' . self::EOL);
@@ -226,9 +266,6 @@ class LocaleGenerator
     protected function getTranslationSheet(string $sheetName): Worksheet
     {
         $worksheet = $this->translationSpreadsheet->setActiveSheetIndexByName($sheetName);
-        if ($worksheet === null) {
-            throw new Exception("{$sheetName} Worksheet not found");
-        }
 
         return $worksheet;
     }

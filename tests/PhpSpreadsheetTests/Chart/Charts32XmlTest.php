@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Chart;
 
 use PhpOffice\PhpSpreadsheet\Chart\Properties;
@@ -38,7 +40,7 @@ class Charts32XmlTest extends TestCase
         self::assertSame($expectedCount, substr_count($data, '<c:smooth val="1"/>'));
     }
 
-    public function providerScatterCharts(): array
+    public static function providerScatterCharts(): array
     {
         return [
             'no line' => [0, '32readwriteScatterChart1.xlsx'],
@@ -114,7 +116,7 @@ class Charts32XmlTest extends TestCase
         }
     }
 
-    public function providerCatAxValAx(): array
+    public static function providerCatAxValAx(): array
     {
         return [
             [true],
@@ -174,6 +176,47 @@ class Charts32XmlTest extends TestCase
             substr_count(
                 $data,
                 '</c:tx><c:spPr><a:solidFill><a:prstClr val="red"/>'
+            )
+        );
+    }
+
+    public function testDateAx(): void
+    {
+        $file = self::DIRECTORY . '32readwriteLineDateAxisChart1.xlsx';
+        $reader = new XlsxReader();
+        $reader->setIncludeCharts(true);
+        $spreadsheet = $reader->load($file);
+        $sheet = $spreadsheet->getActiveSheet();
+        $charts = $sheet->getChartCollection();
+        self::assertCount(2, $charts);
+        $chart = $charts[1];
+        self::assertNotNull($chart);
+
+        $writer = new XlsxWriter($spreadsheet);
+        $writer->setIncludeCharts(true);
+        $writerChart = new XlsxWriter\Chart($writer);
+        $data = $writerChart->writeChart($chart);
+        $spreadsheet->disconnectWorksheets();
+
+        self::assertSame(
+            1,
+            substr_count(
+                $data,
+                '<c:baseTimeUnit val="days"/><c:majorTimeUnit val="months"/><c:minorTimeUnit val="months"/>'
+            )
+        );
+        self::assertSame(
+            1,
+            substr_count(
+                $data,
+                '<c:dateAx>'
+            )
+        );
+        self::assertSame(
+            1,
+            substr_count(
+                $data,
+                '<c:valAx>'
             )
         );
     }

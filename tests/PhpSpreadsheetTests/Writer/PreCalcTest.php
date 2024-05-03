@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Writer;
 
 use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
@@ -11,8 +13,7 @@ use PhpOffice\PhpSpreadsheetTests\Functional\AbstractFunctional;
 
 class PreCalcTest extends AbstractFunctional
 {
-    /** @var string */
-    private $outfile = '';
+    private string $outfile = '';
 
     protected function tearDown(): void
     {
@@ -22,7 +23,7 @@ class PreCalcTest extends AbstractFunctional
         }
     }
 
-    public function providerPreCalc(): array
+    public static function providerPreCalc(): array
     {
         return [
             [true, 'Xlsx'],
@@ -106,7 +107,7 @@ class PreCalcTest extends AbstractFunctional
             $data = self::readFile($file);
             // confirm that file contains B2 pre-calculated or not as appropriate
             if ($preCalc === false) {
-                self::assertStringContainsString('<c r="B2" t="str"><f>3+A3</f><v>0</v></c>', $data);
+                self::assertStringContainsString('<c r="B2" t="str"><f>3+A3</f></c>', $data);
             } else {
                 self::assertStringContainsString('<c r="B2"><f>3+A3</f><v>14</v></c>', $data);
             }

@@ -1,31 +1,36 @@
 <?php
 
+declare(strict_types=1);
+
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Logical;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\Logical;
-use PHPUnit\Framework\TestCase;
-
-class XorTest extends TestCase
+class XorTest extends AllSetupTeardown
 {
-    protected function setUp(): void
+    /**
+     * @dataProvider providerXOR
+     */
+    public function testXOR(mixed $expectedResult, mixed ...$args): void
     {
-        Functions::setCompatibilityMode(Functions::COMPATIBILITY_EXCEL);
+        $this->runTestCase('XOR', $expectedResult, ...$args);
+    }
+
+    public static function providerXOR(): array
+    {
+        return require 'tests/data/Calculation/Logical/XOR.php';
     }
 
     /**
-     * @dataProvider providerXOR
-     *
-     * @param mixed $expectedResult
+     * @dataProvider providerXORLiteral
      */
-    public function testXOR($expectedResult, ...$args): void
+    public function xtestXORLiteral(mixed $expectedResult, string $formula): void
     {
-        $result = Logical::logicalXor(...$args);
-        self::assertEquals($expectedResult, $result);
+        $sheet = $this->getSheet();
+        $sheet->getCell('A1')->setValue("=XOR($formula)");
+        self::assertSame($expectedResult, $sheet->getCell('A1')->getCalculatedValue());
     }
 
-    public function providerXOR(): array
+    public static function providerXORLiteral(): array
     {
-        return require 'tests/data/Calculation/Logical/XOR.php';
+        return require 'tests/data/Calculation/Logical/XORLiteral.php';
     }
 }
