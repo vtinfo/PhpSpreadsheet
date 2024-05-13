@@ -91,7 +91,7 @@ class Conditional implements IComparable
     /**
      * Text.
      */
-    private string $text;
+    private string $text = '';
 
     /**
      * Stop on this condition, if it matches.
@@ -231,7 +231,7 @@ class Conditional implements IComparable
     /**
      * Set Conditions.
      *
-     * @param (bool|float|int|string)[]|bool|float|int|string $conditions Condition
+     * @param bool|(bool|float|int|string)[]|float|int|string $conditions Condition
      *
      * @return $this
      */
