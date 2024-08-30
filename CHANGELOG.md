@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 ### Changed
 
-- Nothing
+- Update BooleanLiteralTest with more options & apply int type check to avoid hard typing issues [Commit 1567f1d](https://github.com/vtinfo/PhpSpreadsheet/pull/35/commits/1567f1d96aeef494dfe3d6bdf816b8a440d1a595) 
 
 ### Deprecated
 
