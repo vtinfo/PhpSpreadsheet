@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/phpoffice.html" class="">PhpOffice</a>
@@ -67,7 +67,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -75,14 +75,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -128,6 +128,8 @@
     </aside>
 
         
+
+
 
 
 
@@ -180,13 +182,6 @@
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Added number formats. Maps from numberFormat&#039;s hash =&gt; index in workbook.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#property_biffSize">$biffSize</a>
-    <span>
-                        &nbsp;: int            </span>
-</dt>
-<dd>The BIFF file size for the workbook. Not currently used.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#property_byteOrder">$byteOrder</a>
@@ -323,6 +318,13 @@
 <dd>Class constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addColor">addColor()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Alter color palette adding a custom color.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addFont">addFont()</a>
     <span>
                                 &nbsp;: int    </span>
@@ -401,13 +403,6 @@ sub-stream in the BIFF file.</dd>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Writes Excel EOF record to indicate the end of a BIFF stream.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addColor">addColor()</a>
-    <span>
-                                &nbsp;: int    </span>
-</dt>
-<dd>Alter color palette adding a custom color.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#method_addContinue">addContinue()</a>
@@ -587,7 +582,6 @@ supported).</dd>
 
 
 
-
         
 
         
@@ -630,6 +624,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -662,6 +658,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -698,6 +696,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -732,54 +732,7 @@ supported).</dd>
     
     
 
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_biffSize">
-        $biffSize
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#property_biffSize" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Workbook.php"><a href="files/src-phpspreadsheet-writer-xls-workbook.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Workbook.php">Workbook.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">60</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The BIFF file size for the workbook. Not currently used.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$biffSize</span>
-    </code>
-
     
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#property_biffSize#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Xls\calcSheetOffsets()">calcSheetOffsets()</abbr></span>
-                                        
-                                             
-                                    </dd>
-                                            </dl>
 
 </article>
                     <article
@@ -813,6 +766,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -849,6 +804,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -881,6 +838,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -917,6 +876,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -951,6 +912,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -983,6 +946,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1034,6 +999,8 @@ supported).</dd>
                                     </dd>
                                             </dl>
 
+    
+
 </article>
                     <article
         class="
@@ -1066,6 +1033,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1102,6 +1071,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1134,6 +1105,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1170,6 +1143,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1202,6 +1177,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1238,6 +1215,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1270,6 +1249,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1306,6 +1287,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1340,6 +1323,8 @@ supported).</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1372,6 +1357,8 @@ supported).</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1471,6 +1458,69 @@ supported).</dd>
     
 
     
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addColor">
+        addColor()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addColor" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Workbook.php"><a href="files/src-phpspreadsheet-writer-xls-workbook.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Workbook.php">Workbook.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">275</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Alter color palette adding a custom color.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rgb</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$rgb</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>E.g. 'FF00AA'</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Color index</p>
+</section>
+
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1509,6 +1559,8 @@ supported).</dd>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1571,6 +1623,8 @@ supported).</dd>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1612,6 +1666,8 @@ recalculating it for each call to new().</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1646,6 +1702,8 @@ recalculating it for each call to new().</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1695,6 +1753,8 @@ recalculating it for each call to new().</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1738,6 +1798,8 @@ recalculating it for each call to new().</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1772,6 +1834,8 @@ recalculating it for each call to new().</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1820,6 +1884,8 @@ storage.</p>
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1876,6 +1942,8 @@ storage.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1922,6 +1990,8 @@ sub-stream in the BIFF file.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1954,58 +2024,8 @@ sub-stream in the BIFF file.</p>
     
 
     
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_addColor">
-        addColor()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addColor" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Xls/Workbook.php"><a href="files/src-phpspreadsheet-writer-xls-workbook.html"><abbr title="src/PhpSpreadsheet/Writer/Xls/Workbook.php">Workbook.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">275</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Alter color palette adding a custom color.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">addColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rgb</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rgb</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>E.g. 'FF00AA'</p>
-</section>
-
-            </dd>
-            </dl>
 
     
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>Color index</p>
-</section>
-
-            </section>
-
 </article>
                     <article
         class="phpdocumentor-element
@@ -2054,6 +2074,8 @@ necessary.</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2092,6 +2114,8 @@ necessary.</p>
         </div>
     
     
+    
+
     
 
     
@@ -2135,6 +2159,8 @@ necessary.</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2172,6 +2198,8 @@ necessary.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2203,6 +2231,8 @@ necessary.</p>
 </section>
 
     
+    
+
     
 
             <section>
@@ -2242,6 +2272,8 @@ necessary.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2271,6 +2303,8 @@ necessary.</p>
         </div>
     
     
+    
+
     
 
     
@@ -2306,6 +2340,8 @@ necessary.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2335,6 +2371,8 @@ necessary.</p>
         </div>
     
     
+    
+
     
 
     
@@ -2389,6 +2427,8 @@ necessary.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2421,6 +2461,8 @@ necessary.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2450,6 +2492,8 @@ necessary.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2486,6 +2530,8 @@ necessary.</p>
         </div>
     
     
+    
+
     
 
     
@@ -2559,6 +2605,8 @@ necessary.</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2600,6 +2648,8 @@ formulas.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2634,6 +2684,8 @@ formulas.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2694,6 +2746,8 @@ formulas.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2726,6 +2780,8 @@ formulas.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2755,6 +2811,8 @@ formulas.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2800,6 +2858,8 @@ required so we will ignore it.</p>
 </section>
 
     
+    
+
     
 
             <section>
@@ -2877,6 +2937,8 @@ required so we will ignore it.</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2918,6 +2980,8 @@ required so we will ignore it.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2947,6 +3011,8 @@ required so we will ignore it.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2983,6 +3049,8 @@ required so we will ignore it.</p>
         </div>
     
     
+    
+
     
 
     
@@ -3104,7 +3172,6 @@ required so we will ignore it.</p>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#property__datasize">$_datasize<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#property_addedFonts">$addedFonts<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#property_addedNumberFormats">$addedNumberFormats<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html"></li>
-                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#property_biffSize">$biffSize<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#property_byteOrder">$byteOrder<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#property_codepage">$codepage<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#property_colors">$colors<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html"></li>
@@ -3129,6 +3196,7 @@ required so we will ignore it.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addColor">addColor()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addFont">addFont()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addXfWriter">addXfWriter()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#method_getByteOrder">getByteOrder()</a></li>
@@ -3140,7 +3208,6 @@ required so we will ignore it.</p>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#method_append">append()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#method_storeBof">storeBof()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#method_storeEof">storeEof()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_addColor">addColor()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-BIFFwriter.html#method_addContinue">addContinue()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_calcSheetOffsets">calcSheetOffsets()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Xls-Workbook.html#method_parseDefinedNameValue">parseDefinedNameValue()</a></li>
