@@ -13,7 +13,7 @@ class BooleanLiteralTest extends AbstractFunctional
     {
         // Issue 3369 - Xls Writer Parser unable to handle
         //   TRUE (or FALSE) when specified as function arguments.
-        $formula = '=AND(true,true(),fAlse,false())';
+        $formula = '=AND(TRUE,true(),true,TRUE(),FALSE,false(),false,FALSE(),fAlse)';
         $spreadsheet = new Spreadsheet();
         $spreadsheet->setActiveSheetIndex(0);
         $spreadsheet->getActiveSheet()->setCellValue('A1', $formula);

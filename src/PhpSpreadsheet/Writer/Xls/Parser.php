@@ -586,7 +586,7 @@ class Parser
      * Convert a function to a ptgFunc or ptgFuncVarV depending on the number of
      * args that it takes.
      *
-     * @param string $token the name of the function for convertion to ptg value
+     * @param string $token the name of the function for conversion to ptg value
      * @param int $num_args the number of arguments the function receives
      *
      * @return string The packed ptg for the function
@@ -1481,13 +1481,14 @@ class Parser
             $converted_tree = $this->convert($tree['right']);
             $polish .= $converted_tree;
         }
-        // if it's a function convert it here (so we can set it's arguments)
+        // if it's a function convert it here (so we can set its arguments)
         if (
             preg_match("/^[A-Z0-9\xc0-\xdc\\.]+$/", $tree['value'])
             && !preg_match('/^([A-Ia-i]?[A-Za-z])(\d+)$/', $tree['value'])
             && !preg_match('/^[A-Ia-i]?[A-Za-z](\\d+)\\.\\.[A-Ia-i]?[A-Za-z](\\d+)$/', $tree['value'])
             && !is_numeric($tree['value'])
             && !isset($this->ptg[$tree['value']])
+            && is_int($tree['right'])
         ) {
             // left subtree for a function is always an array.
             if ($tree['left'] != '') {
