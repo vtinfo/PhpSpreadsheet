@@ -102,6 +102,9 @@ class IOFactoryTest extends TestCase
             // Following not readable by Excel.
             //['samples/templates/Excel2003XMLTest.xml', 'Xml', Reader\Xml::class],
             ['samples/templates/46readHtml.html', 'Html', Reader\Html::class],
+            ['tests/data/Reader/CSV/encoding.utf8bom.csv', 'Csv', Reader\Csv::class],
+            ['tests/data/Reader/HTML/charset.UTF-16.lebom.html', 'Html', Reader\Html::class],
+            ['tests/data/Reader/HTML/charset.UTF-8.bom.html', 'Html', Reader\Html::class],
         ];
     }
 
@@ -164,7 +167,7 @@ class IOFactoryTest extends TestCase
 
     public function testRegisterInvalidWriter(): void
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Writer\Exception::class);
+        $this->expectException(Writer\Exception::class);
 
         // @phpstan-ignore-next-line
         IOFactory::registerWriter('foo', 'bar');
@@ -179,7 +182,7 @@ class IOFactoryTest extends TestCase
 
     public function testCreateInvalidWriter(): void
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Writer\Exception::class);
+        $this->expectException(Writer\Exception::class);
         $spreadsheet = new Spreadsheet();
         IOFactory::createWriter($spreadsheet, 'bad');
     }
@@ -192,14 +195,14 @@ class IOFactoryTest extends TestCase
 
     public function testCreateReaderUnknownExtension(): void
     {
-        $filename = 'samples/Reader/sampleData/example1.tsv';
+        $filename = 'samples/Reader2/sampleData/example1.tsv';
         $reader = IOFactory::createReaderForFile($filename);
         self::assertEquals('PhpOffice\\PhpSpreadsheet\\Reader\\Csv', $reader::class);
     }
 
     public function testCreateReaderCsvExtension(): void
     {
-        $filename = 'samples/Reader/sampleData/example1.csv';
+        $filename = 'samples/Reader2/sampleData/example1.csv';
         $reader = IOFactory::createReaderForFile($filename);
         self::assertEquals('PhpOffice\\PhpSpreadsheet\\Reader\\Csv', $reader::class);
     }

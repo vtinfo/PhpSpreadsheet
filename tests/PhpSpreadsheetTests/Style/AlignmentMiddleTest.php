@@ -14,7 +14,6 @@ use ZipArchive;
 
 class AlignmentMiddleTest extends TestCase
 {
-    /** @var ?Spreadsheet */
     private ?Spreadsheet $spreadsheet = null;
 
     private string $outputFileName = '';
@@ -40,7 +39,7 @@ class AlignmentMiddleTest extends TestCase
         $sheet->getStyle('A1')
             ->getAlignment()
             ->setVertical(Alignment::VERTICAL_CENTER);
-        $writer = new HTML($this->spreadsheet);
+        $writer = new Html($this->spreadsheet);
         $html = $writer->generateHtmlAll();
         self::assertStringContainsString('vertical-align:middle', $html);
         self::assertStringNotContainsString('vertical-align:center', $html);
