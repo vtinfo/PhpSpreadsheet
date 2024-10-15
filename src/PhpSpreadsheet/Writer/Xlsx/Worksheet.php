@@ -22,6 +22,8 @@ use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet as PhpspreadsheetWorksheet;
 
 class Worksheet extends WriterPart
 {
+    private bool $writeIgnoredErrors = false;
+
     private string $numberStoredAsText = '';
 
     private string $formula = '';
@@ -142,7 +144,9 @@ class Worksheet extends WriterPart
         $this->writeAlternateContent($objWriter, $worksheet);
 
         // IgnoredErrors
-        $this->writeIgnoredErrors($objWriter);
+        if ($this->writeIgnoredErrors) {
+            $this->writeIgnoredErrors($objWriter);
+        }
 
         // BackgroundImage must come after ignored, before table
         $this->writeBackgroundImage($objWriter, $worksheet);
