@@ -38411,10 +38411,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Worksheet.html#method_writeIgnoredError"
         },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet\u003A\u003AwriteIgnoredErrors\u0028\u0029",
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet\u003A\u003A\u0024writeIgnoredErrors",
             "name": "writeIgnoredErrors",
             "summary": "",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Worksheet.html#method_writeIgnoredErrors"
+            "url": "classes/PhpOffice-PhpSpreadsheet-Writer-Xlsx-Worksheet.html#property_writeIgnoredErrors"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet\u003A\u003AwriteSheetPr\u0028\u0029",
             "name": "writeSheetPr",
