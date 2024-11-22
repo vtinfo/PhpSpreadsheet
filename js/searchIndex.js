@@ -33656,6 +33656,11 @@ Search.appendIndex(
             "summary": "Code\u0020to\u0020execute\u0020when\u0020this\u0020worksheet\u0020is\u0020unset\u0028\u0029.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method___destruct"
         },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003A__wakeup\u0028\u0029",
+            "name": "__wakeup",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method___wakeup"
+        },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetCellCollection\u0028\u0029",
             "name": "getCellCollection",
             "summary": "Return\u0020the\u0020cell\u0020collection.",
@@ -34423,8 +34428,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetHashCode\u0028\u0029",
             "name": "getHashCode",
-            "summary": "Get\u0020hash\u0020code.",
+            "summary": "",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getHashCode"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AgetHashInt\u0028\u0029",
+            "name": "getHashInt",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#method_getHashInt"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003AextractSheetTitle\u0028\u0029",
             "name": "extractSheetTitle",
@@ -34900,11 +34910,6 @@ Search.appendIndex(
             "name": "tabColor",
             "summary": "Tab\u0020color.",
             "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#property_tabColor"
-        },                {
-            "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003A\u0024dirty",
-            "name": "dirty",
-            "summary": "Dirty\u0020flag.",
-            "url": "classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html#property_dirty"
         },                {
             "fqsen": "\\PhpOffice\\PhpSpreadsheet\\Worksheet\\Worksheet\u003A\u003A\u0024hash",
             "name": "hash",
