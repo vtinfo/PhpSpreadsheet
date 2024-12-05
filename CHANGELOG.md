@@ -5,6 +5,114 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com)
 and this project adheres to [Semantic Versioning](https://semver.org).
 
+## 2024-11-22 - 3.5.0.1
+
+### Added
+
+- Nothing
+
+### Changed
+
+- Nothing
+
+### Deprecated
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+## 2024-11-22 - 3.5.0
+
+### Added
+
+- Nothing yet.
+
+### Changed
+
+- Settings::libXmlLoaderOptions is ignored. [PR #4233](https://github.com/PHPOffice/PhpSpreadsheet/pull/4233)
+
+### Moved
+
+- Nothing yet.
+
+### Deprecated
+
+- Settings::setLibXmlLoaderOptions() and Settings::getLibXmlLoaderOptions() are no longer needed - no replacement.
+- Worksheet::getHashCode is no longer needed.
+
+### Fixed
+
+- Add support for `<s>` tag when converting HTML to RichText. [Issue #4223](https://github.com/PHPOffice/PhpSpreadsheet/issues/4223) [PR #4224](https://github.com/PHPOffice/PhpSpreadsheet/pull/4224)
+- Change hash code for worksheet. [Issue #4192](https://github.com/PHPOffice/PhpSpreadsheet/issues/4192) [PR #4207](https://github.com/PHPOffice/PhpSpreadsheet/pull/4207)
+
+## 2024-11-14 - 3.4.0.1
+
+### Added
+
+- Nothing
+
+### Changed
+
+- Nothing
+
+### Deprecated
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+## 2024-11-10 - 3.4.0
+
+### Security Fix
+
+- Several security patches.
+
+### Added
+
+- Add Dynamic valueBinder Property to Spreadsheet and Readers. [Issue #1395](https://github.com/PHPOffice/PhpSpreadsheet/issues/1395) [PR #4185](https://github.com/PHPOffice/PhpSpreadsheet/pull/4185)
+- Allow Omitting Chart Border. [Issue #562](https://github.com/PHPOffice/PhpSpreadsheet/issues/562) [PR #4188](https://github.com/PHPOffice/PhpSpreadsheet/pull/4188)
+- Method to Test Whether Csv Will Be Affected by Php9. [PR #4189](https://github.com/PHPOffice/PhpSpreadsheet/pull/4189)
+
+### Changed
+
+- Refactor Xls Reader. [PR #4118](https://github.com/PHPOffice/PhpSpreadsheet/pull/4118)
+
+### Deprecated
+
+- IReader::SKIP_EMPTY_CELLS - use its alias IGNORE_EMPTY_CELLS instead.
+- Worksheet::getProtectedCells was deprecated in release 2, but was not properly documented, and not removed in release 3. Use getProtectedCellRanges instead.
+- Writer/Html::isMpdf property was deprecated in release 2, but was not properly documented, and not removed in release 3. Use instanceof Mpdf instead.
+
+### Moved
+
+- Nothing yet.
+
+### Fixed
+
+- Xls Writer Condtional Rules Applied to Whole Rows or Columns. [Issue #3185](https://github.com/PHPOffice/PhpSpreadsheet/issues/3185) [PR #4152](https://github.com/PHPOffice/PhpSpreadsheet/pull/4152)
+- Xlsx Writer Duplicate ContentTypes Entry for Background Image. [Issue #4179](https://github.com/PHPOffice/PhpSpreadsheet/issues/4179) [PR #4180](https://github.com/PHPOffice/PhpSpreadsheet/pull/4180)
+- Check strictNullComparison outside of loops. [PR #3347](https://github.com/PHPOffice/PhpSpreadsheet/pull/3347)
+- SUMIFS Does Not Require xlfn. [Issue #4182](https://github.com/PHPOffice/PhpSpreadsheet/issues/4182) [PR #4186](https://github.com/PHPOffice/PhpSpreadsheet/pull/4186)
+- Image Transparency/Opacity with Html Reader Changes. [Discussion #4117](https://github.com/PHPOffice/PhpSpreadsheet/discussions/4117) [PR #4142](https://github.com/PHPOffice/PhpSpreadsheet/pull/4142)
+- Option to Write Hyperlink Rather Than Label to Csv. [Issue #1412](https://github.com/PHPOffice/PhpSpreadsheet/issues/1412) [PR #4151](https://github.com/PHPOffice/PhpSpreadsheet/pull/4151)
+- Invalid Html Due to Cached Filesize. [Issue #1107](https://github.com/PHPOffice/PhpSpreadsheet/issues/1107) [PR #4184](https://github.com/PHPOffice/PhpSpreadsheet/pull/4184)
+- Excel 2003 Allows Html Entities. [Issue #2157](https://github.com/PHPOffice/PhpSpreadsheet/issues/2157) [PR #4187](https://github.com/PHPOffice/PhpSpreadsheet/pull/4187)
+- Changes to ROUNDDOWN/ROUNDUP/TRUNC. [Issue #4213](https://github.com/PHPOffice/PhpSpreadsheet/issues/4213) [PR #4214](https://github.com/PHPOffice/PhpSpreadsheet/pull/4214)
+- Writer Xlsx ignoredErrors Before Drawings. [Issue #4200](https://github.com/PHPOffice/PhpSpreadsheet/issues/4200) [Issue #4145](https://github.com/PHPOffice/PhpSpreadsheet/issues/4145)  [PR #4212](https://github.com/PHPOffice/PhpSpreadsheet/pull/4212)
+- Allow ANCHORARRAY as Data Validation list. [Issue #4197](https://github.com/PHPOffice/PhpSpreadsheet/issues/4197) [PR #4203](https://github.com/PHPOffice/PhpSpreadsheet/pull/4203)
+
 ## 2024-10-16 - 3.3.0.2
 
 ### Added
@@ -49,7 +157,7 @@ and this project adheres to [Semantic Versioning](https://semver.org).
 
 - Nothing
 
-## 2024-09-29 - 3.0.0  (no 3.0.*, 3.1.*, 3.2.*)
+## 2024-09-29 - 3.3.0 (no 3.0.\*, 3.1.\*, 3.2.\*)
 
 ### Dynamic Arrays
 
