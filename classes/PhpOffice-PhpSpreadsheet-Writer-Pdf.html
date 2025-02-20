@@ -235,13 +235,6 @@
 Identifies whether the Writer should write definitions for any charts that exist in the PhpSpreadsheet object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_isMPdf">$isMPdf</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-<dd>Is the current writer creating mPDF?</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_isPdf">$isPdf</a>
     <span>
                         &nbsp;: bool            </span>
@@ -293,6 +286,12 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
 <dd>Temporary storage directory.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_betterBoolean">$betterBoolean</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_columnWidths">$columnWidths</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
@@ -333,6 +332,18 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
                         &nbsp;: bool            </span>
 </dt>
 <dd>Generate the Navigation block.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_getFalse">$getFalse</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_getTrue">$getTrue</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_imagesRoot">$imagesRoot</a>
@@ -438,6 +449,13 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
 <dd>Add color to formatted string as inline style.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_formatColorStatic">formatColorStatic()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Add color to formatted string as inline style.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_generateHtmlAll">generateHtmlAll()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -478,6 +496,12 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
                                 &nbsp;: string    </span>
 </dt>
 <dd>Generate CSS styles.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_getBetterBoolean">getBetterBoolean()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-BaseWriter.html#method_getDiskCachingDirectory">getDiskCachingDirectory()</a>
@@ -589,6 +613,12 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
                                 &nbsp;: void    </span>
 </dt>
 <dd>Save Spreadsheet to file.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_setBetterBoolean">setBetterBoolean()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_setEditHtmlCallback">setEditHtmlCallback()</a>
@@ -950,6 +980,18 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
 <dd>Map VAlign.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_replaceControlChars">replaceControlChars()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_replaceNonAscii">replaceNonAscii()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_shouldGenerateColumn">shouldGenerateColumn()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -1003,7 +1045,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">335</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -1033,7 +1075,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
@@ -1063,7 +1105,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">250</span>
 
     </aside>
 
@@ -1093,7 +1135,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -1135,7 +1177,7 @@ old logic with styling via Html tags
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">337</span>
+    <span class="phpdocumentor-element-found-in__line">341</span>
 
     </aside>
 
@@ -1165,7 +1207,7 @@ old logic with styling via Html tags
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -1195,7 +1237,7 @@ old logic with styling via Html tags
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -1241,7 +1283,7 @@ old logic with styling via Html tags
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -1373,59 +1415,6 @@ Identifies whether the Writer should write definitions for any charts that exist
             phpdocumentor-element
             -property
             -protected
-                        -deprecated                                "
->
-    <h4 class="phpdocumentor-element__name" id="property_isMPdf">
-        $isMPdf
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_isMPdf" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">124</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Is the current writer creating mPDF?</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$isMPdf</span>
-     = <span class="phpdocumentor-signature__default-value">false</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_isMPdf#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link">2.0.1</span>
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>use instanceof Mpdf instead</p>
-</section>
-
-                                    </dd>
-                                            </dl>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_isPdf">
@@ -1438,7 +1427,7 @@ Identifies whether the Writer should write definitions for any charts that exist
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -1752,7 +1741,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -1814,6 +1803,41 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_betterBoolean">
+        $betterBoolean
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_betterBoolean" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">139</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$betterBoolean</span>
+     = <span class="phpdocumentor-signature__default-value">true</span></code>
+
+    
+    
+    
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_columnWidths">
         $columnWidths
         <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_columnWidths" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1824,7 +1848,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -1860,7 +1884,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -1896,7 +1920,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -1968,7 +1992,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -2004,7 +2028,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -2030,6 +2054,76 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_getFalse">
+        $getFalse
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_getFalse" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">143</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$getFalse</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;FALSE&#039;</span></code>
+
+    
+    
+    
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_getTrue">
+        $getTrue
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_getTrue" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">141</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$getTrue</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;TRUE&#039;</span></code>
+
+    
+    
+    
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_imagesRoot">
         $imagesRoot
         <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_imagesRoot" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2040,7 +2134,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -2076,7 +2170,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -2112,7 +2206,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -2148,7 +2242,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -2184,7 +2278,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -2219,7 +2313,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -2254,7 +2348,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -2325,7 +2419,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -2397,7 +2491,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -2484,7 +2578,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">917</span>
+    <span class="phpdocumentor-element-found-in__line">921</span>
 
     </aside>
 
@@ -2534,7 +2628,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1671</span>
+    <span class="phpdocumentor-element-found-in__line">1749</span>
 
     </aside>
 
@@ -2543,6 +2637,65 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">formatColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Plain formatted value without color</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Format code</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_formatColorStatic">
+        formatColorStatic()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_formatColorStatic" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1760</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Add color to formatted string as inline style.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">formatColorStatic</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2593,7 +2746,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -2631,7 +2784,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1153</span>
+    <span class="phpdocumentor-element-found-in__line">1164</span>
 
     </aside>
 
@@ -2669,7 +2822,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">350</span>
+    <span class="phpdocumentor-element-found-in__line">354</span>
 
     </aside>
 
@@ -2719,7 +2872,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">533</span>
+    <span class="phpdocumentor-element-found-in__line">537</span>
 
     </aside>
 
@@ -2757,7 +2910,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">461</span>
+    <span class="phpdocumentor-element-found-in__line">465</span>
 
     </aside>
 
@@ -2795,7 +2948,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">793</span>
+    <span class="phpdocumentor-element-found-in__line">797</span>
 
     </aside>
 
@@ -2828,6 +2981,43 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getBetterBoolean">
+        getBetterBoolean()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_getBetterBoolean" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1996</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getBetterBoolean</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
             </section>
 
 </article>
@@ -2883,7 +3073,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1628</span>
+    <span class="phpdocumentor-element-found-in__line">1706</span>
 
     </aside>
 
@@ -2959,7 +3149,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">297</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 
     </aside>
 
@@ -2997,7 +3187,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1608</span>
+    <span class="phpdocumentor-element-found-in__line">1686</span>
 
     </aside>
 
@@ -3195,7 +3385,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
     </aside>
 
@@ -3309,7 +3499,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1648</span>
+    <span class="phpdocumentor-element-found-in__line">1726</span>
 
     </aside>
 
@@ -3391,7 +3581,7 @@ immediately available to MS Excel or other office spreadsheet viewer when openin
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -3438,6 +3628,53 @@ self::DISABLE_PRECALCULATE_FORMULAE   Don't Precalculate formulae before saving 
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setBetterBoolean">
+        setBetterBoolean()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_setBetterBoolean" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">2001</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setBetterBoolean</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$betterBoolean</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$betterBoolean</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setEditHtmlCallback">
         setEditHtmlCallback()
         <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_setEditHtmlCallback" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3446,7 +3683,7 @@ self::DISABLE_PRECALCULATE_FORMULAE   Don't Precalculate formulae before saving 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -3493,7 +3730,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1638</span>
+    <span class="phpdocumentor-element-found-in__line">1716</span>
 
     </aside>
 
@@ -3593,7 +3830,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">309</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 
@@ -3643,7 +3880,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1618</span>
+    <span class="phpdocumentor-element-found-in__line">1696</span>
 
     </aside>
 
@@ -3894,7 +4131,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">287</span>
+    <span class="phpdocumentor-element-found-in__line">291</span>
 
     </aside>
 
@@ -4051,7 +4288,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1658</span>
+    <span class="phpdocumentor-element-found-in__line">1736</span>
 
     </aside>
 
@@ -4099,7 +4336,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">601</span>
+    <span class="phpdocumentor-element-found-in__line">605</span>
 
     </aside>
 
@@ -4156,7 +4393,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">321</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 
     </aside>
 
@@ -4355,7 +4592,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">757</span>
+    <span class="phpdocumentor-element-found-in__line">761</span>
 
     </aside>
 
@@ -4405,7 +4642,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1594</span>
+    <span class="phpdocumentor-element-found-in__line">1672</span>
 
     </aside>
 
@@ -4453,7 +4690,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">844</span>
+    <span class="phpdocumentor-element-found-in__line">848</span>
 
     </aside>
 
@@ -4503,7 +4740,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">824</span>
+    <span class="phpdocumentor-element-found-in__line">828</span>
 
     </aside>
 
@@ -4560,7 +4797,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1697</span>
+    <span class="phpdocumentor-element-found-in__line">1786</span>
 
     </aside>
 
@@ -4594,7 +4831,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1760</span>
+    <span class="phpdocumentor-element-found-in__line">1849</span>
 
     </aside>
 
@@ -4651,7 +4888,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1009</span>
+    <span class="phpdocumentor-element-found-in__line">1013</span>
 
     </aside>
 
@@ -4699,7 +4936,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1023</span>
+    <span class="phpdocumentor-element-found-in__line">1027</span>
 
     </aside>
 
@@ -4747,7 +4984,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1122</span>
+    <span class="phpdocumentor-element-found-in__line">1126</span>
 
     </aside>
 
@@ -4797,7 +5034,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1087</span>
+    <span class="phpdocumentor-element-found-in__line">1091</span>
 
     </aside>
 
@@ -4847,7 +5084,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1135</span>
+    <span class="phpdocumentor-element-found-in__line">1139</span>
 
     </aside>
 
@@ -4897,7 +5134,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1055</span>
+    <span class="phpdocumentor-element-found-in__line">1059</span>
 
     </aside>
 
@@ -4945,7 +5182,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">564</span>
+    <span class="phpdocumentor-element-found-in__line">568</span>
 
     </aside>
 
@@ -5002,7 +5239,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">328</span>
+    <span class="phpdocumentor-element-found-in__line">332</span>
 
     </aside>
 
@@ -5056,7 +5293,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1827</span>
+    <span class="phpdocumentor-element-found-in__line">1916</span>
 
     </aside>
 
@@ -5104,7 +5341,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1521</span>
+    <span class="phpdocumentor-element-found-in__line">1566</span>
 
     </aside>
 
@@ -5112,7 +5349,7 @@ and it must return the edited HTML as string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">generateRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">generateRow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$row</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cellType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -5128,7 +5365,7 @@ and it must return the edited HTML as string.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$values</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Array containing cells in a row</p>
@@ -5179,7 +5416,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1278</span>
+    <span class="phpdocumentor-element-found-in__line">1289</span>
 
     </aside>
 
@@ -5247,7 +5484,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1370</span>
+    <span class="phpdocumentor-element-found-in__line">1394</span>
 
     </aside>
 
@@ -5308,7 +5545,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1344</span>
+    <span class="phpdocumentor-element-found-in__line">1355</span>
 
     </aside>
 
@@ -5365,7 +5602,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1304</span>
+    <span class="phpdocumentor-element-found-in__line">1315</span>
 
     </aside>
 
@@ -5412,7 +5649,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1419</span>
+    <span class="phpdocumentor-element-found-in__line">1454</span>
 
     </aside>
 
@@ -5466,7 +5703,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1424</span>
+    <span class="phpdocumentor-element-found-in__line">1459</span>
 
     </aside>
 
@@ -5527,7 +5764,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1245</span>
+    <span class="phpdocumentor-element-found-in__line">1256</span>
 
     </aside>
 
@@ -5593,7 +5830,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1432</span>
+    <span class="phpdocumentor-element-found-in__line">1467</span>
 
     </aside>
 
@@ -5706,7 +5943,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">414</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 
     </aside>
 
@@ -5743,7 +5980,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">426</span>
+    <span class="phpdocumentor-element-found-in__line">430</span>
 
     </aside>
 
@@ -5797,7 +6034,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">445</span>
+    <span class="phpdocumentor-element-found-in__line">449</span>
 
     </aside>
 
@@ -5865,7 +6102,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1234</span>
+    <span class="phpdocumentor-element-found-in__line">1245</span>
 
     </aside>
 
@@ -5903,7 +6140,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1200</span>
+    <span class="phpdocumentor-element-found-in__line">1211</span>
 
     </aside>
 
@@ -5962,7 +6199,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1183</span>
+    <span class="phpdocumentor-element-found-in__line">1194</span>
 
     </aside>
 
@@ -6026,7 +6263,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1163</span>
+    <span class="phpdocumentor-element-found-in__line">1174</span>
 
     </aside>
 
@@ -6080,7 +6317,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 
     </aside>
 
@@ -6130,7 +6367,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">241</span>
+    <span class="phpdocumentor-element-found-in__line">245</span>
 
     </aside>
 
@@ -6180,7 +6417,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
     </aside>
 
@@ -6220,6 +6457,100 @@ and it must return the edited HTML as string.</p>
         class="phpdocumentor-element
             -method
             -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_replaceControlChars">
+        replaceControlChars()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_replaceControlChars" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1660</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">replaceControlChars</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$convert</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$convert</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_replaceNonAscii">
+        replaceNonAscii()
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_replaceNonAscii" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1655</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">replaceNonAscii</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$matches</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_shouldGenerateColumn">
@@ -6230,7 +6561,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1895</span>
+    <span class="phpdocumentor-element-found-in__line">1984</span>
 
     </aside>
 
@@ -6284,7 +6615,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1886</span>
+    <span class="phpdocumentor-element-found-in__line">1975</span>
 
     </aside>
 
@@ -6338,7 +6669,7 @@ and it must return the edited HTML as string.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">703</span>
+    <span class="phpdocumentor-element-found-in__line">707</span>
 
     </aside>
 
@@ -6396,7 +6727,7 @@ Chart/32_Chart_read_write_PDF.php.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1797</span>
+    <span class="phpdocumentor-element-found-in__line">1886</span>
 
     </aside>
 
@@ -6466,7 +6797,7 @@ Chart/32_Chart_read_write_PDF.php.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Html.php"><a href="files/src-phpspreadsheet-writer-html.html"><abbr title="src/PhpSpreadsheet/Writer/Html.php">Html.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">617</span>
+    <span class="phpdocumentor-element-found-in__line">621</span>
 
     </aside>
 
@@ -6632,7 +6963,6 @@ Chart/32_Chart_read_write_PDF.php.</p>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-BaseWriter.html#property_fileHandle">$fileHandle<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#property_font">$font<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-BaseWriter.html#property_includeCharts">$includeCharts<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
-                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_isMPdf">$isMPdf<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_isPdf">$isPdf<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#property_orientation">$orientation<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#property_paperSize">$paperSize<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
@@ -6640,12 +6970,15 @@ Chart/32_Chart_read_write_PDF.php.</p>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-BaseWriter.html#property_preCalculateFormulas">$preCalculateFormulas<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_spreadsheet">$spreadsheet<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#property_tempDir">$tempDir<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
+                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_betterBoolean">$betterBoolean<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_columnWidths">$columnWidths<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_cssStyles">$cssStyles<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_defaultFont">$defaultFont<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-BaseWriter.html#property_diskCachingDirectory">$diskCachingDirectory<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_editHtmlCallback">$editHtmlCallback<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_generateSheetNavigationBlock">$generateSheetNavigationBlock<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
+                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_getFalse">$getFalse<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
+                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_getTrue">$getTrue<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_imagesRoot">$imagesRoot<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_isBaseCell">$isBaseCell<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
                                                     <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#property_isSpannedCell">$isSpannedCell<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html"></li>
@@ -6666,12 +6999,14 @@ Chart/32_Chart_read_write_PDF.php.</p>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_buildCSS">buildCSS()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_formatColor">formatColor()</a></li>
+                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_formatColorStatic">formatColorStatic()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_generateHtmlAll">generateHtmlAll()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_generateHTMLFooter">generateHTMLFooter()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_generateHTMLHeader">generateHTMLHeader()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_generateNavigation">generateNavigation()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_generateSheetData">generateSheetData()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_generateStyles">generateStyles()</a></li>
+                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_getBetterBoolean">getBetterBoolean()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-BaseWriter.html#method_getDiskCachingDirectory">getDiskCachingDirectory()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_getEmbedImages">getEmbedImages()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#method_getFont">getFont()</a></li>
@@ -6687,6 +7022,7 @@ Chart/32_Chart_read_write_PDF.php.</p>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_getUseInlineCss">getUseInlineCss()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-BaseWriter.html#method_openFileHandle">openFileHandle()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_save">save()</a></li>
+                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_setBetterBoolean">setBetterBoolean()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_setEditHtmlCallback">setEditHtmlCallback()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_setEmbedImages">setEmbedImages()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Pdf.html#method_setFont">setFont()</a></li>
@@ -6740,6 +7076,8 @@ Chart/32_Chart_read_write_PDF.php.</p>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_mapBorderStyle">mapBorderStyle()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_mapHAlign">mapHAlign()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_mapVAlign">mapVAlign()</a></li>
+                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_replaceControlChars">replaceControlChars()</a></li>
+                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_replaceNonAscii">replaceNonAscii()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_shouldGenerateColumn">shouldGenerateColumn()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_shouldGenerateRow">shouldGenerateRow()</a></li>
                                             <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Html.html#method_writeChartInCell">writeChartInCell()</a></li>
