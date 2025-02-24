@@ -134,11 +134,6 @@ class Calculation
     public ?string $formulaError = null;
 
     /**
-     * Reference Helper.
-     */
-    private static ReferenceHelper $referenceHelper;
-
-    /**
      * An array of the nested cell references accessed by the calculation engine, used for the debug log.
      */
     private CyclicReferenceStack $cyclicReferenceStack;
@@ -553,13 +548,13 @@ class Calculation
             'argumentCount' => '2+',
         ],
         'CHOOSECOLS' => [
-            'category' => Category::CATEGORY_MATH_AND_TRIG,
-            'functionCall' => [Functions::class, 'DUMMY'],
+            'category' => Category::CATEGORY_LOOKUP_AND_REFERENCE,
+            'functionCall' => [LookupRef\ChooseRowsEtc::class, 'chooseCols'],
             'argumentCount' => '2+',
         ],
         'CHOOSEROWS' => [
-            'category' => Category::CATEGORY_MATH_AND_TRIG,
-            'functionCall' => [Functions::class, 'DUMMY'],
+            'category' => Category::CATEGORY_LOOKUP_AND_REFERENCE,
+            'functionCall' => [LookupRef\ChooseRowsEtc::class, 'chooseRows'],
             'argumentCount' => '2+',
         ],
         'CLEAN' => [
@@ -925,8 +920,8 @@ class Calculation
             'argumentCount' => '3',
         ],
         'DROP' => [
-            'category' => Category::CATEGORY_MATH_AND_TRIG,
-            'functionCall' => [Functions::class, 'DUMMY'],
+            'category' => Category::CATEGORY_LOOKUP_AND_REFERENCE,
+            'functionCall' => [LookupRef\ChooseRowsEtc::class, 'drop'],
             'argumentCount' => '2-3',
         ],
         'DSTDEV' => [
@@ -1025,8 +1020,8 @@ class Calculation
             'argumentCount' => '1',
         ],
         'EXPAND' => [
-            'category' => Category::CATEGORY_MATH_AND_TRIG,
-            'functionCall' => [Functions::class, 'DUMMY'],
+            'category' => Category::CATEGORY_LOOKUP_AND_REFERENCE,
+            'functionCall' => [LookupRef\ChooseRowsEtc::class, 'expand'],
             'argumentCount' => '2-4',
         ],
         'EXPONDIST' => [
@@ -1255,6 +1250,11 @@ class Calculation
             'category' => Category::CATEGORY_LOOKUP_AND_REFERENCE,
             'functionCall' => [Functions::class, 'DUMMY'],
             'argumentCount' => '2+',
+        ],
+        'GROUPBY' => [
+            'category' => Category::CATEGORY_LOOKUP_AND_REFERENCE,
+            'functionCall' => [Functions::class, 'DUMMY'],
+            'argumentCount' => '3-7',
         ],
         'GROWTH' => [
             'category' => Category::CATEGORY_STATISTICAL,
@@ -2485,8 +2485,8 @@ class Calculation
             'argumentCount' => '1',
         ],
         'TAKE' => [
-            'category' => Category::CATEGORY_MATH_AND_TRIG,
-            'functionCall' => [Functions::class, 'DUMMY'],
+            'category' => Category::CATEGORY_LOOKUP_AND_REFERENCE,
+            'functionCall' => [LookupRef\ChooseRowsEtc::class, 'take'],
             'argumentCount' => '2-3',
         ],
         'TAN' => [
@@ -2890,7 +2890,6 @@ class Calculation
         $this->cyclicReferenceStack = new CyclicReferenceStack();
         $this->debugLog = new Logger($this->cyclicReferenceStack);
         $this->branchPruner = new BranchPruner($this->branchPruningEnabled);
-        self::$referenceHelper = ReferenceHelper::getInstance();
     }
 
     private static function loadLocales(): void
@@ -3139,6 +3138,53 @@ class Calculation
         }
 
         return $localeFileName;
+    }
+
+    /** @var array<int, array<int, string>> */
+    private static array $falseTrueArray = [];
+
+    /** @return array<int, array<int, string>> */
+    public function getFalseTrueArray(): array
+    {
+        if (!empty(self::$falseTrueArray)) {
+            return self::$falseTrueArray;
+        }
+        if (count(self::$validLocaleLanguages) == 1) {
+            self::loadLocales();
+        }
+        $falseTrueArray = [['FALSE'], ['TRUE']];
+        foreach (self::$validLocaleLanguages as $language) {
+            if (str_starts_with($language, 'en')) {
+                continue;
+            }
+            $locale = $language;
+            if (str_contains($locale, '_')) {
+                [$language] = explode('_', $locale);
+            }
+            $localeDir = implode(DIRECTORY_SEPARATOR, [__DIR__, 'locale', null]);
+
+            try {
+                $functionNamesFile = $this->getLocaleFile($localeDir, $locale, $language, 'functions');
+            } catch (Exception $e) {
+                continue;
+            }
+            //    Retrieve the list of locale or language specific function names
+            $localeFunctions = file($functionNamesFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: [];
+            foreach ($localeFunctions as $localeFunction) {
+                [$localeFunction] = explode('##', $localeFunction); //    Strip out comments
+                if (str_contains($localeFunction, '=')) {
+                    [$fName, $lfName] = array_map('trim', explode('=', $localeFunction));
+                    if ($fName === 'FALSE') {
+                        $falseTrueArray[0][] = $lfName;
+                    } elseif ($fName === 'TRUE') {
+                        $falseTrueArray[1][] = $lfName;
+                    }
+                }
+            }
+        }
+        self::$falseTrueArray = $falseTrueArray;
+
+        return $falseTrueArray;
     }
 
     /**
@@ -4554,7 +4600,7 @@ class Calculation
     private static int $matchIndex10 = 10;
 
     /**
-     * @return array<int, mixed>|false
+     * @return array<int, mixed>|false|string
      */
     private function processTokenStack(mixed $tokens, ?string $cellID = null, ?Cell $cell = null)
     {
@@ -4835,17 +4881,18 @@ class Calculation
                             }
                             $result = $operand1;
                         } else {
-                            // In theory, we should truncate here.
-                            // But I can't figure out a formula
-                            // using the concatenation operator
-                            // with literals that fits in 32K,
-                            // so I don't think we can overflow here.
                             if (Information\ErrorValue::isError($operand1)) {
                                 $result = $operand1;
                             } elseif (Information\ErrorValue::isError($operand2)) {
                                 $result = $operand2;
                             } else {
-                                $result = self::FORMULA_STRING_QUOTE . str_replace('""', self::FORMULA_STRING_QUOTE, self::unwrapResult($operand1) . self::unwrapResult($operand2)) . self::FORMULA_STRING_QUOTE;
+                                $result = str_replace('""', self::FORMULA_STRING_QUOTE, self::unwrapResult($operand1) . self::unwrapResult($operand2));
+                                $result = Shared\StringHelper::substring(
+                                    $result,
+                                    0,
+                                    DataType::MAX_STRING_LENGTH
+                                );
+                                $result = self::FORMULA_STRING_QUOTE . $result . self::FORMULA_STRING_QUOTE;
                             }
                         }
                         $this->debugLog->writeDebugLog('Evaluation Result is %s', $this->showTypeDetails($result));
@@ -4994,6 +5041,9 @@ class Calculation
                     while (is_array($cellValue)) {
                         $cellValue = array_shift($cellValue);
                     }
+                    if (is_string($cellValue)) {
+                        $cellValue = preg_replace('/"/', '""', $cellValue);
+                    }
                     $this->debugLog->writeDebugLog('Scalar Result for cell %s is %s', $cellRef, $this->showTypeDetails($cellValue));
                 }
                 $this->processingAnchorArray = false;
@@ -5135,6 +5185,9 @@ class Calculation
                 } elseif (preg_match('/^' . self::CALCULATION_REGEXP_DEFINEDNAME . '$/miu', $token, $matches)) {
                     // if the token is a named range or formula, evaluate it and push the result onto the stack
                     $definedName = $matches[6];
+                    if (str_starts_with($definedName, '_xleta')) {
+                        return Functions::NOT_YET_IMPLEMENTED;
+                    }
                     if ($cell === null || $pCellWorksheet === null) {
                         return $this->raiseFormulaError("undefined name '$token'");
                     }
@@ -5167,6 +5220,7 @@ class Calculation
                     }
 
                     $result = $this->evaluateDefinedName($cell, $namedRange, $pCellWorksheet, $stack, $specifiedWorksheet !== '');
+
                     if (isset($storeKey)) {
                         $branchStore[$storeKey] = $result;
                     }
@@ -5685,11 +5739,14 @@ class Calculation
         $recursiveCalculationCellAddress = $recursiveCalculationCell->getCoordinate();
 
         // Adjust relative references in ranges and formulae so that we execute the calculation for the correct rows and columns
-        $definedNameValue = self::$referenceHelper->updateFormulaReferencesAnyWorksheet(
-            $definedNameValue,
-            Coordinate::columnIndexFromString($cell->getColumn()) - 1,
-            $cell->getRow() - 1
-        );
+        $definedNameValue = ReferenceHelper::getInstance()
+            ->updateFormulaReferencesAnyWorksheet(
+                $definedNameValue,
+                Coordinate::columnIndexFromString(
+                    $cell->getColumn()
+                ) - 1,
+                $cell->getRow() - 1
+            );
 
         $this->debugLog->writeDebugLog('Value adjusted for relative references is %s', $definedNameValue);
 

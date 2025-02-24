@@ -84,10 +84,13 @@ class Csv extends BaseReader
      */
     private static $constructorCallback;
 
+    /** Changed from true to false in release 4.0.0 */
+    public const DEFAULT_TEST_AUTODETECT = false;
+
     /**
      * Attempt autodetect line endings (deprecated after PHP8.1)?
      */
-    private bool $testAutodetect = true;
+    private bool $testAutodetect = self::DEFAULT_TEST_AUTODETECT;
 
     protected bool $castFormattedNumberToNumeric = false;
 

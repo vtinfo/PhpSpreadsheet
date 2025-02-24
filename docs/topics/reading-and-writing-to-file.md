@@ -169,6 +169,12 @@ $writer->save("05featuredemo.xlsx");
 **Note** Formulas will still be calculated in any column set to be autosized
 even if pre-calculated is set to false
 
+**Note** Prior to release 3.7.0, the use of this feature will cause Excel to be used in a mode where opening a sheet saved in this manner *might* not automatically recalculate a cell's formula when a cell used it the formula changes. Furthermore, that behavior might be applied to all spreadsheets open at the time. To avoid this behavior, add the following statement after `setPreCalculateFormulas` above:
+```php
+$writer->setForceFullCalc(false);
+```
+Starting with Release 4.0.0, the property's default is changed to `false` and that statement is no longer be required. The property can be set to `null` if the old behavior is needed.
+
 #### Office 2003 compatibility pack
 
 Because of a bug in the Office2003 compatibility pack, there can be some
@@ -588,6 +594,9 @@ You can suppress testing for Mac line endings as follows:
 $reader = new \PhpOffice\PhpSpreadsheet\Reader\Csv();
 $reader->setTestAutoDetect(false);
 ```
+Starting with Release 4.0.0, the property defaults to `false`,
+so the statement above is no longer needed. The old behavior
+can be enabled by setting the property to `true`.
 
 ### \PhpOffice\PhpSpreadsheet\Writer\Csv
 
