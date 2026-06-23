@@ -131,6 +131,7 @@
 
 
 
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -153,7 +154,7 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_getDistanceX">getDistanceX()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_getDistanceX">getDistanceX()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -161,7 +162,7 @@
 The distanceX is found as sum of all the spanning columns widths minus correction for the two offsets.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_getDistanceY">getDistanceY()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_getDistanceY">getDistanceY()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -169,15 +170,15 @@ The distanceX is found as sum of all the spanning columns widths minus correctio
 The distanceY is found as sum of all the spanning rows minus two offsets.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_oneAnchor2twoAnchor">oneAnchor2twoAnchor()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_oneAnchor2twoAnchor">oneAnchor2twoAnchor()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
+                                &nbsp;: array{startCoordinates: string, startOffsetX: float|int, startOffsetY: float|int, endCoordinates: string, endOffsetX: float|int, endOffsetY: float|int}|null    </span>
 </dt>
 <dd>Convert 1-cell anchor coordinates to 2-cell anchor coordinates
 This function is ported from PEAR Spreadsheet_Writer_Excel with small modifications.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_sizeCol">sizeCol()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_sizeCol">sizeCol()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -186,7 +187,7 @@ x is the width in intrinsic Excel units (measuring width in number of normal cha
 This holds for Arial 10.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_sizeRow">sizeRow()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_sizeRow">sizeRow()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
@@ -235,6 +236,7 @@ The distanceX is found as sum of all the spanning columns widths minus correctio
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -321,6 +323,7 @@ The distanceY is found as sum of all the spanning rows minus two offsets.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -396,7 +399,7 @@ The distanceY is found as sum of all the spanning rows minus two offsets.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Shared/Xls.php"><a href="files/src-phpspreadsheet-shared-xls.html"><abbr title="src/PhpSpreadsheet/Shared/Xls.php">Xls.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -405,10 +408,11 @@ This function is ported from PEAR Spreadsheet_Writer_Excel with small modificati
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">oneAnchor2twoAnchor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinates</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offsetX</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offsetY</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$width</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">oneAnchor2twoAnchor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$worksheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coordinates</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offsetX</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offsetY</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$width</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{startCoordinates: string, startOffsetX: float|int, startOffsetY: float|int, endCoordinates: string, endOffsetX: float|int, endOffsetY: float|int}|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Calculate the vertices that define the position of the image as required by
 the OBJ record.</p>
 <pre class="prettyprint"><code class="prettyprint">    +------------+------------+
@@ -510,7 +514,7 @@ follows (rhs values are in pixels):</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span>
+        <span class="phpdocumentor-signature__response_type">array{startCoordinates: string, startOffsetX: float|int, startOffsetY: float|int, endCoordinates: string, endOffsetX: float|int, endOffsetY: float|int}|null</span>
             </section>
 
 </article>
@@ -542,6 +546,7 @@ This holds for Arial 10.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -607,6 +612,7 @@ use the default value. If the row is hidden we use a value of zero.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -682,6 +688,8 @@ use the default value. If the row is hidden we use a value of zero.</p>
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
@@ -757,11 +765,11 @@ use the default value. If the row is hidden we use a value of zero.</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_getDistanceX">getDistanceX()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_getDistanceY">getDistanceY()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_oneAnchor2twoAnchor">oneAnchor2twoAnchor()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_sizeCol">sizeCol()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_sizeRow">sizeRow()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_getDistanceX">getDistanceX()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_getDistanceY">getDistanceY()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_oneAnchor2twoAnchor">oneAnchor2twoAnchor()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_sizeCol">sizeCol()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Shared-Xls.html#method_sizeRow">sizeRow()</a></li>
                                     </ul>
             </li>
                     </ul>

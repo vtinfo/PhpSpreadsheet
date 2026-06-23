@@ -136,6 +136,7 @@
 
 
 
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -155,7 +156,7 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#constant_FILL_MAPPINGS">FILL_MAPPINGS</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#constant_FILL_MAPPINGS">FILL_MAPPINGS</a>
     <span>
         &nbsp;= [&#039;fillType&#039; =&gt; [
     &#039;solid&#039; =&gt; \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
@@ -197,19 +198,19 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#method_parseStyle">parseStyle()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#method_parseStyle">parseStyle()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array{fill?: array{endColor?: array{rgb: string}, startColor?: array{rgb: string}, fillType?: string}}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-StyleBase.html#method_getAttributes">getAttributes()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-StyleBase.html#method_getAttributes">getAttributes()</a>
     <span>
                                 &nbsp;: <abbr title="\SimpleXMLElement">SimpleXMLElement</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-StyleBase.html#method_identifyFixedStyleValue">identifyFixedStyleValue()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-StyleBase.html#method_identifyFixedStyleValue">identifyFixedStyleValue()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -235,14 +236,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Reader/Xml/Style/Fill.php"><a href="files/src-phpspreadsheet-reader-xml-style-fill.html"><abbr title="src/PhpSpreadsheet/Reader/Xml/Style/Fill.php">Fill.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">FILL_MAPPINGS</span>
     = <span class="phpdocumentor-signature__default-value">[&#039;fillType&#039; =&gt; [
     &#039;solid&#039; =&gt; \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
@@ -305,17 +307,18 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Reader/Xml/Style/Fill.php"><a href="files/src-phpspreadsheet-reader-xml-style-fill.html"><abbr title="src/PhpSpreadsheet/Reader/Xml/Style/Fill.php">Fill.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">parseStyle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\SimpleXMLElement">SimpleXMLElement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$styleAttributes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">parseStyle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\SimpleXMLElement">SimpleXMLElement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$styleAttributes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{fill?: array{endColor?: array{rgb: string}, startColor?: array{rgb: string}, fillType?: string}}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -334,7 +337,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array{fill?: array{endColor?: array{rgb: string}, startColor?: array{rgb: string}, fillType?: string}}</span>
             </section>
 
 </article>
@@ -352,7 +355,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Reader/Xml/Style/StyleBase.php"><a href="files/src-phpspreadsheet-reader-xml-style-stylebase.html"><abbr title="src/PhpSpreadsheet/Reader/Xml/Style/StyleBase.php">StyleBase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -363,6 +366,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -406,23 +410,24 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Reader/Xml/Style/StyleBase.php"><a href="files/src-phpspreadsheet-reader-xml-style-stylebase.html"><abbr title="src/PhpSpreadsheet/Reader/Xml/Style/StyleBase.php">StyleBase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">identifyFixedStyleValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$styleList</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$styleAttributeValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">identifyFixedStyleValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$styleList</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$styleAttributeValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$styleList</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -484,6 +489,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
@@ -558,7 +565,7 @@
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#constant_FILL_MAPPINGS">FILL_MAPPINGS</a></li>
+                                                    <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#constant_FILL_MAPPINGS">FILL_MAPPINGS</a></li>
                                             </ul>
                 </li>
             
@@ -566,9 +573,9 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#method_parseStyle">parseStyle()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-StyleBase.html#method_getAttributes">getAttributes()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-StyleBase.html#method_identifyFixedStyleValue">identifyFixedStyleValue()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-Fill.html#method_parseStyle">parseStyle()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-StyleBase.html#method_getAttributes">getAttributes()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Reader-Xml-Style-StyleBase.html#method_identifyFixedStyleValue">identifyFixedStyleValue()</a></li>
                                     </ul>
             </li>
                     </ul>

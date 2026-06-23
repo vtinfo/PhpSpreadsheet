@@ -124,6 +124,7 @@
 
 
 
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -146,13 +147,13 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#method_fromParser">fromParser()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#method_fromParser">fromParser()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#method_value">value()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#method_value">value()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -184,17 +185,18 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engine/Operands/Operand.php"><a href="files/src-phpspreadsheet-calculation-engine-operands-operand.html"><abbr title="src/PhpSpreadsheet/Calculation/Engine/Operands/Operand.php">Operand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">8</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromParser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formula</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$index</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromParser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formula</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$index</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matches</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -214,7 +216,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$matches</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -245,7 +247,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/Engine/Operands/Operand.php"><a href="files/src-phpspreadsheet-calculation-engine-operands-operand.html"><abbr title="src/PhpSpreadsheet/Calculation/Engine/Operands/Operand.php">Operand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
@@ -256,6 +258,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
     
     
@@ -306,6 +309,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
@@ -380,8 +385,8 @@
                             <li class="phpdocumentor-on-this-page-section__title">Methods</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#method_fromParser">fromParser()</a></li>
-                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#method_value">value()</a></li>
+                                                    <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#method_fromParser">fromParser()</a></li>
+                                                    <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Engine-Operands-Operand.html#method_value">value()</a></li>
                                             </ul>
                 </li>
             

@@ -115,7 +115,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Table\Column">Column</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Table\TableStyle">TableStyle</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-Column.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Table\Column">Column</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableDxfsStyle.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Table\TableDxfsStyle">TableDxfsStyle</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Table-TableStyle.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Table\TableStyle">TableStyle</abbr></a></dt>    </dl>
 
 
 
@@ -163,6 +163,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 

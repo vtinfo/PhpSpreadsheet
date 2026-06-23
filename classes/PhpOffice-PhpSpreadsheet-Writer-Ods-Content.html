@@ -123,11 +123,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
         
+
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -171,18 +172,11 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#property_formulaConvertor">$formulaConvertor</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#property_additionalNumberFormats">$additionalNumberFormats</a>
     <span>
-                        &nbsp;: <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Formula.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Ods\Formula">Formula</abbr></a>            </span>
+                        &nbsp;: array&lt;string, callable&gt;            </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-WriterPart.html#property_parentWriter">$parentWriter</a>
-    <span>
-                        &nbsp;: <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Ods">Ods</abbr></a>            </span>
-</dt>
-<dd>Parent Ods object.</dd>
 
     </dl>
 
@@ -193,67 +187,25 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method___construct">__construct()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Set parent Ods writer.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-WriterPart.html#method_getParentWriter">getParentWriter()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-WriterPart.html#method_getParentWriter">getParentWriter()</a>
     <span>
                                 &nbsp;: <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Ods">Ods</abbr></a>    </span>
 </dt>
 <dd>Get Ods writer.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_write">write()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_write">write()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Write content.xml to XML format.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCellMerge">writeCellMerge()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Write attributes for merged cell.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCells">writeCells()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Write cells of the specified row.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCellSpan">writeCellSpan()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Write span.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeRows">writeRows()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Write rows of the specified sheet.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeSheets">writeSheets()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Write sheets.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeXfStyles">writeXfStyles()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Write XF cell styles.</dd>
 
     </dl>
 
@@ -272,68 +224,35 @@
         class="
             phpdocumentor-element
             -property
-            -private
-                                                        "
+            -public
+                                                                    "
 >
-    <h4 class="phpdocumentor-element__name" id="property_formulaConvertor">
-        $formulaConvertor
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#property_formulaConvertor" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_additionalNumberFormats">
+        $additionalNumberFormats
+        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#property_additionalNumberFormats" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">411</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Formula.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Ods\Formula">Formula</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$formulaConvertor</span>
-    </code>
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, callable&gt;</span>
+    <span class="phpdocumentor-signature__name">$additionalNumberFormats</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
     
 
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_parentWriter">
-        $parentWriter
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-WriterPart.html#property_parentWriter" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/WriterPart.php"><a href="files/src-phpspreadsheet-writer-ods-writerpart.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/WriterPart.php">WriterPart.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">12</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Parent Ods object.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods.html"><abbr title="\PhpOffice\PhpSpreadsheet\Writer\Ods">Ods</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$parentWriter</span>
-    </code>
-
-    
-    
     
 
     
@@ -361,7 +280,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -373,6 +292,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -420,6 +340,7 @@
     
     
     
+    
 
     
 
@@ -443,7 +364,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -455,6 +376,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
     
     
@@ -470,319 +392,6 @@
 
             </section>
 
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_writeCellMerge">
-        writeCellMerge()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCellMerge" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">343</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Write attributes for merged cell.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">writeCellMerge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Cell-Cell.html"><abbr title="\PhpOffice\PhpSpreadsheet\Cell\Cell">Cell</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cell</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$objWriter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cell</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Cell-Cell.html"><abbr title="\PhpOffice\PhpSpreadsheet\Cell\Cell">Cell</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_writeCells">
-        writeCells()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCells" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">189</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Write cells of the specified row.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">writeCells</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-RowCellIterator.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cells</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$objWriter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cells</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-RowCellIterator.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator">RowCellIterator</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_writeCellSpan">
-        writeCellSpan()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCellSpan" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">295</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Write span.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">writeCellSpan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$curColumn</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prevColumn</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$objWriter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$curColumn</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$prevColumn</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_writeRows">
-        writeRows()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeRows" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">153</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Write rows of the specified sheet.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">writeRows</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheet</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sheetIndex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$objWriter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Worksheet-Worksheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet">Worksheet</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$sheetIndex</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_writeSheets">
-        writeSheets()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeSheets" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">117</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Write sheets.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">writeSheets</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$objWriter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$objWriter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_writeXfStyles">
-        writeXfStyles()
-        <a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeXfStyles" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Writer/Ods/Content.php"><a href="files/src-phpspreadsheet-writer-ods-content.html"><abbr title="src/PhpSpreadsheet/Writer/Ods/Content.php">Content.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">310</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Write XF cell styles.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">writeXfStyles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$writer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spreadsheet</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$writer</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Shared-XMLWriter.html"><abbr title="\PhpOffice\PhpSpreadsheet\Shared\XMLWriter">XMLWriter</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$spreadsheet</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PhpOffice-PhpSpreadsheet-Spreadsheet.html"><abbr title="\PhpOffice\PhpSpreadsheet\Spreadsheet">Spreadsheet</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-
-    
 </article>
             </section>
 
@@ -822,6 +431,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
@@ -897,23 +508,16 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#property_formulaConvertor">$formulaConvertor<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html"></li>
-                                                    <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-WriterPart.html#property_parentWriter">$parentWriter<a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html"></li>
+                                                    <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#property_additionalNumberFormats">$additionalNumberFormats</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-WriterPart.html#method_getParentWriter">getParentWriter()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_write">write()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCellMerge">writeCellMerge()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCells">writeCells()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeCellSpan">writeCellSpan()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeRows">writeRows()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeSheets">writeSheets()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_writeXfStyles">writeXfStyles()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-WriterPart.html#method_getParentWriter">getParentWriter()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Writer-Ods-Content.html#method_write">write()</a></li>
                                     </ul>
             </li>
                     </ul>

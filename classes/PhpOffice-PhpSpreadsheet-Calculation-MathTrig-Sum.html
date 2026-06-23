@@ -132,6 +132,7 @@
 
 
 
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -154,21 +155,21 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_product">product()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_product">product()</a>
     <span>
                                 &nbsp;: float|int|string    </span>
 </dt>
 <dd>SUMPRODUCT.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_sumErroringStrings">sumErroringStrings()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_sumErroringStrings">sumErroringStrings()</a>
     <span>
-                                &nbsp;: float|int|string|array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;|float|int|string    </span>
 </dt>
 <dd>SUM, returning error for non-numeric strings. This is used by Excel SUM function.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_sumIgnoringStrings">sumIgnoringStrings()</a>
+    <a class="" href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_sumIgnoringStrings">sumIgnoringStrings()</a>
     <span>
                                 &nbsp;: float|int|string    </span>
 </dt>
@@ -202,7 +203,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/MathTrig/Sum.php"><a href="files/src-phpspreadsheet-calculation-mathtrig-sum.html"><abbr title="src/PhpSpreadsheet/Calculation/MathTrig/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -214,6 +215,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Excel Function:
 SUMPRODUCT(value1[,value2[, ...]])</p>
 </section>
@@ -259,7 +261,7 @@ SUMPRODUCT(value1[,value2[, ...]])</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/PhpSpreadsheet/Calculation/MathTrig/Sum.php"><a href="files/src-phpspreadsheet-calculation-mathtrig-sum.html"><abbr title="src/PhpSpreadsheet/Calculation/MathTrig/Sum.php">Sum.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -267,10 +269,11 @@ SUMPRODUCT(value1[,value2[, ...]])</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">sumErroringStrings</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$args</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|int|string|array&lt;string|int, mixed&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">sumErroringStrings</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$args</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|float|int|string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>SUM computes the sum of all the values and cells referenced in the argument list.</p>
 <p>Excel Function:
 SUM(value1[,value2[, ...]])</p>
@@ -295,7 +298,7 @@ SUM(value1[,value2[, ...]])</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">float|int|string|array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|float|int|string</span>
             </section>
 
 </article>
@@ -325,6 +328,7 @@ SUM(value1[,value2[, ...]])</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>SUM computes the sum of all the values and cells referenced in the argument list.</p>
 <p>Excel Function:
 SUM(value1[,value2[, ...]])</p>
@@ -391,6 +395,8 @@ SUM(value1[,value2[, ...]])</p>
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
@@ -466,9 +472,9 @@ SUM(value1[,value2[, ...]])</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_product">product()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_sumErroringStrings">sumErroringStrings()</a></li>
-                                            <li><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_sumIgnoringStrings">sumIgnoringStrings()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_product">product()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_sumErroringStrings">sumErroringStrings()</a></li>
+                                            <li class=""><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-MathTrig-Sum.html#method_sumIgnoringStrings">sumIgnoringStrings()</a></li>
                                     </ul>
             </li>
                     </ul>

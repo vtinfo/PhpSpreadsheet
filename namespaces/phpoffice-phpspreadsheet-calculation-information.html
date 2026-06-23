@@ -115,7 +115,7 @@
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ErrorValue.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Information\ErrorValue">ErrorValue</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError">ExcelError</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Information\Value">Value</abbr></a></dt>    </dl>
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ErrorValue.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Information\ErrorValue">ErrorValue</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Information-ExcelError.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError">ExcelError</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Info.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Information\Info">Info</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/PhpOffice-PhpSpreadsheet-Calculation-Information-Value.html"><abbr title="\PhpOffice\PhpSpreadsheet\Calculation\Information\Value">Value</abbr></a></dt>    </dl>
 
 
 
@@ -163,6 +163,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
