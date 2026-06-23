@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org). Thia is a
 
 ## TBD - 5.9.0
 
+### Version 5.8.0.1
+
+- Merge in 5.8.0
+
 ### Added
 
 - Nothing yet.
